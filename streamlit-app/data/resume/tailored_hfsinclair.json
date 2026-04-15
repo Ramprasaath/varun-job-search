@@ -1,0 +1,68 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical chemistry, quality control, and materials testing. Expertise in FT-IR spectroscopy, thermal analysis (TGA, DSC), GC-MS, and method development for petroleum and chemical analysis. Strong background in statistical process control (SPC), developing analytical methods, and establishing quality control protocols. Experienced in laboratory operations management and ensuring data integrity for analytical testing.",
+  "competencies": [
+    "Analytical Chemistry",
+    "Quality Control Testing",
+    "FT-IR Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "GC-MS Analysis",
+    "Method Development",
+    "Statistical Process Control (SPC)",
+    "Materials Testing",
+    "SOP Development",
+    "Laboratory Operations"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Develop and validate analytical methods using FT-IR, thermal analysis, and chromatographic techniques.",
+        "Apply statistical process control methods to ensure quality and reproducibility of analytical data."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted comprehensive materials characterization using FT-IR, TGA, DSC, GC-MS, and LC-MS.",
+        "Developed and documented analytical methods and SOPs for quality control testing."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed QC laboratory operations including instrument calibration, maintenance, and compliance.",
+        "Implemented SOPs and quality control protocols ensuring data integrity."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Techniques": "FT-IR, TGA, DSC, GC-MS, LC-MS, HPLC, UV-Vis, NMR",
+    "Quality Control": "QC testing, method development, SOP creation, statistical process control",
+    "Laboratory Operations": "Instrument calibration, maintenance, compliance, data integrity"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

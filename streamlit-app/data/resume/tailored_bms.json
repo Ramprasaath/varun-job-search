@@ -1,0 +1,52 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in chemistry research, analytical development, and materials characterization. Expertise in organic synthesis, method development using HPLC, FT-IR, UV-Vis, and thermal analysis (TGA, DSC). Strong background in structure-property relationships, process development, and multi-technique characterization. Proven track record of scientific publications and managing complex research projects.",
+  "competencies": [
+    "Chemistry Research",
+    "Analytical Development",
+    "Organic Synthesis",
+    "Method Development",
+    "HPLC & Chromatography",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "Process Development",
+    "Materials Characterization",
+    "Scientific Research"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted organic synthesis and characterization of novel materials for electrochromic applications.",
+        "Developed analytical methods using HPLC, FT-IR, UV-Vis, and mass spectrometry.",
+        "Performed comprehensive materials characterization using thermal analysis and spectroscopic techniques."
+      ]
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+  ],
+  "skills": {
+    "Chemistry": "Organic synthesis, materials characterization, method development",
+    "Analytical Methods": "HPLC, LC-MS, GC-MS, FT-IR, UV-Vis, TGA, DSC, NMR"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

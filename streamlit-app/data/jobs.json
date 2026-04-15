@@ -1,0 +1,1100 @@
+[
+  {
+    "id": 1,
+    "url": "https://jobs.lever.co/BreezeBio/b8f50bbe-2d60-4ca3-8357-e0fd3fc17f56",
+    "company": "BreezeBio",
+    "title": "Principal/Senior Scientist, Analytical Chemistry (Biopolymers)",
+    "location": "Brisbane, CA (Onsite)",
+    "date_found": "2026-04-13",
+    "score": 4.2,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": "reports/001-breezebio-principal-scientist-analytical-chemistry-2026-04-13.md",
+    "pdf_path": "output/cv-breezebio-principal-senior-scientist,-analytical-c-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": "2026-04-22",
+    "notes": "Best match. Postdoc = biopolymer process dev. Target Senior Scientist level. GPC/SEC-MALS, HPLC, nanoparticle characterization.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.5,
+      "comp": 4.0,
+      "cultural": 4.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "SEC-MALS specifically",
+        "DLS/NTA/Zeta potential",
+        "IND/regulatory (cGMP/ICH)"
+      ],
+      "strengths": [
+        "Postdoc is literally biopolymer process development",
+        "10+ characterization techniques",
+        "DOE expertise",
+        "Lab operations management"
+      ],
+      "recommendation": "APPLY - Target Senior Scientist level"
+    },
+    "tailored_resume": "tailored_breezebio"
+  },
+  {
+    "id": 2,
+    "url": "https://jobs.lever.co/BreezeBio/b39d276b-16cd-452e-b81d-3dd126594074",
+    "company": "BreezeBio",
+    "title": "Associate Director / Director, Analytical Development",
+    "location": "Brisbane, CA (Onsite)",
+    "date_found": "2026-04-13",
+    "score": 3.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": "output/cv-breezebio-associate-director---director--2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "10+ years industry required. May be too senior for Varun's profile.",
+    "evaluation": null
+  },
+  {
+    "id": 3,
+    "url": "https://job-boards.greenhouse.io/relaytherapeutics/jobs/5830349004",
+    "company": "Relay Therapeutics",
+    "title": "Director, Analytical Development and Quality Control",
+    "location": "Cambridge, MA",
+    "date_found": "2026-04-13",
+    "score": 3.2,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Director level likely too senior. Requires extensive industry experience.",
+    "evaluation": null
+  },
+  {
+    "id": 4,
+    "url": "https://jobs.lever.co/empiricotx/72625463-152c-4df6-b709-acd632009218",
+    "company": "Empirico",
+    "title": "Senior Scientist - CMC",
+    "location": "San Diego, CA / Madison, WI",
+    "date_found": "2026-04-14",
+    "score": 3.8,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-empirico-senior-scientist---cmc-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "siRNA biotech. Solid-phase oligonucleotide synthesis role. Salary $110K-$160K. May require more synthesis experience than Varun has.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.7,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Solid-phase oligonucleotide synthesis experience",
+        "siRNA chemistry specific knowledge",
+        "May prefer more synthesis-heavy background"
+      ],
+      "strengths": [
+        "Analytical characterization expertise",
+        "Process development experience",
+        "DOE and statistical analysis",
+        "Method development background"
+      ],
+      "recommendation": "Consider if interested in nucleotide chemistry - strong analytical fit but synthesis gap"
+    }
+  },
+  {
+    "id": 5,
+    "url": "https://careers.abbvie.com/en/job/sr-scientist-i-analytical-research-and-development-in-north-chicago-il-jid-1208",
+    "company": "AbbVie",
+    "title": "Sr. Scientist I, Analytical Research & Development",
+    "location": "North Chicago, IL",
+    "date_found": "2026-04-14",
+    "score": 4.0,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-abbvie-sr.-scientist-i,-analytical-research-&-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PhD 0+ years accepted. Strong analytical chemistry focus. Large pharma stability.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 3.8,
+      "comp": 4.2,
+      "cultural": 4.0,
+      "red_flags": 0,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Pharma industry experience",
+        "Regulatory submission experience"
+      ],
+      "strengths": [
+        "PhD-level analytical chemistry",
+        "Method development expertise",
+        "0+ years industry experience accepted",
+        "Strong match with Varun's characterization background"
+      ],
+      "recommendation": "APPLY - Good entry point into big pharma"
+    },
+    "tailored_resume": "tailored_abbvie"
+  },
+  {
+    "id": 6,
+    "url": "https://careers.regeneron.com/en/jobs/r36436/scientist-analytical-chemistry-lc-ms/",
+    "company": "Regeneron",
+    "title": "Scientist, Analytical Chemistry (LC-MS)",
+    "location": "Tarrytown, NY",
+    "date_found": "2026-04-14",
+    "score": 4.1,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-regeneron-scientist-analytical-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PhD with 0-3+ years experience. LC-MS focus for biotherapeutics. Strong growth potential.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.2,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "LC-MS method development (some experience but not expert)",
+        "Biotherapeutics specific experience"
+      ],
+      "strengths": [
+        "PhD in Chemistry - strong match",
+        "0-3 years accepted - entry level friendly",
+        "Method development experience",
+        "Characterization expertise"
+      ],
+      "recommendation": "APPLY - Strong match for LC-MS and analytical chemistry background"
+    },
+    "tailored_resume": "tailored_regeneron"
+  },
+  {
+    "id": 7,
+    "url": "https://careers.astrazeneca.com/job/gaithersburg/scientist-senior-scientist-analytical-sciences/7684/58035991120",
+    "company": "AstraZeneca",
+    "title": "Scientist/Senior Scientist, Analytical Sciences",
+    "location": "Gaithersburg, MD",
+    "date_found": "2026-04-14",
+    "score": 3.9,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-astrazeneca-scientist-senior-scientist-ana-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Biopharmaceutical analytical development. Method development and CQA assessment.",
+    "evaluation": {
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 3.8,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Biopharmaceutical specific experience",
+        "Protein characterization experience"
+      ],
+      "strengths": [
+        "Method development background",
+        "Analytical characterization expertise",
+        "CQA and specification development aligned with Varun's QA experience",
+        "Process development support experience"
+      ],
+      "recommendation": "STRONG CONSIDER - Good match, slightly lower score due to biologics focus"
+    }
+  },
+  {
+    "id": 8,
+    "url": "https://jobs.appliedmaterials.com/job/santa-clara/2026-ncg-process-engineer-iii-phd-santa-clara-ca/95/91645773312",
+    "company": "Applied Materials",
+    "title": "2026 NCG Process Engineer III - PhD",
+    "location": "Santa Clara, CA",
+    "date_found": "2026-04-14",
+    "score": 3.7,
+    "archetype": "Process Engineer",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-applied-materials-2026-ncg-process-engineer-iii--2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Semiconductor equipment. Materials Science/Chemical Engineering/Physics PhD. XRD, SEM, TEM characterization.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 3.5,
+      "comp": 4.0,
+      "cultural": 3.8,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Semiconductor industry knowledge",
+        "XRD, SEM, TEM expertise (some experience but limited)",
+        "Process engineering vs pure chemistry focus"
+      ],
+      "strengths": [
+        "Materials characterization background",
+        "PhD in Chemistry - meets requirements",
+        "New college grad program - designed for PhDs",
+        "Santa Clara location - Bay Area"
+      ],
+      "recommendation": "CONSIDER - Good for semiconductor pivot, but different industry"
+    },
+    "tailored_resume": "tailored_applied_materials"
+  },
+  {
+    "id": 9,
+    "url": "https://careers.amgen.com/en/job/thousand-oaks/process-development-senior-scientist-analytical-development/87/83906220208",
+    "company": "Amgen",
+    "title": "Process Development Senior Scientist \u2013 Analytical Development",
+    "location": "Thousand Oaks, CA",
+    "date_found": "2026-04-14",
+    "score": 3.6,
+    "archetype": "Process Development Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": "output/cv-amgen-process-development-senior-sci-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Requires 2+ years post-PhD industry experience. May be slightly senior for Varun.",
+    "evaluation": null,
+    "tailored_resume": "tailored_amgen_process"
+  },
+  {
+    "id": 10,
+    "url": "https://www.pfizer.com/about/careers/job/4924728",
+    "company": "Pfizer",
+    "title": "Principal Scientist, Materials Science",
+    "location": "Various US Locations",
+    "date_found": "2026-04-14",
+    "score": 3.4,
+    "archetype": "Materials Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Principal level likely too senior. Coaching/mentoring role requires extensive experience.",
+    "evaluation": null
+  },
+  {
+    "id": 11,
+    "url": "https://careers.bms.com/research/",
+    "company": "Bristol Myers Squibb",
+    "title": "Formulator, Principal Scientist, Exploratory Biopharmaceutics",
+    "location": "Various US Locations",
+    "date_found": "2026-04-14",
+    "score": 3.3,
+    "archetype": "Formulation Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Principal Scientist level. May require more formulation experience.",
+    "evaluation": null
+  },
+  {
+    "id": 12,
+    "url": "https://careers.bms.com/research/",
+    "company": "Bristol Myers Squibb",
+    "title": "Research Scientist - Chemistry",
+    "location": "Various US Locations",
+    "date_found": "2026-04-14",
+    "score": 3.5,
+    "archetype": "Research Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": "output/cv-bristol-myers-squibb-research-scientist---chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Multiple PhD-level positions in Discovery and Process Chemistry. Need to find specific postings.",
+    "evaluation": null,
+    "tailored_resume": "tailored_bms"
+  },
+  {
+    "id": 13,
+    "url": "https://www.linkedin.com/jobs/view/scientist-large-molecule-cmc-analytical-development-process-analytics-at-denali-therapeutics-4144053207",
+    "company": "Denali Therapeutics",
+    "title": "Scientist, Large Molecule CMC Analytical Development",
+    "location": "South San Francisco, CA",
+    "date_found": "2026-04-14",
+    "score": 3.2,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong company (neurodegenerative biotech), but large molecule focus is gap. Varun's expertise is small molecules/polymers.",
+    "evaluation": {
+      "cv_match": 3.0,
+      "north_star": 3.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Large molecule/biologics experience",
+        "Protein analytics (HPLC-SEC, DLS)",
+        "Cell-based assays"
+      ],
+      "strengths": [
+        "CMC analytical development core skills",
+        "Method development transferable",
+        "DoE and statistical background"
+      ],
+      "recommendation": "MAYBE - Only apply if willing to pivot to biologics"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 14,
+    "url": "https://www.linkedin.com/jobs/view/associate-scientist-large-molecule-cmc-analytical-development-at-denali-therapeutics-4122448608",
+    "company": "Denali Therapeutics",
+    "title": "Associate Scientist, Large Molecule CMC Analytical Development",
+    "location": "South San Francisco, CA",
+    "date_found": "2026-04-14",
+    "score": 3.0,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Associate level better fit, but still large molecule gap. Overqualified for associate with PhD?",
+    "evaluation": {
+      "cv_match": 3.0,
+      "north_star": 3.0,
+      "comp": 3.5,
+      "cultural": 4.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Large molecule/biologics experience",
+        "May be overqualified (PhD for associate)"
+      ],
+      "strengths": [
+        "Entry point into biotech",
+        "CMC analytical transferable skills",
+        "Strong company reputation"
+      ],
+      "recommendation": "LOW PRIORITY - Role likely too junior for PhD"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 15,
+    "url": "https://www.linkedin.com/jobs/view/sr-scientist-cmc-analytical-development-at-neurocrine-biosciences-4127948994",
+    "company": "Neurocrine Biosciences",
+    "title": "Sr. Scientist, CMC Analytical Development",
+    "location": "San Diego, CA",
+    "date_found": "2026-04-14",
+    "score": 4.1,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-neurocrine-biosciences-sr.-scientist-cmc-analytical-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong match! Established biotech (NASDAQ: NBIX), CMC analytical focus. Need to verify small vs large molecule.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.5,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Need to verify molecule type (small vs large)",
+        "Industry experience (2 years postdoc only)"
+      ],
+      "strengths": [
+        "CMC analytical development - exact match",
+        "Established public biotech - stability",
+        "San Diego location - strong biotech hub",
+        "Method development and validation skills"
+      ],
+      "recommendation": "APPLY - High priority, verify JD for molecule type"
+    },
+    "tailored_resume": "tailored_neurocrine"
+  },
+  {
+    "id": 16,
+    "url": "https://www.linkedin.com/jobs/view/scientist-cmc-analytical-development-large-and-small-molecule-work-at-the-steely-group-4230015566",
+    "company": "The Steely Group (recruiting for client)",
+    "title": "Scientist, CMC Analytical Development (Large and Small Molecule)",
+    "location": "Unknown - check posting",
+    "date_found": "2026-04-14",
+    "score": null,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Found via LinkedIn search. Mixed small/large molecule - recruiter posting, verify company.",
+    "evaluation": null,
+    "tailored_resume": null
+  },
+  {
+    "id": 17,
+    "url": "https://www.linkedin.com/jobs/view/scientist-i-cmc-analytical-development-at-planet-pharma-4273721762",
+    "company": "Planet Pharma (contract)",
+    "title": "Scientist I, CMC Analytical Development",
+    "location": "Unknown - check posting",
+    "date_found": "2026-04-14",
+    "score": null,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Found via LinkedIn search. Contract role through staffing agency.",
+    "evaluation": null,
+    "tailored_resume": null
+  },
+  {
+    "id": 18,
+    "url": "https://www.linkedin.com/jobs/view/technical-development-scientist-associate-scientist-spectroscopy-chemometrics-at-genentech-3078641932",
+    "company": "Genentech",
+    "title": "Technical Development Scientist/Associate Scientist, Spectroscopy & Chemometrics",
+    "location": "San Francisco, CA",
+    "date_found": "2026-04-14",
+    "score": 3.8,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-genentech-technical-development-scientis-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Top-tier company (Genentech/Roche). Spectroscopy focus aligns with Varun's background. PhD + 0-2 years experience required.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 4.5,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Chemometrics expertise",
+        "Industry experience (0-2 years req, postdoc counts)"
+      ],
+      "strengths": [
+        "PhD in chemistry - meets requirement",
+        "Spectroscopy background (UV-Vis, FTIR)",
+        "Top-tier biotech (Genentech)",
+        "Entry-level friendly (0-2 years)"
+      ],
+      "recommendation": "APPLY - Strong match, prestigious company"
+    },
+    "tailored_resume": "tailored_genentech"
+  },
+  {
+    "id": 19,
+    "url": "https://www.linkedin.com/jobs/view/scientist-process-development-material-science-at-amgen-3300419187",
+    "company": "Amgen",
+    "title": "Scientist, Process Development - Material Science",
+    "location": "Thousand Oaks, CA",
+    "date_found": "2026-04-14",
+    "score": 3.9,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-amgen-scientist-process-development--2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Amgen materials science role. Strong company. Need to verify specific requirements.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Process development experience",
+        "Specific materials science background"
+      ],
+      "strengths": [
+        "Materials characterization expertise",
+        "Polymer chemistry background",
+        "Large pharma (Amgen)",
+        "Analytical method development skills"
+      ],
+      "recommendation": "APPLY - Good match, verify JD details"
+    },
+    "tailored_resume": "tailored_amgen_materials"
+  },
+  {
+    "id": 20,
+    "url": "https://www.linkedin.com/jobs/view/senior-scientist-process-development-at-amgen-3840953367",
+    "company": "Amgen",
+    "title": "Senior Scientist, Process Development",
+    "location": "Cambridge, MA",
+    "date_found": "2026-04-14",
+    "score": 3.4,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Senior level likely too high. Process development focus vs analytical. Cambridge MA location.",
+    "evaluation": {
+      "cv_match": 3.0,
+      "north_star": 3.5,
+      "comp": 4.0,
+      "cultural": 3.5,
+      "red_flags": -0.6,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Senior level (likely needs 5+ years industry)",
+        "Process development vs analytical focus",
+        "cGMP manufacturing experience"
+      ],
+      "strengths": [
+        "Amgen brand recognition",
+        "CMC regulatory knowledge transferable",
+        "Boston biotech hub"
+      ],
+      "recommendation": "SKIP - Likely too senior, wrong focus area"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 21,
+    "url": "https://www.linkedin.com/jobs/view/application-scientist-at-waters-corporation-4213007412",
+    "company": "Waters Corporation",
+    "title": "Application Scientist",
+    "location": "Milford, MA",
+    "date_found": "2026-04-14",
+    "score": 4.3,
+    "archetype": "Applications/Support Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-waters-application-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Perfect match for spectroscopy background. Top analytical instrumentation company. Customer-facing technical role.",
+    "evaluation": {
+      "cv_match": 4.5,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.5,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Customer-facing experience",
+        "Specific instrument expertise training"
+      ],
+      "strengths": [
+        "FT-IR, UV-Vis spectroscopy expertise",
+        "Materials characterization background",
+        "PhD in Chemistry",
+        "Method development experience"
+      ],
+      "recommendation": "APPLY - High priority, perfect company match"
+    },
+    "tailored_resume": "tailored_waters"
+  },
+  {
+    "id": 22,
+    "url": "https://www.linkedin.com/jobs/view/senior-scientist-%E2%80%93-lc-ms-applications-at-waters-corporation-4335441074",
+    "company": "Waters Corporation",
+    "title": "Senior Scientist \u2013 LC-MS Applications",
+    "location": "Multiple Locations",
+    "date_found": "2026-04-14",
+    "score": 4.0,
+    "archetype": "Applications/Support Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-waters-lc-ms-applications-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "LC-MS applications role. Slightly senior but Varun has some LC-MS experience. Strong company.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Senior level may require more experience",
+        "LC-MS method development depth"
+      ],
+      "strengths": [
+        "Some LC-MS experience",
+        "PhD in Chemistry",
+        "Analytical method development",
+        "Waters is top-tier company"
+      ],
+      "recommendation": "APPLY - Good match, may need to target non-senior version"
+    },
+    "tailored_resume": "tailored_waters_lcms"
+  },
+  {
+    "id": 23,
+    "url": "https://www.linkedin.com/jobs/view/application-scientist-at-bruker-nano-analytics-3389745231",
+    "company": "Bruker Nano Analytics",
+    "title": "Application Scientist",
+    "location": "Madison, WI",
+    "date_found": "2026-04-14",
+    "score": 4.2,
+    "archetype": "Applications/Support Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-bruker-nano-analytics-application-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Micro X-ray fluorescence product line. Materials characterization focus. Leading scientific instrumentation company.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "XRF specific experience",
+        "Customer-facing technical support"
+      ],
+      "strengths": [
+        "Materials characterization expertise",
+        "Spectroscopy background",
+        "PhD in Chemistry",
+        "Bruker is market leader"
+      ],
+      "recommendation": "APPLY - High priority materials characterization role"
+    },
+    "tailored_resume": "tailored_bruker"
+  },
+  {
+    "id": 24,
+    "url": "https://www.linkedin.com/jobs/view/battery-engineer-scientist-at-exponent-3335505563",
+    "company": "Exponent",
+    "title": "Battery Engineer/Scientist",
+    "location": "Natick, MA / Menlo Park, CA",
+    "date_found": "2026-04-14",
+    "score": 4.5,
+    "archetype": "Failure Analysis/Reliability Engineer",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-exponent-battery-engineer-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "EXCELLENT MATCH! Battery failure analysis and materials characterization. PhD required. SEM, X-ray CT, electrochemical analysis.",
+    "evaluation": {
+      "cv_match": 4.5,
+      "north_star": 4.5,
+      "comp": 4.5,
+      "cultural": 4.5,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Battery industry specific knowledge",
+        "Client consulting experience"
+      ],
+      "strengths": [
+        "Failure analysis expertise - exact match",
+        "Materials characterization (FTIR, TGA, DSC)",
+        "PhD in Chemistry/Materials",
+        "Root cause analysis experience",
+        "Menlo Park CA location option"
+      ],
+      "recommendation": "APPLY IMMEDIATELY - Highest priority match"
+    },
+    "tailored_resume": "tailored_exponent"
+  },
+  {
+    "id": 25,
+    "url": "https://www.linkedin.com/jobs/view/chemist-vibrational-spectroscopy-and-thermal-analysis-at-intertek-3331060825",
+    "company": "Intertek",
+    "title": "Chemist - Vibrational Spectroscopy and Thermal Analysis",
+    "location": "Trexlertown, PA",
+    "date_found": "2026-04-14",
+    "score": 4.6,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-intertek-vibrational-spectroscopy-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "EXCELLENT MATCH! FTIR, Raman, TGA, DSC - exactly Varun's expertise. Polymer characterization focus.",
+    "evaluation": {
+      "cv_match": 4.8,
+      "north_star": 4.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Raman specific expertise",
+        "Client service environment"
+      ],
+      "strengths": [
+        "FTIR expertise - core skill",
+        "TGA/DSC thermal analysis",
+        "Polymer characterization",
+        "Materials analysis background",
+        "PhD in Chemistry"
+      ],
+      "recommendation": "APPLY IMMEDIATELY - Perfect technical match"
+    },
+    "tailored_resume": "tailored_intertek"
+  },
+  {
+    "id": 26,
+    "url": "https://www.linkedin.com/jobs/view/scientific-lead-cmc-process-chemistry-at-loxo@lilly-3572341288",
+    "company": "Loxo@Lilly",
+    "title": "Scientific Lead, CMC Process Chemistry",
+    "location": "Louisville, CO",
+    "date_found": "2026-04-14",
+    "score": 4.1,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-loxolilly-scientific-lead-cmc-process-ch-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PhD with 0-5 years experience accepted. Small molecule process development. CMC focus. Large pharma.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 4.5,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Process chemistry specific experience",
+        "Scale-up experience"
+      ],
+      "strengths": [
+        "Process development experience",
+        "PhD in Chemistry - meets requirement",
+        "Lilly stability and resources",
+        "0-5 years accepted - entry friendly"
+      ],
+      "recommendation": "APPLY - Strong pharma opportunity"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 27,
+    "url": "https://jobs.biospace.com/job/3039592/senior-scientist-analytical-development-small-molecule/",
+    "company": "Insmed",
+    "title": "Senior Scientist, Analytical Development \u2013 Small Molecule",
+    "location": "Bridgewater, NJ",
+    "date_found": "2026-04-14",
+    "score": 4.3,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-insmed-senior-scientist-analytical-de-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Small molecule analytical development. Method development focus. Growing biotech with approved products.",
+    "evaluation": {
+      "cv_match": 4.5,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Senior level may require more experience",
+        "Pharma regulatory knowledge"
+      ],
+      "strengths": [
+        "Small molecule focus - perfect match",
+        "Analytical method development",
+        "Growing public biotech",
+        "Method validation experience"
+      ],
+      "recommendation": "APPLY - High priority small molecule role"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 28,
+    "url": "https://www.linkedin.com/jobs/view/sr-cell-materials-engineer-at-tesla-3774355298",
+    "company": "Tesla",
+    "title": "Sr. Cell Materials Engineer",
+    "location": "Palo Alto, CA",
+    "date_found": "2026-04-14",
+    "score": 3.7,
+    "archetype": "Materials Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-tesla-sr.-cell-materials-engineer-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Battery materials characterization. Electrochemical focus. Palo Alto location. May be slightly senior.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 4.5,
+      "cultural": 3.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Senior level requirements",
+        "Battery industry specific experience",
+        "Cell engineering focus"
+      ],
+      "strengths": [
+        "Materials characterization",
+        "Electrochemistry background",
+        "Bay Area location",
+        "Tesla brand recognition"
+      ],
+      "recommendation": "CONSIDER - Good company but may be too senior/focused"
+    },
+    "tailored_resume": "tailored_tesla_battery"
+  },
+  {
+    "id": 29,
+    "url": "https://www.linkedin.com/jobs/view/battery-materials-scientist-at-volexion-2857921710",
+    "company": "Volexion",
+    "title": "Battery Materials Scientist",
+    "location": "Greater Chicago Area",
+    "date_found": "2026-04-14",
+    "score": 3.8,
+    "archetype": "Materials Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-volexion-battery-materials-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Battery materials characterization. Electrochemical testing. Li-ion cell development.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 3.5,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Battery materials specific experience",
+        "Li-ion cell testing"
+      ],
+      "strengths": [
+        "Materials characterization",
+        "Electrochemical analysis",
+        "Process development",
+        "Startup environment"
+      ],
+      "recommendation": "CONSIDER - Good for battery industry pivot"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 30,
+    "url": "https://www.linkedin.com/jobs/view/principal-scientist-manager-formulation-at-biotalent-3836786746",
+    "company": "BioTalent (client)",
+    "title": "Principal Scientist/Manager, Formulation",
+    "location": "San Diego, CA",
+    "date_found": "2026-04-14",
+    "score": 3.8,
+    "archetype": "Formulation Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-biotalent-(client)-principal-scientist-manager-fo-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Small molecule formulation. Degradation pathways and characterization. May be slightly senior.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "Medium Confidence",
+      "gaps": [
+        "Principal/Manager level may be too senior",
+        "Formulation specific experience"
+      ],
+      "strengths": [
+        "Small molecule chemistry knowledge",
+        "Degradation analysis",
+        "Characterization expertise",
+        "San Diego biotech hub"
+      ],
+      "recommendation": "MAYBE - Check if less senior version available"
+    },
+    "tailored_resume": "tailored_biodtalent"
+  },
+  {
+    "id": 31,
+    "url": "https://www.linkedin.com/jobs/ppg-industries-chemist-jobs",
+    "company": "PPG Industries",
+    "title": "Process Development Chemist",
+    "location": "Monroeville, PA",
+    "date_found": "2026-04-14",
+    "score": 3.9,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-ppg-industries-process-development-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Coatings/chemicals company. Process development focus. Good industry stability.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 3.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Coatings industry experience",
+        "Pittsburgh location (may not be preferred)"
+      ],
+      "strengths": [
+        "Process development experience",
+        "Polymer chemistry background",
+        "Established company",
+        "PhD-level role"
+      ],
+      "recommendation": "CONSIDER - Good stability, coatings focus"
+    },
+    "tailored_resume": "tailored_ppg_polymer"
+  },
+  {
+    "id": 32,
+    "url": "https://www.linkedin.com/jobs/ppg-industries-chemist-jobs",
+    "company": "PPG Industries",
+    "title": "Polymer Chemist",
+    "location": "Monroeville, PA",
+    "date_found": "2026-04-14",
+    "score": 3.8,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-ppg-industries-polymer-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Polymer chemistry focus. Coatings industry. Good fit for Varun's polymer background.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 3.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Coatings-specific polymer experience",
+        "Location (Pittsburgh area)"
+      ],
+      "strengths": [
+        "Polymer chemistry expertise",
+        "Materials characterization",
+        "Industrial R&D environment",
+        "Established company"
+      ],
+      "recommendation": "CONSIDER - Good technical match"
+    },
+    "tailored_resume": "tailored_ppg_process"
+  },
+  {
+    "id": 33,
+    "url": "https://www.linkedin.com/jobs/view/analytical-chemist-at-hf-sinclair-3666790888",
+    "company": "HF Sinclair",
+    "title": "Analytical Chemist",
+    "location": "Tulsa, OK",
+    "date_found": "2026-04-14",
+    "score": 3.7,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-hf-sinclair-analytical-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "FTIR, DSC/TGA, GC-MS experience required. Petroleum/refining industry.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 3.0,
+      "comp": 4.0,
+      "cultural": 3.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Petroleum industry experience",
+        "GC-MS expertise",
+        "Location (Tulsa, OK)"
+      ],
+      "strengths": [
+        "FTIR, DSC, TGA expertise - exact match",
+        "Analytical method development",
+        "Materials characterization"
+      ],
+      "recommendation": "MAYBE - Good technical fit but different industry/location"
+    },
+    "tailored_resume": "tailored_hfsinclair"
+  },
+  {
+    "id": 34,
+    "url": "https://www.linkedin.com/jobs/view/quality-control-chemist-at-mp-materials-4184887554",
+    "company": "MP Materials",
+    "title": "Quality Control Chemist",
+    "location": "Nevada",
+    "date_found": "2026-04-14",
+    "score": 3.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": "output/cv-mp-materials-quality-control-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Rare earth materials mining company. QC focus. Need more details on requirements.",
+    "evaluation": null,
+    "tailored_resume": "tailored_mpmaterials"
+  },
+  {
+    "id": 35,
+    "url": "https://www.linkedin.com/jobs/view/design-engineer-materials-applications-at-tesla-3314910402",
+    "company": "Tesla",
+    "title": "Design Engineer, Materials Applications",
+    "location": "Palo Alto, CA",
+    "date_found": "2026-04-14",
+    "score": 3.6,
+    "archetype": "Materials Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "output/cv-intertek-vibrational-spectroscopy-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Materials applications engineering. Manufacturing focus. Different from pure analytical roles.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 3.5,
+      "comp": 4.5,
+      "cultural": 3.5,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Design engineering focus",
+        "Manufacturing process experience",
+        "Materials applications vs characterization"
+      ],
+      "strengths": [
+        "Materials science background",
+        "Process development",
+        "Bay Area location",
+        "Tesla brand"
+      ],
+      "recommendation": "LOW PRIORITY - Different focus than Varun's expertise"
+    },
+    "tailored_resume": "tailored_intertek"
+  }
+]

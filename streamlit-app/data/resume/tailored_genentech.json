@@ -1,0 +1,58 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in spectroscopy, chemometrics, and analytical method development. Expertise in FT-IR, UV-Vis-NIR spectroscopy, and spectroelectrochemistry for materials characterization and process monitoring. Strong background in developing multivariate analysis methods, calibration models, and applying statistical techniques to spectral data. Experienced in quantitative spectroscopic analysis and establishing structure-property correlations using advanced data analysis approaches.",
+  "competencies": [
+    "Spectroscopy & Chemometrics",
+    "FT-IR & UV-Vis-NIR",
+    "Multivariate Data Analysis",
+    "Calibration Model Development",
+    "Spectroelectrochemistry",
+    "Method Development",
+    "Statistical Analysis",
+    "Process Monitoring",
+    "Materials Characterization",
+    "Technical Development"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted extensive spectroscopic analysis using FT-IR, UV-Vis-NIR, and spectroelectrochemistry for materials characterization.",
+        "Developed quantitative relationships between spectral features and electrochemical properties using statistical analysis.",
+        "Applied chemometric approaches to analyze complex spectral data and establish calibration models."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Develop spectroscopic methods for process monitoring and quality assessment of polymer systems."
+      ]
+    }
+  ],
+  "skills": {
+    "Spectroscopy": "FT-IR, UV-Vis-NIR, spectroelectrochemistry, ellipsometry, Raman",
+    "Data Analysis": "Multivariate analysis, statistical analysis, DOE, JMP, chemometrics concepts",
+    "Analytical Methods": "Method development, calibration, process monitoring, materials characterization"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

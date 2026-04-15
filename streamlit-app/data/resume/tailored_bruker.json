@@ -1,0 +1,95 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of materials characterization experience using advanced spectroscopic and analytical techniques. Expertise in FT-IR, UV-Vis-NIR spectroscopy, thermal analysis (TGA, DSC), and thin-film materials characterization. Strong background in method development, applications support, and communicating technical concepts to diverse audiences. Experienced in surface analysis, polymer characterization, and establishing structure-property relationships. Seeking to leverage analytical expertise in a customer-facing applications scientist role supporting scientific instrumentation.",
+  "competencies": [
+    "FT-IR & Vibrational Spectroscopy",
+    "UV-Vis-NIR Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "Materials Characterization",
+    "Thin-Film Analysis",
+    "Applications Support",
+    "Method Development",
+    "Customer Training & Communication",
+    "Technical Presentations",
+    "Surface Analysis"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nFocus: Spectroscopy, materials characterization, thin-film analysis"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted extensive materials characterization using FT-IR, UV-Vis-NIR spectroscopy, ellipsometry, and thermal analysis (TGA, DSC) on organic thin-films and polymer systems.",
+        "Developed expertise in spectral interpretation, correlating spectroscopic signatures with material properties and performance metrics.",
+        "Applied surface analysis techniques including ellipsometry and QCM-D to characterize thin-film deposition and growth kinetics."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Characterized molecular thin-film coatings using multiple analytical techniques, developing protocols for quality assessment and process optimization.",
+        "Collaborated with cross-functional teams to communicate characterization results and guide materials selection decisions."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 – July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Applied in-situ QCM-D monitoring for polymer thin-film deposition processes, establishing process control parameters and characterizing film growth kinetics."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Trained 15+ researchers on proper use of FT-IR, UV-Vis, and thermal analysis instrumentation, developing documentation and best practices.",
+        "Provided technical support and troubleshooting for analytical instruments, ensuring optimal performance and reliable data quality."
+      ]
+    },
+    {
+      "company": "Georgia Tech",
+      "period": "2019 – 2021",
+      "role": "Teaching Assistant, Organic Chemistry",
+      "bullets": [
+        "Mentored 120+ undergraduate students; developed instructional materials and delivered lectures on analytical techniques and spectroscopy interpretation."
+      ]
+    }
+  ],
+  "skills": {
+    "Spectroscopy": "FT-IR (transmission, ATR), UV-Vis-NIR, Raman (familiar), ellipsometry, spectroelectrochemistry",
+    "Thermal & Materials Analysis": "TGA, DSC, QCM-D, NMR, GPC, cyclic voltammetry",
+    "Surface & Thin-Film": "Surface characterization, thin-film analysis, polymer coatings, CVD processes",
+    "Applications Support Skills": "Method development, customer training, technical presentations, SOP development, troubleshooting",
+    "Data Analysis": "Statistical analysis, DOE, JMP, Excel (advanced), spectral data processing"
+  },
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ]
+}

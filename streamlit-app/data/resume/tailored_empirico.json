@@ -1,0 +1,57 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical development, CMC support, and process development for small molecule and nucleotide chemistry. Expertise in method development using HPLC, FT-IR, UV-Vis, and mass spectrometry (LC-MS, GC-MS), as well as thermal analysis (TGA, DSC). Strong background in statistical analysis (DOE, SPC), method validation, and supporting manufacturing processes. Proven track record of managing multiple projects and delivering high-quality analytical data.",
+  "competencies": [
+    "CMC Analytical Development",
+    "Method Development & Validation",
+    "HPLC & Mass Spectrometry",
+    "Process Development Support",
+    "DOE & Statistical Analysis",
+    "Small Molecule Chemistry",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis",
+    "Quality Control",
+    "Technical Documentation"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Develop analytical methods and apply statistical process control to support process development and scale-up.",
+        "Characterize small molecules and polymers using HPLC, FT-IR, and thermal analysis."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed and validated analytical methods using HPLC, FT-IR, UV-Vis, LC-MS, and GC-MS for compound characterization.",
+        "Applied DOE methodologies to optimize synthetic processes and analytical methods.",
+        "Performed thermal analysis (TGA, DSC) to assess stability and degradation behavior."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Methods": "HPLC, LC-MS, GC-MS, FT-IR, UV-Vis-NIR, TGA, DSC, NMR",
+    "CMC & Process": "CMC analytical development, method validation, process development support, DOE, SPC"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

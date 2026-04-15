@@ -1,0 +1,58 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist and materials scientist with 6+ years of experience in materials characterization, process development, and analytical method development. Expertise in polymer chemistry, thin-film materials, and multi-technique characterization (FT-IR, UV-Vis, TGA, DSC, ellipsometry). Strong background in structure-property-processing relationships, materials failure analysis, and root cause investigation. Proven track record managing laboratory operations and supporting cross-functional projects in materials science research.",
+  "competencies": [
+    "Materials Characterization",
+    "Polymer Chemistry",
+    "Process Development",
+    "Thin-Film Materials",
+    "FT-IR & Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "Failure Analysis",
+    "Root Cause Investigation",
+    "Structure-Property Relationships",
+    "Analytical Method Development"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead process development for bio-based polymer systems, applying statistical methods to optimize process parameters and material properties."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Characterized organic and polymer materials using FT-IR, UV-Vis, TGA, DSC, and ellipsometry to establish structure-property relationships.",
+        "Investigated material failure modes through systematic root cause analysis and multi-technique characterization.",
+        "Developed and optimized CVD-based deposition processes for thin-film materials."
+      ]
+    }
+  ],
+  "skills": {
+    "Materials Characterization": "FT-IR, UV-Vis-NIR, ellipsometry, TGA, DSC, NMR, GPC, QCM-D",
+    "Materials Science": "Polymer chemistry, thin-film materials, surface functionalization, structure-property relationships",
+    "Process Development": "Process optimization, DOE, CVD processes, scale-up support"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

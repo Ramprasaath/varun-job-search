@@ -1,0 +1,67 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical development, process development, and laboratory management. Expertise in developing and validating analytical methods using chromatography (HPLC, GPC), spectroscopy (FT-IR, UV-Vis), and thermal analysis (TGA, DSC). Strong background in statistical methods (DOE, SPC), method validation, and supporting CMC activities for biopharmaceutical applications. Proven leadership managing laboratory operations and coordinating cross-functional projects.",
+  "competencies": [
+    "Analytical Development",
+    "Method Development & Validation",
+    "CMC Support",
+    "Chromatography (HPLC/GPC)",
+    "Spectroscopy (FT-IR/UV-Vis)",
+    "Thermal Analysis (TGA/DSC)",
+    "DOE & Statistical Methods",
+    "Laboratory Management",
+    "Process Development",
+    "Quality Control"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead analytical development and method validation for polymer characterization.",
+        "Apply DOE and SPC to establish robust analytical methods and process controls."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed and validated analytical methods using HPLC, FT-IR, UV-Vis, and mass spectrometry.",
+        "Performed comprehensive materials characterization using thermal analysis and spectroscopic techniques."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed operations for 15-member research group; implemented calibration and quality systems.",
+        "Developed SOPs and trained researchers on analytical methods and instrumentation."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Methods": "HPLC, GPC, LC-MS, GC-MS, FT-IR, UV-Vis, TGA, DSC, NMR",
+    "Development & Management": "Method development, validation, DOE, SPC, laboratory management, CMC support"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

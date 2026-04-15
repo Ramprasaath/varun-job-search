@@ -1,0 +1,69 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical sciences, method development, and CMC support for pharmaceutical development. Expertise in chromatographic techniques (HPLC, LC-MS), spectroscopic methods (FT-IR, UV-Vis), and thermal analysis (TGA, DSC) for characterization of small molecules and materials. Strong background in developing analytical methods, assessing critical quality attributes (CQAs), and supporting process development activities. Experienced in statistical data analysis, DOE, and cross-functional collaboration in research environments.",
+  "competencies": [
+    "Analytical Sciences",
+    "Method Development",
+    "CMC Support",
+    "HPLC & LC-MS",
+    "CQAs & Specification Development",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "Process Development Support",
+    "Statistical Analysis (DOE/SPC)",
+    "Quality Control"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Develop analytical methods using HPLC, FT-IR, and thermal analysis to support process development and quality assessment.",
+        "Apply statistical process control and DOE to establish robust analytical methods and identify critical process parameters."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed analytical methods using HPLC, FT-IR, UV-Vis, and mass spectrometry for characterization of organic materials.",
+        "Assessed material properties and stability using thermal analysis (TGA, DSC) and established correlations with performance.",
+        "Supported process development activities through analytical characterization and data interpretation."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed analytical instrumentation and developed SOPs for method execution and data documentation."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Techniques": "HPLC, LC-MS, GC-MS, FT-IR, UV-Vis-NIR, TGA, DSC, NMR, GPC",
+    "CMC & Development": "CMC analytical support, method development, CQAs, specification development, process development support",
+    "Statistical Tools": "DOE, SPC, JMP, statistical analysis"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

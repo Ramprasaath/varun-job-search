@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "job_id": 25,
+    "company": "Intertek",
+    "name": "Joe Franklin",
+    "title": "Director, Analytical Testing",
+    "linkedin_url": "https://www.linkedin.com/in/joe-franklin-0266b6272/",
+    "contact_type": "hiring_manager",
+    "message_draft": "Dear Joe, I'm a PhD Chemist with extensive experience in FT-IR spectroscopy and thermal analysis (TGA, DSC). I came across the Vibrational Spectroscopy and Thermal Analysis Chemist position at Intertek and was impressed by your team's analytical capabilities. My polymer characterization expertise and background in materials analysis make me a strong fit for this role. I'd welcome the opportunity to discuss how I could contribute to your analytical testing team.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Director of Analytical Testing - primary hiring contact"
+  },
+  {
+    "id": 2,
+    "job_id": 25,
+    "company": "Intertek",
+    "name": "James Mogush",
+    "title": "Manager Analytical Testing",
+    "linkedin_url": "https://www.linkedin.com/pub/james-mogush/45/3a2/1a9",
+    "contact_type": "team_lead",
+    "message_draft": "Hi James, I saw the Chemist position focusing on vibrational spectroscopy at Intertek. I have 6+ years of hands-on FT-IR experience and extensive thermal analysis background. I'd love to learn more about the spectroscopy team and the types of materials characterization projects you're working on. Would you be open to a brief conversation?",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Analytical Testing Manager - potential direct supervisor"
+  },
+  {
+    "id": 3,
+    "job_id": 24,
+    "company": "Exponent",
+    "name": "Sangheon (Tyler) Lee",
+    "title": "Battery Engineer/Scientist",
+    "linkedin_url": "https://www.linkedin.com/in/sangheon-tyler-lee/",
+    "contact_type": "team_lead",
+    "message_draft": "Hi Tyler, I'm a PhD Chemist with 6+ years of experience in electrochemical analysis and materials characterization. I came across the Battery Engineer/Scientist position at Exponent and was impressed by the team's work on battery failure analysis. My background in cyclic voltammetry, thermal analysis, and root cause analysis aligns well with the role. I'd love to learn more about the position and how my skills could contribute to your battery materials team.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Battery engineer at Exponent - good peer connection"
+  },
+  {
+    "id": 4,
+    "job_id": 24,
+    "company": "Exponent",
+    "name": "Kevin White",
+    "title": "Battery/Materials Engineer",
+    "linkedin_url": "https://www.linkedin.com/in/kevin-white-2958a44/",
+    "contact_type": "team_lead",
+    "message_draft": "Hi Kevin, I'm a recent PhD in Chemistry with expertise in materials characterization and failure analysis. I came across the Battery Engineer/Scientist role at Exponent and was impressed by your work on battery manufacturing and electrode engineering. I'd love to learn more about the position and how my background in electrochemical analysis could contribute to your projects.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Battery engineer - posts about battery manufacturing"
+  }
+]

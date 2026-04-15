@@ -1,0 +1,101 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist and materials scientist with 6+ years of experience characterizing material failure modes, establishing structure-property-processing relationships, and applying systematic root cause analysis to diagnose and resolve materials performance challenges. Demonstrated expertise in identifying failure mechanisms in functional thin-film and polymer material systems through hypothesis-driven experimental design and multi-technique characterization (FT-IR, UV-Vis-NIR, ellipsometry, TGA, DSC, cyclic voltammetry). Proficient in statistical data analysis tools (DOE, SPC, JMP) and experienced communicating failure analysis findings and design recommendations to cross-functional engineering teams. Strong track record of managing multiple concurrent projects under demanding timelines.",
+  "competencies": [],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Leading chemical process development and optimization for novel bio-based polymer systems, applying statistical experimental design to identify critical process parameters, improve yield and product quality, and establish reproducible process specifications for scale-up."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Assessed material-level reliability risks in functional electrochromic systems by identifying high-risk failure modes including oxidative degradation, interface delamination, and redox instability, applying systematic root cause analysis to develop design and process mitigations.",
+        "Developed and executed stress test conditions based on material physics of failure, evaluating long-term stability and degradation behavior of 15+ organic and organometallic material variants under controlled electrochemical and optical stress conditions."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led AFOSR-funded process development for high-performance molecular thin-film coatings for defense optical applications, developing surface preparation protocols and CVD-based deposition strategies to achieve controlled film morphology and device performance."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 – July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Developed and optimized CVD-based polymer thin-film deposition processes using DOE strategies and in-situ QCM-D process monitoring, establishing process control parameters and characterizing film growth kinetics to improve coating reproducibility and uniformity."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed process development laboratory operations for a 15-member research group; implemented equipment tracking and calibration systems improving instrument uptime by 30%, developed SOPs and safety protocols, and coordinated cross-functional resource planning across multiple concurrent projects."
+      ]
+    }
+  ],
+  "projects": [],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024.",
+    "Decoupling Redox and Color for High-Contrast Electrochromics, Excited State Processes Conference, Santa Fe, NM, June 2023.",
+    "Electrochromism: Decoupling Color and Redox in Rhodamine-Based Systems, Rocky Mountain Solid State Chemistry Workshop, Boulder, CO, January 2023."
+  ],
+  "skills": {
+    "Reliability and Failure Analysis": "Failure mode identification, root cause analysis, physics of failure, materials degradation characterization, stress test development, design and process mitigation, FMEA principles, accelerated testing methodology",
+    "Materials Characterization": "FT-IR, UV-Vis-NIR spectrophotometry, ellipsometry, cyclic voltammetry, spectroelectrochemistry, TGA, DSC, NMR, GPC, QCM-D, GC-MS, LC-MS",
+    "Statistical Analysis": "DOE, Statistical Process Control (SPC, Coursera 2026), JMP (basic), Python (basic), Excel (advanced), statistical data analysis, Weibull analysis (familiarity)",
+    "Materials Expertise": "Organic and organometallic thin-film materials, PVD-adjacent optical coatings, polymer systems, surface functionalization, structure-property-processing relationships",
+    "Project Management": "Multi-project management, cross-functional collaboration, technical documentation, stakeholder communication"
+  },
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)",
+    "97.12 Percentile – IIT JEE Mains (2015)",
+    "All India Rank 144 – NEST (2014)"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019–2021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  }
+}

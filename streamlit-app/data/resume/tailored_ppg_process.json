@@ -1,0 +1,58 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in process development, polymer chemistry, and materials characterization. Expertise in developing and optimizing chemical processes for polymer systems, applying statistical methods (DOE, SPC), and characterizing materials using FT-IR, thermal analysis (TGA, DSC), and chromatographic techniques. Strong background in coatings, thin-film materials, and structure-property relationships. Proven track record managing laboratory operations and supporting process scale-up activities.",
+  "competencies": [
+    "Process Development",
+    "Polymer Chemistry",
+    "Coatings & Thin Films",
+    "DOE & Statistical Methods",
+    "FT-IR & Thermal Analysis",
+    "Materials Characterization",
+    "Process Optimization",
+    "Scale-Up Support",
+    "Quality Control",
+    "SOP Development"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead chemical process development and optimization for bio-based polymer systems using statistical experimental design (DOE).",
+        "Establish process specifications and quality control methods for scale-up activities."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led process development for molecular thin-film coatings, developing surface preparation protocols and CVD-based deposition strategies.",
+        "Characterized coating properties using FT-IR, ellipsometry, and thermal analysis to optimize process conditions."
+      ]
+    }
+  ],
+  "skills": {
+    "Process Development": "Process optimization, DOE, SPC, scale-up support, CVD processes",
+    "Polymer & Coatings": "Polymer chemistry, thin-film coatings, surface functionalization, structure-property relationships",
+    "Analytical Methods": "FT-IR, TGA, DSC, HPLC, GPC, ellipsometry"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

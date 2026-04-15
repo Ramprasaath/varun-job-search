@@ -1,0 +1,56 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in process development, analytical characterization, and CMC support for biopharmaceutical applications. Expertise in method development using HPLC, FT-IR, UV-Vis, and thermal analysis (TGA, DSC). Strong background in process optimization using DOE and SPC, scale-up support, and analytical development. Proven track record managing multiple projects and delivering high-quality data for process characterization.",
+  "competencies": [
+    "Process Development",
+    "Analytical Development",
+    "CMC Support",
+    "Method Development",
+    "HPLC & Chromatography",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "DOE & Statistical Methods",
+    "Scale-Up Support",
+    "Quality Control"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead process development and optimization using DOE and statistical process control.",
+        "Develop analytical methods to support process characterization and quality control."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed and validated analytical methods using HPLC, FT-IR, UV-Vis, and mass spectrometry.",
+        "Supported process development through comprehensive materials characterization."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Methods": "HPLC, LC-MS, GC-MS, FT-IR, UV-Vis, TGA, DSC, NMR",
+    "Process Development": "Process optimization, DOE, SPC, scale-up support, CMC analytical support"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

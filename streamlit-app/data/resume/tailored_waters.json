@@ -1,0 +1,82 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "target_company": "Waters Corporation",
+  "target_role": "Application Scientist",
+  "summary": "PhD Chemist with 6+ years of experience in analytical instrumentation and materials characterization. Expertise in spectroscopy (FT-IR, UV-Vis-NIR), chromatography (LC-MS, GC-MS), and thermal analysis (TGA, DSC). Strong background in method development, analytical problem-solving, and cross-functional technical communication. Passionate about helping customers optimize their analytical workflows and achieve reliable results. Seeking to leverage technical expertise and customer-facing skills as an Application Scientist at Waters Corporation.",
+  "highlighted_skills": [
+    "FT-IR & UV-Vis Spectroscopy",
+    "LC-MS & GC-MS Chromatography",
+    "Thermal Analysis (TGA, DSC)",
+    "Method Development & Validation",
+    "Analytical Problem-Solving",
+    "Technical Communication & Training",
+    "Statistical DOE & Data Analysis",
+    "Materials Characterization"
+  ],
+  "experience_highlights": [
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Postdoctoral Researcher",
+      "period": "July 2025 – Present",
+      "relevant_bullets": [
+        "Develop and optimize analytical methods for polymer characterization using FT-IR, TGA, and DSC",
+        "Apply statistical experimental design to identify critical process parameters and improve analytical reproducibility"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Graduate Researcher",
+      "period": "July 2021 – July 2025",
+      "relevant_bullets": [
+        "Developed and validated spectroelectrochemical methods combining FT-IR, UV-Vis, and electrochemical analysis",
+        "Conducted method development and optimization for materials characterization using multiple analytical techniques",
+        "Managed analytical laboratory operations for 15-member research group; implemented equipment tracking and calibration systems improving instrument uptime by 30%",
+        "Developed SOPs and trained lab members on analytical instrumentation including FT-IR, UV-Vis, and thermal analysis systems"
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "role": "Graduate Researcher",
+      "period": "Aug 2019 – July 2021",
+      "relevant_bullets": [
+        "Developed CVD-based coating processes with comprehensive analytical characterization using FT-IR and ellipsometry",
+        "Collaborated with cross-functional engineering teams to communicate analytical findings and design recommendations"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Laboratory Operations Manager",
+      "period": "2021 – 2025",
+      "relevant_bullets": [
+        "Managed analytical instrumentation for research group including FT-IR, UV-Vis, TGA, DSC, and electrochemical systems",
+        "Developed training protocols and mentored 15+ researchers on proper analytical techniques and instrument operation",
+        "Implemented calibration and maintenance schedules ensuring reliable instrument performance"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019–2021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  }
+}

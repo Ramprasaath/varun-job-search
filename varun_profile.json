@@ -1,0 +1,178 @@
+{
+  "profile": {
+    "personal": {
+      "full_name": "Varun R. Selvaraju",
+      "email": "varun.selvaraju@email.com",
+      "phone": "+1-XXX-XXX-XXXX",
+      "location": {
+        "city": "San Diego",
+        "state": "CA",
+        "country": "USA",
+        "zip_code": "92121"
+      },
+      "linkedin_url": "https://linkedin.com/in/varunselvaraju",
+      "portfolio_url": null,
+      "github_url": null
+    },
+    
+    "work_authorization": {
+      "authorized_to_work_us": true,
+      "requires_visa_sponsorship": false,
+      "has_security_clearance": false,
+      "willing_to_relocate": true,
+      "open_to_remote": true
+    },
+    
+    "experience": {
+      "years_total": 2,
+      "current_title": "Postdoctoral Researcher",
+      "industry": "Biotechnology / Pharmaceuticals",
+      "specializations": [
+        "Analytical Chemistry",
+        "Materials Characterization",
+        "Synthetic Chemistry",
+        "Polymer Chemistry",
+        "LC-MS/MS",
+        "NMR Spectroscopy",
+        "GPC/SEC"
+      ]
+    },
+    
+    "education": {
+      "highest_degree": "PhD",
+      "field_of_study": "Organic Chemistry",
+      "university": "University of California",
+      "graduation_year": 2023
+    },
+    
+    "skills": {
+      "technical_skills": [
+        "Analytical Method Development",
+        "LC-MS/MS",
+        "NMR Spectroscopy",
+        "GPC/SEC",
+        "UV-Vis Spectroscopy",
+        "FTIR Spectroscopy",
+        "TGA/DSC",
+        "Small Molecule Synthesis",
+        "Polymer Characterization",
+        "Bioanalytical Chemistry",
+        "Quality Control (QC)",
+        "CMC Documentation"
+      ],
+      "research_areas": [
+        "Organic Synthesis",
+        "Polymer Chemistry",
+        "Bioconjugation",
+        "Drug Delivery Systems",
+        "Nanoparticle Formulations",
+        "Medicinal Chemistry"
+      ],
+      "software_tools": [
+        "ChemDraw",
+        "MestReNova",
+        "Origin",
+        "Microsoft Office",
+        "Electronic Lab Notebooks"
+      ],
+      "soft_skills": [
+        "Scientific Writing",
+        "Cross-functional Collaboration",
+        "Problem Solving",
+        "Data Analysis",
+        "Project Management"
+      ]
+    },
+    
+    "preferences": {
+      "job_types": ["full-time"],
+      "work_arrangement": ["onsite", "hybrid", "remote"],
+      "salary_expectations": {
+        "minimum": 90000,
+        "currency": "USD",
+        "period": "annual"
+      },
+      "preferred_company_sizes": ["startup", "mid-size", "enterprise"],
+      "industries_of_interest": [
+        "Biotechnology",
+        "Pharmaceuticals",
+        "Materials Science",
+        "Drug Discovery",
+        "Life Sciences"
+      ],
+      "deal_breakers": [
+        "No career growth opportunities",
+        "Unreasonable relocation requirements"
+      ]
+    },
+    
+    "documents": {
+      "resume_path": "/Users/ram/varun-career-ops/output/cv-varunprasaath-base-2026.pdf",
+      "cover_letter_template_path": null,
+      "portfolio_path": null,
+      "references_document": null
+    },
+    
+    "application_settings": {
+      "platforms": ["linkedin", "indeed", "wellfound", "glassdoor", "ziprecruiter"],
+      "max_applications_per_day": 15,
+      "min_match_score": 0.70,
+      "auto_apply_threshold": 0.85,
+      "require_manual_confirmation": true,
+      "save_application_logs": true,
+      "notifications": {
+        "email_on_application": false,
+        "email_on_response": true,
+        "daily_summary": true
+      }
+    },
+    
+    "screening_answers": {
+      "why_leave_current_job": "Transitioning from academia to industry to apply my analytical chemistry expertise to develop innovative therapeutics",
+      "expected_start_date": "2-4 weeks",
+      "salary_expectations": "Competitive based on experience and industry standards for PhD-level analytical scientists",
+      "availability_for_interview": "Flexible during business hours",
+      "what_interests_you": "I'm drawn to companies developing novel therapeutics where my analytical chemistry and materials characterization expertise can contribute to advancing drug discovery and development"
+    }
+  },
+  
+  "search_criteria": {
+    "job_titles": [
+      "Scientist, Analytical Chemistry",
+      "Scientist, Analytical Development",
+      "Senior Scientist, Analytical R&D",
+      "Analytical Chemist",
+      "Scientist, CMC",
+      "Scientist, Quality Control",
+      "Research Scientist",
+      "Analytical Development Scientist",
+      "Formulation Scientist",
+      "Materials Characterization Scientist"
+    ],
+    "keywords_required": ["analytical", "chemistry", "phd"],
+    "keywords_preferred": ["lc-ms", "characterization", "small molecule", "polymers", "biologics", "cmc"],
+    "keywords_excluded": ["sales", "marketing", " technician"],
+    "locations": [
+      {
+        "city": "San Francisco",
+        "state": "CA",
+        "radius_miles": 50
+      },
+      {
+        "city": "San Diego",
+        "state": "CA",
+        "radius_miles": 50
+      },
+      {
+        "city": "Boston",
+        "state": "MA",
+        "radius_miles": 50
+      },
+      {
+        "remote": true
+      }
+    ],
+    "experience_levels": ["entry-level", "mid-level"],
+    "company_blacklist": []
+  }
+}
