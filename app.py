@@ -261,11 +261,13 @@ with tab_tracker:
             })
         df = pd.DataFrame(rows)
 
-        # Display table using native Streamlit
-        st.dataframe(
+        # Display table with clickable row selection
+        event = st.dataframe(
             df,
             use_container_width=True,
             hide_index=True,
+            on_select="rerun",
+            selection_mode="single-row",
             column_config={
                 "ID": st.column_config.NumberColumn("ID", width="small"),
                 "Score": st.column_config.NumberColumn("Score", format="%.1f"),
@@ -273,12 +275,10 @@ with tab_tracker:
             }
         )
         
-        # Job selector dropdown
-        job_options = [f"{j['id']}: {j['company']} - {j['title'][:40]}" for j in filtered_jobs]
-        selected = st.selectbox("Select a job to view/edit:", [""] + job_options, key="job_selector")
-        
-        if selected:
-            selected_id = int(selected.split(":")[0])
+        # Handle row selection
+        if event.selection.rows:
+            selected_idx = event.selection.rows[0]
+            selected_id = int(df.iloc[selected_idx]["ID"])
             st.session_state["selected_job_id"] = selected_id
             j = next((x for x in jobs if x["id"]==selected_id), None)
         elif st.session_state.get("selected_job_id"):
