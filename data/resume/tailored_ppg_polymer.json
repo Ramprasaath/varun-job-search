@@ -1,0 +1,56 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist specializing in polymer chemistry with 6+ years of experience in polymer synthesis, characterization, and materials analysis. Expertise in FT-IR, thermal analysis (TGA, DSC), GPC, and spectroscopic techniques for polymer systems. Strong background in structure-property relationships, polymer thin-films, and surface functionalization. Experienced in process development for polymer materials and statistical optimization methods (DOE, SPC).",
+  "competencies": [
+    "Polymer Chemistry",
+    "Polymer Characterization",
+    "FT-IR & Thermal Analysis",
+    "GPC & Chromatography",
+    "Structure-Property Relationships",
+    "Polymer Thin Films",
+    "Surface Functionalization",
+    "Process Development",
+    "DOE & Statistical Methods",
+    "Materials Analysis"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead process development for bio-based polymer systems using FT-IR, GPC, and thermal analysis for characterization."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder / Georgia Tech",
+      "period": "Aug 2019 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Characterized polymer systems using FT-IR, TGA, DSC, GPC, and ellipsometry to establish structure-property relationships.",
+        "Developed CVD-based polymer thin-film deposition processes with controlled morphology and properties."
+      ]
+    }
+  ],
+  "skills": {
+    "Polymer Characterization": "FT-IR, TGA, DSC, GPC, ellipsometry, QCM-D, NMR",
+    "Polymer Chemistry": "Polymer synthesis, thin films, surface functionalization, structure-property relationships",
+    "Process Development": "CVD processes, DOE, process optimization"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

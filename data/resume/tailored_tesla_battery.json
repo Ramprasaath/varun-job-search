@@ -1,0 +1,50 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in materials characterization, electrochemical analysis, and battery materials research. Expertise in cyclic voltammetry, electrochemical systems characterization, and failure analysis using FT-IR, UV-Vis, and thermal analysis (TGA, DSC). Strong background in cell materials analysis, degradation studies, and establishing structure-property relationships for energy materials. Experienced in process development and DOE for materials optimization.",
+  "competencies": [
+    "Battery Materials Engineering",
+    "Electrochemical Analysis",
+    "Cell Materials Characterization",
+    "Cyclic Voltammetry",
+    "Failure Analysis",
+    "Materials Degradation Studies",
+    "FT-IR & Thermal Analysis",
+    "Process Development",
+    "DOE & Statistical Methods",
+    "Root Cause Investigation"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted electrochemical analysis including cyclic voltammetry and impedance spectroscopy on energy materials.",
+        "Performed failure analysis and degradation studies using FT-IR, UV-Vis, TGA, and DSC.",
+        "Characterized material properties and stability under electrochemical stress conditions."
+      ]
+    }
+  ],
+  "skills": {
+    "Battery & Electrochemistry": "Cyclic voltammetry, electrochemical characterization, battery materials, degradation analysis",
+    "Materials Characterization": "FT-IR, UV-Vis, TGA, DSC, ellipsometry, NMR",
+    "Analysis Methods": "DOE, failure analysis, root cause investigation, process development"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

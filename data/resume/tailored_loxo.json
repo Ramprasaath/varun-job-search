@@ -1,0 +1,88 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in process development, analytical characterization, and CMC support for small molecule chemistry. Expertise in process optimization using DOE and statistical methods, analytical method development (HPLC, FT-IR, UV-Vis), and materials characterization (TGA, DSC). Strong background in scaling up chemical processes, establishing process control strategies, and supporting regulatory activities. Proven track record managing multiple development projects and collaborating with cross-functional teams.",
+  "competencies": [
+    "CMC Process Development",
+    "Process Optimization (DOE/SPC)",
+    "Analytical Method Development",
+    "Small Molecule Chemistry",
+    "Scale-Up Support",
+    "Process Control Strategy",
+    "HPLC & Chromatography",
+    "FT-IR & Thermal Analysis",
+    "Technical Documentation",
+    "Cross-Functional Collaboration"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead chemical process development and optimization for bio-based polymer systems, applying statistical experimental design (DOE) to identify critical process parameters and improve yield.",
+        "Establish reproducible process specifications and control strategies for scale-up from lab to pilot quantities.",
+        "Develop analytical methods using FT-IR, HPLC, and thermal analysis to monitor process performance and product quality."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed synthetic routes and process conditions for organic electrochromic materials, optimizing reaction parameters using DOE methodologies.",
+        "Applied analytical characterization (HPLC, FT-IR, UV-Vis, TGA, DSC) to assess process outcomes, purity, and material properties.",
+        "Collaborated with cross-functional teams to transfer processes and analytical methods, ensuring reproducibility and quality."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led AFOSR-funded process development for molecular thin-film coatings, developing surface preparation protocols and CVD-based deposition strategies."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed process development laboratory operations for 15-member research group; implemented equipment tracking and calibration systems.",
+        "Developed SOPs for chemical processes and analytical methods; coordinated resource planning across multiple concurrent projects."
+      ]
+    }
+  ],
+  "skills": {
+    "Process Development": "Process optimization, DOE, SPC, scale-up support, process control, reaction optimization",
+    "Analytical Methods": "HPLC, LC-MS, GC-MS, FT-IR, UV-Vis-NIR, TGA, DSC, NMR, method development",
+    "CMC & Quality": "CMC support, analytical development, technical documentation, SOP development, data integrity",
+    "Materials Chemistry": "Organic synthesis, polymer chemistry, small molecule characterization, thin-film materials",
+    "Project Management": "Multi-project coordination, cross-functional collaboration, stakeholder communication"
+  },
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ]
+}

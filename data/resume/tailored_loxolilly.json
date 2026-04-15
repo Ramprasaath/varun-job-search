@@ -1,0 +1,80 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "target_company": "Loxo@Lilly",
+  "target_role": "Scientific Lead, CMC Process Chemistry",
+  "summary": "PhD Chemist with 6+ years of experience in process development, analytical characterization, and statistical optimization of chemical systems. Expertise in Design of Experiments (DOE), process parameter optimization, and structure-property relationships. Strong background in small molecule synthesis, purification, and characterization using FT-IR, UV-Vis, and thermal analysis. Proven ability to lead process development projects and collaborate cross-functionally. Seeking to contribute to CMC process chemistry at Loxo@Lilly.",
+  "highlighted_skills": [
+    "Process Development & Optimization",
+    "CMC & Small Molecule Chemistry",
+    "Design of Experiments (DOE)",
+    "Statistical Process Control (SPC)",
+    "Analytical Characterization (FT-IR, UV-Vis, TGA, DSC)",
+    "Scale-up & Technology Transfer",
+    "Cross-functional Collaboration",
+    "Root Cause Analysis"
+  ],
+  "experience_highlights": [
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Postdoctoral Researcher",
+      "period": "July 2025 – Present",
+      "relevant_bullets": [
+        "Lead chemical process development and optimization for novel bio-based polymer systems",
+        "Apply statistical experimental design (DOE) to identify critical process parameters and establish control strategies",
+        "Develop scalable processes with improved yield and reproducible specifications"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Graduate Researcher",
+      "period": "July 2021 – July 2025",
+      "relevant_bullets": [
+        "Designed and optimized synthetic routes for xanthene-based electrochromic molecules",
+        "Applied DOE to optimize reaction conditions and purification processes",
+        "Developed structure-property relationships to guide molecular design decisions",
+        "Collaborated with cross-functional teams to scale-up synthetic processes"
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "role": "Graduate Researcher",
+      "period": "Aug 2019 – July 2021",
+      "relevant_bullets": [
+        "Co-led AFOSR-funded process development for molecular thin-film coatings",
+        "Developed CVD-based deposition processes and surface preparation protocols for controlled film morphology",
+        "Established process control parameters and quality specifications"
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "role": "Research Assistant",
+      "period": "May 2017 – July 2017",
+      "relevant_bullets": [
+        "Developed CVD-based polymer thin-film deposition processes using DOE strategies",
+        "Established process control parameters and characterized film growth kinetics"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award"
+  ]
+}

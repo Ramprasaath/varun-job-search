@@ -1,0 +1,113 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of expertise in failure analysis, materials characterization, and electrochemical systems. Proven track record in root cause analysis, battery materials degradation studies, and systematic failure mode identification using advanced analytical techniques (FT-IR, electrochemistry, thermal analysis). Experienced in managing multi-phase projects and communicating technical findings to diverse stakeholders.",
+  "competencies": [
+    "Failure Analysis",
+    "Battery Materials",
+    "Electrochemistry",
+    "Root Cause Analysis",
+    "Materials Characterization",
+    "Thermal Analysis (TGA/DSC)",
+    "Statistical Analysis",
+    "DOE & SPC"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Leading polymer process development with extensive materials characterization and failure mode analysis for bio-based polymer systems.",
+        "Developing electrochemical testing protocols and thermal stability assessments for novel materials."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted comprehensive failure analysis on electrochromic systems using systematic root cause analysis to identify degradation mechanisms.",
+        "Performed electrochemical characterization (cyclic voltammetry) and thermal analysis (TGA, DSC) on 15+ material variants.",
+        "Developed physics-of-failure models and stress test protocols to predict long-term material stability."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led AFOSR-funded research on high-performance coatings, performing failure mode analysis and materials characterization.",
+        "Optimized CVD-based deposition processes using DOE strategies to improve coating reliability and performance."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed laboratory operations for 15-member research group with focus on analytical instrumentation and failure analysis protocols.",
+        "Implemented equipment tracking and calibration systems, improving analytical uptime by 30%.",
+        "Developed standardized operating procedures (SOPs) for materials testing and safety protocols."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Battery Materials Failure Analysis",
+      "badge": "Failure Analysis",
+      "description": "Systematically identified failure mechanisms in electrochemical systems through thermal and electrochemical characterization.",
+      "tech": "Cyclic voltammetry, TGA, DSC, root cause analysis"
+    },
+    {
+      "title": "AFOSR Defense Coatings Program",
+      "badge": "DoD Funded",
+      "description": "Characterized molecular thin-film coatings for defense optical applications, identifying failure modes and optimizing processes.",
+      "tech": "Failure analysis, CVD processes, materials characterization"
+    },
+    {
+      "title": "Materials Reliability Assessment",
+      "badge": "Reliability Engineering",
+      "description": "Evaluated long-term stability and degradation behavior of organic materials under controlled stress conditions.",
+      "tech": "Stress testing, DOE, statistical analysis, FMEA"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024."
+  ],
+  "skills": {
+    "Failure Analysis": "Root cause analysis, physics of failure, FMEA, materials degradation characterization",
+    "Electrochemistry": "Cyclic voltammetry, spectroelectrochemistry, electrochemical analysis",
+    "Thermal Analysis": "TGA, DSC, thermal stability assessment",
+    "Materials Characterization": "FT-IR, UV-Vis-NIR, ellipsometry, polymer analysis",
+    "Statistical Analysis": "DOE, SPC, JMP, data analysis",
+    "Project Management": "Multi-project management, cross-functional collaboration"
+  },
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)"
+  ]
+}

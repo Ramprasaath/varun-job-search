@@ -1,0 +1,70 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "target_company": "Waters Corporation",
+  "target_role": "Senior Scientist – LC-MS Applications",
+  "summary": "PhD Chemist with 6+ years of experience in analytical chemistry, chromatography, and mass spectrometry applications. Expertise in method development, materials characterization, and analytical problem-solving. Hands-on experience with LC-MS, GC-MS, FT-IR, UV-Vis, and thermal analysis techniques. Strong background in small molecule analysis, polymer characterization, and quality control. Passionate about developing innovative LC-MS solutions and supporting customers in achieving their analytical goals.",
+  "highlighted_skills": [
+    "LC-MS & GC-MS Chromatography",
+    "Method Development & Validation",
+    "Small Molecule Analysis",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis (TGA, DSC)",
+    "Analytical Problem-Solving",
+    "Technical Communication",
+    "Statistical Data Analysis"
+  ],
+  "experience_highlights": [
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Postdoctoral Researcher",
+      "period": "July 2025 – Present",
+      "relevant_bullets": [
+        "Develop analytical methods for polymer characterization including chromatographic analysis",
+        "Apply statistical methods to optimize separation conditions and improve method performance"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Graduate Researcher",
+      "period": "July 2021 – July 2025",
+      "relevant_bullets": [
+        "Developed analytical methods for small molecule characterization using multiple techniques including mass spectrometry",
+        "Conducted LC-MS and GC-MS analysis of organic compounds and degradation products",
+        "Validated analytical methods for quantitative analysis and impurity profiling",
+        "Applied spectroscopic and chromatographic techniques to solve complex analytical problems"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Laboratory Operations Manager",
+      "period": "2021 – 2025",
+      "relevant_bullets": [
+        "Managed analytical instrumentation including LC-MS, GC-MS, FT-IR, and thermal analysis systems",
+        "Developed SOPs and trained researchers on proper chromatographic techniques and instrument operation",
+        "Implemented preventive maintenance programs ensuring reliable instrument performance"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V. et al. 'Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.' Chemistry of Materials, 2025, 37, 5558–5568."
+  ]
+}

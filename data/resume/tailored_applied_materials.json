@@ -1,0 +1,58 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in materials characterization, thin-film analysis, and process development. Expertise in FT-IR, UV-Vis-NIR spectroscopy, ellipsometry, and thermal analysis (TGA, DSC) for semiconductor-adjacent materials. Strong background in surface characterization, CVD processes, and structure-property-processing relationships. Experienced in XRD, SEM concepts, and materials analysis for high-performance coatings and thin-film applications.",
+  "competencies": [
+    "Materials Characterization",
+    "Thin-Film Analysis",
+    "Surface Characterization",
+    "CVD Processes",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Ellipsometry",
+    "Thermal Analysis (TGA/DSC)",
+    "Process Development",
+    "Structure-Property Relationships",
+    "Semiconductor Materials"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led process development for molecular thin-film coatings using CVD-based deposition strategies.",
+        "Characterized thin-film morphology and properties using FT-IR, ellipsometry, and surface analysis techniques."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted materials characterization using FT-IR, UV-Vis-NIR, ellipsometry, and thermal analysis for functional thin-films.",
+        "Established structure-property-processing relationships for organic and organometallic materials."
+      ]
+    }
+  ],
+  "skills": {
+    "Thin-Film & Surface": "CVD processes, surface functionalization, ellipsometry, thin-film characterization",
+    "Materials Analysis": "FT-IR, UV-Vis-NIR, TGA, DSC, QCM-D, NMR, GPC",
+    "Semiconductor-Related": "Materials characterization concepts, XRD (familiar), SEM (familiar), process development"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

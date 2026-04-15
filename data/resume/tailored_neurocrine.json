@@ -1,0 +1,78 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in CMC analytical development, method development, and small molecule characterization for pharmaceutical applications. Expertise in chromatographic and spectroscopic techniques (HPLC, FT-IR, UV-Vis), thermal analysis (TGA, DSC), and method validation. Strong background in supporting process development, stability testing, and quality control activities. Proven ability to manage multiple analytical projects, develop SOPs, and deliver high-quality data under demanding timelines in collaborative research environments.",
+  "competencies": [
+    "CMC Analytical Development",
+    "Method Development & Validation",
+    "Small Molecule Analysis",
+    "HPLC & Chromatography",
+    "Stability Testing",
+    "Impurity Profiling",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "SOP Development",
+    "Quality Control"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Develop analytical methods for small molecule and polymer characterization supporting process development and scale-up activities.",
+        "Apply statistical process control and DOE methodologies to establish robust analytical methods and process control strategies."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed and validated analytical methods using HPLC, FT-IR, UV-Vis, and mass spectrometry for small molecule characterization, purity assessment, and stability monitoring.",
+        "Conducted forced degradation studies to characterize degradation pathways and establish stability-indicating methods for organic compounds.",
+        "Performed comprehensive materials characterization using thermal analysis (TGA, DSC) and spectroscopic techniques to support formulation and process development."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed analytical laboratory operations ensuring instrument calibration, maintenance, and compliance with quality standards.",
+        "Developed SOPs for analytical methods and instrumentation; trained researchers on proper techniques and data documentation."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Techniques": "HPLC, LC-MS, GC-MS, FT-IR, UV-Vis-NIR, TGA, DSC, NMR, GPC",
+    "CMC & Quality": "CMC analytical development, method development, method validation, stability testing, impurity profiling, specification development",
+    "Statistical Tools": "DOE, SPC, JMP, statistical analysis, Excel (advanced)",
+    "Regulatory Knowledge": "Familiar with cGMP concepts, ICH guidelines, data integrity, documentation practices"
+  },
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ]
+}

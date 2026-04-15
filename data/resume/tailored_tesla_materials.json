@@ -1,0 +1,48 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in materials characterization, failure analysis, and process development. Expertise in FT-IR, UV-Vis, thermal analysis (TGA, DSC), and materials testing for manufacturing applications. Strong background in structure-property relationships, root cause analysis, and supporting manufacturing process development. Experienced in multi-technique characterization and statistical analysis for materials optimization.",
+  "competencies": [
+    "Materials Characterization",
+    "Failure Analysis",
+    "Manufacturing Support",
+    "Process Development",
+    "Root Cause Analysis",
+    "FT-IR & Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "Structure-Property Relationships",
+    "Statistical Analysis (DOE/SPC)",
+    "Quality Control"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Identified failure modes and performed root cause analysis on functional materials using multi-technique characterization.",
+        "Developed stress test protocols and characterized materials using FT-IR, UV-Vis, TGA, and DSC.",
+        "Supported process development through materials characterization and data interpretation."
+      ]
+    }
+  ],
+  "skills": {
+    "Materials Analysis": "FT-IR, UV-Vis, TGA, DSC, ellipsometry, NMR, GPC",
+    "Failure & Process": "Failure analysis, root cause analysis, process development, DOE, SPC"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

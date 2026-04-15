@@ -1,0 +1,49 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in formulation development, small molecule characterization, and degradation pathway analysis. Expertise in analytical techniques including FT-IR, UV-Vis, HPLC, and thermal analysis (TGA, DSC) for assessing formulation stability and degradation mechanisms. Strong background in structure-property relationships, process development, and method validation. Experienced in managing multiple projects and supporting cross-functional development teams.",
+  "competencies": [
+    "Formulation Development",
+    "Small Molecule Characterization",
+    "Degradation Pathway Analysis",
+    "Stability Testing",
+    "FT-IR & UV-Vis Spectroscopy",
+    "HPLC & Chromatography",
+    "Thermal Analysis (TGA/DSC)",
+    "Method Development",
+    "Process Development Support",
+    "Quality Control"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Conducted degradation pathway analysis for organic materials using thermal stress testing (TGA, DSC) and spectroscopic monitoring.",
+        "Characterized small molecules using FT-IR, UV-Vis, HPLC, and mass spectrometry to assess stability and purity.",
+        "Developed and optimized formulations and processes using DOE methodologies."
+      ]
+    }
+  ],
+  "skills": {
+    "Formulation Analysis": "Degradation analysis, stability testing, small molecule characterization",
+    "Analytical Methods": "FT-IR, UV-Vis, HPLC, LC-MS, TGA, DSC, NMR",
+    "Development Support": "Method development, process development, DOE, quality control"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}
