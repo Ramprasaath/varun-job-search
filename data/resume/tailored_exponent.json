@@ -31,7 +31,7 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2025 – Present",
+      "period": "July 2025 \u2013 Present",
       "role": "Postdoctoral Researcher",
       "bullets": [
         "Leading polymer process development with extensive materials characterization and failure mode analysis for bio-based polymer systems.",
@@ -40,7 +40,7 @@
     },
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 – July 2025",
+      "period": "July 2021 \u2013 July 2025",
       "role": "Graduate Researcher",
       "bullets": [
         "Conducted comprehensive failure analysis on electrochromic systems using systematic root cause analysis to identify degradation mechanisms.",
@@ -50,7 +50,7 @@
     },
     {
       "company": "Georgia Institute of Technology",
-      "period": "Aug 2019 – July 2021",
+      "period": "Aug 2019 \u2013 July 2021",
       "role": "Graduate Researcher",
       "bullets": [
         "Co-led AFOSR-funded research on high-performance coatings, performing failure mode analysis and materials characterization.",
@@ -61,7 +61,7 @@
   "leadership": [
     {
       "company": "University of Colorado Boulder",
-      "period": "2021 – 2025",
+      "period": "2021 \u2013 2025",
       "role": "Laboratory Operations Manager",
       "bullets": [
         "Managed laboratory operations for 15-member research group with focus on analytical instrumentation and failure analysis protocols.",
@@ -91,8 +91,8 @@
     }
   ],
   "publications": [
-    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
-    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055."
   ],
   "conferences": [
     "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",

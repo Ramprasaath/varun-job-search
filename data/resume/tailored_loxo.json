@@ -33,7 +33,7 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2025 – Present",
+      "period": "July 2025 \u2013 Present",
       "role": "Postdoctoral Researcher",
       "bullets": [
         "Lead chemical process development and optimization for bio-based polymer systems, applying statistical experimental design (DOE) to identify critical process parameters and improve yield.",
@@ -43,7 +43,7 @@
     },
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 – July 2025",
+      "period": "July 2021 \u2013 July 2025",
       "role": "Graduate Researcher",
       "bullets": [
         "Developed synthetic routes and process conditions for organic electrochromic materials, optimizing reaction parameters using DOE methodologies.",
@@ -53,7 +53,7 @@
     },
     {
       "company": "Georgia Institute of Technology",
-      "period": "Aug 2019 – July 2021",
+      "period": "Aug 2019 \u2013 July 2021",
       "role": "Graduate Researcher",
       "bullets": [
         "Co-led AFOSR-funded process development for molecular thin-film coatings, developing surface preparation protocols and CVD-based deposition strategies."
@@ -63,7 +63,7 @@
   "leadership": [
     {
       "company": "University of Colorado Boulder",
-      "period": "2021 – 2025",
+      "period": "2021 \u2013 2025",
       "role": "Laboratory Operations Manager",
       "bullets": [
         "Managed process development laboratory operations for 15-member research group; implemented equipment tracking and calibration systems.",
@@ -79,10 +79,24 @@
     "Project Management": "Multi-project coordination, cross-functional collaboration, stakeholder communication"
   },
   "publications": [
-    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
-    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055."
   ],
   "certifications": [
-    "Statistical Process Control (SPC) – Coursera, 2026"
+    "Statistical Process Control (SPC) \u2013 Coursera, 2026"
+  ],
+  "projects": [
+    {
+      "title": "Bio-based Polymer Process Development",
+      "badge": "Process Chemistry",
+      "description": "Led chemical process development for novel bio-based polymer systems using statistical experimental design.",
+      "tech": "DOE, Process Optimization, Polymer Chemistry"
+    },
+    {
+      "title": "AFOSR Defense Coatings Program",
+      "badge": "DoD Funded",
+      "description": "Co-led process development for high-performance molecular thin-film coatings for defense optical applications.",
+      "tech": "CVD, Surface Chemistry, Quality Control"
+    }
   ]
 }

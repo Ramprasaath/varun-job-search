@@ -33,7 +33,7 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 – July 2025",
+      "period": "July 2021 \u2013 July 2025",
       "role": "Graduate Researcher",
       "bullets": [
         "Conducted extensive materials characterization using FT-IR, UV-Vis-NIR spectroscopy, ellipsometry, and thermal analysis (TGA, DSC) on organic thin-films and polymer systems.",
@@ -43,7 +43,7 @@
     },
     {
       "company": "Georgia Institute of Technology",
-      "period": "Aug 2019 – July 2021",
+      "period": "Aug 2019 \u2013 July 2021",
       "role": "Graduate Researcher",
       "bullets": [
         "Characterized molecular thin-film coatings using multiple analytical techniques, developing protocols for quality assessment and process optimization.",
@@ -52,7 +52,7 @@
     },
     {
       "company": "ETH Zurich",
-      "period": "May 2017 – July 2017",
+      "period": "May 2017 \u2013 July 2017",
       "role": "Research Assistant",
       "bullets": [
         "Applied in-situ QCM-D monitoring for polymer thin-film deposition processes, establishing process control parameters and characterizing film growth kinetics."
@@ -62,7 +62,7 @@
   "leadership": [
     {
       "company": "University of Colorado Boulder",
-      "period": "2021 – 2025",
+      "period": "2021 \u2013 2025",
       "role": "Laboratory Operations Manager",
       "bullets": [
         "Trained 15+ researchers on proper use of FT-IR, UV-Vis, and thermal analysis instrumentation, developing documentation and best practices.",
@@ -71,7 +71,7 @@
     },
     {
       "company": "Georgia Tech",
-      "period": "2019 – 2021",
+      "period": "2019 \u2013 2021",
       "role": "Teaching Assistant, Organic Chemistry",
       "bullets": [
         "Mentored 120+ undergraduate students; developed instructional materials and delivered lectures on analytical techniques and spectroscopy interpretation."
@@ -86,10 +86,24 @@
     "Data Analysis": "Statistical analysis, DOE, JMP, Excel (advanced), spectral data processing"
   },
   "publications": [
-    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
-    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055."
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055."
   ],
   "certifications": [
-    "Statistical Process Control (SPC) – Coursera, 2026"
+    "Statistical Process Control (SPC) \u2013 Coursera, 2026"
+  ],
+  "projects": [
+    {
+      "title": "Bio-based Polymer Process Development",
+      "badge": "Process Chemistry",
+      "description": "Led chemical process development for novel bio-based polymer systems using statistical experimental design.",
+      "tech": "DOE, Process Optimization, Polymer Chemistry"
+    },
+    {
+      "title": "AFOSR Defense Coatings Program",
+      "badge": "DoD Funded",
+      "description": "Co-led process development for high-performance molecular thin-film coatings for defense optical applications.",
+      "tech": "CVD, Surface Chemistry, Quality Control"
+    }
   ]
 }

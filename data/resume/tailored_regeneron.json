@@ -31,7 +31,7 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2025 – Present",
+      "period": "July 2025 \u2013 Present",
       "role": "Postdoctoral Researcher",
       "bullets": [
         "Leading chemical process development and optimization for novel bio-based polymer systems, applying statistical experimental design to identify critical process parameters, improve yield and product quality, and establish reproducible process specifications for scale-up."
@@ -39,7 +39,7 @@
     },
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 – July 2025",
+      "period": "July 2021 \u2013 July 2025",
       "role": "Graduate Researcher",
       "bullets": [
         "Assessed material-level reliability risks in functional electrochromic systems by identifying high-risk failure modes including oxidative degradation, interface delamination, and redox instability, applying systematic root cause analysis to develop design and process mitigations.",
@@ -48,7 +48,7 @@
     },
     {
       "company": "Georgia Institute of Technology",
-      "period": "Aug 2019 – July 2021",
+      "period": "Aug 2019 \u2013 July 2021",
       "role": "Graduate Researcher",
       "bullets": [
         "Co-led AFOSR-funded process development for high-performance molecular thin-film coatings for defense optical applications, developing surface preparation protocols and CVD-based deposition strategies to achieve controlled film morphology and device performance."
@@ -56,7 +56,7 @@
     },
     {
       "company": "ETH Zurich",
-      "period": "May 2017 – July 2017",
+      "period": "May 2017 \u2013 July 2017",
       "role": "Research Assistant",
       "bullets": [
         "Developed and optimized CVD-based polymer thin-film deposition processes using DOE strategies and in-situ QCM-D process monitoring, establishing process control parameters and characterizing film growth kinetics to improve coating reproducibility and uniformity."
@@ -66,7 +66,7 @@
   "leadership": [
     {
       "company": "University of Colorado Boulder",
-      "period": "2021 – 2025",
+      "period": "2021 \u2013 2025",
       "role": "Laboratory Operations Manager",
       "bullets": [
         "Managed process development laboratory operations for a 15-member research group; implemented equipment tracking and calibration systems improving instrument uptime by 30%, developed SOPs and safety protocols, and coordinated cross-functional resource planning across multiple concurrent projects."
@@ -94,8 +94,8 @@
     }
   ],
   "publications": [
-    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
-    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055.",
     "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
   ],
   "conferences": [
@@ -114,16 +114,16 @@
   "honors": [
     "Plastic Sustainability Innovation in Material Award",
     "INSPIRE Scholarship (Top 1%, India, 2015)",
-    "97.12 Percentile – IIT JEE Mains (2015)",
-    "All India Rank 144 – NEST (2014)"
+    "97.12 Percentile \u2013 IIT JEE Mains (2015)",
+    "All India Rank 144 \u2013 NEST (2014)"
   ],
   "certifications": [
-    "Statistical Process Control (SPC) – Coursera, 2026"
+    "Statistical Process Control (SPC) \u2013 Coursera, 2026"
   ],
   "teaching": {
     "role": "Teaching Assistant, Organic Chemistry I & Lab",
     "school": "Georgia Tech",
-    "period": "2019–2021",
+    "period": "2019\u20132021",
     "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
   }
 }

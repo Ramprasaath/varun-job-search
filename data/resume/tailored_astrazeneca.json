@@ -32,7 +32,7 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2025 – Present",
+      "period": "July 2025 \u2013 Present",
       "role": "Postdoctoral Researcher",
       "bullets": [
         "Develop analytical methods using HPLC, FT-IR, and thermal analysis to support process development and quality assessment.",
@@ -41,7 +41,7 @@
     },
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 – July 2025",
+      "period": "July 2021 \u2013 July 2025",
       "role": "Graduate Researcher",
       "bullets": [
         "Developed analytical methods using HPLC, FT-IR, UV-Vis, and mass spectrometry for characterization of organic materials.",
@@ -53,7 +53,7 @@
   "leadership": [
     {
       "company": "University of Colorado Boulder",
-      "period": "2021 – 2025",
+      "period": "2021 \u2013 2025",
       "role": "Laboratory Operations Manager",
       "bullets": [
         "Managed analytical instrumentation and developed SOPs for method execution and data documentation."
@@ -65,5 +65,25 @@
     "CMC & Development": "CMC analytical support, method development, CQAs, specification development, process development support",
     "Statistical Tools": "DOE, SPC, JMP, statistical analysis"
   },
-  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+  "certifications": [
+    "Statistical Process Control (SPC) \u2013 Coursera, 2026"
+  ],
+  "projects": [
+    {
+      "title": "Bio-based Polymer Process Development",
+      "badge": "Process Chemistry",
+      "description": "Led chemical process development for novel bio-based polymer systems using statistical experimental design.",
+      "tech": "DOE, Process Optimization, Polymer Chemistry"
+    },
+    {
+      "title": "AFOSR Defense Coatings Program",
+      "badge": "DoD Funded",
+      "description": "Co-led process development for high-performance molecular thin-film coatings for defense optical applications.",
+      "tech": "CVD, Surface Chemistry, Quality Control"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055."
+  ]
 }
