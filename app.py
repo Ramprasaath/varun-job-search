@@ -263,60 +263,49 @@ with tab_tracker:
             })
         df = pd.DataFrame(rows)
 
-        # Use st.data_editor for editable table
-        edited_df = st.data_editor(
+        # Use st.dataframe with row selection
+        selection = st.dataframe(
             df,
             hide_index=True,
             use_container_width=True,
-            num_rows="fixed",
+            on_select="rerun",
+            selection_mode="single-row",
             column_config={
-                "ID": st.column_config.NumberColumn("ID", disabled=True),
-                "Score": st.column_config.NumberColumn("Score", format="%.1f", disabled=True),
-                "Status": st.column_config.SelectboxColumn("Status", options=STATUS),
-                "Applied": st.column_config.TextColumn("Applied"),
-                "Follow": st.column_config.TextColumn("Follow-up"),
-                "PDF": st.column_config.Column("PDF", disabled=True)
+                "ID": st.column_config.NumberColumn("ID"),
+                "Score": st.column_config.NumberColumn("Score", format="%.1f"),
+                "PDF": st.column_config.Column("PDF")
             },
-            key="job_editor"
+            key="job_table"
         )
         
-        # Save changes back to jobs
-        if edited_df is not None:
-            changed = False
-            for _, row in edited_df.iterrows():
-                job = next((j for j in jobs if j["id"] == row["ID"]), None)
-                if job:
-                    if job.get("status") != row["Status"]:
-                        job["status"] = row["Status"]
-                        changed = True
-                    if job.get("applied_date") != row["Applied"] and row["Applied"]:
-                        job["applied_date"] = row["Applied"]
-                        changed = True
-                    if job.get("follow_up_date") != row["Follow"] and row["Follow"]:
-                        job["follow_up_date"] = row["Follow"]
-                        changed = True
-            if changed:
-                save_jobs(jobs)
-        
-        # Job selector with button-style links
-        st.markdown("#### Select Job to View Details")
-        cols = st.columns(4)
-        for idx, job in enumerate(filtered_jobs[:8]):  # Show first 8 as buttons
-            with cols[idx % 4]:
-                if st.button(f"{job['company'][:15]}", key=f"btn_{job['id']}"):
-                    st.session_state["selected_job_id"] = job["id"]
-        
-        # Or use dropdown for all
-        job_options = {f"{j['company']} - {j['title'][:30]}": j['id'] for j in filtered_jobs}
-        selected_label = st.selectbox("Or select from full list:", [""] + list(job_options.keys()), key="job_dropdown")
-        if selected_label:
-            st.session_state["selected_job_id"] = job_options[selected_label]
-        
-        # Get selected job
-        if st.session_state.get("selected_job_id"):
+        # Get selected job from row click
+        j = None
+        if selection.selection.rows:
+            selected_idx = selection.selection.rows[0]
+            selected_id = int(df.iloc[selected_idx]["ID"])
+            st.session_state["selected_job_id"] = selected_id
+            j = next((x for x in jobs if x["id"]==selected_id), None)
+        elif st.session_state.get("selected_job_id"):
             j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
+        
+        # Edit section for selected job
+        if j:
+            with st.expander(f"✏️ Edit {j['company']} - Status & Dates", expanded=True):
+                c1, c2, c3 = st.columns(3)
+                with c1:
+                    new_status = st.selectbox("Status", STATUS, index=STATUS.index(j.get("status","discovered")), key=f"edit_status_{j['id']}")
+                with c2:
+                    new_applied = st.text_input("Applied Date", value=j.get("applied_date",""), key=f"edit_applied_{j['id']}")
+                with c3:
+                    new_follow = st.text_input("Follow-up Date", value=j.get("follow_up_date",""), key=f"edit_follow_{j['id']}")
+                if st.button("💾 Save Changes", key=f"save_{j['id']}"):
+                    j["status"] = new_status
+                    j["applied_date"] = new_applied if new_applied else None
+                    j["follow_up_date"] = new_follow if new_follow else None
+                    save_jobs(jobs)
+                    st.success("Saved!")
         else:
-            j = None
+            st.info("👆 Click any row to view and edit job details")
 
         # Export CSV
         csv_df = pd.DataFrame([{
