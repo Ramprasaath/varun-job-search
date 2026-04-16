@@ -255,6 +255,11 @@ with tab_tracker:
                 "Applied":applied,"Follow-up":followup,
                 "Notes":j.get("notes",""),"PDF":has_pdf})
         df = pd.DataFrame(rows)
+        
+        # Fix largeUtf8 error by converting string columns to object dtype
+        for col in df.columns:
+            if df[col].dtype == 'string' or str(df[col].dtype).startswith('large'):
+                df[col] = df[col].astype(str)
 
         gb = GridOptionsBuilder.from_dataframe(df)
         gb.configure_selection(selection_mode="single", use_checkbox=False)
