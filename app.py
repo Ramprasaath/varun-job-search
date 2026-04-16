@@ -646,3 +646,40 @@ with tab_resume:
                     mt=datetime.datetime.fromtimestamp(os.path.getmtime(p)).strftime("%Y-%m-%d %H:%M")
                     st.markdown(f"📎 [{p.name}]({p}) ({sz:.0f}KB, {mt})")
             else: st.info("No PDFs yet.")
+
+# --- Archived Jobs Section ---
+st.markdown("---")
+with st.expander("📦 Archived Jobs (> 6 months old) - Click to view/reach out"):
+    archived = lj(DATA_DIR / "archived_jobs.json", [])
+    if archived:
+        st.markdown(f"**{len(archived)} archived jobs** - Reach out to check if still hiring!")
+        
+        # Build dataframe
+        import pandas as pd
+        rows = []
+        for j in archived:
+            rows.append({
+                "ID": j["id"],
+                "Company": j.get("company",""),
+                "Role": j.get("title","")[:50],
+                "Score": j.get("score") or 0,
+                "Date": j.get("date_found",""),
+                "Status": j.get("status","discovered")
+            })
+        df = pd.DataFrame(rows)
+        
+        st.dataframe(df, use_container_width=True, hide_index=True)
+        
+        # Select archived job to view
+        opts = {f"{j['id']}: {j['company']} - {j['title'][:40]}": j for j in archived}
+        sel = st.selectbox("Select archived job to view:", [""] + list(opts.keys()), key="arch_sel")
+        if sel:
+            aj = opts[sel]
+            st.markdown(f"### {aj['company']} — {aj['title']}")
+            st.markdown(f"**Date Posted:** {aj.get('date_found','Unknown')}")
+            st.markdown(f"**Original Score:** {aj.get('score','N/A')}")
+            if aj.get('url'):
+                st.link_button("🔗 Check if still open", aj['url'])
+            st.markdown("**💡 Tip:** Reach out to the company's talent acquisition team to ask if this role is still active or if similar positions are open.")
+    else:
+        st.info("No archived jobs yet. Jobs older than 6 months will appear here.")
