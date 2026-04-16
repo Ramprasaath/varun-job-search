@@ -514,13 +514,17 @@ with tab_tracker:
                 title_slug=j.get("title","").lower().replace(" ","-").replace("/","-")[:40]
                 pdf_name=f"cv-{slug}-{title_slug}-2026.pdf"
                 pdf_out=CAREER_OPS_DIR/"output"/pdf_name
+                repo_pdf_out=CAREER_OPS_DIR/"data"/"output"/pdf_name
                 tmp_html=f"/tmp/cv-tailored-{slug}.html"
                 html_content=_build_resume_html(cur, j.get("company",""))
                 with open(tmp_html,"w") as f: f.write(html_content)
                 try:
                     result=subprocess.run(["node",str(CAREER_OPS_DIR/"generate-pdf.mjs"),tmp_html,str(pdf_out),"--format=letter"],capture_output=True,text=True,timeout=30,cwd=str(CAREER_OPS_DIR))
                     if result.returncode==0:
-                        j["pdf_path"]=f"output/{pdf_name}"; save_jobs(jobs)
+                        repo_pdf_out.parent.mkdir(parents=True, exist_ok=True)
+                        with open(pdf_out, "rb") as src, open(repo_pdf_out, "wb") as dst:
+                            dst.write(src.read())
+                        j["pdf_path"]=f"data/output/{pdf_name}"; save_jobs(jobs)
                         st.success(f"✅ PDF generated: {pdf_name}")
                         st.rerun()
                     else: st.error(f"PDF failed: {result.stderr[:300]}")

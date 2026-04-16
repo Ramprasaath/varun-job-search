@@ -219,5 +219,61 @@
     "date_contacted": null,
     "response": null,
     "notes": "Auto-generated outreach target"
+  },
+  {
+    "job_id": 38,
+    "company": "Takeda",
+    "name": "Search for: Early Stage Analytical Development Director",
+    "title": "Director / Senior Director, Analytical Development",
+    "contact_type": "hiring_manager",
+    "message_draft": "Hi [Name], I came across the Scientist - Analytical Development Early Stage role at Takeda. My PhD background in analytical characterization, thermal analysis, and DOE-driven development aligns well with the role\u2019s API/drug-product analytical scope. I\u2019d love to learn more about the team\u2019s early-stage analytical priorities.",
+    "notes": "LinkedIn search: Takeda analytical development director Cambridge MA",
+    "id": 16,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "job_id": 38,
+    "company": "Takeda",
+    "name": "Search for: CMC Analytical Hiring Manager",
+    "title": "Senior Scientist / Group Lead",
+    "contact_type": "team_lead",
+    "message_draft": "Hi [Name], I\u2019m very interested in Takeda\u2019s early-stage analytical development opening. My experience spans analytical method development, thermal analysis, and cross-functional development support. I\u2019d welcome a quick conversation about what the team is looking for.",
+    "notes": "LinkedIn search: Takeda CMC analytical Cambridge hiring manager",
+    "id": 17,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "job_id": 40,
+    "company": "Kailera Therapeutics",
+    "name": "Search for: Analytical Development & QC Director",
+    "title": "Director, Analytical Development / QC",
+    "contact_type": "hiring_manager",
+    "message_draft": "Hi [Name], I came across the Senior Scientist, Analytical Development and Quality Control opening at Kailera. My background in analytical development, spectroscopy, thermal analysis, and rigorous method-oriented problem solving looks well aligned with the role\u2019s small-molecule and QC scope. I\u2019d love to learn more about the team\u2019s priorities.",
+    "notes": "LinkedIn search: Kailera Therapeutics analytical development quality control director",
+    "id": 18,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "job_id": 40,
+    "company": "Kailera Therapeutics",
+    "name": "Search for: QC / Analytical Team Lead",
+    "title": "Senior Scientist / Associate Director",
+    "contact_type": "team_lead",
+    "message_draft": "Hi [Name], I\u2019m interested in Kailera\u2019s analytical development and QC role. I bring a PhD chemistry background with strong analytical characterization and cross-functional development experience, and I\u2019d love to hear more about the team and role.",
+    "notes": "LinkedIn search: Kailera Therapeutics analytical development scientist Waltham",
+    "id": 19,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
   }
 ]
