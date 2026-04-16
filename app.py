@@ -201,10 +201,9 @@ with tab_tracker:
         
         st.markdown("---")
     
-    # -- AgGrid clickable tracker --
+    # -- Simple native tracker --
     if jobs:
         import pandas as pd
-        from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, ColumnsAutoSizeMode
 
         st.markdown("### 📊 Tracker")
         
@@ -244,86 +243,95 @@ with tab_tracker:
         # Show filter summary
         st.caption(f"Showing {len(filtered_jobs)} of {len(jobs)} jobs")
         
+        # Build display dataframe with index as job ID
         rows = []
         for j in filtered_jobs:
             applied = j.get("applied_date") if j.get("applied_date") else ""
             followup = j.get("follow_up_date") if j.get("follow_up_date") else ""
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
-            rows.append({"ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
-                "Score":j.get("score") or 0,"Status":j.get("status","discovered"),
-                "Location":j.get("location",""),"Found":j.get("date_found",""),
-                "Applied":applied,"Follow-up":followup,
-                "Notes":j.get("notes",""),"PDF":has_pdf})
+            rows.append({
+                "ID": j["id"],
+                "Company": j.get("company",""),
+                "Role": j.get("title","")[:50],
+                "Score": round(j.get("score") or 0, 1),
+                "Status": j.get("status","discovered"),
+                "Location": j.get("location",""),
+                "Found": j.get("date_found",""),
+                "Applied": applied,
+                "Follow": followup,
+                "PDF": has_pdf
+            })
         df = pd.DataFrame(rows)
+
+        # Use st.data_editor for editable table
+        edited_df = st.data_editor(
+            df,
+            hide_index=True,
+            use_container_width=True,
+            num_rows="fixed",
+            column_config={
+                "ID": st.column_config.NumberColumn("ID", disabled=True),
+                "Score": st.column_config.NumberColumn("Score", format="%.1f", disabled=True),
+                "Status": st.column_config.SelectboxColumn("Status", options=STATUS),
+                "Applied": st.column_config.TextColumn("Applied"),
+                "Follow": st.column_config.TextColumn("Follow-up"),
+                "PDF": st.column_config.Column("PDF", disabled=True)
+            },
+            key="job_editor"
+        )
         
-        # Fix largeUtf8 error by converting string columns to object dtype
-        for col in df.columns:
-            if df[col].dtype == 'string' or str(df[col].dtype).startswith('large'):
-                df[col] = df[col].astype(str)
-
-        gb = GridOptionsBuilder.from_dataframe(df)
-        gb.configure_selection(selection_mode="single", use_checkbox=False)
-        gb.configure_column("ID", width=50, pinned="left")
-        gb.configure_column("Company", pinned="left", width=140)
-        gb.configure_column("Role", width=220)
-        gb.configure_column("Score", type=["numericColumn"], width=70)
-        gb.configure_column("Status", width=110, editable=True, cellEditor='agSelectCellEditor', cellEditorParams={'values': STATUS})
-        gb.configure_column("Location", width=130)
-        gb.configure_column("Found", width=95)
-        gb.configure_column("Applied", width=100, editable=True)
-        gb.configure_column("Follow-up", width=100, editable=True)
-        gb.configure_column("Notes", width=200)
-        gb.configure_column("PDF", width=50)
-
-        go = gb.build()
-        ag = AgGrid(df, gridOptions=go, update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.VALUE_CHANGED,
-            columns_auto_size_mode=ColumnsAutoSizeMode.NO_AUTOSIZE,
-            height=min(150+len(filtered_jobs)*50, 600), fit_columns_on_grid_load=False,
-            theme="alpine", key="tracker_grid", reload_data=False)
-
-        # Save edited dates and status back to jobs
-        edited_df = ag.get("data", pd.DataFrame())
-        if edited_df is not None and len(edited_df) > 0:
+        # Save changes back to jobs
+        if edited_df is not None:
             changed = False
             for _, row in edited_df.iterrows():
                 job = next((j for j in jobs if j["id"] == row["ID"]), None)
                 if job:
-                    new_applied = row.get("Applied")
-                    if isinstance(new_applied, pd.Timestamp):
-                        new_applied = new_applied.strftime("%Y-%m-%d")
-                    elif new_applied and not isinstance(new_applied, str):
-                        new_applied = str(new_applied)[:10]
-                    if job.get("applied_date") != new_applied and new_applied:
-                        job["applied_date"] = new_applied
+                    if job.get("status") != row["Status"]:
+                        job["status"] = row["Status"]
                         changed = True
-                    
-                    new_followup = row.get("Follow-up")
-                    if isinstance(new_followup, pd.Timestamp):
-                        new_followup = new_followup.strftime("%Y-%m-%d")
-                    elif new_followup and not isinstance(new_followup, str):
-                        new_followup = str(new_followup)[:10]
-                    if job.get("follow_up_date") != new_followup and new_followup:
-                        job["follow_up_date"] = new_followup
+                    if job.get("applied_date") != row["Applied"] and row["Applied"]:
+                        job["applied_date"] = row["Applied"]
                         changed = True
-                    
-                    if job.get("status") != row.get("Status"):
-                        job["status"] = row["Status"] if row.get("Status") else "discovered"
+                    if job.get("follow_up_date") != row["Follow"] and row["Follow"]:
+                        job["follow_up_date"] = row["Follow"]
                         changed = True
             if changed:
                 save_jobs(jobs)
-
-        # Get selected row
-        sel_df = ag.get("selected_rows", pd.DataFrame())
-        if sel_df is not None and len(sel_df) > 0:
-            selected_id = sel_df.iloc[0]["ID"]
-            st.session_state["selected_job_id"] = selected_id
-            j = next((x for x in jobs if x["id"]==selected_id), None)
-        elif st.session_state.get("selected_job_id"):
+        
+        # Job selector with button-style links
+        st.markdown("#### Select Job to View Details")
+        cols = st.columns(4)
+        for idx, job in enumerate(filtered_jobs[:8]):  # Show first 8 as buttons
+            with cols[idx % 4]:
+                if st.button(f"{job['company'][:15]}", key=f"btn_{job['id']}"):
+                    st.session_state["selected_job_id"] = job["id"]
+        
+        # Or use dropdown for all
+        job_options = {f"{j['company']} - {j['title'][:30]}": j['id'] for j in filtered_jobs}
+        selected_label = st.selectbox("Or select from full list:", [""] + list(job_options.keys()), key="job_dropdown")
+        if selected_label:
+            st.session_state["selected_job_id"] = job_options[selected_label]
+        
+        # Get selected job
+        if st.session_state.get("selected_job_id"):
             j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
         else:
             j = None
 
-        csv = df.drop(columns=["ID","PDF"]).to_csv(index=False).encode("utf-8")
+        # Export CSV
+        csv_df = pd.DataFrame([{
+            "Company": j.get("company",""),
+            "Title": j.get("title",""),
+            "Score": j.get("score"),
+            "Status": j.get("status","discovered"),
+            "Location": j.get("location",""),
+            "Date_Found": j.get("date_found",""),
+            "Applied_Date": j.get("applied_date",""),
+            "Follow_Up_Date": j.get("follow_up_date",""),
+            "Notes": j.get("notes",""),
+            "URL": j.get("url","")
+        } for j in filtered_jobs])
+        csv = csv_df.to_csv(index=False).encode("utf-8")
         st.download_button("📥 Export CSV", csv, "varun-job-tracker.csv", "text/csv")
     else:
         j = None
