@@ -244,14 +244,19 @@ with tab_tracker:
         st.caption(f"Showing {len(filtered_jobs)} of {len(jobs)} jobs")
         
         # Build display dataframe with index as job ID
+        from datetime import datetime
+        today = datetime.now().strftime("%Y-%m-%d")
+        
         rows = []
         for j in filtered_jobs:
             applied = j.get("applied_date") if j.get("applied_date") else ""
             followup = j.get("follow_up_date") if j.get("follow_up_date") else ""
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
+            # Add NEW badge for today's jobs
+            is_new = "🆕 " if j.get("date_found") == today else ""
             rows.append({
                 "ID": j["id"],
-                "Company": j.get("company",""),
+                "Company": is_new + j.get("company",""),
                 "Role": j.get("title","")[:50],
                 "Score": round(j.get("score") or 0, 1),
                 "Status": j.get("status","discovered"),
