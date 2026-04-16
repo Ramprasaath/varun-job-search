@@ -254,11 +254,12 @@ with tab_tracker:
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
             # Add NEW badge for today's jobs
             is_new = "🆕 " if j.get("date_found") == today else ""
+            score_val = j.get("score")
             rows.append({
                 "ID": j["id"],
                 "Company": is_new + j.get("company",""),
                 "Role": j.get("title","")[:50],
-                "Score": round(j.get("score") or 0, 1),
+                "Score": "—" if score_val is None else round(score_val, 1),
                 "Status": j.get("status","discovered"),
                 "Location": j.get("location",""),
                 "Found": j.get("date_found",""),
@@ -277,7 +278,7 @@ with tab_tracker:
             selection_mode="single-row",
             column_config={
                 "ID": st.column_config.NumberColumn("ID"),
-                "Score": st.column_config.NumberColumn("Score", format="%.1f"),
+                "Score": st.column_config.Column("Score"),
                 "PDF": st.column_config.Column("PDF")
             },
             key="job_table"
@@ -667,7 +668,7 @@ with st.expander("📦 Archived Jobs (> 6 months old) - Click to view/reach out"
                 "ID": j["id"],
                 "Company": j.get("company",""),
                 "Role": j.get("title","")[:50],
-                "Score": j.get("score") or 0,
+                "Score": "—" if j.get("score") is None else j.get("score"),
                 "Date": j.get("date_found",""),
                 "Status": j.get("status","discovered")
             })

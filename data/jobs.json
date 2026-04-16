@@ -1201,15 +1201,32 @@
     "title": "Associate Scientist I, Analytical Development - Mass Spectrometry",
     "location": "San Diego, CA",
     "date_found": "2026-04-16",
-    "score": null,
+    "score": 3.4,
     "archetype": "Analytical / Quality Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
     "notes": "BioSpace listing, posted Apr 14 2026. Active and focused on mass spectrometry characterization for comparability, process development, and formulation development.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "CONSIDER - strong analytical title, but mass spectrometry and modality-specific fit are only partial",
+      "strengths": [
+        "Analytical development role",
+        "Mass spectrometry exposure is directionally relevant",
+        "San Diego biotech hub"
+      ],
+      "gaps": [
+        "Heavy MS focus vs Varun's core strengths",
+        "Likely biomolecule/oligo adjacency rather than classic small-molecule analytical chemistry"
+      ],
+      "cv_match": 3.3,
+      "north_star": 3.4,
+      "comp": 3.4,
+      "cultural": 3.5,
+      "red_flags": 1,
+      "legitimacy": "High Confidence"
+    },
     "tailored_resume": null,
     "id": 36
   },
@@ -1219,15 +1236,31 @@
     "title": "Scientist II, Analytical Development (Oligonucleotide)",
     "location": "San Diego, CA",
     "date_found": "2026-04-16",
-    "score": null,
+    "score": 3.1,
     "archetype": "Analytical / Quality Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
     "notes": "BioSpace listing, posted Apr 14 2026. Active oligonucleotide analytical development role covering IP-RP-UPLC, AEX, HILIC, and MS.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "LOWER PRIORITY - solid analytical role, but oligonucleotide specialization is a meaningful mismatch",
+      "strengths": [
+        "Analytical development scope",
+        "UPLC/MS methods are relevant"
+      ],
+      "gaps": [
+        "Oligonucleotide specialization",
+        "Likely stronger need for direct platform experience"
+      ],
+      "cv_match": 3.0,
+      "north_star": 3.1,
+      "comp": 3.1,
+      "cultural": 3.3,
+      "red_flags": 1,
+      "legitimacy": "High Confidence"
+    },
     "tailored_resume": null,
     "id": 37
   },
@@ -1237,15 +1270,31 @@
     "title": "Scientist - Analytical Development Early Stage",
     "location": "Cambridge, MA",
     "date_found": "2026-04-16",
-    "score": null,
+    "score": 4.0,
     "archetype": "Analytical / Quality Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
     "notes": "BioSpace listing, posted Apr 4 2026. Active role with salt/polymorph screening, solid state analytics, and analytical method development for API and drug product.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "APPLY - good fit for analytical development with solid-state and API/drug-product focus",
+      "strengths": [
+        "Analytical development",
+        "Method development",
+        "Salt/polymorph and solid-state angle is relevant to chemistry training"
+      ],
+      "gaps": [
+        "Some industry-specific solid-state methods may need ramp-up"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 3.9,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
     "tailored_resume": null,
     "id": 38
   },
@@ -1255,15 +1304,30 @@
     "title": "Senior Scientist I, Biologics Drug Product Development",
     "location": "North Chicago, IL",
     "date_found": "2026-04-16",
-    "score": null,
+    "score": 2.4,
     "archetype": "Formulation Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
     "notes": "BioSpace listing, posted Apr 3 2026. Active biologics formulation and process development role with characterization and DoE emphasis.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "SKIP - biologics drug product development is not a strong fit",
+      "strengths": [
+        "DoE/process mindset is relevant"
+      ],
+      "gaps": [
+        "Biologics formulation focus",
+        "Drug product development emphasis is off-target for current profile"
+      ],
+      "cv_match": 2.3,
+      "north_star": 2.4,
+      "comp": 2.5,
+      "cultural": 2.8,
+      "red_flags": 2,
+      "legitimacy": "High Confidence"
+    },
     "tailored_resume": null,
     "id": 39
   },
@@ -1273,15 +1337,31 @@
     "title": "Senior Scientist, Analytical Development and Quality Control",
     "location": "Waltham, MA",
     "date_found": "2026-04-16",
-    "score": null,
+    "score": 4.1,
     "archetype": "Analytical / Quality Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Greenhouse listing marked New and active on Apr 16 2026. Small molecule and peptide analytical development and QC oversight with HPLC, UPLC, MS, GC, and spectroscopy.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "APPLY - very relevant analytical development and QC scope",
+      "strengths": [
+        "Small molecule and peptide analytical development",
+        "HPLC/UPLC/MS/GC/spectroscopy fit",
+        "QC oversight aligns with analytical rigor"
+      ],
+      "gaps": [
+        "May prefer direct industry depth in QC leadership"
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.1,
+      "comp": 4.1,
+      "cultural": 3.9,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
     "tailored_resume": null,
     "id": 40
   }
