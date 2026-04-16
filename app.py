@@ -220,8 +220,7 @@ with tab_tracker:
         
         # Filter by recent only
         if show_recent_only:
-            from datetime import datetime, timedelta
-            cutoff = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
+            cutoff = (datetime.datetime.now() - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
             filtered_jobs = [j for j in filtered_jobs if j.get("date_found", "") >= cutoff]
         
         # Filter by high priority only
@@ -244,8 +243,7 @@ with tab_tracker:
         st.caption(f"Showing {len(filtered_jobs)} of {len(jobs)} jobs")
         
         # Build display dataframe with index as job ID
-        from datetime import datetime
-        today = datetime.now().strftime("%Y-%m-%d")
+        today = datetime.datetime.now().strftime("%Y-%m-%d")
         
         rows = []
         for j in filtered_jobs:
