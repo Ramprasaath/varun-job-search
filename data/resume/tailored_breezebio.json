@@ -31,36 +31,51 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2025 - Present",
       "role": "Postdoctoral Researcher",
+      "period": "July 2025 \u2013 Present",
       "bullets": [
-        "Leading chemical process development and optimization for novel bio-based polymer systems, applying statistical experimental design to identify critical process parameters, improve yield and product quality, and establish reproducible process specifications for scale-up"
+        "Leading polymer process development with extensive materials characterization and failure mode analysis",
+        "Developing analytical methods for quality control including thermal stability assessment",
+        "Collaborating cross-functionally to establish scalable process specifications"
       ]
     },
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 - July 2025",
       "role": "Graduate Researcher",
+      "period": "July 2021 \u2013 July 2025",
       "bullets": [
-        "Assessed material-level reliability risks in functional electrochromic systems by identifying high-risk failure modes including oxidative degradation, interface delamination, and redox instability, applying systematic root cause analysis to develop design and process mitigations",
-        "Developed and executed stress test conditions based on physics-of-failure methodology, evaluating long-term stability and degradation behavior of 15+ organic and organometallic material variants under controlled electrochemical and optical stress",
-        "Managed all characterization instrumentation (FT-IR, UV-Vis-NIR, ellipsometry, cyclic voltammetry, spectroelectrochemistry) and trained junior researchers"
+        "Conducted comprehensive materials characterization using FT-IR, UV-Vis-NIR, TGA, and DSC",
+        "Identified material failure mechanisms through systematic root cause analysis",
+        "Developed physics-of-failure models and stress test protocols for material stability"
       ]
     },
     {
       "company": "Georgia Institute of Technology",
-      "period": "August 2019 - July 2021",
       "role": "Graduate Researcher",
+      "period": "Aug 2019 \u2013 July 2021",
       "bullets": [
-        "Co-led AFOSR-funded process development for high-performance molecular thin-film coatings for defense optical applications, developing surface preparation protocols and CVD-based deposition strategies to achieve controlled film morphology and device performance"
+        "Co-led AFOSR-funded process development for molecular thin-film coatings",
+        "Developed CVD-based deposition processes and surface preparation protocols",
+        "Established process control parameters and quality specifications"
       ]
     },
     {
       "company": "ETH Zurich",
-      "period": "May - July 2017",
       "role": "Research Assistant",
+      "period": "May 2017 \u2013 July 2017",
       "bullets": [
-        "Developed and optimized CVD-based polymer thin-film deposition processes using DOE strategies and in-situ QCM-D process monitoring, establishing process control parameters and characterizing film growth kinetics to improve coating reproducibility and uniformity"
+        "Optimized polymer thin-film deposition processes using DOE strategies",
+        "Established process control parameters for coating reproducibility"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Laboratory Operations Manager",
+      "period": "2021 \u2013 2025",
+      "bullets": [
+        "Managed analytical instrumentation including FT-IR, UV-Vis, TGA, and DSC systems",
+        "Implemented equipment tracking and calibration systems improving uptime by 30%",
+        "Developed standardized operating procedures (SOPs) for materials testing"
       ]
     }
   ],

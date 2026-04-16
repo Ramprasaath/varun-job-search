@@ -31,39 +31,51 @@
   "experience": [
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2025 \u2013 Present",
       "role": "Postdoctoral Researcher",
+      "period": "July 2025 \u2013 Present",
       "bullets": [
-        "Leading polymer process development with extensive FT-IR and thermal characterization to establish structure-property relationships in bio-based polymer systems.",
-        "Developing analytical methods for polymer quality control, including TGA for thermal stability assessment and FT-IR for chemical composition verification."
+        "Leading polymer process development with extensive materials characterization and failure mode analysis",
+        "Developing analytical methods for quality control including thermal stability assessment",
+        "Collaborating cross-functionally to establish scalable process specifications"
       ]
     },
     {
       "company": "University of Colorado Boulder",
-      "period": "July 2021 \u2013 July 2025",
       "role": "Graduate Researcher",
+      "period": "July 2021 \u2013 July 2025",
       "bullets": [
-        "Conducted comprehensive materials characterization using FT-IR, UV-Vis-NIR, TGA, and DSC to analyze organic and organometallic thin-film materials.",
-        "Identified material failure mechanisms through vibrational spectroscopy and thermal analysis, developing mitigation strategies for 15+ material variants.",
-        "Operated and maintained multiple analytical instruments including FT-IR, UV-Vis spectrophotometers, TGA, and DSC systems."
+        "Conducted comprehensive materials characterization using FT-IR, UV-Vis-NIR, TGA, and DSC",
+        "Identified material failure mechanisms through systematic root cause analysis",
+        "Developed physics-of-failure models and stress test protocols for material stability"
       ]
     },
     {
       "company": "Georgia Institute of Technology",
-      "period": "Aug 2019 \u2013 July 2021",
       "role": "Graduate Researcher",
+      "period": "Aug 2019 \u2013 July 2021",
       "bullets": [
-        "Characterized molecular thin-film coatings using FT-IR and ellipsometry to optimize film morphology and optical performance for defense applications.",
-        "Developed surface analysis protocols and established quality control criteria for CVD-based coating processes."
+        "Co-led AFOSR-funded process development for molecular thin-film coatings",
+        "Developed CVD-based deposition processes and surface preparation protocols",
+        "Established process control parameters and quality specifications"
       ]
     },
     {
       "company": "ETH Zurich",
-      "period": "May 2017 \u2013 July 2017",
       "role": "Research Assistant",
+      "period": "May 2017 \u2013 July 2017",
       "bullets": [
-        "Optimized polymer thin-film deposition processes using in-situ QCM-D monitoring and FT-IR characterization to ensure coating uniformity and reproducibility.",
-        "Established process control parameters based on analytical data, improving batch-to-batch consistency."
+        "Optimized polymer thin-film deposition processes using DOE strategies",
+        "Established process control parameters for coating reproducibility"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Laboratory Operations Manager",
+      "period": "2021 \u2013 2025",
+      "bullets": [
+        "Managed analytical instrumentation including FT-IR, UV-Vis, TGA, and DSC systems",
+        "Implemented equipment tracking and calibration systems improving uptime by 30%",
+        "Developed standardized operating procedures (SOPs) for materials testing"
       ]
     }
   ],

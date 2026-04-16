@@ -41,8 +41,9 @@
       "role": "Postdoctoral Researcher",
       "period": "July 2025 \u2013 Present",
       "bullets": [
-        "Develop analytical methods for polymer characterization including chromatographic analysis",
-        "Apply statistical methods to optimize separation conditions and improve method performance"
+        "Leading polymer process development with extensive materials characterization and failure mode analysis",
+        "Developing analytical methods for quality control including thermal stability assessment",
+        "Collaborating cross-functionally to establish scalable process specifications"
       ]
     },
     {
@@ -50,10 +51,28 @@
       "role": "Graduate Researcher",
       "period": "July 2021 \u2013 July 2025",
       "bullets": [
-        "Developed analytical methods for small molecule characterization using multiple techniques including mass spectrometry",
-        "Conducted LC-MS and GC-MS analysis of organic compounds and degradation products",
-        "Validated analytical methods for quantitative analysis and impurity profiling",
-        "Applied spectroscopic and chromatographic techniques to solve complex analytical problems"
+        "Conducted comprehensive materials characterization using FT-IR, UV-Vis-NIR, TGA, and DSC",
+        "Identified material failure mechanisms through systematic root cause analysis",
+        "Developed physics-of-failure models and stress test protocols for material stability"
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "role": "Graduate Researcher",
+      "period": "Aug 2019 \u2013 July 2021",
+      "bullets": [
+        "Co-led AFOSR-funded process development for molecular thin-film coatings",
+        "Developed CVD-based deposition processes and surface preparation protocols",
+        "Established process control parameters and quality specifications"
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "role": "Research Assistant",
+      "period": "May 2017 \u2013 July 2017",
+      "bullets": [
+        "Optimized polymer thin-film deposition processes using DOE strategies",
+        "Established process control parameters for coating reproducibility"
       ]
     },
     {
@@ -61,9 +80,9 @@
       "role": "Laboratory Operations Manager",
       "period": "2021 \u2013 2025",
       "bullets": [
-        "Managed analytical instrumentation including LC-MS, GC-MS, FT-IR, and thermal analysis systems",
-        "Developed SOPs and trained researchers on proper chromatographic techniques and instrument operation",
-        "Implemented preventive maintenance programs ensuring reliable instrument performance"
+        "Managed analytical instrumentation including FT-IR, UV-Vis, TGA, and DSC systems",
+        "Implemented equipment tracking and calibration systems improving uptime by 30%",
+        "Developed standardized operating procedures (SOPs) for materials testing"
       ]
     }
   ],

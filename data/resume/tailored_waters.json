@@ -44,8 +44,9 @@
       "role": "Postdoctoral Researcher",
       "period": "July 2025 \u2013 Present",
       "bullets": [
-        "Develop and optimize analytical methods for polymer characterization using FT-IR, TGA, and DSC",
-        "Apply statistical experimental design to identify critical process parameters and improve analytical reproducibility"
+        "Leading polymer process development with extensive materials characterization and failure mode analysis",
+        "Developing analytical methods for quality control including thermal stability assessment",
+        "Collaborating cross-functionally to establish scalable process specifications"
       ]
     },
     {
@@ -53,10 +54,9 @@
       "role": "Graduate Researcher",
       "period": "July 2021 \u2013 July 2025",
       "bullets": [
-        "Developed and validated spectroelectrochemical methods combining FT-IR, UV-Vis, and electrochemical analysis",
-        "Conducted method development and optimization for materials characterization using multiple analytical techniques",
-        "Managed analytical laboratory operations for 15-member research group; implemented equipment tracking and calibration systems improving instrument uptime by 30%",
-        "Developed SOPs and trained lab members on analytical instrumentation including FT-IR, UV-Vis, and thermal analysis systems"
+        "Conducted comprehensive materials characterization using FT-IR, UV-Vis-NIR, TGA, and DSC",
+        "Identified material failure mechanisms through systematic root cause analysis",
+        "Developed physics-of-failure models and stress test protocols for material stability"
       ]
     },
     {
@@ -64,8 +64,18 @@
       "role": "Graduate Researcher",
       "period": "Aug 2019 \u2013 July 2021",
       "bullets": [
-        "Developed CVD-based coating processes with comprehensive analytical characterization using FT-IR and ellipsometry",
-        "Collaborated with cross-functional engineering teams to communicate analytical findings and design recommendations"
+        "Co-led AFOSR-funded process development for molecular thin-film coatings",
+        "Developed CVD-based deposition processes and surface preparation protocols",
+        "Established process control parameters and quality specifications"
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "role": "Research Assistant",
+      "period": "May 2017 \u2013 July 2017",
+      "bullets": [
+        "Optimized polymer thin-film deposition processes using DOE strategies",
+        "Established process control parameters for coating reproducibility"
       ]
     },
     {
@@ -73,9 +83,9 @@
       "role": "Laboratory Operations Manager",
       "period": "2021 \u2013 2025",
       "bullets": [
-        "Managed analytical instrumentation for research group including FT-IR, UV-Vis, TGA, DSC, and electrochemical systems",
-        "Developed training protocols and mentored 15+ researchers on proper analytical techniques and instrument operation",
-        "Implemented calibration and maintenance schedules ensuring reliable instrument performance"
+        "Managed analytical instrumentation including FT-IR, UV-Vis, TGA, and DSC systems",
+        "Implemented equipment tracking and calibration systems improving uptime by 30%",
+        "Developed standardized operating procedures (SOPs) for materials testing"
       ]
     }
   ],

@@ -41,9 +41,9 @@
       "role": "Postdoctoral Researcher",
       "period": "July 2025 \u2013 Present",
       "bullets": [
-        "Lead chemical process development and optimization for novel bio-based polymer systems",
-        "Apply statistical experimental design (DOE) to identify critical process parameters and establish control strategies",
-        "Develop scalable processes with improved yield and reproducible specifications"
+        "Leading polymer process development with extensive materials characterization and failure mode analysis",
+        "Developing analytical methods for quality control including thermal stability assessment",
+        "Collaborating cross-functionally to establish scalable process specifications"
       ]
     },
     {
@@ -51,10 +51,9 @@
       "role": "Graduate Researcher",
       "period": "July 2021 \u2013 July 2025",
       "bullets": [
-        "Designed and optimized synthetic routes for xanthene-based electrochromic molecules",
-        "Applied DOE to optimize reaction conditions and purification processes",
-        "Developed structure-property relationships to guide molecular design decisions",
-        "Collaborated with cross-functional teams to scale-up synthetic processes"
+        "Conducted comprehensive materials characterization using FT-IR, UV-Vis-NIR, TGA, and DSC",
+        "Identified material failure mechanisms through systematic root cause analysis",
+        "Developed physics-of-failure models and stress test protocols for material stability"
       ]
     },
     {
@@ -63,7 +62,7 @@
       "period": "Aug 2019 \u2013 July 2021",
       "bullets": [
         "Co-led AFOSR-funded process development for molecular thin-film coatings",
-        "Developed CVD-based deposition processes and surface preparation protocols for controlled film morphology",
+        "Developed CVD-based deposition processes and surface preparation protocols",
         "Established process control parameters and quality specifications"
       ]
     },
@@ -72,8 +71,18 @@
       "role": "Research Assistant",
       "period": "May 2017 \u2013 July 2017",
       "bullets": [
-        "Developed CVD-based polymer thin-film deposition processes using DOE strategies",
-        "Established process control parameters and characterized film growth kinetics"
+        "Optimized polymer thin-film deposition processes using DOE strategies",
+        "Established process control parameters for coating reproducibility"
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "role": "Laboratory Operations Manager",
+      "period": "2021 \u2013 2025",
+      "bullets": [
+        "Managed analytical instrumentation including FT-IR, UV-Vis, TGA, and DSC systems",
+        "Implemented equipment tracking and calibration systems improving uptime by 30%",
+        "Developed standardized operating procedures (SOPs) for materials testing"
       ]
     }
   ],
