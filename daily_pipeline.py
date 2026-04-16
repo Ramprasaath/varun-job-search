@@ -55,6 +55,60 @@ def get_next_id(tracker_path: str) -> int:
     except:
         return 1
 
+def is_job_active(description: str) -> bool:
+    """Check if job is still accepting applications based on description"""
+    inactive_keywords = [
+        'no longer accepting', 'position filled', 'closed', 'expired',
+        '3 years ago', '2 years ago', '1 year ago', 'archived',
+        'no longer available', 'position has been filled', 'not currently hiring',
+        'application deadline passed', 'requisition closed'
+    ]
+    desc_lower = description.lower()
+    return not any(keyword in desc_lower for keyword in inactive_keywords)
+
+def extract_posted_date(description: str) -> str:
+    """Try to extract posted date from description"""
+    import re
+    from datetime import datetime, timedelta
+    
+    # Look for patterns like "3 days ago", "2 weeks ago", "1 month ago"
+    patterns = [
+        (r'(\d+)\s+day[s]?\s+ago', 'days'),
+        (r'(\d+)\s+week[s]?\s+ago', 'weeks'),
+        (r'(\d+)\s+month[s]?\s+ago', 'months'),
+        (r'(\d+)\s+year[s]?\s+ago', 'years'),
+        (r'posted\s+(\d+)\s+day[s]?\s+ago', 'days'),
+        (r'posted\s+(\d+)\s+week[s]?\s+ago', 'weeks'),
+    ]
+    
+    for pattern, unit in patterns:
+        match = re.search(pattern, description.lower())
+        if match:
+            num = int(match.group(1))
+            if unit == 'days':
+                date = datetime.now() - timedelta(days=num)
+            elif unit == 'weeks':
+                date = datetime.now() - timedelta(weeks=num)
+            elif unit == 'months':
+                date = datetime.now() - timedelta(days=num*30)
+            elif unit == 'years':
+                date = datetime.now() - timedelta(days=num*365)
+            return date.strftime('%Y-%m-%d')
+    
+    return None
+
+def is_recent_job(date_str: str, days: int = 180) -> bool:
+    """Check if job is within recent days (default 6 months)"""
+    from datetime import datetime, timedelta
+    if not date_str:
+        return True  # If no date, assume recent
+    try:
+        job_date = datetime.strptime(date_str, '%Y-%m-%d')
+        cutoff = datetime.now() - timedelta(days=days)
+        return job_date >= cutoff
+    except:
+        return True
+
 def parse_search_result(result: dict, platform: str, query: str) -> dict:
     """Parse a web search result into job format"""
     import re
@@ -62,6 +116,13 @@ def parse_search_result(result: dict, platform: str, query: str) -> dict:
     url = result.get('url', '')
     title = result.get('title', '').replace('\n', '').strip()
     description = result.get('description', '')
+    
+    # Check if job is still active
+    if not is_job_active(description):
+        return None  # Skip inactive jobs
+    
+    # Try to extract actual posted date
+    posted_date = extract_posted_date(description)
     
     # Extract company
     company = "Unknown"
@@ -98,7 +159,8 @@ def parse_search_result(result: dict, platform: str, query: str) -> dict:
         "location": location,
         "url": url,
         "description": description[:300],
-        "date_found": datetime.now().strftime("%Y-%m-%d"),
+        "date_found": posted_date or datetime.now().strftime("%Y-%m-%d"),
+        "date_posted": posted_date,
         "job_id": None,
         "status": "discovered",
         "score": None,

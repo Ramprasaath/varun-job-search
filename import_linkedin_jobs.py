@@ -7,14 +7,45 @@ import json
 import sys
 from datetime import datetime
 
-def import_linkedin_jobs(linkedin_file: str, tracker_file: str):
+def is_job_recent(job: dict, max_days: int = 180) -> bool:
+    """Check if job is within last 6 months (180 days)"""
+    from datetime import datetime, timedelta
+    
+    date_str = job.get('date_found') or job.get('date_posted')
+    if not date_str:
+        return True  # If no date, assume recent
+    
+    try:
+        job_date = datetime.strptime(date_str[:10], '%Y-%m-%d')
+        cutoff = datetime.now() - timedelta(days=max_days)
+        return job_date >= cutoff
+    except:
+        return True
+
+def is_job_active(job: dict) -> bool:
+    """Check if job is still accepting applications"""
+    title = job.get('title', '').lower()
+    notes = job.get('notes', '').lower()
+    
+    inactive_keywords = [
+        'no longer accepting', 'position filled', 'closed', 'expired',
+        'archived', 'no longer available', 'position has been filled',
+        'not currently hiring', 'application deadline passed', 'requisition closed'
+    ]
+    
+    text = title + ' ' + notes
+    return not any(keyword in text for keyword in inactive_keywords)
+
+def import_linkedin_jobs(linkedin_file: str, tracker_file: str, max_age_days: int = 180):
     """
     Merge LinkedIn jobs into the main tracker
     
     Args:
         linkedin_file: Path to linkedin_jobs_YYYYMMDD.json
         tracker_file: Path to streamlit-app/data/jobs.json
+        max_age_days: Only import jobs posted within this many days (default 180 = 6 months)
     """
+    from datetime import datetime
     
     # Load LinkedIn jobs
     with open(linkedin_file, 'r') as f:
@@ -30,6 +61,26 @@ def import_linkedin_jobs(linkedin_file: str, tracker_file: str):
     # Track what's new
     added = []
     skipped = []
+    too_old = []
+    inactive = []
+    
+    for job in linkedin_jobs:
+        # Check if job is recent (within 6 months)
+        if not is_job_recent(job, max_age_days):
+            too_old.append(job)
+            continue
+        
+        # Check if job is still active
+        if not is_job_active(job):
+            inactive.append(job)
+            continue
+        
+        # Check for duplicates by URL
+        existing = [j for j in tracker if j.get('url') == job.get('url')]
+        
+        if existing:
+            skipped.append(job)
+            continue
     
     for job in linkedin_jobs:
         # Check for duplicates by URL
@@ -60,6 +111,8 @@ def import_linkedin_jobs(linkedin_file: str, tracker_file: str):
     print(f"✅ Import complete!")
     print(f"   Added: {len(added)} new jobs")
     print(f"   Skipped (duplicates): {len(skipped)}")
+    print(f"   Skipped (too old >{max_age_days} days): {len(too_old)}")
+    print(f"   Skipped (inactive/not accepting): {len(inactive)}")
     print(f"   Total tracker jobs: {len(tracker)}")
     
     return added
