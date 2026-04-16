@@ -51,7 +51,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "10+ years industry required. May be too senior for Varun's profile.",
-    "evaluation": null
+    "evaluation": {
+      "recommendation": "CONSIDER - Good match with some gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.5,
+      "north_star": 3.5,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    }
   },
   {
     "id": 3,
@@ -68,7 +82,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Director level likely too senior. Requires extensive industry experience.",
-    "evaluation": null
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Significant gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.2,
+      "north_star": 3.2,
+      "comp": 3.2,
+      "cultural": 3.2,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    }
   },
   {
     "id": 4,
@@ -265,7 +293,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Requires 2+ years post-PhD industry experience. May be slightly senior for Varun.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "CONSIDER - Good match with some gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.6,
+      "north_star": 3.6,
+      "comp": 3.6,
+      "cultural": 3.6,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    },
     "tailored_resume": "tailored_amgen_process"
   },
   {
@@ -283,7 +325,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Principal level likely too senior. Coaching/mentoring role requires extensive experience.",
-    "evaluation": null
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Significant gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.4,
+      "north_star": 3.4,
+      "comp": 3.4,
+      "cultural": 3.4,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    }
   },
   {
     "id": 11,
@@ -300,7 +356,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Principal Scientist level. May require more formulation experience.",
-    "evaluation": null
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Significant gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.3,
+      "north_star": 3.3,
+      "comp": 3.3,
+      "cultural": 3.3,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    }
   },
   {
     "id": 12,
@@ -317,7 +387,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Multiple PhD-level positions in Discovery and Process Chemistry. Need to find specific postings.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "CONSIDER - Good match with some gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.5,
+      "north_star": 3.5,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    },
     "tailored_resume": "tailored_bms"
   },
   {
@@ -1057,7 +1141,21 @@
     "applied_date": null,
     "follow_up_date": null,
     "notes": "Rare earth materials mining company. QC focus. Need more details on requirements.",
-    "evaluation": null,
+    "evaluation": {
+      "recommendation": "CONSIDER - Good match with some gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.5,
+      "north_star": 3.5,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    },
     "tailored_resume": "tailored_mpmaterials"
   },
   {
