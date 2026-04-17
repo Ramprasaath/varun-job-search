@@ -1327,5 +1327,46 @@
     },
     "tailored_resume": "tailored_kailera_adqc",
     "id": 40
+  },
+  {
+    "url": "https://careers.gene.com/us/en/job/202603-107743/Senior-Principal-Scientist-Synthetic-Molecule-Analytical-Chemistry-Genentech-Research-and-Early-Development",
+    "company": "Genentech",
+    "title": "Senior/Principal Scientist - Synthetic Molecule Analytical Chemistry (SMAC)",
+    "location": "South San Francisco, CA",
+    "date_found": "2026-04-17",
+    "score": 4.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-genentech-smac-senior-principal-scientist-analytical-chem-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "EXCEPTIONAL MATCH. Genentech SMAC group seeks analytical chemist for small molecules, peptides, oligonucleotides, and drug delivery systems (LNP, polymer nanoparticles). Varun's postdoc is biopolymer nanoparticle process dev - direct pipeline alignment. Requires HRMS, UHPLC, 2D-LC/MS, GC/MS, spectroscopy, rheology, microscopy. PhD + 0-2 years for Senior Scientist. Salary $124K-$231K (Senior) / $143K-$266K (Principal). Relocation benefits available. Published ~1 week ago, still active on Genentech careers.",
+    "evaluation": {
+      "recommendation": "APPLY IMMEDIATELY - One of the strongest matches in the tracker",
+      "strengths": [
+        "Postdoc is literally biopolymer nanoparticle process development - matches LNP/polymer nanoparticle pipeline",
+        "PhD in Chemistry with 0-2 years accepted for Senior Scientist level",
+        "Multi-technique characterization expertise (FT-IR, UV-Vis, TGA, DSC, cyclic voltammetry, NMR, GC-MS, LC-MS)",
+        "Analytical method development from first principles",
+        "Cross-functional collaboration experience",
+        "DOE and statistical analysis proficiency",
+        "Top-tier biotech (Genentech/Roche) with strong compensation",
+        "Materials characterization and structure-property relationships expertise"
+      ],
+      "gaps": [
+        "No direct HRMS method development experience (some LC-MS/GC-MS exposure)",
+        "Limited cGMP/regulatory submission experience",
+        "No peptide/oligonucleotide-specific analytical experience"
+      ],
+      "cv_match": 4.5,
+      "north_star": 4.5,
+      "comp": 4.5,
+      "cultural": 4.5,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_genentech_smac",
+    "id": 41
   }
 ]

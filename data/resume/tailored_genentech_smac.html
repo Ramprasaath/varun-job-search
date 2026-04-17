@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varunprasaath R. Selvaraju, Ph.D. — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: hsl(187, 74%, 32%);
+  }
+
+  .contact-row a {
+    color: hsl(187, 74%, 32%);
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  /* Links must never break across lines */
+  a {
+    white-space: nowrap;
+  }
+
+  /* === CORE COMPETENCIES === */
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  /* === PROJECTS === */
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  /* === EDUCATION === */
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === CERTIFICATIONS === */
+  .cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  /* === PAGE BREAK CONTROL === */
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>Varunprasaath R. Selvaraju, Ph.D.</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>(+1) 678-207-9914</span>
+      <span class="separator">|</span>
+      <span>varunprasaath@gmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/varunprasaath-rs">linkedin.com/in/varunprasaath-rs</a>
+      <span class="separator">|</span>
+      <a href="#"></a>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">PROFESSIONAL SUMMARY</div>
+    <div class="summary-text">PhD Chemist with 6+ years of experience in analytical method development, materials characterization, and process development across small-molecule, polymer, and nanoparticle systems. Deep expertise in spectroscopy (FT-IR, UV-Vis-NIR), chromatography (HPLC, LC-MS, GC-MS), thermal analysis (TGA, DSC), and statistical experimental design (DOE, SPC). Proven ability to solve complex analytical challenges from first principles, establish structure-property-processing relationships, and generate high-quality data to guide molecular and formulation decisions in cross-functional environments.</div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">CORE COMPETENCIES</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Analytical Chemistry & Method Development</span>
+<span class="competency-tag">Small Molecule & Polymer Characterization</span>
+<span class="competency-tag">Nanoparticle / Drug Delivery Systems</span>
+<span class="competency-tag">HRMS, UHPLC, GC/MS, Spectroscopy</span>
+<span class="competency-tag">Thermal Analysis (TGA, DSC)</span>
+<span class="competency-tag">DOE & Statistical Data Analysis</span>
+<span class="competency-tag">CMC / Regulatory Submissions</span>
+<span class="competency-tag">Cross-functional Collaboration</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">WORK EXPERIENCE</div>
+    <div class="job"><div class="job-header"><span class="job-company">University of Colorado Boulder</span><span class="job-period">July 2025 - Present</span></div><div class="job-role">Postdoctoral Researcher</div><ul><li>Leading chemical process development and optimization for novel bio-based polymer and nanoparticle systems, applying statistical experimental design to identify critical process parameters, improve yield and product quality, and establish reproducible process specifications for scale-up.</li><li>Developing and applying analytical methods including spectroscopy, chromatography, and thermal analysis to characterize polymer nanoparticles and establish structure-property relationships for drug delivery applications.</li></ul></div>
+<div class="job"><div class="job-header"><span class="job-company">University of Colorado Boulder</span><span class="job-period">July 2021 - July 2025</span></div><div class="job-role">Graduate Researcher</div><ul><li>Designed and executed analytical characterization of 15+ organic and organometallic material variants using FT-IR, UV-Vis-NIR, cyclic voltammetry, NMR, and thermal analysis (TGA, DSC), identifying degradation pathways and establishing structure-property-processing relationships to guide molecular design decisions.</li><li>Developed stress test protocols and analytical methods from first principles to evaluate long-term stability under controlled electrochemical and optical conditions, generating high-quality datasets for cross-functional team review.</li></ul></div>
+<div class="job"><div class="job-header"><span class="job-company">Georgia Institute of Technology</span><span class="job-period">Aug 2019 - July 2021</span></div><div class="job-role">Graduate Researcher</div><ul><li>Co-led AFOSR-funded process development for high-performance molecular thin-film coatings, developing surface preparation protocols and CVD-based deposition strategies to achieve controlled film morphology and device performance.</li></ul></div>
+<div class="job"><div class="job-header"><span class="job-company">ETH Zurich</span><span class="job-period">May 2017 - July 2017</span></div><div class="job-role">Research Assistant</div><ul><li>Developed and optimized CVD-based polymer thin-film deposition processes using DOE strategies and in-situ QCM-D process monitoring, establishing process control parameters and characterizing film growth kinetics to improve coating reproducibility and uniformity.</li></ul></div>
+<div class="job"><div class="job-header"><span class="job-company">University of Colorado Boulder</span><span class="job-period">2021 - 2025</span></div><div class="job-role">Laboratory Operations Manager</div><ul><li>Managed process development laboratory operations for a 15-member research group; implemented equipment tracking and calibration systems improving instrument uptime by 30%, developed SOPs and safety protocols, and coordinated cross-functional resource planning across multiple concurrent projects.</li></ul></div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">KEY PROJECTS</div>
+    <div class="project"><div class="project-title">Polymer Nanoparticle Analytical Development <span class="project-badge">SMAC Alignment</span></div><div class="project-desc">Leading analytical development for bio-based polymer nanoparticle systems, applying multi-technique characterization (spectroscopy, chromatography, thermal analysis, particle sizing) to support process development and formulation decisions for drug delivery applications.</div><div class="project-tech">Polymer nanoparticles, spectroscopy, thermal analysis, DOE, analytical method development</div></div>
+<div class="project"><div class="project-title">Small Molecule Structural Elucidation <span class="project-badge">Analytical Depth</span></div><div class="project-desc">Characterized organic and organometallic compounds using NMR, MS, FT-IR, UV-Vis, and electrochemical methods to determine molecular structure, degradation pathways, and stability profiles for 15+ novel material systems.</div><div class="project-tech">NMR, MS, FT-IR, UV-Vis, cyclic voltammetry, structural elucidation, degradation analysis</div></div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">EDUCATION</div>
+    <div class="edu-item"><div class="edu-header"><span class="edu-title">Ph.D. in Chemistry - University of Colorado Boulder</span><span class="edu-year">2025</span></div><div class="edu-desc">Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials<br>Advisor: Prof. Seth Marder<br>(Transferred from Georgia Institute of Technology)</div></div>
+<div class="edu-item"><div class="edu-header"><span class="edu-title">B.S. (Research), Major: Chemistry; Minor: Materials Science - Indian Institute of Science (IISc)</span><span class="edu-year">2019</span></div><div class="edu-desc">INSPIRE Scholarship for Higher Education (Top 1% nationally)</div></div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">CERTIFICATIONS</div>
+    <div class="cert-item"><span class="cert-title">Statistical Process Control (SPC) - Coursera, 2026</span></div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">TECHNICAL SKILLS</div>
+    <div class="skill-row"><span class="skill-category">Analytical Chemistry:</span> FT-IR, UV-Vis-NIR spectrophotometry, HRMS/LC-MS, GC-MS, NMR, UHPLC, HPLC, GPC, QCM-D, ellipsometry, spectroelectrochemistry</div>
+<div class="skill-row"><span class="skill-category">Materials Characterization:</span> TGA, DSC, cyclic voltammetry, nanoparticle characterization, polymer analysis, thin-film analysis, structure-property-processing relationships</div>
+<div class="skill-row"><span class="skill-category">Statistical Analysis:</span> DOE, Statistical Process Control (SPC, Coursera 2026), JMP (basic), Python (basic), Excel (advanced), statistical data analysis</div>
+<div class="skill-row"><span class="skill-category">Materials Expertise:</span> Small molecules, polymer systems, nanoparticles (polymer and lipid), organic thin films, surface functionalization</div>
+<div class="skill-row"><span class="skill-category">Regulatory & Quality:</span> cGMP awareness, ICH guidelines (familiarity), analytical control strategies, SOP development, technical documentation</div>
+<div class="skill-row"><span class="skill-category">Project Management:</span> Multi-project management, cross-functional collaboration, technical documentation, stakeholder communication</div>
+  </div>
+
+</div>
+</body>
+</html>

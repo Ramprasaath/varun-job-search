@@ -275,5 +275,47 @@
     "status": "not_contacted",
     "date_contacted": null,
     "response": null
+  },
+  {
+    "job_id": 41,
+    "company": "Genentech",
+    "name": "Search for: SMAC Group Leader / Director",
+    "title": "Director / Senior Director, Synthetic Molecule Analytical Chemistry",
+    "contact_type": "hiring_manager",
+    "message_draft": "Dear [Name], I'm a PhD Chemist with deep expertise in analytical method development and materials characterization across small-molecule, polymer, and nanoparticle systems. I came across the Senior/Principal Scientist opening in the SMAC group at Genentech and was excited to see the focus on drug delivery systems including polymer nanoparticles - which aligns directly with my current postdoctoral work in biopolymer nanoparticle process development. I'd welcome the opportunity to discuss how my analytical and characterization expertise could contribute to your pipeline.",
+    "notes": "LinkedIn search: Genentech SMAC synthetic molecule analytical chemistry director",
+    "id": 20,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "job_id": 41,
+    "company": "Genentech",
+    "name": "Search for: SMAC Senior Scientist / Team Lead",
+    "title": "Senior Scientist / Principal Scientist, SMAC",
+    "contact_type": "team_lead",
+    "message_draft": "Hi [Name], I'm a PhD Chemist specializing in analytical method development and multi-technique characterization (spectroscopy, chromatography, thermal analysis). I'm very interested in the SMAC group's work on small molecules, peptides, and drug delivery systems. My current postdoc focuses on biopolymer nanoparticle process development and characterization - directly relevant to the LNP/polymer nanoprotein pipeline. I'd love to learn more about the team and role.",
+    "notes": "LinkedIn search: Genentech SMAC analytical chemistry scientist South San Francisco",
+    "id": 21,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "job_id": 41,
+    "company": "Genentech",
+    "name": "Search for: Genentech Research & Early Development Recruiter",
+    "title": "Talent Acquisition / Scientific Recruiter",
+    "contact_type": "recruiter",
+    "message_draft": "Hi [Name], I'm a PhD Chemist with 6+ years of analytical development and materials characterization experience. I'm very interested in the Senior/Principal Scientist role in the SMAC group (Job ID 202603-107743). My background in nanoparticle characterization, spectroscopy, and statistical method development aligns well with this position. I'd appreciate any guidance on the application process.",
+    "notes": "LinkedIn search: Genentech talent acquisition recruiter research early development",
+    "id": 22,
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
   }
 ]
