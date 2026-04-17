@@ -764,43 +764,6 @@
     "tailored_resume": "tailored_bruker"
   },
   {
-    "id": 24,
-    "url": "https://www.linkedin.com/jobs/view/battery-engineer-scientist-at-exponent-3335505563",
-    "company": "Exponent",
-    "title": "Battery Engineer/Scientist",
-    "location": "Natick, MA / Menlo Park, CA",
-    "date_found": "2026-04-14",
-    "score": 4.5,
-    "archetype": "Failure Analysis/Reliability Engineer",
-    "status": "evaluated",
-    "report_path": null,
-    "pdf_path": "data/output/cv-exponent-battery-engineer-scientist-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "EXCELLENT MATCH! Battery failure analysis and materials characterization. PhD required. SEM, X-ray CT, electrochemical analysis.",
-    "evaluation": {
-      "cv_match": 4.5,
-      "north_star": 4.5,
-      "comp": 4.5,
-      "cultural": 4.5,
-      "red_flags": -0.1,
-      "legitimacy": "High Confidence",
-      "gaps": [
-        "Battery industry specific knowledge",
-        "Client consulting experience"
-      ],
-      "strengths": [
-        "Failure analysis expertise - exact match",
-        "Materials characterization (FTIR, TGA, DSC)",
-        "PhD in Chemistry/Materials",
-        "Root cause analysis experience",
-        "Menlo Park CA location option"
-      ],
-      "recommendation": "APPLY IMMEDIATELY - Highest priority match"
-    },
-    "tailored_resume": "tailored_exponent"
-  },
-  {
     "id": 25,
     "url": "https://www.linkedin.com/jobs/view/chemist-vibrational-spectroscopy-and-thermal-analysis-at-intertek-3331060825",
     "company": "Intertek",
