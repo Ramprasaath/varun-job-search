@@ -317,5 +317,33 @@
     "status": "not_contacted",
     "date_contacted": null,
     "response": null
+  },
+  {
+    "id": 23,
+    "job_id": 43,
+    "company": "AbbVie",
+    "name": "Search for: Analytical R&D Predictive Stability Lead",
+    "title": "Director / Senior Director, Analytical R&D",
+    "contact_type": "hiring_manager",
+    "message_draft": "Dear [Name], I'm a PhD Chemist with deep expertise in analytical characterization, degradation pathway analysis, and stability studies. I came across the Senior Scientist II opening on the Predictive Stability & Structure Elucidation team at AbbVie. My background in multi-technique materials characterization and statistical DOE aligns well with the impurity profiling and stability work. I'd welcome the opportunity to discuss how I could contribute to your analytical R&D team.",
+    "notes": "LinkedIn search: AbbVie analytical R&D predictive stability director North Chicago",
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "id": 24,
+    "job_id": 43,
+    "company": "AbbVie",
+    "name": "Search for: Predictive Stability Team Scientist",
+    "title": "Senior Scientist / Principal Scientist",
+    "contact_type": "team_lead",
+    "message_draft": "Hi [Name], I'm very interested in AbbVie's Predictive Stability & Structure Elucidation team. My PhD background in analytical chemistry, thermal analysis, and degradation pathway assessment aligns well with the team's focus on small molecule stability. I'd love to learn more about the team and the Senior Scientist II role.",
+    "notes": "LinkedIn search: AbbVie predictive stability structure elucidation scientist North Chicago",
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
   }
 ]

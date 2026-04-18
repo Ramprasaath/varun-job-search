@@ -1368,5 +1368,119 @@
     },
     "tailored_resume": "tailored_genentech_smac",
     "id": 41
+  },
+  {
+    "id": 42,
+    "url": "https://jobrxiv.org/job/senior-scientist-chemistry-onsite/",
+    "company": "Merck",
+    "title": "Senior Scientist, Chemistry (Labeled Compound Synthesis)",
+    "location": "Rahway, NJ (Onsite)",
+    "date_found": "2026-04-18",
+    "score": 3.2,
+    "archetype": "Research Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Merck Labeled Compound Synthesis group within Discovery Process Chemistry. Role focuses on synthesizing isotopically labeled compounds (stable + radioactive) for drug discovery/ADME studies. PhD in Chemistry required (by June 2026). Organic synthesis heavy \u2014 Varun's PhD is organic chemistry but his postdoc shifted to biopolymer process development. May require deep synthetic organic benchwork that doesn't align with Varun's current trajectory.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Strong company but role is heavily synthesis-focused, not analytical",
+      "strengths": [
+        "Merck \u2014 top-tier pharma with excellent compensation and stability",
+        "PhD in Chemistry accepted",
+        "Analytical and purification techniques (chromatography, crystallization) listed",
+        "Unique niche (isotope labeling) could be differentiating expertise"
+      ],
+      "gaps": [
+        "Core role is synthetic organic chemistry \u2014 not analytical/characterization focused",
+        "Isotope labeling experience preferred but not required",
+        "GMP synthesis for human ADME studies requires regulatory knowledge",
+        "Varun's postdoc shifted away from synthesis toward process dev/characterization"
+      ],
+      "cv_match": 3.0,
+      "north_star": 3.0,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 43,
+    "url": "https://jobrxiv.org/job/senior-scientist-ii-analytical-chemistry-predictive-stability-mass-spectrometry/",
+    "company": "AbbVie",
+    "title": "Senior Scientist II, Analytical Chemistry (Predictive Stability, Mass Spectrometry)",
+    "location": "North Chicago, IL",
+    "date_found": "2026-04-18",
+    "score": 3.9,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "AbbVie Analytical R&D \u2014 Predictive Stability & Structure Elucidation team. Small molecule focus covering API/DP from preclinical through clinical. Impurity profiling, stability studies, method development/validation. PhD with 4+ years experience OR BS 12yr/MS 10yr. Varun has 2yr postdoc \u2014 may be borderline on years but strong on analytical techniques. Different from job #5 (Sr. Scientist I, Analytical R&D) which requires 0+ years.",
+    "evaluation": {
+      "recommendation": "STRONG CONSIDER - Excellent analytical chemistry fit, slight concern on years requirement",
+      "strengths": [
+        "Small molecule analytical development \u2014 direct match for Varun's chemistry training",
+        "Predictive stability and degradation pathway analysis aligns with materials reliability background",
+        "Method development, validation, technical transfer \u2014 core analytical skills",
+        "AbbVie \u2014 major pharma with strong pipeline and compensation",
+        "cGMP and regulatory submission exposure \u2014 valuable career growth"
+      ],
+      "gaps": [
+        "PhD + 4 years experience required \u2014 Varun has ~2 years postdoc",
+        "Mass spectrometry emphasis \u2014 Varun has some GC-MS/LC-MS but not deep expertise",
+        "Regulatory submission experience not present in Varun's background",
+        "May be able to target Senior Scientist I level instead (already in tracker as job #5)"
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 3.8,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 44,
+    "url": "https://modernatx.wd1.myworkdayjobs.com/M_tx/job/Scientist--Analytical-Development_R19027-1",
+    "company": "Moderna",
+    "title": "Scientist, Analytical Development",
+    "location": "Norwood, MA (Onsite)",
+    "date_found": "2026-04-18",
+    "score": 2.8,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Moderna analytical development role focused on cell-based potency assays for mRNA therapeutics/vaccines. Requires cell biology + mass spectrometry (proteomics) expertise. Heavy bioassay focus \u2014 significant mismatch with Varun's small molecule/materials characterization background. Salary $109K-$175K. Great company but wrong modality fit.",
+    "evaluation": {
+      "recommendation": "SKIP - Cell-based assay and mRNA modality is a poor fit for Varun's background",
+      "strengths": [
+        "Moderna \u2014 premier mRNA company, strong brand",
+        "Good salary range ($109K-$175K)",
+        "Norwood MA \u2014 strong biotech hub"
+      ],
+      "gaps": [
+        "Cell-based potency assays \u2014 no relevant experience",
+        "mRNA/LNP modality \u2014 not Varun's expertise",
+        "Proteomics/mass spectrometry depth required",
+        "100% onsite in Norwood, MA \u2014 relocation from Boulder"
+      ],
+      "cv_match": 2.5,
+      "north_star": 3.0,
+      "comp": 3.5,
+      "cultural": 3.0,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
   }
 ]
