@@ -1,0 +1,62 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical method development, materials characterization, and process optimization. Expertise in salt/polymorph screening, solid-state analytics, thermal analysis (TGA/DSC), spectroscopy (FT-IR, UV-Vis), and chromatographic methods (HPLC, GPC/SEC). Strong background in DOE-driven analytical development and establishing structure-property relationships. Experienced in developing robust analytical methods from first principles for API and drug product characterization.",
+  "competencies": [
+    "Analytical Method Development & Validation",
+    "Salt & Polymorph Screening",
+    "Solid-State Characterization",
+    "Thermal Analysis (TGA/DSC)",
+    "FT-IR & UV-Vis Spectroscopy",
+    "HPLC/UPLC Method Development",
+    "DOE & Statistical Analysis",
+    "API & Drug Product Analysis",
+    "Materials Characterization",
+    "Cross-functional Collaboration"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher — Process Development & Characterization",
+      "bullets": [
+        "Develop and optimize analytical methods for polymer and nanoparticle characterization using HPLC, GPC/SEC, thermal analysis, and spectroscopy.",
+        "Apply DOE approaches to systematically characterize materials and establish optimal processing parameters.",
+        "Conduct solid-state characterization including thermal analysis (TGA/DSC) and spectroscopic analysis (FT-IR, UV-Vis) for phase identification and stability assessment."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher — Analytical Chemistry & Materials Characterization",
+      "bullets": [
+        "Developed and validated analytical methods for small molecule characterization using HPLC, NMR, GC-MS, and spectroscopic techniques.",
+        "Performed comprehensive solid-state characterization to identify polymorphic forms and establish degradation pathways.",
+        "Applied statistical methods (DOE, multivariate analysis) to optimize analytical methods and process conditions.",
+        "Authored technical reports and presented findings at departmental reviews and scientific conferences."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Methods": "HPLC/UPLC, GPC/SEC, GC-MS, NMR, method development & validation",
+    "Solid-State Analysis": "TGA, DSC, FT-IR, UV-Vis, polymorph screening, PXRD concepts",
+    "Data Analysis": "DOE, SPC, multivariate analysis, Origin, JMP, MestReNova",
+    "Characterization": "Thermal analysis, spectroscopy, particle sizing, microscopy"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

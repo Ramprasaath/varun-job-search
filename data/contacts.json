@@ -345,5 +345,47 @@
     "status": "not_contacted",
     "date_contacted": null,
     "response": null
+  },
+  {
+    "id": 25,
+    "job_id": 45,
+    "company": "AbbVie",
+    "name": "Search for: PAC/SPC Group Leader",
+    "title": "Director / Senior Director, Synthetic Particle Characterization",
+    "contact_type": "hiring_manager",
+    "message_draft": "Dear [Name], I'm a PhD Chemist with deep expertise in particle sizing, thermal analysis, spectroscopy, and rheology for polymer and nanoparticle systems. I came across the Senior Scientist I/II opening in the Particle & Material Analysis group at AbbVie and was excited by the focus on multi-technique materials characterization. My current postdoctoral work involves biopolymer nanoparticle process development where I routinely use particle sizing, TGA/DSC, FT-IR, and rheological methods. I'd welcome the opportunity to discuss how my analytical characterization expertise could contribute to your team.",
+    "notes": "LinkedIn search: AbbVie particle characterization analytical chemistry director North Chicago",
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "id": 26,
+    "job_id": 45,
+    "company": "AbbVie",
+    "name": "Search for: PAC Senior Scientist / Team Lead",
+    "title": "Senior Scientist / Principal Scientist, Particle Analysis",
+    "contact_type": "team_lead",
+    "message_draft": "Hi [Name], I'm a PhD Chemist specializing in materials characterization with expertise in thermal analysis, spectroscopy, and particle sizing. I'm very interested in the Particle & Material Analysis group at AbbVie. My background in multi-technique characterization of polymer and nanoparticle systems aligns well with the group's focus. I'd love to learn more about the team and role.",
+    "notes": "LinkedIn search: AbbVie synthetic particle characterization scientist North Chicago",
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
+  },
+  {
+    "id": 27,
+    "job_id": 45,
+    "company": "AbbVie",
+    "name": "Search for: AbbVie Analytical R&D Recruiter",
+    "title": "Talent Acquisition / Scientific Recruiter",
+    "contact_type": "recruiter",
+    "message_draft": "Hi [Name], I'm a PhD Chemist with 6+ years of analytical characterization and materials analysis experience. I'm very interested in the Senior Scientist I/II role in the Particle & Material Analysis group at AbbVie. My background in particle sizing, thermal analysis, spectroscopy, and rheology aligns well with this position. I'd appreciate any guidance on the application process.",
+    "notes": "LinkedIn search: AbbVie talent acquisition recruiter analytical R&D North Chicago",
+    "linkedin_url": "",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null
   }
 ]

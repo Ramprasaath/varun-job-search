@@ -1,0 +1,64 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical method development and multi-technique materials characterization. Expertise in small molecule, polymer, and nanoparticle analysis using HPLC/UPLC, LC-MS, GC-MS, spectroscopy (FT-IR, UV-Vis-NIR), thermal analysis (TGA/DSC), and rheology. Current postdoctoral research focuses on biopolymer nanoparticle process development — directly aligned with drug delivery system characterization. Strong foundation in DOE, statistical analysis, and analytical method development from first principles.",
+  "competencies": [
+    "Analytical Method Development (HPLC/UPLC, LC-MS, GC-MS)",
+    "Spectroscopy (FT-IR, UV-Vis-NIR, Raman)",
+    "Thermal Analysis (TGA, DSC)",
+    "Nanoparticle & Polymer Characterization",
+    "Rheology & Viscometry",
+    "DOE & Statistical Analysis",
+    "Structure-Property Relationships",
+    "Cross-functional Collaboration",
+    "Regulatory Documentation",
+    "Chromatographic Method Development"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher — Biopolymer Nanoparticle Process Development",
+      "bullets": [
+        "Lead comprehensive analytical characterization of biopolymer nanoparticles using HPLC, GPC/SEC, particle sizing (DLS), spectroscopy (FT-IR, UV-Vis), thermal analysis (TGA/DSC), and rheology.",
+        "Develop and optimize nanoparticle formulation processes using DOE, correlating process parameters with critical quality attributes (size, PDI, drug loading, release kinetics).",
+        "Apply HRMS and LC-MS techniques for molecular weight confirmation and impurity profiling of polymeric drug delivery systems.",
+        "Collaborate cross-functionally with synthesis and formulation teams to establish structure-property relationships guiding material selection and process development."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher — Analytical Chemistry & Materials Characterization",
+      "bullets": [
+        "Developed and validated analytical methods for small molecule characterization using HPLC, GC-MS, NMR, and spectroscopic techniques.",
+        "Conducted 2D-LC/MS and GC/MS analysis for complex mixture separation and impurity identification in organic materials.",
+        "Performed comprehensive thermal and spectroscopic characterization to establish degradation pathways and stability profiles.",
+        "Authored technical reports and presented findings at cross-functional team meetings and scientific conferences."
+      ]
+    }
+  ],
+  "skills": {
+    "Chromatography": "HPLC/UPLC, 2D-LC, GPC/SEC, GC-MS, LC-MS, HRMS",
+    "Spectroscopy": "FT-IR, UV-Vis-NIR, Raman, NMR, spectroelectrochemistry",
+    "Thermal & Physical": "TGA, DSC, rheology, DLS, particle sizing",
+    "Data Analysis": "DOE, SPC, multivariate analysis, Origin, JMP, MestReNova, ChemDraw",
+    "Techniques": "Method development, validation, transfer, stability studies"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

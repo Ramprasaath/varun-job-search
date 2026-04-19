@@ -1,0 +1,62 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical method development, quality control, and materials characterization. Expertise in HPLC/UPLC, spectroscopy (FT-IR, UV-Vis), thermal analysis (TGA/DSC), and chromatographic methods for small molecule and peptide analysis. Strong background in DOE, method validation, and GMP documentation. Experienced in developing robust analytical methods and supporting cross-functional development teams.",
+  "competencies": [
+    "Analytical Method Development & Validation",
+    "HPLC/UPLC & GC Analysis",
+    "Quality Control & cGMP",
+    "Spectroscopy (FT-IR, UV-Vis)",
+    "Thermal Analysis (TGA/DSC)",
+    "Small Molecule & Peptide Analysis",
+    "DOE & Statistical Analysis",
+    "Method Transfer & Qualification",
+    "Stability Programs",
+    "Cross-functional Collaboration"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher — Analytical Development & Process Optimization",
+      "bullets": [
+        "Develop and validate analytical methods for small molecule and polymer characterization using HPLC, GPC/SEC, FT-IR, and thermal analysis.",
+        "Apply DOE approaches to optimize analytical methods and establish control strategies for process development.",
+        "Support quality control activities including stability studies, method qualification, and documentation."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher — Analytical Chemistry",
+      "bullets": [
+        "Developed and validated analytical methods for small molecule characterization using HPLC, NMR, GC-MS, and spectroscopic techniques.",
+        "Conducted comprehensive analytical characterization including purity assessment, impurity profiling, and stability studies.",
+        "Authored technical documentation and maintained detailed electronic lab notebooks in compliance with research best practices."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical": "HPLC/UPLC, GC, GPC/SEC, method development, validation, transfer",
+    "Spectroscopy": "FT-IR, UV-Vis-NIR, Raman, NMR",
+    "Thermal": "TGA, DSC, thermal stability assessment",
+    "Quality": "cGMP awareness, stability programs, method qualification, documentation",
+    "Data": "DOE, SPC, Origin, JMP, MestReNova, ChemDraw"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

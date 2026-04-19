@@ -1,0 +1,66 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of hands-on experience in materials characterization, analytical method development, and process optimization. Deep expertise in thermal analysis (TGA, DSC), spectroscopy (FT-IR, UV-Vis-NIR), particle sizing, and rheology for polymer and nanoparticle systems. Postdoctoral work focuses on biopolymer nanoparticle process development with extensive multi-technique characterization including particle size distribution, morphology, and structure-property relationships. Proven ability to develop robust analytical methods from first principles and apply statistical approaches (DOE, SPC) to complex characterization challenges.",
+  "competencies": [
+    "Particle Sizing & Distribution Analysis",
+    "Thermal Analysis (TGA/DSC)",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Rheology & Viscometry",
+    "Microscopy (Optical, SEM)",
+    "Analytical Method Development",
+    "Materials Characterization",
+    "Polymer & Nanoparticle Analysis",
+    "DOE & Statistical Analysis",
+    "Chromatography (GPC/SEC, HPLC)"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher — Biopolymer Nanoparticle Process Development",
+      "bullets": [
+        "Lead analytical characterization of biopolymer nanoparticles including particle size distribution (DLS), morphology (TEM/SEM), thermal properties (TGA/DSC), and spectroscopic analysis (FT-IR, UV-Vis).",
+        "Develop and optimize process parameters for nanoparticle formulation using DOE approaches, achieving reproducible particle size and size distribution targets.",
+        "Establish rheological characterization methods to assess viscosity and flow behavior of polymer solutions during processing.",
+        "Apply multivariate analysis to correlate process conditions with material properties, driving data-informed process optimization."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher — Materials Chemistry & Characterization",
+      "bullets": [
+        "Designed and synthesized novel electrochromic materials with tunable optical and electrochemical properties, requiring extensive multi-technique characterization.",
+        "Performed comprehensive thermal analysis (TGA, DSC) to evaluate thermal stability, phase transitions, and decomposition profiles of organic materials.",
+        "Conducted spectroscopic analysis (FT-IR, UV-Vis-NIR, Raman) for structural elucidation, quantification, and real-time process monitoring.",
+        "Developed quantitative structure-property relationships using statistical methods and calibration models for predictive materials characterization.",
+        "Managed analytical instrumentation including calibration, maintenance, and troubleshooting of spectroscopic and thermal analysis equipment."
+      ]
+    }
+  ],
+  "skills": {
+    "Particle & Thermal Analysis": "DLS, particle sizing, TGA, DSC, TMA, rheology, viscometry",
+    "Spectroscopy": "FT-IR, UV-Vis-NIR, Raman, spectroelectrochemistry, ellipsometry",
+    "Chromatography": "HPLC/UPLC, GPC/SEC, GC-MS",
+    "Microscopy": "Optical microscopy, SEM, TEM sample preparation",
+    "Data Analysis": "DOE, SPC, multivariate analysis, Origin, JMP, MestReNova",
+    "Analytical Methods": "Method development, validation, calibration, GMP documentation"
+  },
+  "certifications": ["Statistical Process Control (SPC) – Coursera, 2026"]
+}

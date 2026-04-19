@@ -1482,5 +1482,306 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
+  },
+  {
+    "id": 45,
+    "url": "https://jobs.biospace.com/job/3033062/senior-scientist-i-ii-analytical-chemistry-particle-and-material-analysis/",
+    "company": "AbbVie",
+    "title": "Sr. Scientist I/II, Analytical Chemistry – Particle & Material Analysis",
+    "location": "North Chicago, IL (Onsite)",
+    "date_found": "2026-04-19",
+    "score": 4.3,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-abbvie-particle-sr-scientist-analytical-chemistry-partic-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "STRONG MATCH. AbbVie PAC group within Synthetic Particle Characterization. Focus on particle sizing, microscopy, thermal analysis (TGA/DSC), spectroscopy (FT-IR, UV-Vis), and rheology. PhD + 0-5 years accepted. Varun's postdoc in biopolymer nanoparticle process development provides direct particle characterization and thermal analysis expertise. Different from existing AbbVie job #5 (Analytical R&D, general) — this is specifically materials/particle focused.",
+    "evaluation": {
+      "recommendation": "APPLY - One of the strongest matches; particle & material analysis is a direct pipeline alignment",
+      "strengths": [
+        "PhD + 0-5 years accepted — perfect experience level",
+        "Particle sizing and microscopy — directly used in postdoc nanoparticle work",
+        "Thermal analysis (TGA/DSC) — core Varun expertise",
+        "Spectroscopy (FT-IR, UV-Vis) — primary analytical techniques",
+        "Rheology — used in polymer solution characterization during postdoc",
+        "Materials characterization from multiple techniques — exact match",
+        "AbbVie — major pharma with strong pipeline and compensation"
+      ],
+      "gaps": [
+        "Industry GMP experience — academic background only",
+        "Specific pharmaceutical particle analysis methods (laser diffraction, SEM-EDS)",
+        "Regulatory submission experience"
+      ],
+      "cv_match": 4.5,
+      "north_star": 4.3,
+      "comp": 4.2,
+      "cultural": 4.0,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_abbvie_particle"
+  },
+  {
+    "id": 46,
+    "url": "https://jobs.biospace.com/job/3040040/project-chemist-analytical-method-and-research-development-",
+    "company": "Eagle Analytical",
+    "title": "Project Chemist (Analytical Method & Research Development)",
+    "location": "Houston, TX",
+    "date_found": "2026-04-19",
+    "score": 3.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "HPLC-focused analytical development and testing role at compounding pharmacy testing lab. ISO 17025, cGMP, cGLP compliance. PhD/Masters + 3 years. Strong HPLC method development, validation, and transfer scope. May be slightly overqualified with PhD but good analytical rigor and regulatory exposure.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Good analytical fit, especially HPLC method development and GMP exposure",
+      "strengths": [
+        "HPLC method development, optimization, validation — core analytical skill",
+        "cGMP/cGLP/ISO 17025 regulatory environment — valuable experience",
+        "Project coordination across teams",
+        "PhD accepted, strong analytical background"
+      ],
+      "gaps": [
+        "Compounding pharmacy testing niche — not traditional pharma R&D",
+        "May be overqualified with PhD",
+        "Smaller company with limited career growth"
+      ],
+      "cv_match": 3.5,
+      "north_star": 3.3,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 47,
+    "url": "https://jobs.biospace.com/job/3033150/senior-scientist-analytical-chemistry/",
+    "company": "Eli Lilly",
+    "title": "Senior Scientist, Analytical Chemistry (Mass Spectrometry)",
+    "location": "Indianapolis, IN",
+    "date_found": "2026-04-19",
+    "score": 3.2,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Lilly Synthetic Molecule Design and Development group. Mass spectrometry focus for trace analysis, impurity profiling, nitrosamine/gentoxin impurity quantitation. BS+2yrs accepted (PhD is preferred). Strong pharma brand. NOTE: No visa sponsorship — Lilly will not support work authorization for this role.",
+    "evaluation": {
+      "recommendation": "CONSIDER WITH CAUTION - Strong analytical chemistry role but no visa sponsorship and MS-heavy",
+      "strengths": [
+        "Eli Lilly — top-tier pharma with excellent pipeline",
+        "Analytical chemistry focus aligned with Varun's training",
+        "Impurity profiling and method development relevant",
+        "BS+2 years accepted (PhD preferred)"
+      ],
+      "gaps": [
+        "No visa sponsorship — Lilly explicitly states no work authorization support",
+        "Heavy mass spectrometry focus — not Varun's primary expertise",
+        "Indianapolis location — may not align with preferred biotech hubs"
+      ],
+      "cv_match": 3.2,
+      "north_star": 3.3,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 48,
+    "url": "https://jobs.biospace.com/job/3042524/senior-scientist-analytical-and-biological-mass-spectrometry-abms-",
+    "company": "Regeneron",
+    "title": "Senior Scientist – AAV (CDMS), Analytical & Biological Mass Spectrometry",
+    "location": "Tarrytown, NY (Onsite)",
+    "date_found": "2026-04-19",
+    "score": 3.0,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Regeneron ABMS group — AAV characterization via charge detection mass spectrometry (CDMS). Biotherapeutic focus including AAV, monoclonal antibodies, Fc-fusion proteins. PhD 0-3+ years accepted. CDMS experience strongly preferred. Different from existing Regeneron job #6 (Scientist, LC-MS) which was more general.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Specialized AAV/biotherapeutic MS role; Varun's background is small molecule/materials",
+      "strengths": [
+        "Regeneron — top biotech with excellent compensation",
+        "PhD 0-3+ years — good experience level match",
+        "Analytical method development transferable"
+      ],
+      "gaps": [
+        "AAV/biotherapeutic modality — not Varun's expertise",
+        "CDMS (charge detection MS) — specialized technique",
+        "Protein characterization focus vs materials characterization",
+        "Regulatory submission experience (IND, BLA)"
+      ],
+      "cv_match": 2.8,
+      "north_star": 3.0,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 49,
+    "url": "https://jobs.biospace.com/job/3043060/analytical-principal-scientist-analytical-team-lead-",
+    "company": "Sanofi",
+    "title": "Analytical Principal Scientist (Analytical Team Lead)",
+    "location": "Cambridge, MA (Onsite)",
+    "date_found": "2026-04-19",
+    "score": 3.2,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Sanofi Global CMC Development — small molecule synthetic platform. Analytical method development (HPLC, UHPLC, GC), method validation, CMC project coordination, specifications, stability programs. PhD + 5 years minimum. Team lead responsibilities. Excellent small molecule focus and top pharma, but 5+ year requirement likely disqualifies Varun (~2 yrs postdoc).",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Excellent small molecule analytical role but 5+ year minimum is likely a blocker",
+      "strengths": [
+        "Sanofi — major pharma with global CMC presence",
+        "Small molecule analytical development — direct match",
+        "HPLC/UHPLC/GC method development — core techniques",
+        "Cambridge MA — strong biotech hub"
+      ],
+      "gaps": [
+        "PhD + 5 years minimum — Varun has ~2 years postdoc",
+        "Team lead / project management responsibilities",
+        "cGMP and regulatory submission experience required",
+        "Principal-level expectations for independent operation"
+      ],
+      "cv_match": 3.2,
+      "north_star": 3.3,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 50,
+    "url": "https://jobs.biospace.com/job/3042346/scientist-analytical-development/",
+    "company": "GenScript (ProBio)",
+    "title": "Scientist, Analytical Development",
+    "location": "Pennington, NJ",
+    "date_found": "2026-04-19",
+    "score": 3.3,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "GenScript/ProBio CDMO — gene & cell therapy analytical development. UPLC/HPLC, CE-SDS, AUC, MALS. GMP method development, validation, transfer. PhD with relevant experience accepted. Pay $90-120K (below market for PhD). Good CDMO experience but gene/cell therapy focus and low compensation.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Good analytical development and GMP exposure but niche modality and below-market pay",
+      "strengths": [
+        "PhD accepted — entry level friendly",
+        "Analytical method development, validation, transfer — core skills",
+        "GMP environment experience — valuable",
+        "CDMO exposure — broad client/project experience"
+      ],
+      "gaps": [
+        "Gene & cell therapy modality — not small molecule/materials",
+        "CE-SDS, AUC — protein-specific techniques",
+        "Compensation $90-120K — below market for PhD scientists",
+        "Pennington NJ — limited biotech ecosystem"
+      ],
+      "cv_match": 3.0,
+      "north_star": 3.2,
+      "comp": 3.0,
+      "cultural": 3.5,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 51,
+    "url": "https://jobs.biospace.com/job/3041197/principal-scientist-analytical-development/",
+    "company": "Dyne Therapeutics",
+    "title": "Principal Scientist, Analytical Development",
+    "location": "Waltham, MA (Onsite 4-5 days)",
+    "date_found": "2026-04-19",
+    "score": 2.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Dyne Therapeutics — ADC/bioconjugate analytical development. Antibody drug conjugate method development, method transfer, CMC oversight, CDMO management. PhD + 8 years minimum. SEC, AEX, RP-HPLC, CE-SDS, icIEF, ELISA, GC, MS. $159-195K. Way too senior for Varun's experience level and ADC/bioconjugate is wrong modality.",
+    "evaluation": {
+      "recommendation": "SKIP - 8+ years required, ADC/bioconjugate modality is wrong fit",
+      "strengths": [
+        "Strong biotech company with clinical programs",
+        "Good compensation $159-195K",
+        "Waltham MA biotech hub"
+      ],
+      "gaps": [
+        "PhD + 8 years minimum — Varun has ~2 years postdoc",
+        "ADC/bioconjugate focus — not small molecule/materials",
+        "Extensive CDMO management and regulatory experience required",
+        "Principal-level leadership expectations"
+      ],
+      "cv_match": 2.0,
+      "north_star": 2.5,
+      "comp": 3.5,
+      "cultural": 3.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 52,
+    "url": "https://jobs.biospace.com/job/3039729/sr-scientist-analytical-cmc/",
+    "company": "Eli Lilly (Verve Therapeutics)",
+    "title": "Sr. Scientist, Analytical CMC (RNA/LNP)",
+    "location": "Boston, MA",
+    "date_found": "2026-04-19",
+    "score": 2.8,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Verve Therapeutics (Lilly subsidiary) — RNA/LNP analytical development. HPLC/UHPLC, CE, LCMS for raw materials, RNA drug substance, and LNP products. MS+3 or BS+5. NOTE: No visa sponsorship. RNA/LNP modality mismatch with Varun's small molecule/materials focus.",
+    "evaluation": {
+      "recommendation": "SKIP - No visa sponsorship and RNA/LNP modality is a poor fit",
+      "strengths": [
+        "Lilly/Verve — strong genetic medicines company",
+        "Analytical development scope",
+        "Boston biotech hub"
+      ],
+      "gaps": [
+        "No visa sponsorship — Lilly will not support work authorization",
+        "RNA/LNP analytical focus — not Varun's expertise",
+        "MS+3 or BS+5 — non-PhD entry level",
+        "gRNA, mRNA, LNP technical background preferred"
+      ],
+      "cv_match": 2.5,
+      "north_star": 2.8,
+      "comp": 3.0,
+      "cultural": 3.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
   }
 ]
