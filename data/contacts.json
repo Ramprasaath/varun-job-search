@@ -387,5 +387,47 @@
     "status": "not_contacted",
     "date_contacted": null,
     "response": null
+  },
+  {
+    "id": 28,
+    "job_id": 53,
+    "company": "Pfizer",
+    "name": "Search for: Analytical Development Director / Group Leader",
+    "title": "Director, Analytical Development",
+    "linkedin_url": null,
+    "contact_type": "hiring_manager",
+    "message_draft": null,
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search LinkedIn for Pfizer Analytical Development leadership at likely sites (Groton CT, Andover MA, Pearl River NY)"
+  },
+  {
+    "id": 29,
+    "job_id": 53,
+    "company": "Pfizer",
+    "name": "Search for: Senior Principal Scientist, Analytical Chemistry",
+    "title": "Senior Principal Scientist",
+    "linkedin_url": null,
+    "contact_type": "team_lead",
+    "message_draft": null,
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search LinkedIn for Pfizer Senior Principal Scientists in analytical chemistry teams"
+  },
+  {
+    "id": 30,
+    "job_id": 53,
+    "company": "Pfizer",
+    "name": "Search for: Pfizer Scientific Recruiter, Analytical Roles",
+    "title": "Scientific Recruiter",
+    "linkedin_url": null,
+    "contact_type": "recruiter",
+    "message_draft": null,
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search LinkedIn for Pfizer talent acquisition specializing in scientific/analytical roles"
   }
 ]

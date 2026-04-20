@@ -1487,7 +1487,7 @@
     "id": 45,
     "url": "https://jobs.biospace.com/job/3033062/senior-scientist-i-ii-analytical-chemistry-particle-and-material-analysis/",
     "company": "AbbVie",
-    "title": "Sr. Scientist I/II, Analytical Chemistry – Particle & Material Analysis",
+    "title": "Sr. Scientist I/II, Analytical Chemistry \u2013 Particle & Material Analysis",
     "location": "North Chicago, IL (Onsite)",
     "date_found": "2026-04-19",
     "score": 4.3,
@@ -1497,20 +1497,20 @@
     "pdf_path": "data/output/cv-abbvie-particle-sr-scientist-analytical-chemistry-partic-2026.pdf",
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "STRONG MATCH. AbbVie PAC group within Synthetic Particle Characterization. Focus on particle sizing, microscopy, thermal analysis (TGA/DSC), spectroscopy (FT-IR, UV-Vis), and rheology. PhD + 0-5 years accepted. Varun's postdoc in biopolymer nanoparticle process development provides direct particle characterization and thermal analysis expertise. Different from existing AbbVie job #5 (Analytical R&D, general) — this is specifically materials/particle focused.",
+    "notes": "STRONG MATCH. AbbVie PAC group within Synthetic Particle Characterization. Focus on particle sizing, microscopy, thermal analysis (TGA/DSC), spectroscopy (FT-IR, UV-Vis), and rheology. PhD + 0-5 years accepted. Varun's postdoc in biopolymer nanoparticle process development provides direct particle characterization and thermal analysis expertise. Different from existing AbbVie job #5 (Analytical R&D, general) \u2014 this is specifically materials/particle focused.",
     "evaluation": {
       "recommendation": "APPLY - One of the strongest matches; particle & material analysis is a direct pipeline alignment",
       "strengths": [
-        "PhD + 0-5 years accepted — perfect experience level",
-        "Particle sizing and microscopy — directly used in postdoc nanoparticle work",
-        "Thermal analysis (TGA/DSC) — core Varun expertise",
-        "Spectroscopy (FT-IR, UV-Vis) — primary analytical techniques",
-        "Rheology — used in polymer solution characterization during postdoc",
-        "Materials characterization from multiple techniques — exact match",
-        "AbbVie — major pharma with strong pipeline and compensation"
+        "PhD + 0-5 years accepted \u2014 perfect experience level",
+        "Particle sizing and microscopy \u2014 directly used in postdoc nanoparticle work",
+        "Thermal analysis (TGA/DSC) \u2014 core Varun expertise",
+        "Spectroscopy (FT-IR, UV-Vis) \u2014 primary analytical techniques",
+        "Rheology \u2014 used in polymer solution characterization during postdoc",
+        "Materials characterization from multiple techniques \u2014 exact match",
+        "AbbVie \u2014 major pharma with strong pipeline and compensation"
       ],
       "gaps": [
-        "Industry GMP experience — academic background only",
+        "Industry GMP experience \u2014 academic background only",
         "Specific pharmaceutical particle analysis methods (laser diffraction, SEM-EDS)",
         "Regulatory submission experience"
       ],
@@ -1541,13 +1541,13 @@
     "evaluation": {
       "recommendation": "CONSIDER - Good analytical fit, especially HPLC method development and GMP exposure",
       "strengths": [
-        "HPLC method development, optimization, validation — core analytical skill",
-        "cGMP/cGLP/ISO 17025 regulatory environment — valuable experience",
+        "HPLC method development, optimization, validation \u2014 core analytical skill",
+        "cGMP/cGLP/ISO 17025 regulatory environment \u2014 valuable experience",
         "Project coordination across teams",
         "PhD accepted, strong analytical background"
       ],
       "gaps": [
-        "Compounding pharmacy testing niche — not traditional pharma R&D",
+        "Compounding pharmacy testing niche \u2014 not traditional pharma R&D",
         "May be overqualified with PhD",
         "Smaller company with limited career growth"
       ],
@@ -1574,19 +1574,19 @@
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Lilly Synthetic Molecule Design and Development group. Mass spectrometry focus for trace analysis, impurity profiling, nitrosamine/gentoxin impurity quantitation. BS+2yrs accepted (PhD is preferred). Strong pharma brand. NOTE: No visa sponsorship — Lilly will not support work authorization for this role.",
+    "notes": "Lilly Synthetic Molecule Design and Development group. Mass spectrometry focus for trace analysis, impurity profiling, nitrosamine/gentoxin impurity quantitation. BS+2yrs accepted (PhD is preferred). Strong pharma brand. NOTE: No visa sponsorship \u2014 Lilly will not support work authorization for this role.",
     "evaluation": {
       "recommendation": "CONSIDER WITH CAUTION - Strong analytical chemistry role but no visa sponsorship and MS-heavy",
       "strengths": [
-        "Eli Lilly — top-tier pharma with excellent pipeline",
+        "Eli Lilly \u2014 top-tier pharma with excellent pipeline",
         "Analytical chemistry focus aligned with Varun's training",
         "Impurity profiling and method development relevant",
         "BS+2 years accepted (PhD preferred)"
       ],
       "gaps": [
-        "No visa sponsorship — Lilly explicitly states no work authorization support",
-        "Heavy mass spectrometry focus — not Varun's primary expertise",
-        "Indianapolis location — may not align with preferred biotech hubs"
+        "No visa sponsorship \u2014 Lilly explicitly states no work authorization support",
+        "Heavy mass spectrometry focus \u2014 not Varun's primary expertise",
+        "Indianapolis location \u2014 may not align with preferred biotech hubs"
       ],
       "cv_match": 3.2,
       "north_star": 3.3,
@@ -1601,7 +1601,7 @@
     "id": 48,
     "url": "https://jobs.biospace.com/job/3042524/senior-scientist-analytical-and-biological-mass-spectrometry-abms-",
     "company": "Regeneron",
-    "title": "Senior Scientist – AAV (CDMS), Analytical & Biological Mass Spectrometry",
+    "title": "Senior Scientist \u2013 AAV (CDMS), Analytical & Biological Mass Spectrometry",
     "location": "Tarrytown, NY (Onsite)",
     "date_found": "2026-04-19",
     "score": 3.0,
@@ -1611,17 +1611,17 @@
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Regeneron ABMS group — AAV characterization via charge detection mass spectrometry (CDMS). Biotherapeutic focus including AAV, monoclonal antibodies, Fc-fusion proteins. PhD 0-3+ years accepted. CDMS experience strongly preferred. Different from existing Regeneron job #6 (Scientist, LC-MS) which was more general.",
+    "notes": "Regeneron ABMS group \u2014 AAV characterization via charge detection mass spectrometry (CDMS). Biotherapeutic focus including AAV, monoclonal antibodies, Fc-fusion proteins. PhD 0-3+ years accepted. CDMS experience strongly preferred. Different from existing Regeneron job #6 (Scientist, LC-MS) which was more general.",
     "evaluation": {
       "recommendation": "LOW PRIORITY - Specialized AAV/biotherapeutic MS role; Varun's background is small molecule/materials",
       "strengths": [
-        "Regeneron — top biotech with excellent compensation",
-        "PhD 0-3+ years — good experience level match",
+        "Regeneron \u2014 top biotech with excellent compensation",
+        "PhD 0-3+ years \u2014 good experience level match",
         "Analytical method development transferable"
       ],
       "gaps": [
-        "AAV/biotherapeutic modality — not Varun's expertise",
-        "CDMS (charge detection MS) — specialized technique",
+        "AAV/biotherapeutic modality \u2014 not Varun's expertise",
+        "CDMS (charge detection MS) \u2014 specialized technique",
         "Protein characterization focus vs materials characterization",
         "Regulatory submission experience (IND, BLA)"
       ],
@@ -1648,17 +1648,17 @@
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Sanofi Global CMC Development — small molecule synthetic platform. Analytical method development (HPLC, UHPLC, GC), method validation, CMC project coordination, specifications, stability programs. PhD + 5 years minimum. Team lead responsibilities. Excellent small molecule focus and top pharma, but 5+ year requirement likely disqualifies Varun (~2 yrs postdoc).",
+    "notes": "Sanofi Global CMC Development \u2014 small molecule synthetic platform. Analytical method development (HPLC, UHPLC, GC), method validation, CMC project coordination, specifications, stability programs. PhD + 5 years minimum. Team lead responsibilities. Excellent small molecule focus and top pharma, but 5+ year requirement likely disqualifies Varun (~2 yrs postdoc).",
     "evaluation": {
       "recommendation": "LOW PRIORITY - Excellent small molecule analytical role but 5+ year minimum is likely a blocker",
       "strengths": [
-        "Sanofi — major pharma with global CMC presence",
-        "Small molecule analytical development — direct match",
-        "HPLC/UHPLC/GC method development — core techniques",
-        "Cambridge MA — strong biotech hub"
+        "Sanofi \u2014 major pharma with global CMC presence",
+        "Small molecule analytical development \u2014 direct match",
+        "HPLC/UHPLC/GC method development \u2014 core techniques",
+        "Cambridge MA \u2014 strong biotech hub"
       ],
       "gaps": [
-        "PhD + 5 years minimum — Varun has ~2 years postdoc",
+        "PhD + 5 years minimum \u2014 Varun has ~2 years postdoc",
         "Team lead / project management responsibilities",
         "cGMP and regulatory submission experience required",
         "Principal-level expectations for independent operation"
@@ -1686,20 +1686,20 @@
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "GenScript/ProBio CDMO — gene & cell therapy analytical development. UPLC/HPLC, CE-SDS, AUC, MALS. GMP method development, validation, transfer. PhD with relevant experience accepted. Pay $90-120K (below market for PhD). Good CDMO experience but gene/cell therapy focus and low compensation.",
+    "notes": "GenScript/ProBio CDMO \u2014 gene & cell therapy analytical development. UPLC/HPLC, CE-SDS, AUC, MALS. GMP method development, validation, transfer. PhD with relevant experience accepted. Pay $90-120K (below market for PhD). Good CDMO experience but gene/cell therapy focus and low compensation.",
     "evaluation": {
       "recommendation": "CONSIDER - Good analytical development and GMP exposure but niche modality and below-market pay",
       "strengths": [
-        "PhD accepted — entry level friendly",
-        "Analytical method development, validation, transfer — core skills",
-        "GMP environment experience — valuable",
-        "CDMO exposure — broad client/project experience"
+        "PhD accepted \u2014 entry level friendly",
+        "Analytical method development, validation, transfer \u2014 core skills",
+        "GMP environment experience \u2014 valuable",
+        "CDMO exposure \u2014 broad client/project experience"
       ],
       "gaps": [
-        "Gene & cell therapy modality — not small molecule/materials",
-        "CE-SDS, AUC — protein-specific techniques",
-        "Compensation $90-120K — below market for PhD scientists",
-        "Pennington NJ — limited biotech ecosystem"
+        "Gene & cell therapy modality \u2014 not small molecule/materials",
+        "CE-SDS, AUC \u2014 protein-specific techniques",
+        "Compensation $90-120K \u2014 below market for PhD scientists",
+        "Pennington NJ \u2014 limited biotech ecosystem"
       ],
       "cv_match": 3.0,
       "north_star": 3.2,
@@ -1724,7 +1724,7 @@
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Dyne Therapeutics — ADC/bioconjugate analytical development. Antibody drug conjugate method development, method transfer, CMC oversight, CDMO management. PhD + 8 years minimum. SEC, AEX, RP-HPLC, CE-SDS, icIEF, ELISA, GC, MS. $159-195K. Way too senior for Varun's experience level and ADC/bioconjugate is wrong modality.",
+    "notes": "Dyne Therapeutics \u2014 ADC/bioconjugate analytical development. Antibody drug conjugate method development, method transfer, CMC oversight, CDMO management. PhD + 8 years minimum. SEC, AEX, RP-HPLC, CE-SDS, icIEF, ELISA, GC, MS. $159-195K. Way too senior for Varun's experience level and ADC/bioconjugate is wrong modality.",
     "evaluation": {
       "recommendation": "SKIP - 8+ years required, ADC/bioconjugate modality is wrong fit",
       "strengths": [
@@ -1733,8 +1733,8 @@
         "Waltham MA biotech hub"
       ],
       "gaps": [
-        "PhD + 8 years minimum — Varun has ~2 years postdoc",
-        "ADC/bioconjugate focus — not small molecule/materials",
+        "PhD + 8 years minimum \u2014 Varun has ~2 years postdoc",
+        "ADC/bioconjugate focus \u2014 not small molecule/materials",
         "Extensive CDMO management and regulatory experience required",
         "Principal-level leadership expectations"
       ],
@@ -1761,18 +1761,18 @@
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Verve Therapeutics (Lilly subsidiary) — RNA/LNP analytical development. HPLC/UHPLC, CE, LCMS for raw materials, RNA drug substance, and LNP products. MS+3 or BS+5. NOTE: No visa sponsorship. RNA/LNP modality mismatch with Varun's small molecule/materials focus.",
+    "notes": "Verve Therapeutics (Lilly subsidiary) \u2014 RNA/LNP analytical development. HPLC/UHPLC, CE, LCMS for raw materials, RNA drug substance, and LNP products. MS+3 or BS+5. NOTE: No visa sponsorship. RNA/LNP modality mismatch with Varun's small molecule/materials focus.",
     "evaluation": {
       "recommendation": "SKIP - No visa sponsorship and RNA/LNP modality is a poor fit",
       "strengths": [
-        "Lilly/Verve — strong genetic medicines company",
+        "Lilly/Verve \u2014 strong genetic medicines company",
         "Analytical development scope",
         "Boston biotech hub"
       ],
       "gaps": [
-        "No visa sponsorship — Lilly will not support work authorization",
-        "RNA/LNP analytical focus — not Varun's expertise",
-        "MS+3 or BS+5 — non-PhD entry level",
+        "No visa sponsorship \u2014 Lilly will not support work authorization",
+        "RNA/LNP analytical focus \u2014 not Varun's expertise",
+        "MS+3 or BS+5 \u2014 non-PhD entry level",
         "gRNA, mRNA, LNP technical background preferred"
       ],
       "cv_match": 2.5,
@@ -1780,6 +1780,157 @@
       "comp": 3.0,
       "cultural": 3.0,
       "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 53,
+    "url": "https://jobrxiv.org/job/senior-associate-scientist-20/",
+    "company": "Pfizer",
+    "title": "Senior Associate Scientist, Analytical Development",
+    "location": "United States (On Premise, site TBD)",
+    "date_found": "2026-04-20",
+    "score": 4.0,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-pfizer-senior-associate-scientist-analytical-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong match. HPLC/UPLC, GC, IC, UV, FTIR instrumentation directly aligned with Varun's expertise. Analytical method development/validation/transfer experience required. cGMP/GDP regulatory standards. PhD + analytical chemistry background fits well. On-premise role; exact Pfizer site location TBD.",
+    "evaluation": {
+      "recommendation": "APPLY - Excellent instrumentation match",
+      "strengths": [
+        "PhD-level analytical chemistry expertise directly relevant",
+        "FTIR proficiency is a standout skill match",
+        "HPLC, GC experience aligns with job requirements",
+        "Method development and validation background applicable",
+        "Strong characterization and problem-solving skills"
+      ],
+      "gaps": [
+        "cGMP/GDP industry experience may need strengthening",
+        "IC (ion chromatography) experience unclear",
+        "Exact work location not specified in posting"
+      ],
+      "cv_match": 4.2,
+      "north_star": 3.8,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_pfe_analytical"
+  },
+  {
+    "id": 54,
+    "url": "https://jobrxiv.org/job/senior-scientist-i-14/",
+    "company": "AbbVie",
+    "title": "Senior Scientist I, Parenteral Drug Product Process Development",
+    "location": "United States (likely North Chicago, IL)",
+    "date_found": "2026-04-20",
+    "score": 3.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Parenteral drug product characterization + process scale up. PhD + 0-3 years acceptable. Requires small molecule analytics experience (Varun has). Gaps: biologics/monoclonal antibody process development, aseptic manufacturing knowledge. CMC team collaboration role with regulatory filing responsibilities.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Good fit with biologics experience gap",
+      "strengths": [
+        "PhD chemistry fits educational requirements",
+        "Small molecule analytics experience required and present",
+        "Strong analytical characterization and experimental design skills",
+        "Technical report writing and documentation experience"
+      ],
+      "gaps": [
+        "No parenteral/biologics manufacturing process development experience",
+        "Aseptic manufacturing unit operations knowledge limited",
+        "Monoclonal antibody/antibody conjugate specific experience lacking",
+        "FDA/global CMC regulatory experience may be limited"
+      ],
+      "cv_match": 3.5,
+      "north_star": 3.5,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 55,
+    "url": "https://jobrxiv.org/job/senior-scientist-ii-8/",
+    "company": "AbbVie",
+    "title": "Senior Scientist II, Parenteral Drug Product Process Lead",
+    "location": "United States (likely North Chicago, IL)",
+    "date_found": "2026-04-20",
+    "score": 2.8,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Requires PhD + 4 years industry experience. Parenteral DP process lead role focused on biologics manufacturing. Too senior for Varun's current industry experience level. Requires aseptic manufacturing expertise, PFS/cartridge experience, and team management.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Too senior, significant experience gaps",
+      "strengths": [
+        "PhD chemistry background relevant",
+        "Analytical characterization skills transferable"
+      ],
+      "gaps": [
+        "PhD + 4 years industry experience required",
+        "Biologics/parenteral manufacturing process development",
+        "Aseptic manufacturing expertise (vials, PFS, cartridges)",
+        "Team management/leadership of junior scientists",
+        "FDA/global CMC regulatory requirements deep knowledge"
+      ],
+      "cv_match": 2.8,
+      "north_star": 2.5,
+      "comp": 3.0,
+      "cultural": 3.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 56,
+    "url": "https://jobrxiv.org/job/senior-scientist-principal-investigator-lcms/",
+    "company": "Thermo Fisher Scientific",
+    "title": "Senior Scientist, Principal Investigator - LCMS",
+    "location": "United States (PPD Laboratory Services)",
+    "date_found": "2026-04-20",
+    "score": 2.8,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PPD Laboratory Services (Thermo Fisher CRO). LCMS method validation/transfer for pharma/biopharma compounds. PI experience is a MUST HAVE requirement. BS+5 years minimum. GMP/GLP environment. Varun's GC-MS experience partially transferable but PI role and LCMS-specific gaps exist.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - PI experience gap is a blocker",
+      "strengths": [
+        "Analytical chemistry PhD relevant",
+        "Method validation and analytical testing experience",
+        "Troubleshooting and problem-solving skills",
+        "Technical writing and documentation skills"
+      ],
+      "gaps": [
+        "Principal Investigator experience is a MUST HAVE - likely gap",
+        "LCMS specifically (vs GC-MS) may need demonstration",
+        "GMP/GLP regulated environment experience",
+        "Client-facing analytical services experience"
+      ],
+      "cv_match": 2.8,
+      "north_star": 2.5,
+      "comp": 3.0,
+      "cultural": 3.0,
+      "red_flags": -0.2,
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null

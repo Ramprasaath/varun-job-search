@@ -1,0 +1,71 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of hands-on experience in analytical chemistry, method development, and materials characterization. Deep expertise in FT-IR, HPLC, GC-MS, UV-Vis, and thermal analysis (TGA, DSC) with proven ability to develop and validate analytical methods. Postdoctoral work focuses on biopolymer process development with extensive multi-technique analytical characterization, DOE-driven optimization, and data integrity standards. Strong background in cGMP-compliant laboratory practices and regulatory documentation.",
+  "competencies": [
+    "Analytical Method Development & Validation",
+    "HPLC/UPLC & GC Operation",
+    "FT-IR & UV-Vis Spectroscopy",
+    "Thermal Analysis (TGA/DSC)",
+    "cGMP/GDP Compliance",
+    "Analytical Method Transfer",
+    "Particle Sizing & Distribution Analysis",
+    "Rheology & Viscometry",
+    "DOE & Statistical Analysis",
+    "Technical Report Writing & SOP Development"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 \u2013 Present",
+      "role": "Postdoctoral Researcher \u2014 Biopolymer Nanoparticle Process Development",
+      "bullets": [
+        "Lead analytical characterization of biopolymer nanoparticles using FT-IR, UV-Vis, DLS, TGA/DSC, and chromatography (GPC/SEC, HPLC), developing robust analytical methods for routine quality assessment.",
+        "Design and execute experiments following DOE principles to optimize formulation process parameters, ensuring reproducible product quality and analytical reproducibility.",
+        "Develop and maintain SOPs for analytical methods, ensuring data integrity and compliance with best practices in laboratory documentation.",
+        "Apply multivariate analysis to correlate process conditions with material properties, driving data-informed decisions for method optimization."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 \u2013 July 2025",
+      "role": "Graduate Researcher \u2014 Materials Chemistry & Analytical Characterization",
+      "bullets": [
+        "Performed comprehensive analytical characterization using FT-IR, UV-Vis-NIR, NMR, HPLC, GC-MS, SEM, and XRD to elucidate structure-property relationships in novel materials.",
+        "Developed and validated analytical methods for quantitative analysis of electrochromic materials, including spectroscopic calibration curves and chromatographic purity assessments.",
+        "Operated and maintained multiple analytical instruments (FT-IR, UV-Vis, HPLC, GC-MS, TGA, DSC), performing troubleshooting, calibration, and preventive maintenance.",
+        "Authored detailed technical reports and presented findings at national conferences (ACS, MRS), demonstrating strong scientific communication skills."
+      ]
+    },
+    {
+      "company": "Indian Institute of Science (IISc)",
+      "period": "May 2018 \u2013 May 2019",
+      "role": "Undergraduate Researcher \u2014 Materials Science",
+      "bullets": [
+        "Conducted thermal analysis (TGA, DSC) and spectroscopic characterization (FT-IR, Raman) of polymer nanocomposites for materials performance optimization.",
+        "Developed analytical protocols for systematic comparison of material properties across experimental conditions."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Instruments": "HPLC/UPLC, GC, GC-MS, FT-IR, UV-Vis-NIR, IC, TGA, DSC, DLS, SEM, XRD, NMR",
+    "Software": "OriginLab, GraphPad Prism, ChemDraw, Minitab, MATLAB, Python (pandas, scipy)",
+    "Regulatory": "cGMP awareness, GLP principles, ICH guidelines familiarity, SOP development",
+    "Methods": "Analytical method development, validation (ICH Q2), transfer, stability studies, DOE"
+  }
+}
