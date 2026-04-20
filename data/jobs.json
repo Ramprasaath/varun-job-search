@@ -1717,5 +1717,203 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
+  },
+  {
+    "id": 57,
+    "source": "full_scan_validated_import",
+    "url": "https://jobs.ashbyhq.com/periodic-labs/e90c6050-e544-4a2b-ae30-7c41e5eb4f16",
+    "company": "Periodic Labs",
+    "title": "Research Scientist, Materials Characterization",
+    "location": "Menlo Park, CA",
+    "date_found": "2026-04-20",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "job_id": null,
+    "score": 4.5,
+    "archetype": "Materials Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong fit. Direct match on materials characterization. Menlo Park. Full-time, 12-month term.",
+    "evaluation": {
+      "recommendation": "APPLY - Strong fit",
+      "strengths": [
+        "Direct materials characterization match",
+        "Bay Area location",
+        "Good alignment with Varun's characterization toolkit"
+      ],
+      "gaps": [
+        "12-month term role"
+      ],
+      "cv_match": 4.5,
+      "north_star": 4.5,
+      "comp": 4.5,
+      "cultural": 4.5,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 58,
+    "source": "full_scan_validated_import",
+    "url": "https://jobs.ashbyhq.com/periodic-labs/7f36ea6e-3e67-40df-82c6-5540859a2ac5",
+    "company": "Periodic Labs",
+    "title": "Research Scientist, Thin Films",
+    "location": "Menlo Park, CA",
+    "date_found": "2026-04-20",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "job_id": null,
+    "score": 4.4,
+    "archetype": "Materials Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong fit. Thin films is directly aligned with Varun's coatings / surface / thin-film background. Menlo Park.",
+    "evaluation": {
+      "recommendation": "APPLY - Strong fit",
+      "strengths": [
+        "Thin films is a direct domain match",
+        "Bay Area location",
+        "Strong overlap with coatings and materials background"
+      ],
+      "gaps": [
+        "Role details on term length not fully extracted"
+      ],
+      "cv_match": 4.4,
+      "north_star": 4.4,
+      "comp": 4.4,
+      "cultural": 4.4,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 59,
+    "source": "full_scan_validated_import",
+    "url": "https://job-boards.greenhouse.io/kailera/jobs/5016908008",
+    "company": "Kailera Therapeutics",
+    "title": "Senior Scientist, Process Development Chemist",
+    "location": "Waltham, MA",
+    "date_found": "2026-04-20",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "job_id": null,
+    "score": 3.8,
+    "archetype": "Process Development Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Relevant process-development chemistry role. Good small-molecule / analytical overlap, but asks for 5-8 years industry experience and onsite in Waltham 3-4 days/week.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Good fit with some gaps",
+      "strengths": [
+        "Small-molecule and analytical chemistry overlap",
+        "Process development role",
+        "Real active Greenhouse posting"
+      ],
+      "gaps": [
+        "5-8 years industry experience requested",
+        "Onsite in Waltham, MA"
+      ],
+      "cv_match": 3.8,
+      "north_star": 3.8,
+      "comp": 3.8,
+      "cultural": 3.8,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 60,
+    "source": "full_scan_validated_import",
+    "url": "https://job-boards.greenhouse.io/spacex/jobs/8487266002",
+    "company": "SpaceX",
+    "title": "Materials Engineer, Satellites (Starlink)",
+    "location": "Redmond, WA",
+    "date_found": "2026-04-20",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "job_id": null,
+    "score": 3.9,
+    "archetype": "Materials Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Interesting materials role with strong characterization relevance. Red flag: SpaceX roles typically carry ITAR / U.S. person constraints.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Strong technical fit, check eligibility",
+      "strengths": [
+        "Materials characterization relevance",
+        "High-upside hardware/materials role",
+        "Verified active"
+      ],
+      "gaps": [
+        "Likely ITAR / U.S. person requirement",
+        "More engineering-oriented than core chemistry roles"
+      ],
+      "cv_match": 3.9,
+      "north_star": 3.9,
+      "comp": 3.9,
+      "cultural": 3.9,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 61,
+    "source": "full_scan_validated_import",
+    "url": "https://careers.gene.com/us/en/job/202602-104120/Principal-Scientist-Synthetic-Molecule-Process-Chemistry-Genentech-Research",
+    "company": "Genentech",
+    "title": "Principal Scientist - Synthetic Molecule Process Chemistry",
+    "location": "South San Francisco, CA",
+    "date_found": "2026-04-20",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "job_id": null,
+    "score": 3.3,
+    "archetype": "Process Development Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Very relevant domain, local, and high-quality employer, but principal level is likely a stretch for Varun right now.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Strong domain, likely too senior",
+      "strengths": [
+        "Synthetic molecule process chemistry is relevant",
+        "South San Francisco location",
+        "Verified active"
+      ],
+      "gaps": [
+        "Principal level likely too senior",
+        "May require substantial direct industry leadership experience"
+      ],
+      "cv_match": 3.3,
+      "north_star": 3.3,
+      "comp": 3.3,
+      "cultural": 3.3,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
   }
 ]
