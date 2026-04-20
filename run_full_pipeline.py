@@ -20,7 +20,7 @@ def run_linkedin_search():
     
     result = subprocess.run(
         [sys.executable, "linkedin_scraper.py"],
-        cwd="/Users/ram/varun-career-ops",
+        cwd="/Users/ram/Projects/varun-job-search",
         capture_output=False
     )
     
@@ -30,7 +30,7 @@ def run_linkedin_search():
     
     # Find the output file
     date_str = datetime.now().strftime("%Y-%m-%d")
-    output_file = f"/Users/ram/varun-career-ops/linkedin_jobs_{date_str}.json"
+    output_file = f"/Users/ram/Projects/varun-job-search/linkedin_jobs_{date_str}.json"
     
     if Path(output_file).exists():
         with open(output_file) as f:
@@ -48,7 +48,7 @@ def import_to_tracker(linkedin_file):
     
     result = subprocess.run(
         [sys.executable, "import_linkedin_jobs.py", linkedin_file],
-        cwd="/Users/ram/varun-career-ops",
+        cwd="/Users/ram/Projects/varun-job-search",
         capture_output=False
     )
     
@@ -84,7 +84,7 @@ def main():
     print("✅ PIPELINE COMPLETE")
     print("=" * 70)
     print("\nNext steps:")
-    print("  1. Open Streamlit app: streamlit run streamlit-app/app.py")
+    print("  1. Open Streamlit app: streamlit run app.py")
     print("  2. Review newly imported jobs")
     print("  3. Ask me to score 4.0+ matches and generate tailored resumes")
     print("  4. I'll find LinkedIn contacts for top matches")

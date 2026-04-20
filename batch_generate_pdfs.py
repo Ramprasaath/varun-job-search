@@ -6,10 +6,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-CAREER_OPS_DIR = Path("/Users/ram/varun-career-ops")
-RESUME_DIR = CAREER_OPS_DIR / "streamlit-app" / "data" / "resume"
+CAREER_OPS_DIR = Path("/Users/ram/Projects/varun-job-search")
+RESUME_DIR = CAREER_OPS_DIR / "data" / "resume"
 TEMPLATE_PATH = CAREER_OPS_DIR / "templates" / "cv-template.html"
-OUTPUT_DIR = CAREER_OPS_DIR / "output"
+OUTPUT_DIR = CAREER_OPS_DIR / "data" / "output"
 
 def load_resume(version):
     path = RESUME_DIR / f"{version}.json"
@@ -148,7 +148,7 @@ def generate_pdf(resume_version, company_slug, job_title=""):
     # Skip if already exists
     if pdf_path.exists():
         print(f"  ⏭️  Skipping {pdf_name} (already exists)")
-        return f"output/{pdf_name}"
+        return f"data/output/{pdf_name}"
     
     # Generate PDF using Node script
     try:
@@ -161,7 +161,7 @@ def generate_pdf(resume_version, company_slug, job_title=""):
         )
         if result.returncode == 0:
             print(f"  ✅ {pdf_name}")
-            return f"output/{pdf_name}"
+            return f"data/output/{pdf_name}"
         else:
             print(f"  ❌ Failed: {result.stderr[:100]}")
             return None

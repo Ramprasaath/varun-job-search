@@ -10,6 +10,8 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from job_freshness import assess_job_freshness, best_reference_date
+
 DATA_DIR = Path(__file__).parent / "data"
 JOBS_FILE = DATA_DIR / "jobs.json"
 ARCHIVE_FILE = DATA_DIR / "archived_jobs.json"
@@ -44,10 +46,15 @@ def save_jobs(jobs):
         json.dump(jobs, f, indent=2)
 
 def archive_old_jobs(jobs, days=180):
-    """Move jobs older than cutoff to archive"""
+    """Move jobs older than cutoff to archive."""
     cutoff = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
-    recent = [j for j in jobs if j.get('date_found', '') >= cutoff]
-    old = [j for j in jobs if j.get('date_found', '') < cutoff]
+    recent, old = [], []
+    for job in jobs:
+        ref_date = best_reference_date(job)
+        if ref_date and ref_date < cutoff:
+            old.append(job)
+        else:
+            recent.append(job)
     
     if old:
         archived = []
@@ -69,13 +76,17 @@ def is_duplicate(jobs, url):
     return any(j.get('url') == url for j in jobs)
 
 def parse_job_from_result(result, query):
-    """Parse web search result into job dict"""
+    """Parse web search result into job dict."""
     url = result.get('url', '')
     title = result.get('title', '').replace('\n', ' ').strip()
     desc = result.get('description', '')
-    
+
     # Skip non-job URLs
     if not any(x in url.lower() for x in ['jobs', 'careers', 'linkedin.com/jobs', 'lever.co', 'greenhouse.io']):
+        return None
+
+    freshness = assess_job_freshness(title=title, description=desc, url=url, source='automated_search')
+    if not freshness['keep']:
         return None
     
     # Extract company from URL or title
@@ -107,13 +118,16 @@ def parse_job_from_result(result, query):
         "url": url,
         "description": desc[:300],
         "date_found": datetime.now().strftime('%Y-%m-%d'),
+        "date_posted": freshness.get('date_posted'),
+        "freshness_verified": freshness.get('verified', False),
+        "freshness_reason": freshness.get('reason'),
         "job_id": None,
         "status": "discovered",
         "score": None,
         "archetype": "Analytical / Quality Scientist",
         "applied_date": None,
         "follow_up_date": None,
-        "notes": f"Found via automated search: {query[:40]}...",
+        "notes": f"Found via automated search: {query[:40]}... Freshness: {freshness.get('reason')}",
         "evaluation": None,
         "report_path": None,
         "pdf_path": None,
@@ -124,8 +138,8 @@ def git_commit_push():
     """Commit and push changes to GitHub"""
     try:
         subprocess.run(['git', 'add', '-A'], cwd=Path(__file__).parent, check=True)
-        subprocess.run(['git', 'commit', '-m', f'"Daily job search update - {datetime.now().strftime(\"%Y-%m-%d\")}"'], 
-                      cwd=Path(__file__).parent, check=True)
+        commit_msg = f"Daily job search update - {datetime.now().strftime('%Y-%m-%d')}"
+        subprocess.run(['git', 'commit', '-m', commit_msg], cwd=Path(__file__).parent, check=True)
         subprocess.run(['git', 'push'], cwd=Path(__file__).parent, check=True)
         print("✅ Pushed to GitHub")
         return True

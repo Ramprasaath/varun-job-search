@@ -134,9 +134,10 @@ with tab_tracker:
         ev = [j for j in jobs if j.get("score")]
         avg = sum(j["score"] for j in ev)/len(ev) if ev else 0
         high_score = len([j for j in jobs if j.get("score") and j["score"] >= 4.0])
-        new_jobs = len([j for j in jobs if j.get("status") == "discovered"])
+        today_iso = datetime.date.today().isoformat()
+        new_jobs = len([j for j in jobs if j.get("date_found") == today_iso])
         not_applied = len([j for j in jobs if j.get("status") not in ("applied", "interviewing", "offer", "rejected")])
-        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=datetime.date.today().isoformat() and j["status"] in("applied","interviewing")]
+        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=today_iso and j["status"] in("applied","interviewing")]
         c1,c2,c3,c4,c5,c6 = st.columns(6)
         c1.metric("Total",len(jobs)); c2.metric("Avg",f"{avg:.1f}"); c3.metric("⭐ 4.0+",high_score)
         c4.metric("🆕 New",new_jobs); c5.metric("📋 To Apply",not_applied); c6.metric("⚠️ Due",len(od))
@@ -353,7 +354,10 @@ with tab_tracker:
                         pdf_bytes = f.read()
                     st.download_button("📄 Download Resume", pdf_bytes, pdf_path.name, "application/pdf", key=f"dlr_{j['id']}")
         
-        st.caption(f"📍 {j.get('location','—')} | 📅 Found: {j.get('date_found','—')}")
+        date_bits = [f"📍 {j.get('location','—')}", f"📅 Found: {j.get('date_found','—')}"]
+        if j.get('date_posted'):
+            date_bits.append(f"🕒 Posted: {j.get('date_posted')}")
+        st.caption(" | ".join(date_bits))
         
         # Edit fields
         st.markdown("#### Update Job")
@@ -645,7 +649,7 @@ with tab_resume:
         sv=st.selectbox("Version",vers,key="pvs")
         ch=load_resume(sv)
         if ch: st.markdown(f"**Summary:** {ch.get('summary','')[:150]}...")
-        pdf_dir=CAREER_OPS_DIR/"output"
+        pdf_dir=CAREER_OPS_DIR/"data"/"output"
         if pdf_dir.exists():
             pdfs=sorted(pdf_dir.glob("*.pdf"),key=os.path.getmtime,reverse=True)
             if pdfs:
@@ -657,10 +661,10 @@ with tab_resume:
 
 # --- Archived Jobs Section ---
 st.markdown("---")
-with st.expander("📦 Archived Jobs (> 6 months old) - Click to view/reach out"):
+with st.expander("📦 Archived Jobs (stale/closed or > 6 months old) - Click to view"):
     archived = lj(DATA_DIR / "archived_jobs.json", [])
     if archived:
-        st.markdown(f"**{len(archived)} archived jobs** - Reach out to check if still hiring!")
+        st.markdown(f"**{len(archived)} archived jobs**")
         
         # Build dataframe
         import pandas as pd
@@ -683,11 +687,21 @@ with st.expander("📦 Archived Jobs (> 6 months old) - Click to view/reach out"
         sel = st.selectbox("Select archived job to view:", [""] + list(opts.keys()), key="arch_sel")
         if sel:
             aj = opts[sel]
+            archive_reason = aj.get('archive_reason')
             st.markdown(f"### {aj['company']} — {aj['title']}")
-            st.markdown(f"**Date Posted:** {aj.get('date_found','Unknown')}")
+            if aj.get('date_posted'):
+                st.markdown(f"**Date Posted:** {aj.get('date_posted')}")
+            st.markdown(f"**Discovered:** {aj.get('date_found','Unknown')}")
             st.markdown(f"**Original Score:** {aj.get('score','N/A')}")
+            if archive_reason:
+                st.warning(f"Archived reason: {archive_reason}")
             if aj.get('url'):
-                st.link_button("🔗 Check if still open", aj['url'])
-            st.markdown("**💡 Tip:** Reach out to the company's talent acquisition team to ask if this role is still active or if similar positions are open.")
+                closed_reason = (archive_reason or '').lower()
+                label = "🔗 Original listing URL" if any(x in closed_reason for x in ['stale', 'closed', 'not found', 'no longer accepting']) else "🔗 Check if still open"
+                st.link_button(label, aj['url'])
+            if archive_reason:
+                st.markdown("**💡 Tip:** Prefer fresh or directly-posted roles over archived wrappers unless you have a specific outreach reason.")
+            else:
+                st.markdown("**💡 Tip:** Reach out to the company's talent acquisition team to ask if this role is still active or if similar positions are open.")
     else:
         st.info("No archived jobs yet. Jobs older than 6 months will appear here.")

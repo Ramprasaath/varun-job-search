@@ -11,6 +11,8 @@ from datetime import datetime
 from typing import List, Dict, Optional
 from playwright.sync_api import sync_playwright
 
+from job_freshness import assess_job_freshness
+
 
 class LinkedInJobScraper:
     """Scraper for LinkedIn Jobs - works around login modal"""
@@ -86,14 +88,19 @@ class LinkedInJobScraper:
         
         for job_id, href, title in matches:
             if not any(j.get('job_id') == job_id for j in jobs):
+                job_url = f"https://www.linkedin.com{href}" if href.startswith('/') else href
+                freshness = assess_job_freshness(title=title, url=job_url, source="linkedin")
                 job = {
                     "source": "linkedin",
                     "title": title.strip(),
                     "company": "Unknown",  # Will try to extract better
                     "location": "Unknown",
-                    "url": f"https://www.linkedin.com{href}" if href.startswith('/') else href,
+                    "url": job_url,
                     "description": "",
                     "date_found": datetime.now().strftime("%Y-%m-%d"),
+                    "date_posted": freshness.get("date_posted"),
+                    "freshness_verified": freshness.get("verified", False),
+                    "freshness_reason": freshness.get("reason"),
                     "job_id": job_id,
                     "status": "discovered",
                     "score": None,
@@ -111,14 +118,19 @@ class LinkedInJobScraper:
             job_id = job_id.group(1) if job_id else ""
             
             if job_id and not any(j.get('job_id') == job_id for j in jobs):
+                job_url = f"https://www.linkedin.com{href}"
+                freshness = assess_job_freshness(title=title, url=job_url, source="linkedin")
                 job = {
                     "source": "linkedin",
                     "title": title.strip(),
                     "company": company.strip(),
                     "location": "Unknown",
-                    "url": f"https://www.linkedin.com{href}",
+                    "url": job_url,
                     "description": "",
                     "date_found": datetime.now().strftime("%Y-%m-%d"),
+                    "date_posted": freshness.get("date_posted"),
+                    "freshness_verified": freshness.get("verified", False),
+                    "freshness_reason": freshness.get("reason"),
                     "job_id": job_id,
                     "status": "discovered",
                     "score": None,
@@ -138,6 +150,13 @@ class LinkedInJobScraper:
                 if match:
                     job_id = match.group(1)
             
+            freshness = assess_job_freshness(
+                title=data.get('title', 'Unknown'),
+                description=data.get('description', ''),
+                url=url,
+                source='linkedin',
+                explicit_date_posted=data.get('datePosted'),
+            )
             return {
                 "source": "linkedin",
                 "title": data.get('title', 'Unknown'),
@@ -146,6 +165,9 @@ class LinkedInJobScraper:
                 "url": url,
                 "description": data.get('description', '')[:2000],
                 "date_found": datetime.now().strftime("%Y-%m-%d"),
+                "date_posted": freshness.get("date_posted"),
+                "freshness_verified": freshness.get("verified", False),
+                "freshness_reason": freshness.get("reason"),
                 "job_id": job_id,
                 "status": "discovered",
                 "score": None,
@@ -221,7 +243,7 @@ if __name__ == "__main__":
     
     jobs = run_pipeline_search(SEARCH_TERMS, "United States", 15)
     
-    tracker_path = "/Users/ram/varun-career-ops/streamlit-app/data/jobs.json"
+    tracker_path = "/Users/ram/Projects/varun-job-search/data/jobs.json"
     output = export_to_tracker(jobs, tracker_path)
     
     print(f"\n✅ Done! Found {len(jobs)} unique jobs")

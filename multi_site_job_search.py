@@ -12,6 +12,8 @@ from typing import List, Dict
 import subprocess
 import re
 
+from job_freshness import assess_job_freshness
+
 # Search queries for different platforms
 SEARCH_CONFIG = {
     "linkedin": {
@@ -62,11 +64,15 @@ def run_brave_search(query: str, count: int = 5) -> List[Dict]:
 
 
 def parse_job_from_result(result: Dict, source: str) -> Dict:
-    """Parse a search result into tracker-compatible job format"""
+    """Parse a search result into tracker-compatible job format."""
     url = result.get('url', '')
     title = result.get('title', '').strip()
     description = result.get('description', '')
-    
+
+    freshness = assess_job_freshness(title=title, description=description, url=url, source=source)
+    if not freshness['keep']:
+        return None
+
     # Extract company from title or URL
     company = "Unknown"
     
@@ -111,6 +117,9 @@ def parse_job_from_result(result: Dict, source: str) -> Dict:
         "url": url,
         "description": description[:500],
         "date_found": datetime.now().strftime("%Y-%m-%d"),
+        "date_posted": freshness.get('date_posted'),
+        "freshness_verified": freshness.get('verified', False),
+        "freshness_reason": freshness.get('reason'),
         "job_id": None,  # Will be assigned during import
         "status": "discovered",
         "score": None,
@@ -196,7 +205,7 @@ def create_search_checklist():
     checklist.append("- [ ] Find LinkedIn contacts")
     
     filename = f"search_checklist_{datetime.now().strftime('%Y-%m-%d')}.md"
-    filepath = f"/Users/ram/varun-career-ops/{filename}"
+    filepath = f"/Users/ram/Projects/varun-job-search/{filename}"
     
     with open(filepath, 'w') as f:
         f.write('\n'.join(checklist))

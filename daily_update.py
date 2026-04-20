@@ -11,6 +11,8 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from job_freshness import best_reference_date
+
 DATA_DIR = Path(__file__).parent / "data"
 JOBS_FILE = DATA_DIR / "jobs.json"
 ARCHIVE_FILE = DATA_DIR / "archived_jobs.json"
@@ -26,11 +28,16 @@ def save_jobs(jobs):
         json.dump(jobs, f, indent=2)
 
 def archive_old_jobs(jobs, days=180):
-    """Move jobs older than 6 months to archive"""
+    """Move jobs older than 6 months to archive."""
     cutoff = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
-    
-    recent = [j for j in jobs if j.get('date_found', '') >= cutoff]
-    old = [j for j in jobs if j.get('date_found', '') < cutoff]
+
+    recent, old = [], []
+    for job in jobs:
+        ref_date = best_reference_date(job)
+        if ref_date and ref_date < cutoff:
+            old.append(job)
+        else:
+            recent.append(job)
     
     if old:
         archived = []

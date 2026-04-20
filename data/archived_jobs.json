@@ -36,5 +36,240 @@
     },
     "tailored_resume": "tailored_exponent",
     "archive_reason": "User-verified stale LinkedIn posting: reposted 3 years ago and no longer accepting applications."
+  },
+  {
+    "id": 6,
+    "url": "https://careers.regeneron.com/en/jobs/r36436/scientist-analytical-chemistry-lc-ms/",
+    "company": "Regeneron",
+    "title": "Scientist, Analytical Chemistry (LC-MS)",
+    "location": "Tarrytown, NY",
+    "date_found": "2026-04-14",
+    "score": 4.1,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-regeneron-scientist-analytical-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PhD with 0-3+ years experience. LC-MS focus for biotherapeutics. Strong growth potential. User-verified dead direct link: careers.regeneron.com job URL returns Page Not Found.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.2,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "LC-MS method development (some experience but not expert)",
+        "Biotherapeutics specific experience"
+      ],
+      "strengths": [
+        "PhD in Chemistry - strong match",
+        "0-3 years accepted - entry level friendly",
+        "Method development experience",
+        "Characterization expertise"
+      ],
+      "recommendation": "APPLY - Strong match for LC-MS and analytical chemistry background"
+    },
+    "tailored_resume": "tailored_regeneron",
+    "archive_reason": "User-verified dead direct link: careers.regeneron.com job URL returns Page Not Found.",
+    "freshness_verified": true,
+    "freshness_reason": "User-verified dead direct link: careers.regeneron.com job URL returns Page Not Found."
+  },
+  {
+    "id": 15,
+    "url": "https://www.linkedin.com/jobs/view/sr-scientist-cmc-analytical-development-at-neurocrine-biosciences-4127948994",
+    "company": "Neurocrine Biosciences",
+    "title": "Sr. Scientist, CMC Analytical Development",
+    "location": "San Diego, CA",
+    "date_found": "2026-04-14",
+    "score": 4.1,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-neurocrine-biosciences-sr.-scientist-cmc-analytical-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong match! Established biotech (NASDAQ: NBIX), CMC analytical focus. Need to verify small vs large molecule. User-verified stale LinkedIn posting: reposted 1 year ago on LinkedIn.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.5,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Need to verify molecule type (small vs large)",
+        "Industry experience (2 years postdoc only)"
+      ],
+      "strengths": [
+        "CMC analytical development - exact match",
+        "Established public biotech - stability",
+        "San Diego location - strong biotech hub",
+        "Method development and validation skills"
+      ],
+      "recommendation": "APPLY - High priority, verify JD for molecule type"
+    },
+    "tailored_resume": "tailored_neurocrine",
+    "archive_reason": "User-verified stale LinkedIn posting: reposted 1 year ago on LinkedIn.",
+    "freshness_verified": true,
+    "freshness_reason": "User-verified stale LinkedIn posting: reposted 1 year ago on LinkedIn."
+  },
+  {
+    "id": 21,
+    "url": "https://www.linkedin.com/jobs/view/application-scientist-at-waters-corporation-4213007412",
+    "company": "Waters Corporation",
+    "title": "Application Scientist",
+    "location": "Milford, MA",
+    "date_found": "2026-04-14",
+    "score": 4.3,
+    "archetype": "Applications/Support Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-waters-application-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Perfect match for spectroscopy background. Top analytical instrumentation company. Customer-facing technical role. User-verified stale LinkedIn posting: reposted 1 year ago and no longer accepting applications.",
+    "evaluation": {
+      "cv_match": 4.5,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 4.5,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Customer-facing experience",
+        "Specific instrument expertise training"
+      ],
+      "strengths": [
+        "FT-IR, UV-Vis spectroscopy expertise",
+        "Materials characterization background",
+        "PhD in Chemistry",
+        "Method development experience"
+      ],
+      "recommendation": "APPLY - High priority, perfect company match"
+    },
+    "tailored_resume": "tailored_waters",
+    "archive_reason": "User-verified stale LinkedIn posting: reposted 1 year ago and no longer accepting applications.",
+    "freshness_verified": true,
+    "freshness_reason": "User-verified stale LinkedIn posting: reposted 1 year ago and no longer accepting applications."
+  },
+  {
+    "id": 23,
+    "url": "https://www.linkedin.com/jobs/view/application-scientist-at-bruker-nano-analytics-3389745231",
+    "company": "Bruker Nano Analytics",
+    "title": "Application Scientist",
+    "location": "Madison, WI",
+    "date_found": "2026-04-14",
+    "score": 4.2,
+    "archetype": "Applications/Support Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-bruker-nano-analytics-application-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Micro X-ray fluorescence product line. Materials characterization focus. Leading scientific instrumentation company. User-verified stale LinkedIn posting: reposted 3 years ago and no longer accepting applications.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "XRF specific experience",
+        "Customer-facing technical support"
+      ],
+      "strengths": [
+        "Materials characterization expertise",
+        "Spectroscopy background",
+        "PhD in Chemistry",
+        "Bruker is market leader"
+      ],
+      "recommendation": "APPLY - High priority materials characterization role"
+    },
+    "tailored_resume": "tailored_bruker",
+    "archive_reason": "User-verified stale LinkedIn posting: reposted 3 years ago and no longer accepting applications.",
+    "freshness_verified": true,
+    "freshness_reason": "User-verified stale LinkedIn posting: reposted 3 years ago and no longer accepting applications."
+  },
+  {
+    "id": 25,
+    "url": "https://www.linkedin.com/jobs/view/chemist-vibrational-spectroscopy-and-thermal-analysis-at-intertek-3331060825",
+    "company": "Intertek",
+    "title": "Chemist - Vibrational Spectroscopy and Thermal Analysis",
+    "location": "Trexlertown, PA",
+    "date_found": "2026-04-14",
+    "score": 4.6,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-intertek-vibrational-spectroscopy-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "EXCELLENT MATCH! FTIR, Raman, TGA, DSC - exactly Varun's expertise. Polymer characterization focus. User-verified stale LinkedIn posting: listed as 3 years old on LinkedIn.",
+    "evaluation": {
+      "cv_match": 4.8,
+      "north_star": 4.5,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Raman specific expertise",
+        "Client service environment"
+      ],
+      "strengths": [
+        "FTIR expertise - core skill",
+        "TGA/DSC thermal analysis",
+        "Polymer characterization",
+        "Materials analysis background",
+        "PhD in Chemistry"
+      ],
+      "recommendation": "APPLY IMMEDIATELY - Perfect technical match"
+    },
+    "tailored_resume": "tailored_intertek",
+    "archive_reason": "User-verified stale LinkedIn posting: listed as 3 years old on LinkedIn.",
+    "freshness_verified": true,
+    "freshness_reason": "User-verified stale LinkedIn posting: listed as 3 years old on LinkedIn."
+  },
+  {
+    "id": 26,
+    "url": "https://www.linkedin.com/jobs/view/scientific-lead-cmc-process-chemistry-at-loxo@lilly-3572341288",
+    "company": "Loxo@Lilly",
+    "title": "Scientific Lead, CMC Process Chemistry",
+    "location": "Louisville, CO",
+    "date_found": "2026-04-14",
+    "score": 4.1,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-loxolilly-scientific-lead-cmc-process-ch-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PhD with 0-5 years experience accepted. Small molecule process development. CMC focus. Large pharma. User-verified stale LinkedIn posting: listed as 3 years old and no longer accepting applications.",
+    "evaluation": {
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 4.5,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Process chemistry specific experience",
+        "Scale-up experience"
+      ],
+      "strengths": [
+        "Process development experience",
+        "PhD in Chemistry - meets requirement",
+        "Lilly stability and resources",
+        "0-5 years accepted - entry friendly"
+      ],
+      "recommendation": "APPLY - Strong pharma opportunity"
+    },
+    "tailored_resume": null,
+    "archive_reason": "User-verified stale LinkedIn posting: listed as 3 years old and no longer accepting applications.",
+    "freshness_verified": true,
+    "freshness_reason": "User-verified stale LinkedIn posting: listed as 3 years old and no longer accepting applications."
   }
 ]

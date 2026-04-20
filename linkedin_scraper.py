@@ -11,6 +11,8 @@ from datetime import datetime
 from typing import List, Dict, Optional
 from playwright.sync_api import sync_playwright, Page, TimeoutError as PlaywrightTimeout
 
+from job_freshness import assess_job_freshness
+
 
 class LinkedInJobScraper:
     """Scraper for LinkedIn Jobs with safety features"""
@@ -170,6 +172,13 @@ class LinkedInJobScraper:
             except:
                 pass
             
+            freshness = assess_job_freshness(
+                title=title,
+                description=description,
+                url=job_url,
+                source="linkedin",
+            )
+
             # Create tracker-compatible job entry
             return {
                 "source": "linkedin",
@@ -179,6 +188,9 @@ class LinkedInJobScraper:
                 "url": job_url,
                 "description": description[:2000],  # Limit description length
                 "date_found": datetime.now().strftime("%Y-%m-%d"),
+                "date_posted": freshness.get("date_posted"),
+                "freshness_verified": freshness.get("verified", False),
+                "freshness_reason": freshness.get("reason"),
                 "job_id": job_id,
                 "status": "discovered",
                 "score": None,  # To be evaluated
@@ -288,7 +300,7 @@ if __name__ == "__main__":
     jobs = run_pipeline_search(SEARCH_TERMS, LOCATION, MAX_JOBS_PER_TERM)
     
     # Export for integration with tracker
-    tracker_path = "/Users/ram/varun-career-ops/streamlit-app/data/jobs.json"
+    tracker_path = "/Users/ram/Projects/varun-job-search/data/jobs.json"
     output = export_to_tracker(jobs, tracker_path)
     
     print(f"\n✅ Pipeline complete!")
