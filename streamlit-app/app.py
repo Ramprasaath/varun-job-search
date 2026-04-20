@@ -1,5 +1,5 @@
 import streamlit as st
-import json, os, datetime, subprocess
+import copy, json, os, datetime, subprocess
 from pathlib import Path
 
 st.set_page_config(page_title="Varun's Job Pipeline", page_icon="🎯", layout="wide", initial_sidebar_state="collapsed")
@@ -17,12 +17,39 @@ def lj(path, default=None):
 def sj(path, data):
     with open(path, "w") as f: json.dump(data, f, indent=2, ensure_ascii=False)
 
+def _deep_merge(base, override):
+    if isinstance(base, dict) and isinstance(override, dict):
+        merged = dict(base)
+        for k, v in override.items():
+            merged[k] = _deep_merge(merged.get(k), v) if k in merged else v
+        return merged
+    return override if override is not None else base
+
+def _resume_paths(version="base"):
+    if version == "base":
+        return RESUME_DIR / "base_resume.json", RESUME_DIR / "base.json"
+    return RESUME_DIR / f"{version}.json", None
+
+def load_resume(version="base"):
+    primary, legacy = _resume_paths(version)
+    primary_data = lj(primary, {})
+    legacy_data = lj(legacy, {}) if legacy else {}
+    if version == "base":
+        if primary_data and legacy_data:
+            return _deep_merge(primary_data, legacy_data)
+        return primary_data or legacy_data or {}
+    return primary_data or {}
+
+def save_resume(data, version="base"):
+    primary, legacy = _resume_paths(version)
+    sj(primary, data)
+    if legacy and legacy.exists():
+        sj(legacy, data)
+
 load_jobs = lambda: lj(DATA_DIR / "jobs.json", [])
 save_jobs = lambda d: sj(DATA_DIR / "jobs.json", d)
 load_contacts = lambda: lj(DATA_DIR / "contacts.json", [])
 save_contacts = lambda d: sj(DATA_DIR / "contacts.json", d)
-load_resume = lambda v="base": lj(RESUME_DIR / f"{v}.json", {})
-save_resume = lambda d, v="base": sj(RESUME_DIR / f"{v}.json", d)
 def nid(items): return max((i.get("id",0) for i in items), default=0) + 1
 
 STATUS = ["discovered","evaluated","interested","applying","applied","interviewing","offer","rejected","withdrawn"]
@@ -441,7 +468,7 @@ with tab_tracker:
                 cur=load_resume(tver)
             else:
                 st.markdown("Editing from **base resume**. Save creates tailored version.")
-                cur=dict(base)
+                cur=copy.deepcopy(base)
 
             st.markdown("#### Header")
             hr1,hr2=st.columns(2)
@@ -584,10 +611,26 @@ with tab_resume:
                 ld["role"]=st.text_input("Role",value=ld.get("role",""),key=f"bldr_{i}")
                 ld["period"]=st.text_input("Period",value=ld.get("period",""),key=f"bldp_{i}")
                 ld["bullets"]=[b.strip() for b in st.text_area("Bullets",value="\n".join(ld.get("bullets",[])),height=80,key=f"bldb_{i}").split("\n") if b.strip()]
+        teaching = dict(resume.get("teaching", {}))
+        with st.expander("👨‍🏫 Teaching Experience", expanded=bool(teaching)):
+            teaching["role"] = st.text_input("Teaching Role", value=teaching.get("role", ""), key="btr")
+            teaching["school"] = st.text_input("Institution", value=teaching.get("school", ""), key="bts")
+            teaching["period"] = st.text_input("Teaching Period", value=teaching.get("period", ""), key="btp")
+            teaching["description"] = st.text_area("Teaching Description", value=teaching.get("description", ""), height=80, key="btd")
+        resume["teaching"] = teaching
+        st.markdown("### Projects")
+        for i,pr in enumerate(resume.get("projects",[])):
+            with st.expander(f"🔬 {pr.get('title', f'Project {i+1}')}"):
+                pr["title"]=st.text_input("Title",value=pr.get("title",""),key=f"bprt_{i}")
+                pr["badge"]=st.text_input("Badge",value=pr.get("badge",""),key=f"bprb_{i}")
+                pr["description"]=st.text_area("Description",value=pr.get("description",""),height=60,key=f"bprd_{i}")
+                pr["tech"]=st.text_input("Tech",value=pr.get("tech",""),key=f"bprtech_{i}")
         st.markdown("### Publications")
         resume["publications"]=[p.strip() for p in st.text_area("One per paragraph",value="\n\n".join(resume.get("publications",[])),height=120,key="bpb").split("\n\n") if p.strip()]
         st.markdown("### Conferences")
         resume["conferences"]=[c.strip() for c in st.text_area("One per line",value="\n".join(resume.get("conferences",[])),height=100,key="bcf").split("\n") if c.strip()]
+        st.markdown("### Certifications")
+        resume["certifications"]=[c.strip() for c in st.text_area("One per line",value="\n".join(resume.get("certifications",[])),height=80,key="bcrt").split("\n") if c.strip()]
         st.markdown("### Skills")
         for cat,val in list(resume.get("skills",{}).items()):
             resume["skills"][cat]=st.text_input(cat,value=val,key=f"bsk_{cat}")
@@ -608,7 +651,7 @@ with tab_resume:
             slug=sj.get("company","").lower().replace(" ","-").replace(".","")
             tver=f"tailored_{slug}"
             tp=RESUME_DIR/f"{tver}.json"
-            cur=load_resume(tver) if tp.exists() else dict(load_resume("base"))
+            cur=load_resume(tver) if tp.exists() else copy.deepcopy(load_resume("base"))
             if tp.exists(): st.markdown("✅ Editing tailored version")
             else: st.markdown("Editing from base")
             st.markdown(f"**Target:** {sj['title']} at {sj['company']}")

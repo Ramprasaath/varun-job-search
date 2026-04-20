@@ -12,7 +12,7 @@ TEMPLATE_PATH = CAREER_OPS_DIR / "templates" / "cv-template.html"
 OUTPUT_DIR = CAREER_OPS_DIR / "data" / "output"
 
 def load_resume(version):
-    path = RESUME_DIR / f"{version}.json"
+    path = RESUME_DIR / ("base_resume.json" if version == "base" else f"{version}.json")
     if path.exists():
         with open(path) as f:
             return json.load(f)
