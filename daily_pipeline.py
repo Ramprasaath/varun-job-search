@@ -13,39 +13,37 @@ from job_freshness import assess_job_freshness
 
 # All search queries for daily sweep
 DAILY_SEARCHES = [
-    # LinkedIn - Core searches
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Senior Scientist" "Analytical Chemistry"', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Scientist" "CMC Analytical" OR "Analytical Development"', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Scientist" "Formulation" pharmaceutical', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Scientist" "Quality Control" biotech', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Materials" characterization scientist', "count": 10},
-    
-    # Indeed
-    {"platform": "indeed", "query": 'site:indeed.com "Scientist" "Analytical Chemistry" biotech', "count": 10},
-    {"platform": "indeed", "query": 'site:indeed.com "Analytical Development" scientist', "count": 10},
-    {"platform": "indeed", "query": 'site:indeed.com "CMC" "Analytical" scientist', "count": 10},
-    {"platform": "indeed", "query": 'site:indeed.com "Formulation" scientist pharmaceutical', "count": 10},
-    
-    # Wellfound (Startups)
-    {"platform": "wellfound", "query": 'site:wellfound.com/jobs "scientist" chemistry biotech', "count": 10},
-    {"platform": "wellfound", "query": 'site:wellfound.com/jobs "analytical" scientist', "count": 10},
-    
-    # BioSpace
-    {"platform": "biospace", "query": 'site:biospace.com jobs "Analytical Development" scientist', "count": 10},
-    {"platform": "biospace", "query": 'site:biospace.com jobs "CMC" scientist', "count": 10},
-    {"platform": "biospace", "query": 'site:biospace.com jobs "Formulation" scientist', "count": 10},
-    
-    # Company-specific searches (major biotechs without Lever)
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Genentech" "Scientist" analytical', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Amgen" "Scientist" analytical chemistry', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Gilead" "Scientist" analytical', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Pfizer" "Scientist" analytical chemistry', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "BMS" "Scientist" analytical', "count": 10},
-    
-    # Additional biotech hubs
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Scientist" analytical "San Diego" biotech', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Scientist" analytical "Boston" biotech', "count": 10},
-    {"platform": "linkedin", "query": 'site:linkedin.com/jobs "Scientist" analytical "Cambridge" MA', "count": 10},
+    # Materials / characterization
+    {"platform": "linkedin", "query": 'site:linkedin.com/jobs ("Materials Scientist" OR "Materials Engineer" OR "Characterization Engineer") thin film OR coatings OR polymer', "count": 8},
+    {"platform": "indeed", "query": 'site:indeed.com ("Materials Scientist" OR "Analytical Scientist") polymer OR coatings OR characterization', "count": 8},
+
+    # Failure analysis / reliability
+    {"platform": "linkedin", "query": 'site:linkedin.com/jobs ("Failure Analysis Engineer" OR "Reliability Engineer" OR "Reliability Scientist") materials OR semiconductor OR chemistry', "count": 8},
+    {"platform": "indeed", "query": 'site:indeed.com ("Failure Analysis" OR "Reliability Engineer") materials OR chemistry OR semiconductor', "count": 8},
+
+    # Process development / formulation
+    {"platform": "linkedin", "query": 'site:linkedin.com/jobs ("Process Development Scientist" OR "Process Chemist" OR "Formulation Scientist") polymer OR coatings OR scale-up', "count": 8},
+    {"platform": "indeed", "query": 'site:indeed.com ("Process Chemist" OR "Development Chemist" OR "Formulation Scientist") polymer OR coating OR chemistry', "count": 8},
+    {"platform": "biospace", "query": 'site:biospace.com jobs ("Formulation Scientist" OR "Process Development") chemistry OR materials', "count": 8},
+
+    # Applications / instrumentation
+    {"platform": "linkedin", "query": 'site:linkedin.com/jobs ("Applications Scientist" OR "Field Application Scientist") spectroscopy OR chromatography OR materials', "count": 8},
+    {"platform": "wellfound", "query": 'site:wellfound.com/jobs ("applications scientist" OR analytical OR materials OR chemist) startup biotech OR battery OR semiconductor', "count": 6},
+
+    # Selective small-molecule pharma
+    {"platform": "linkedin", "query": 'site:linkedin.com/jobs ("Analytical Development" OR "CMC Analytical" OR "Analytical Scientist") "small molecule"', "count": 8},
+    {"platform": "biospace", "query": 'site:biospace.com jobs ("Analytical Development" OR "CMC Analytical") "small molecule"', "count": 8},
+
+    # Semiconductor / advanced materials
+    {"platform": "linkedin", "query": 'site:linkedin.com/jobs ("Process Engineer" OR metrology OR deposition OR "Characterization Engineer") semiconductor OR thin film', "count": 8},
+
+    # High-fit company watchers
+    {"platform": "websearch", "query": 'site:careers.gene.com ("Scientist" OR "Analytical" OR materials OR formulation)', "count": 6},
+    {"platform": "websearch", "query": 'site:careers.agilent.com ("Applications Scientist" OR spectroscopy OR chromatography OR materials)', "count": 6},
+    {"platform": "websearch", "query": 'site:jobs.waters.com ("Applications Scientist" OR LC-MS OR analytical)', "count": 6},
+    {"platform": "websearch", "query": 'site:appliedmaterials.com/careers ("Process" OR metrology OR deposition OR materials)', "count": 6},
+    {"platform": "websearch", "query": 'site:ppg.com/careers (coatings OR formulation OR materials OR chemist)', "count": 6},
+    {"platform": "websearch", "query": 'site:quantumscape.com/careers (materials OR electrochemist OR characterization OR process)', "count": 6},
 ]
 
 def get_next_id(tracker_path: str) -> int:

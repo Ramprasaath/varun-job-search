@@ -1,0 +1,489 @@
+# Portal Scanner Configuration — Varun's Job Search
+# Customized for: Materials Science, Analytical Chemistry, Process Development, Reliability Engineering
+
+title_filter:
+  positive:
+    # -- Materials / Characterization --
+    - "Materials Scientist"
+    - "Materials Engineer"
+    - "Materials Science"
+    - "Characterization"
+    - "Characterization Engineer"
+    - "Analytical Chemist"
+    - "Analytical Chemistry"
+    - "Analytical Scientist"
+    - "Spectroscopy"
+    - "Surface Science"
+    - "Thin Film"
+    - "Thin Films"
+    - "Polymer"
+    - "Coatings"
+    - "Metrology"
+    # -- Failure Analysis / Reliability --
+    - "Failure Analysis"
+    - "Reliability Engineer"
+    - "Reliability Scientist"
+    - "Root Cause"
+    - "Quality Engineer"
+    - "Quality Scientist"
+    - "FMEA"
+    # -- Process Development / Scale-up --
+    - "Process Development"
+    - "Process Chemist"
+    - "Scale-up"
+    - "Manufacturing Science"
+    - "Process Engineer"
+    - "Development Chemist"
+    - "Method Development"
+    # -- Instrumentation / Applications --
+    - "Applications Scientist"
+    - "Application Scientist"
+    - "Field Application Scientist"
+    - "Technical Specialist"
+    # -- Pharma/Biotech R&D --
+    - "Scientist I"
+    - "Scientist II"
+    - "Associate Scientist"
+    - "Staff Scientist"
+    - "R&D Scientist"
+    - "Research Scientist"
+    - "Medicinal Chemistry"
+    - "Synthetic Chemistry"
+    - "Organic Chemistry"
+    - "Analytical Development"
+    - "CMC"
+    - "Small Molecule"
+    - "Formulation"
+    # -- Semiconductor / Advanced Materials --
+    - "Semiconductor"
+    - "Etch"
+    - "Deposition"
+    - "CVD"
+    - "PVD"
+    - "Lithography"
+    - "Packaging Engineer"
+    - "Process Integration"
+    # -- Electrochemistry / Battery --
+    - "Electrochemist"
+    - "Battery"
+    - "Energy Storage"
+    # -- General PhD-level --
+    - "PhD"
+    - "Postdoctoral"
+    - "Chemist"
+
+  negative:
+    - "Intern"
+    - "Co-op"
+    - "Technician"
+    - "Associate Professor"
+    - "Professor"
+    - "Faculty"
+    - "Tenure"
+    - "Lecturer"
+    - "Clinical"
+    - "Nursing"
+    - "Sales"
+    - "Marketing"
+    - "HR"
+    - "Recruiter"
+    - "Accountant"
+    - "Java"
+    - "Frontend"
+    - "Web Developer"
+    - "Software Engineer"
+    - "Biologics"
+    - "Protein"
+    - "Antibody"
+    - "Cell Culture"
+    - "Bioanalytical"
+    - "ELISA"
+    - "Immunoassay"
+    - "Cell Therapy"
+    - "Gene Therapy"
+    - "In Vivo"
+    - "Immunology"
+    - "Biologist"
+    - "Patent"
+    - "Counsel"
+    - "Attorney"
+    - "AI Trainer"
+
+  seniority_boost:
+    - "Scientist"
+    - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+
+search_queries:
+  - name: "Greenhouse - Materials / Characterization"
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io ("Materials Scientist" OR "Materials Engineer" OR "Characterization Engineer" OR "Analytical Scientist")'
+    count: 5
+    enabled: true
+
+  - name: "Greenhouse - Failure Analysis / Reliability"
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io ("Failure Analysis" OR "Reliability Engineer" OR "Root Cause") materials OR semiconductor OR chemistry'
+    count: 5
+    enabled: true
+
+  - name: "Greenhouse - Process Development / Formulation"
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io ("Process Development" OR "Process Chemist" OR "Formulation Scientist" OR "Development Chemist") polymer OR coating OR chemistry'
+    count: 5
+    enabled: true
+
+  - name: "Ashby - Materials / Thin Films / Polymer"
+    query: 'site:jobs.ashbyhq.com ("Materials Scientist" OR "Thin Film" OR polymer OR coatings OR characterization) PhD'
+    count: 5
+    enabled: true
+
+  - name: "Ashby - Applications / Instrumentation"
+    query: 'site:jobs.ashbyhq.com ("Applications Scientist" OR "Field Application Scientist" OR spectroscopy OR chromatography OR metrology)'
+    count: 5
+    enabled: true
+
+  - name: "Lever - Analytical / CMC Small Molecule"
+    query: 'site:jobs.lever.co ("Analytical Development" OR "CMC Analytical" OR "Analytical Scientist") "small molecule" OR formulation'
+    count: 5
+    enabled: true
+
+  - name: "Lever - Materials / Coatings"
+    query: 'site:jobs.lever.co ("Materials Scientist" OR coatings OR polymer OR "surface science")'
+    count: 5
+    enabled: true
+
+  - name: "BioSpace - Analytical Development Small Molecule"
+    query: 'site:biospace.com ("Analytical Development" OR "CMC Analytical" OR formulation) "small molecule" scientist'
+    count: 5
+    enabled: true
+
+  - name: "LinkedIn - Applications Scientist / Spectroscopy"
+    query: 'site:linkedin.com/jobs ("Applications Scientist" OR "Field Application Scientist") spectroscopy OR chromatography OR materials'
+    count: 5
+    enabled: true
+
+  - name: "LinkedIn - Semiconductor Process / Metrology"
+    query: 'site:linkedin.com/jobs ("Process Engineer" OR "Characterization Engineer" OR metrology OR deposition) semiconductor OR thin film'
+    count: 5
+    enabled: true
+
+  - name: "Indeed - Failure Analysis / Reliability"
+    query: 'site:indeed.com ("Failure Analysis" OR "Reliability Engineer" OR "Reliability Scientist") materials OR chemistry OR semiconductor'
+    count: 5
+    enabled: true
+
+  - name: "Indeed - Process Chemist / Development Chemist"
+    query: 'site:indeed.com ("Process Chemist" OR "Development Chemist" OR "Formulation Scientist") polymer OR coatings OR chemistry'
+    count: 5
+    enabled: true
+
+  - name: "Wellfound - Materials / Chemistry Startup"
+    query: 'site:wellfound.com/jobs ("Materials Scientist" OR chemist OR analytical OR polymer) biotech OR battery OR semiconductor'
+    count: 5
+    enabled: true
+
+  - name: "Remote - Analytical / Materials Scientist"
+    query: '("Analytical Scientist" OR "Applications Scientist" OR "Materials Scientist") remote chemistry OR materials'
+    count: 3
+    enabled: true
+
+tracked_companies:
+
+  # -- Major Pharma (Bay Area + hubs) --
+
+  - name: Genentech
+    careers_url: https://careers.gene.com
+    scan_method: websearch
+    scan_query: 'site:careers.gene.com "Scientist" chemistry OR analytical OR materials PhD'
+    notes: "South San Francisco. $98K-$290K range for Scientist roles."
+    enabled: true
+
+  - name: Amgen
+    careers_url: https://careers.amgen.com
+    scan_method: websearch
+    scan_query: 'site:careers.amgen.com ("Scientist" OR analytical OR materials OR process OR formulation)'
+    notes: "Thousand Oaks + South SF. Large pharma, many chem roles."
+    enabled: true
+
+  - name: Gilead Sciences
+    careers_url: https://careers.gilead.com
+    scan_method: websearch
+    scan_query: 'site:gilead.com/careers ("Scientist" OR analytical OR chemistry OR formulation OR process)'
+    notes: "Foster City, CA. PDM team, medicinal chemistry."
+    enabled: true
+
+  - name: Pfizer
+    careers_url: https://pfizer.wd1.myworkdayjobs.com/PfizerCareers
+    scan_method: websearch
+    scan_query: 'site:pfizer.wd1.myworkdayjobs.com "Scientist" chemistry OR analytical PhD'
+    notes: "Multiple locations. Small molecule, process chemistry."
+    enabled: true
+
+  - name: Merck (MSD)
+    careers_url: https://www.merck.com/careers
+    scan_method: websearch
+    scan_query: 'site:merck.com/careers "Scientist" chemistry OR analytical OR materials PhD'
+    notes: "NJ/PA corridor. Large analytical and process teams."
+    enabled: true
+
+  - name: Bristol Myers Squibb
+    careers_url: https://careers.bms.com
+    scan_method: websearch
+    scan_query: 'site:careers.bms.com "Scientist" chemistry OR analytical PhD'
+    notes: "NJ + San Francisco. Drug discovery + process."
+    enabled: true
+
+  - name: Eli Lilly
+    careers_url: https://careers.lilly.com
+    scan_method: websearch
+    scan_query: 'site:careers.lilly.com "Scientist" chemistry OR "medicinal chemistry" OR "analytical" PhD'
+    notes: "Indianapolis + San Diego. Strong synthetic chemistry teams."
+    enabled: true
+
+  - name: AstraZeneca
+    careers_url: https://careers.astrazeneca.com
+    scan_method: websearch
+    scan_query: 'site:careers.astrazeneca.com "Scientist" chemistry OR analytical PhD'
+    notes: "Waltham, MA + Gaithersburg, MD. Global pharma."
+    enabled: true
+
+  - name: Novartis
+    careers_url: https://www.novartis.com/careers
+    scan_method: websearch
+    scan_query: 'site:novartis.com/careers "Scientist" chemistry OR analytical OR materials PhD'
+    notes: "Cambridge, MA + Basel. Global pharma."
+    enabled: true
+
+  - name: Johnson & Johnson
+    careers_url: https://careers.jnj.com
+    scan_method: websearch
+    scan_query: 'site:careers.jnj.com "Scientist" chemistry OR analytical PhD'
+    notes: "NJ/PA corridor. Janssen pharma division."
+    enabled: true
+
+  # -- Biotech / Innovative Therapeutics --
+
+  - name: Ionis Pharmaceuticals
+    careers_url: https://www.ionis.com/careers
+    scan_method: websearch
+    scan_query: 'site:ionis.com/careers "Scientist" chemistry OR analytical'
+    notes: "Carlsbad, CA. Nucleotide chemistry pioneer."
+    enabled: true
+
+  - name: Neurocrine Biosciences
+    careers_url: https://www.neurocrine.com/careers
+    scan_method: websearch
+    scan_query: 'site:neurocrine.com/careers ("Scientist" OR analytical OR chemistry OR process)'
+    notes: "San Diego, CA. Medicinal chemistry."
+    enabled: true
+
+  - name: Relay Therapeutics
+    careers_url: https://relaytx.com/careers
+    api: https://boards-api.greenhouse.io/v1/boards/relaytherapeutics/jobs
+    notes: "Cambridge, MA. Computational + medicinal chemistry."
+    enabled: true
+
+  - name: Treeline Biosciences
+    careers_url: https://www.treelinebiosciences.com/careers
+    scan_method: websearch
+    scan_query: 'site:treelinebiosciences.com "Scientist" chemistry'
+    notes: "Watertown, MA. $102K-$149K range."
+    enabled: true
+
+  - name: BioNTech
+    careers_url: https://www.biontech.com/careers
+    scan_method: websearch
+    scan_query: 'site:biontech.com/careers "Scientist" chemistry OR analytical'
+    notes: "Cambridge, MA + Germany. mRNA pioneer expanding into small molecules."
+    enabled: true
+
+  - name: Insitro
+    careers_url: https://insitro.com/careers
+    scan_method: websearch
+    scan_query: 'site:insitro.com/careers ("Scientist" OR analytical OR chemistry OR materials OR process)'
+    notes: "South SF. ML-driven drug discovery."
+    enabled: true
+
+  - name: GenEdit
+    careers_url: https://www.genedit.com/careers
+    scan_method: websearch
+    scan_query: 'site:genedit.com "Scientist" OR "polymer" OR "nanoparticle"'
+    notes: "South SF. Polymer nanoparticle delivery. Strong fit for Varun's polymer expertise."
+    enabled: true
+
+  - name: Recursion Pharmaceuticals
+    careers_url: https://recursion.com/careers
+    api: https://boards-api.greenhouse.io/v1/boards/recursionpharmaceuticals/jobs
+    notes: "Salt Lake City + Toronto. Tech-first pharma."
+    enabled: true
+
+  - name: AbbVie
+    careers_url: https://jobs.abbvie.com
+    scan_method: websearch
+    scan_query: 'site:jobs.abbvie.com "Scientist" chemistry OR analytical PhD'
+    notes: "North Chicago, IL + Bay Area. Large pharma."
+    enabled: true
+
+  - name: Regeneron
+    careers_url: https://careers.regeneron.com
+    scan_method: websearch
+    scan_query: 'site:careers.regeneron.com ("Scientist" OR analytical OR chemistry OR process)'
+    notes: "Tarrytown, NY. Biologics + small molecules."
+    enabled: true
+
+  # -- CDMO / Contract Research --
+
+  - name: Catalent
+    careers_url: https://careers.catalent.com
+    scan_method: websearch
+    scan_query: 'site:careers.catalent.com "Scientist" analytical OR chemistry OR process'
+    notes: "Multiple US locations. Drug manufacturing."
+    enabled: true
+
+  - name: Lonza
+    careers_url: https://www.lonza.com/careers
+    scan_method: websearch
+    scan_query: 'site:lonza.com/careers "Scientist" analytical OR chemistry OR process'
+    notes: "Multiple US locations. CDMO."
+    enabled: true
+
+  - name: Thermo Fisher Scientific
+    careers_url: https://jobs.thermofisher.com
+    scan_method: websearch
+    scan_query: 'site:jobs.thermofisher.com "Scientist" analytical OR chemistry OR materials PhD'
+    notes: "Nationwide. Analytical instruments + materials."
+    enabled: true
+
+  # -- Analytical Instrumentation --
+
+  - name: Agilent Technologies
+    careers_url: https://careers.agilent.com
+    scan_method: websearch
+    scan_query: 'site:careers.agilent.com ("Applications Scientist" OR "Analytical Scientist" OR "Field Application Scientist" OR spectroscopy OR chromatography OR materials)'
+    notes: "Strong fit for applications scientist and analytical instrumentation roles."
+    enabled: true
+
+  - name: Waters Corporation
+    careers_url: https://jobs.waters.com
+    scan_method: websearch
+    scan_query: 'site:jobs.waters.com ("Applications Scientist" OR "Analytical Scientist" OR LC-MS OR spectroscopy OR materials)'
+    notes: "High-fit instrumentation company with applications and analytical roles."
+    enabled: true
+
+  - name: Bruker
+    careers_url: https://www.bruker.com/en/careers.html
+    scan_method: websearch
+    scan_query: 'site:bruker.com/careers ("Application Scientist" OR "Applications Scientist" OR spectroscopy OR materials OR analytical)'
+    notes: "Good fit for spectroscopy, materials characterization, and applications roles."
+    enabled: true
+
+  - name: TA Instruments
+    careers_url: https://www.tainstruments.com/careers
+    scan_method: websearch
+    scan_query: 'site:tainstruments.com/careers ("Applications Scientist" OR thermal OR rheology OR characterization OR materials)'
+    notes: "Strong fit for thermal analysis and materials characterization roles."
+    enabled: true
+
+  # -- Semiconductor / Advanced Materials --
+
+  - name: Intel
+    careers_url: https://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html
+    scan_method: websearch
+    scan_query: 'site:intel.com/careers "Process Engineer" OR "Materials" OR "Characterization" OR "Failure Analysis" PhD'
+    notes: "Portland, AZ, NM. Semiconductor manufacturing."
+    enabled: true
+
+  - name: Applied Materials
+    careers_url: https://www.appliedmaterials.com/careers
+    scan_method: websearch
+    scan_query: 'site:appliedmaterials.com/careers "Process" OR "Characterization" OR "Materials" PhD'
+    notes: "Santa Clara, CA. Semiconductor equipment. Thin film + CVD process roles."
+    enabled: true
+
+  - name: Lam Research
+    careers_url: https://www.lamresearch.com/careers
+    scan_method: websearch
+    scan_query: 'site:lamresearch.com/careers "Process" OR "Etch" OR "Deposition" OR "Characterization"'
+    notes: "Fremont, CA. Etch + deposition equipment."
+    enabled: true
+
+  - name: TSMC (Arizona)
+    careers_url: https://careers.tsmc.com
+    scan_method: websearch
+    scan_query: 'site:tsmc.com "Process Engineer" OR "Integration" OR "Characterization" Arizona'
+    notes: "Phoenix, AZ. New fab in Arizona."
+    enabled: true
+
+  - name: KLA
+    careers_url: https://www.kla.com/careers
+    scan_method: websearch
+    scan_query: 'site:kla.com/careers "Characterization" OR "Metrology" OR "Process" OR "Applications"'
+    notes: "Milpitas, CA. Metrology and characterization equipment."
+    enabled: true
+
+  # -- Coatings / Specialty Materials --
+
+  - name: PPG Industries
+    careers_url: https://www.ppg.com/careers
+    scan_method: websearch
+    scan_query: 'site:ppg.com/careers "Scientist" OR "Chemist" OR "Coatings" OR "Materials"'
+    notes: "Pittsburgh + multiple locations. Coatings and specialty materials."
+    enabled: true
+
+  - name: Sherwin-Williams
+    careers_url: https://careers.sherwin-williams.com
+    scan_method: websearch
+    scan_query: 'site:sherwin-williams.com/careers "Scientist" OR "Chemist" OR "Coatings" OR "R&D"'
+    notes: "Cleveland + multiple. Coatings R&D."
+    enabled: true
+
+  - name: 3M
+    careers_url: https://www.3m.com/3M/en_US/careers-us
+    scan_method: websearch
+    scan_query: 'site:3m.com/careers "Scientist" OR "Materials" OR "Analytical" OR "Process" PhD'
+    notes: "Minneapolis + multiple. Diverse materials science."
+    enabled: true
+
+  - name: Corning
+    careers_url: https://www.corning.com/careers
+    scan_method: websearch
+    scan_query: 'site:corning.com/careers "Scientist" OR "Materials" OR "Process" OR "Characterization" PhD'
+    notes: "Corning, NY. Glass and advanced materials."
+    enabled: true
+
+  - name: Axalta
+    careers_url: https://jobs.axalta.com
+    scan_method: websearch
+    scan_query: 'site:jobs.axalta.com ("Scientist" OR "Chemist" OR coatings OR formulation OR materials)'
+    notes: "Coatings and specialty materials company, strong thematic fit."
+    enabled: true
+
+  - name: BASF
+    careers_url: https://basf.jobs
+    scan_method: websearch
+    scan_query: 'site:basf.jobs ("Scientist" OR "Chemist" OR polymer OR coatings OR materials OR process)'
+    notes: "Large materials and specialty chemicals company."
+    enabled: true
+
+  - name: Dow
+    careers_url: https://corporate.dow.com/en-us/careers.html
+    scan_method: websearch
+    scan_query: 'site:dow.com/careers ("Scientist" OR "Chemist" OR polymer OR coatings OR materials OR process)'
+    notes: "Major materials and specialty chemicals employer."
+    enabled: true
+
+  # -- Energy / Battery Materials --
+
+  - name: QuantumScape
+    careers_url: https://www.quantumscape.com/careers
+    scan_method: websearch
+    scan_query: 'site:quantumscape.com/careers (materials OR electrochemist OR characterization OR process OR battery)'
+    notes: "San Jose, CA. Solid-state battery materials."
+    enabled: true
+
+  - name: Sila Nanotechnologies
+    careers_url: https://silanano.com/careers
+    scan_method: websearch
+    scan_query: 'site:silanano.com "Scientist" OR "Materials" OR "Characterization" OR "Process"'
+    notes: "Alameda, CA. Battery materials."
+    enabled: true

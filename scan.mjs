@@ -1,118 +1,188 @@
 #!/usr/bin/env node
 
 /**
- * scan.mjs — Zero-token portal scanner
+ * scan.mjs — Hybrid portal scanner
  *
- * Fetches Greenhouse, Ashby, and Lever APIs directly, applies title
- * filters from portals.yml, deduplicates against existing history,
- * and appends new offers to pipeline.md + scan-history.tsv.
- *
- * Zero Claude API tokens — pure HTTP + JSON.
+ * Sources:
+ * - Direct ATS APIs when possible (Greenhouse, Ashby, Lever, Workday)
+ * - Career page discovery for hidden ATS backends
+ * - Brave web search queries from portals.yml when BRAVE_API_KEY is available
  *
  * Usage:
- *   node scan.mjs                  # scan all enabled companies
- *   node scan.mjs --dry-run        # preview without writing files
- *   node scan.mjs --company Cohere # scan a single company
+ *   node scan.mjs
+ *   node scan.mjs --dry-run
+ *   node scan.mjs --company Pfizer
  */
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync } from 'fs';
 import yaml from 'js-yaml';
 const parseYaml = yaml.load;
 
-// ── Config ──────────────────────────────────────────────────────────
-
 const PORTALS_PATH = 'portals.yml';
 const SCAN_HISTORY_PATH = 'data/scan-history.tsv';
 const PIPELINE_PATH = 'data/pipeline.md';
 const APPLICATIONS_PATH = 'data/applications.md';
 
-// Ensure required directories exist (fresh setup)
 mkdirSync('data', { recursive: true });
 
-const CONCURRENCY = 10;
+const CONCURRENCY = 8;
 const FETCH_TIMEOUT_MS = 10_000;
+const USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+const BRAVE_API_KEY = process.env.BRAVE_API_KEY;
+const BRAVE_RESULTS_PER_QUERY = Number(process.env.BRAVE_RESULTS_PER_QUERY || 5);
+const BRAVE_SEARCH_DELAY_MS = Number(process.env.BRAVE_SEARCH_DELAY_MS || 1100);
+const SCAN_MAX_QUERIES = Number(process.env.SCAN_MAX_QUERIES || 0);
 
-// ── API detection ───────────────────────────────────────────────────
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function normalizeUrl(rawUrl) {
+  if (!rawUrl) return '';
+  try {
+    const url = new URL(rawUrl);
+    url.hash = '';
+    const noisyParams = [
+      'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+      'gh_src', 'gh_jid', 'gh_jid', 'gh_src', 'source', 'src', 'ref', 'referrer',
+      'fbclid', 'gclid', 'mc_cid', 'mc_eid'
+    ];
+    for (const key of noisyParams) url.searchParams.delete(key);
+    return url.toString();
+  } catch {
+    return rawUrl.trim();
+  }
+}
+
+function uniqueBy(items, keyFn) {
+  const seen = new Set();
+  const out = [];
+  for (const item of items) {
+    const key = keyFn(item);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    out.push(item);
+  }
+  return out;
+}
+
+function buildTitleFilter(titleFilter) {
+  const positive = (titleFilter?.positive || []).map(k => k.toLowerCase());
+  const negative = (titleFilter?.negative || []).map(k => k.toLowerCase());
+
+  return (title) => {
+    const lower = (title || '').toLowerCase();
+    const hasPositive = positive.length === 0 || positive.some(k => lower.includes(k));
+    const hasNegative = negative.some(k => lower.includes(k));
+    return hasPositive && !hasNegative;
+  };
+}
 
 function detectApi(company) {
-  // Greenhouse: explicit api field
-  if (company.api && company.api.includes('greenhouse')) {
-    return { type: 'greenhouse', url: company.api };
+  if (company.api) {
+    if (company.api.includes('greenhouse')) return { type: 'greenhouse', url: company.api };
+    if (company.api.includes('ashbyhq')) return { type: 'ashby', url: company.api };
+    if (company.api.includes('lever.co')) return { type: 'lever', url: company.api };
+    if (company.api.includes('/wday/cxs/')) {
+      return {
+        type: 'workday',
+        url: company.api,
+        method: 'POST',
+        siteUrl: company.careers_url,
+        body: { appliedFacets: {}, limit: 20, offset: 0, searchText: '' },
+      };
+    }
   }
 
-  const url = company.careers_url || '';
+  const raw = company.careers_url || '';
+  if (!raw) return null;
 
-  // Ashby
-  const ashbyMatch = url.match(/jobs\.ashbyhq\.com\/([^/?#]+)/);
-  if (ashbyMatch) {
-    return {
-      type: 'ashby',
-      url: `https://api.ashbyhq.com/posting-api/job-board/${ashbyMatch[1]}?includeCompensation=true`,
-    };
-  }
+  try {
+    const url = new URL(raw);
 
-  // Lever
-  const leverMatch = url.match(/jobs\.lever\.co\/([^/?#]+)/);
-  if (leverMatch) {
-    return {
-      type: 'lever',
-      url: `https://api.lever.co/v0/postings/${leverMatch[1]}`,
-    };
-  }
+    const ashbyMatch = raw.match(/jobs\.ashbyhq\.com\/([^/?#]+)/i);
+    if (ashbyMatch) {
+      return {
+        type: 'ashby',
+        url: `https://api.ashbyhq.com/posting-api/job-board/${ashbyMatch[1]}?includeCompensation=true`,
+      };
+    }
 
-  // Greenhouse EU boards
-  const ghEuMatch = url.match(/job-boards(?:\.eu)?\.greenhouse\.io\/([^/?#]+)/);
-  if (ghEuMatch && !company.api) {
-    return {
-      type: 'greenhouse',
-      url: `https://boards-api.greenhouse.io/v1/boards/${ghEuMatch[1]}/jobs`,
-    };
+    const leverMatch = raw.match(/jobs\.lever\.co\/([^/?#]+)/i);
+    if (leverMatch) {
+      return {
+        type: 'lever',
+        url: `https://api.lever.co/v0/postings/${leverMatch[1]}`,
+      };
+    }
+
+    const ghMatch = raw.match(/job-boards(?:\.eu)?\.greenhouse\.io\/([^/?#]+)/i);
+    if (ghMatch) {
+      return {
+        type: 'greenhouse',
+        url: `https://boards-api.greenhouse.io/v1/boards/${ghMatch[1]}/jobs`,
+      };
+    }
+
+    if (url.hostname.includes('myworkdayjobs.com')) {
+      const parts = url.pathname.split('/').filter(Boolean);
+      const site = parts[parts.length - 1];
+      const tenant = url.hostname.split('.')[0];
+      if (site && tenant) {
+        return {
+          type: 'workday',
+          url: `${url.origin}/wday/cxs/${tenant}/${site}/jobs`,
+          method: 'POST',
+          siteUrl: raw,
+          body: { appliedFacets: {}, limit: 20, offset: 0, searchText: '' },
+        };
+      }
+    }
+  } catch {
+    return null;
   }
 
   return null;
 }
 
-// ── API parsers ─────────────────────────────────────────────────────
-
-function parseGreenhouse(json, companyName) {
-  const jobs = json.jobs || [];
-  return jobs.map(j => ({
-    title: j.title || '',
-    url: j.absolute_url || '',
-    company: companyName,
-    location: j.location?.name || '',
-  }));
+function buildGreenhouseEndpoint(slug) {
+  return { type: 'greenhouse', url: `https://boards-api.greenhouse.io/v1/boards/${slug}/jobs` };
 }
 
-function parseAshby(json, companyName) {
-  const jobs = json.jobs || [];
-  return jobs.map(j => ({
-    title: j.title || '',
-    url: j.jobUrl || '',
-    company: companyName,
-    location: j.location || '',
-  }));
+function buildAshbyEndpoint(slug) {
+  return { type: 'ashby', url: `https://api.ashbyhq.com/posting-api/job-board/${slug}?includeCompensation=true` };
 }
 
-function parseLever(json, companyName) {
-  if (!Array.isArray(json)) return [];
-  return json.map(j => ({
-    title: j.text || '',
-    url: j.hostedUrl || '',
-    company: companyName,
-    location: j.categories?.location || '',
-  }));
+function buildLeverEndpoint(slug) {
+  return { type: 'lever', url: `https://api.lever.co/v0/postings/${slug}` };
 }
 
-const PARSERS = { greenhouse: parseGreenhouse, ashby: parseAshby, lever: parseLever };
+function buildWorkdayEndpoint(origin, tenant, site, siteUrl = origin) {
+  return {
+    type: 'workday',
+    url: `${origin}/wday/cxs/${tenant}/${site}/jobs`,
+    method: 'POST',
+    siteUrl,
+    body: { appliedFacets: {}, limit: 20, offset: 0, searchText: '' },
+  };
+}
 
-// ── Fetch with timeout ──────────────────────────────────────────────
-
-async function fetchJson(url) {
+async function fetchJson(endpoint) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    const res = await fetch(url, { signal: controller.signal });
+    const method = endpoint.method || 'GET';
+    const headers = {
+      'user-agent': USER_AGENT,
+      accept: 'application/json',
+      ...(endpoint.headers || {}),
+    };
+    const options = { method, signal: controller.signal, headers };
+    if (endpoint.body && method !== 'GET') {
+      headers['content-type'] = 'application/json';
+      options.body = JSON.stringify(endpoint.body);
+    }
+    const res = await fetch(endpoint.url, options);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   } finally {
@@ -120,47 +190,111 @@ async function fetchJson(url) {
   }
 }
 
-// ── Title filter ────────────────────────────────────────────────────
-
-function buildTitleFilter(titleFilter) {
-  const positive = (titleFilter?.positive || []).map(k => k.toLowerCase());
-  const negative = (titleFilter?.negative || []).map(k => k.toLowerCase());
-
-  return (title) => {
-    const lower = title.toLowerCase();
-    const hasPositive = positive.length === 0 || positive.some(k => lower.includes(k));
-    const hasNegative = negative.some(k => lower.includes(k));
-    return hasPositive && !hasNegative;
-  };
+async function fetchText(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'user-agent': USER_AGENT,
+        accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      },
+      redirect: 'follow',
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return await res.text();
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
-// ── Dedup ───────────────────────────────────────────────────────────
+function parseGreenhouse(json, companyName) {
+  return (json.jobs || []).map(j => ({
+    title: j.title || '',
+    url: normalizeUrl(j.absolute_url || ''),
+    company: companyName,
+    location: j.location?.name || '',
+  }));
+}
+
+function parseAshby(json, companyName) {
+  return (json.jobs || []).map(j => ({
+    title: j.title || '',
+    url: normalizeUrl(j.jobUrl || ''),
+    company: companyName,
+    location: typeof j.location === 'string' ? j.location : (j.location?.locationName || ''),
+  }));
+}
+
+function parseLever(json, companyName) {
+  if (!Array.isArray(json)) return [];
+  return json.map(j => ({
+    title: j.text || '',
+    url: normalizeUrl(j.hostedUrl || ''),
+    company: companyName,
+    location: j.categories?.location || '',
+  }));
+}
+
+function parseWorkday(json, companyName, endpoint) {
+  const origin = endpoint.siteUrl ? new URL(endpoint.siteUrl).origin : new URL(endpoint.url).origin;
+  return (json.jobPostings || []).map(j => ({
+    title: j.title || '',
+    url: normalizeUrl(j.externalPath ? new URL(j.externalPath, origin).toString() : ''),
+    company: companyName,
+    location: j.locationsText || j.location || '',
+  }));
+}
+
+async function fetchWorkdayJobs(endpoint, companyName) {
+  const pageSize = endpoint.body?.limit || 100;
+  let offset = 0;
+  let total = Infinity;
+  const jobs = [];
+
+  while (offset < total && offset < 500) {
+    const json = await fetchJson({
+      ...endpoint,
+      body: { ...(endpoint.body || {}), offset },
+    });
+    jobs.push(...parseWorkday(json, companyName, endpoint));
+    total = Number(json.total || jobs.length);
+    if (!(json.jobPostings || []).length) break;
+    offset += pageSize;
+  }
+
+  return jobs;
+}
+
+const PARSERS = {
+  greenhouse: parseGreenhouse,
+  ashby: parseAshby,
+  lever: parseLever,
+};
 
 function loadSeenUrls() {
   const seen = new Set();
 
-  // scan-history.tsv
   if (existsSync(SCAN_HISTORY_PATH)) {
     const lines = readFileSync(SCAN_HISTORY_PATH, 'utf-8').split('\n');
-    for (const line of lines.slice(1)) { // skip header
+    for (const line of lines.slice(1)) {
       const url = line.split('\t')[0];
-      if (url) seen.add(url);
+      if (url) seen.add(normalizeUrl(url));
     }
   }
 
-  // pipeline.md — extract URLs from checkbox lines
   if (existsSync(PIPELINE_PATH)) {
     const text = readFileSync(PIPELINE_PATH, 'utf-8');
     for (const match of text.matchAll(/- \[[ x]\] (https?:\/\/\S+)/g)) {
-      seen.add(match[1]);
+      seen.add(normalizeUrl(match[1]));
     }
   }
 
-  // applications.md — extract URLs from report links and any inline URLs
   if (existsSync(APPLICATIONS_PATH)) {
     const text = readFileSync(APPLICATIONS_PATH, 'utf-8');
     for (const match of text.matchAll(/https?:\/\/[^\s|)]+/g)) {
-      seen.add(match[0]);
+      seen.add(normalizeUrl(match[0]));
     }
   }
 
@@ -169,47 +303,43 @@ function loadSeenUrls() {
 
 function loadSeenCompanyRoles() {
   const seen = new Set();
-  if (existsSync(APPLICATIONS_PATH)) {
-    const text = readFileSync(APPLICATIONS_PATH, 'utf-8');
-    // Parse markdown table rows: | # | Date | Company | Role | ...
-    for (const match of text.matchAll(/\|[^|]+\|[^|]+\|\s*([^|]+)\s*\|\s*([^|]+)\s*\|/g)) {
-      const company = match[1].trim().toLowerCase();
-      const role = match[2].trim().toLowerCase();
-      if (company && role && company !== 'company') {
-        seen.add(`${company}::${role}`);
-      }
+  if (!existsSync(APPLICATIONS_PATH)) return seen;
+
+  const text = readFileSync(APPLICATIONS_PATH, 'utf-8');
+  for (const match of text.matchAll(/\|[^|]+\|[^|]+\|\s*([^|]+)\s*\|\s*([^|]+)\s*\|/g)) {
+    const company = match[1].trim().toLowerCase();
+    const role = match[2].trim().toLowerCase();
+    if (company && role && company !== 'company') {
+      seen.add(`${company}::${role}`);
     }
   }
   return seen;
 }
 
-// ── Pipeline writer ─────────────────────────────────────────────────
+function ensurePipelineFile() {
+  if (!existsSync(PIPELINE_PATH)) {
+    writeFileSync(PIPELINE_PATH, '# Job Pipeline\n\n## Pendientes\n\n## Procesadas\n', 'utf-8');
+  }
+}
 
 function appendToPipeline(offers) {
   if (offers.length === 0) return;
 
+  ensurePipelineFile();
   let text = readFileSync(PIPELINE_PATH, 'utf-8');
-
-  // Find "## Pendientes" section and append after it
   const marker = '## Pendientes';
   const idx = text.indexOf(marker);
+
   if (idx === -1) {
-    // No Pendientes section — append at end before Procesadas
     const procIdx = text.indexOf('## Procesadas');
     const insertAt = procIdx === -1 ? text.length : procIdx;
-    const block = `\n${marker}\n\n` + offers.map(o =>
-      `- [ ] ${o.url} | ${o.company} | ${o.title}`
-    ).join('\n') + '\n\n';
+    const block = `\n${marker}\n\n` + offers.map(o => `- [ ] ${o.url} | ${o.company} | ${o.title}`).join('\n') + '\n\n';
     text = text.slice(0, insertAt) + block + text.slice(insertAt);
   } else {
-    // Find the end of existing Pendientes content (next ## or end)
     const afterMarker = idx + marker.length;
     const nextSection = text.indexOf('\n## ', afterMarker);
     const insertAt = nextSection === -1 ? text.length : nextSection;
-
-    const block = '\n' + offers.map(o =>
-      `- [ ] ${o.url} | ${o.company} | ${o.title}`
-    ).join('\n') + '\n';
+    const block = '\n' + offers.map(o => `- [ ] ${o.url} | ${o.company} | ${o.title}`).join('\n') + '\n';
     text = text.slice(0, insertAt) + block + text.slice(insertAt);
   }
 
@@ -217,19 +347,16 @@ function appendToPipeline(offers) {
 }
 
 function appendToScanHistory(offers, date) {
-  // Ensure file + header exist
   if (!existsSync(SCAN_HISTORY_PATH)) {
     writeFileSync(SCAN_HISTORY_PATH, 'url\tfirst_seen\tportal\ttitle\tcompany\tstatus\n', 'utf-8');
   }
 
   const lines = offers.map(o =>
-    `${o.url}\t${date}\t${o.source}\t${o.title}\t${o.company}\tadded`
+    `${normalizeUrl(o.url)}\t${date}\t${o.source}\t${o.title}\t${o.company}\tadded`
   ).join('\n') + '\n';
 
   appendFileSync(SCAN_HISTORY_PATH, lines, 'utf-8');
 }
-
-// ── Parallel fetch with concurrency limit ───────────────────────────
 
 async function parallelFetch(tasks, limit) {
   const results = [];
@@ -247,7 +374,225 @@ async function parallelFetch(tasks, limit) {
   return results;
 }
 
-// ── Main ────────────────────────────────────────────────────────────
+function discoverEndpointsFromHtml(html, careersUrl) {
+  const endpoints = [];
+  const origin = (() => {
+    try { return new URL(careersUrl).origin; } catch { return ''; }
+  })();
+
+  const ghEmbed = html.match(/boards\.greenhouse\.io\/embed\/job_board\/js\?for=([a-z0-9-]+)/i);
+  if (ghEmbed) endpoints.push(buildGreenhouseEndpoint(ghEmbed[1]));
+
+  const ghBoard = html.match(/(?:job-boards(?:\.eu)?|boards)\.greenhouse\.io\/([a-z0-9-]+)(?:\/jobs)?/i);
+  if (ghBoard) endpoints.push(buildGreenhouseEndpoint(ghBoard[1]));
+
+  const ashby = html.match(/jobs\.ashbyhq\.com\/([a-z0-9-]+)/i);
+  if (ashby) endpoints.push(buildAshbyEndpoint(ashby[1]));
+
+  const lever = html.match(/jobs\.lever\.co\/([a-z0-9-]+)/i);
+  if (lever) endpoints.push(buildLeverEndpoint(lever[1]));
+
+  const workday = html.match(/\/wday\/cxs\/([^/"'\s<>]+)\/([^/"'\s<>]+)\/jobs/i);
+  if (workday && origin) endpoints.push(buildWorkdayEndpoint(origin, workday[1], workday[2], careersUrl));
+
+  return uniqueBy(endpoints, e => `${e.type}:${e.url}`);
+}
+
+async function discoverApiFromCareerPage(company) {
+  if (!company.careers_url) return [];
+  try {
+    const html = await fetchText(company.careers_url);
+    return discoverEndpointsFromHtml(html, company.careers_url);
+  } catch {
+    return [];
+  }
+}
+
+async function fetchCompanyJobs(company) {
+  const endpoints = uniqueBy([
+    detectApi(company),
+    ...(await discoverApiFromCareerPage(company)),
+  ].filter(Boolean), e => `${e.type}:${e.url}`);
+
+  if (!endpoints.length) {
+    throw new Error('no supported ATS endpoint detected');
+  }
+
+  const errors = [];
+  for (const endpoint of endpoints) {
+    try {
+      if (endpoint.type === 'workday') {
+        return { jobs: await fetchWorkdayJobs(endpoint, company.name), endpointType: endpoint.type };
+      }
+      const json = await fetchJson(endpoint);
+      const parser = PARSERS[endpoint.type];
+      if (!parser) throw new Error(`no parser for ${endpoint.type}`);
+      return { jobs: parser(json, company.name, endpoint), endpointType: endpoint.type };
+    } catch (err) {
+      errors.push(`${endpoint.type}: ${err.message}`);
+    }
+  }
+
+  throw new Error(errors.join('; '));
+}
+
+async function braveSearch(query, count = BRAVE_RESULTS_PER_QUERY) {
+  if (!BRAVE_API_KEY) return [];
+  const url = new URL('https://api.search.brave.com/res/v1/web/search');
+  url.searchParams.set('q', query);
+  url.searchParams.set('count', String(count));
+  url.searchParams.set('country', 'us');
+  url.searchParams.set('search_lang', 'en');
+  url.searchParams.set('text_decorations', 'false');
+  url.searchParams.set('freshness', 'month');
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        accept: 'application/json',
+        'user-agent': USER_AGENT,
+        'x-subscription-token': BRAVE_API_KEY,
+      },
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    return json.web?.results || [];
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function looksLikeJobUrl(url) {
+  const lower = (url || '').toLowerCase();
+  return /(\/jobs?\/|careers?|job-boards|greenhouse|lever|ashbyhq|myworkdayjobs|workdayjobs|opening|position|requisition|opportunit|smartrecruiters|workable)/.test(lower);
+}
+
+function extractLocation(text) {
+  if (!text) return '';
+  const patterns = [
+    /((?:San Francisco|South San Francisco|Sunnyvale|Santa Clara|San Jose|Milpitas|Fremont|Alameda|Cambridge|Boston|Watertown|San Diego|Carlsbad|Research Triangle|Seattle|Austin|Phoenix|Portland|Indianapolis|New York|Newark|Princeton|Waltham|Gaithersburg|Tarrytown|Corning)(?:,\s*(?:CA|MA|NY|NJ|NC|WA|TX|AZ|OR|IN|MD))?)/i,
+    /([A-Z][a-z]+(?:\s[A-Z][a-z]+)*,\s*(?:CA|MA|NY|NJ|NC|WA|TX|AZ|OR|IN|MD|PA|IL|MN|CO|CT))/,
+  ];
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match) return match[1];
+  }
+  return '';
+}
+
+function inferCompanyFromResult(result, fallbackCompany = '') {
+  const title = result.title || '';
+  if (fallbackCompany) return fallbackCompany;
+  if (/\sat\s/i.test(title)) {
+    return title.split(/\sat\s/i).pop().split('|')[0].trim();
+  }
+  if (/@\s*[A-Z]/.test(title)) {
+    return title.split('@').pop().split('|')[0].trim();
+  }
+  return '';
+}
+
+function parseSearchResult(result, fallbackCompany = '') {
+  const url = normalizeUrl(result.url || result.profile?.url || '');
+  let title = (result.title || '').replace(/\s+/g, ' ').trim();
+  const description = (result.description || '').replace(/\s+/g, ' ').trim();
+
+  if (!url || !title || !looksLikeJobUrl(url)) return null;
+
+  title = title
+    .replace(/^Job Application for\s+/i, '')
+    .replace(/\s*-\s*Myworkdayjobs\.com$/i, '')
+    .split('|')[0]
+    .trim();
+
+  return {
+    title,
+    url,
+    company: inferCompanyFromResult({ ...result, title }, fallbackCompany),
+    location: extractLocation(description),
+    description,
+  };
+}
+
+function buildSearchTargets(config, companies, filterCompany) {
+  const queryTargets = [];
+
+  for (const q of config.search_queries || []) {
+    if (q.enabled === false) continue;
+    if (filterCompany && !(q.name || '').toLowerCase().includes(filterCompany)) continue;
+    queryTargets.push({
+      label: q.name || q.query,
+      query: q.query,
+      count: q.count || BRAVE_RESULTS_PER_QUERY,
+      companyName: '',
+    });
+  }
+
+  for (const company of companies) {
+    if (company.enabled === false) continue;
+    if (filterCompany && !company.name.toLowerCase().includes(filterCompany)) continue;
+
+    if (company.scan_query) {
+      queryTargets.push({
+        label: `Company watcher - ${company.name}`,
+        query: company.scan_query,
+        count: company.count || BRAVE_RESULTS_PER_QUERY,
+        companyName: company.name,
+      });
+      continue;
+    }
+
+    if (company.careers_url) {
+      try {
+        const host = new URL(company.careers_url).hostname.replace(/^www\./, '');
+        queryTargets.push({
+          label: `Company watcher - ${company.name}`,
+          query: `site:${host} ("Materials Scientist" OR "Analytical Scientist" OR "Applications Scientist" OR "Process Engineer" OR "Scientist")`,
+          count: company.count || BRAVE_RESULTS_PER_QUERY,
+          companyName: company.name,
+        });
+      } catch {
+        // noop
+      }
+    }
+  }
+
+  const deduped = uniqueBy(queryTargets, q => q.query.trim().toLowerCase());
+  return SCAN_MAX_QUERIES > 0 ? deduped.slice(0, SCAN_MAX_QUERIES) : deduped;
+}
+
+function maybeAddOffer(job, source, titleFilter, seenUrls, seenCompanyRoles, stats, output) {
+  if (!job || !job.title || !job.url) return;
+
+  const canonicalUrl = normalizeUrl(job.url);
+  if (!titleFilter(job.title)) {
+    stats.filtered++;
+    return;
+  }
+  if (seenUrls.has(canonicalUrl)) {
+    stats.duplicates++;
+    return;
+  }
+
+  const company = job.company || 'Unknown';
+  const key = `${company.toLowerCase()}::${job.title.toLowerCase()}`;
+  if (seenCompanyRoles.has(key)) {
+    stats.duplicates++;
+    return;
+  }
+
+  seenUrls.add(canonicalUrl);
+  seenCompanyRoles.add(key);
+  output.push({
+    ...job,
+    url: canonicalUrl,
+    company,
+    source,
+  });
+}
 
 async function main() {
   const args = process.argv.slice(2);
@@ -255,100 +600,105 @@ async function main() {
   const companyFlag = args.indexOf('--company');
   const filterCompany = companyFlag !== -1 ? args[companyFlag + 1]?.toLowerCase() : null;
 
-  // 1. Read portals.yml
   if (!existsSync(PORTALS_PATH)) {
     console.error('Error: portals.yml not found. Run onboarding first.');
     process.exit(1);
   }
 
   const config = parseYaml(readFileSync(PORTALS_PATH, 'utf-8'));
-  const companies = config.tracked_companies || [];
+  const companies = (config.tracked_companies || [])
+    .filter(c => c.enabled !== false)
+    .filter(c => !filterCompany || c.name.toLowerCase().includes(filterCompany));
   const titleFilter = buildTitleFilter(config.title_filter);
 
-  // 2. Filter to enabled companies with detectable APIs
-  const targets = companies
-    .filter(c => c.enabled !== false)
-    .filter(c => !filterCompany || c.name.toLowerCase().includes(filterCompany))
-    .map(c => ({ ...c, _api: detectApi(c) }))
-    .filter(c => c._api !== null);
+  const apiCandidates = companies.filter(c => c.api || /(?:greenhouse|ashbyhq|lever\.co|myworkdayjobs\.com)/i.test(c.careers_url || ''));
+  const queryTargets = buildSearchTargets(config, companies, filterCompany);
 
-  const skippedCount = companies.filter(c => c.enabled !== false).length - targets.length;
-
-  console.log(`Scanning ${targets.length} companies via API (${skippedCount} skipped — no API detected)`);
+  console.log(`Scanning ${apiCandidates.length} ATS-backed companies`);
+  console.log(`Web query targets: ${queryTargets.length}${BRAVE_API_KEY ? '' : ' (BRAVE_API_KEY missing, web search disabled)'}`);
   if (dryRun) console.log('(dry run — no files will be written)\n');
 
-  // 3. Load dedup sets
   const seenUrls = loadSeenUrls();
   const seenCompanyRoles = loadSeenCompanyRoles();
-
-  // 4. Fetch all APIs
   const date = new Date().toISOString().slice(0, 10);
-  let totalFound = 0;
-  let totalFiltered = 0;
-  let totalDupes = 0;
   const newOffers = [];
-  const errors = [];
 
-  const tasks = targets.map(company => async () => {
-    const { type, url } = company._api;
+  const stats = {
+    totalFound: 0,
+    filtered: 0,
+    duplicates: 0,
+    apiCompaniesScanned: 0,
+    apiErrors: [],
+    apiHits: 0,
+    webQueriesRun: 0,
+    webErrors: [],
+    webHits: 0,
+  };
+
+  const apiTasks = apiCandidates.map(company => async () => {
     try {
-      const json = await fetchJson(url);
-      const jobs = PARSERS[type](json, company.name);
-      totalFound += jobs.length;
-
+      const { jobs, endpointType } = await fetchCompanyJobs(company);
+      stats.apiCompaniesScanned++;
+      stats.totalFound += jobs.length;
+      stats.apiHits += jobs.length;
       for (const job of jobs) {
-        if (!titleFilter(job.title)) {
-          totalFiltered++;
-          continue;
-        }
-        if (seenUrls.has(job.url)) {
-          totalDupes++;
-          continue;
-        }
-        const key = `${job.company.toLowerCase()}::${job.title.toLowerCase()}`;
-        if (seenCompanyRoles.has(key)) {
-          totalDupes++;
-          continue;
-        }
-        // Mark as seen to avoid intra-scan dupes
-        seenUrls.add(job.url);
-        seenCompanyRoles.add(key);
-        newOffers.push({ ...job, source: `${type}-api` });
+        maybeAddOffer(job, `${endpointType}-api`, titleFilter, seenUrls, seenCompanyRoles, stats, newOffers);
       }
     } catch (err) {
-      errors.push({ company: company.name, error: err.message });
+      stats.apiErrors.push({ company: company.name, error: err.message });
     }
   });
 
-  await parallelFetch(tasks, CONCURRENCY);
+  await parallelFetch(apiTasks, CONCURRENCY);
 
-  // 5. Write results
+  if (BRAVE_API_KEY) {
+    for (const target of queryTargets) {
+      try {
+        const results = await braveSearch(target.query, target.count || BRAVE_RESULTS_PER_QUERY);
+        stats.webQueriesRun++;
+        stats.totalFound += results.length;
+        stats.webHits += results.length;
+        for (const result of results) {
+          maybeAddOffer(parseSearchResult(result, target.companyName), 'brave-web', titleFilter, seenUrls, seenCompanyRoles, stats, newOffers);
+        }
+      } catch (err) {
+        stats.webErrors.push({ query: target.label, error: err.message });
+      }
+      await delay(BRAVE_SEARCH_DELAY_MS);
+    }
+  }
+
   if (!dryRun && newOffers.length > 0) {
     appendToPipeline(newOffers);
     appendToScanHistory(newOffers, date);
   }
 
-  // 6. Print summary
   console.log(`\n${'━'.repeat(45)}`);
   console.log(`Portal Scan — ${date}`);
   console.log(`${'━'.repeat(45)}`);
-  console.log(`Companies scanned:     ${targets.length}`);
-  console.log(`Total jobs found:      ${totalFound}`);
-  console.log(`Filtered by title:     ${totalFiltered} removed`);
-  console.log(`Duplicates:            ${totalDupes} skipped`);
-  console.log(`New offers added:      ${newOffers.length}`);
+  console.log(`ATS companies attempted: ${apiCandidates.length}`);
+  console.log(`ATS jobs fetched:        ${stats.apiHits}`);
+  console.log(`Web queries run:         ${stats.webQueriesRun}`);
+  console.log(`Web results fetched:     ${stats.webHits}`);
+  console.log(`Total raw results:       ${stats.totalFound}`);
+  console.log(`Filtered by title:       ${stats.filtered} removed`);
+  console.log(`Duplicates:              ${stats.duplicates} skipped`);
+  console.log(`New offers added:        ${newOffers.length}`);
 
-  if (errors.length > 0) {
-    console.log(`\nErrors (${errors.length}):`);
-    for (const e of errors) {
-      console.log(`  ✗ ${e.company}: ${e.error}`);
-    }
+  if (stats.apiErrors.length > 0) {
+    console.log(`\nATS Errors (${stats.apiErrors.length}):`);
+    for (const e of stats.apiErrors) console.log(`  ✗ ${e.company}: ${e.error}`);
+  }
+
+  if (stats.webErrors.length > 0) {
+    console.log(`\nWeb Search Errors (${stats.webErrors.length}):`);
+    for (const e of stats.webErrors) console.log(`  ✗ ${e.query}: ${e.error}`);
   }
 
   if (newOffers.length > 0) {
     console.log('\nNew offers:');
-    for (const o of newOffers) {
-      console.log(`  + ${o.company} | ${o.title} | ${o.location || 'N/A'}`);
+    for (const offer of newOffers) {
+      console.log(`  + ${offer.company} | ${offer.title} | ${offer.location || 'N/A'} | ${offer.source}`);
     }
     if (dryRun) {
       console.log('\n(dry run — run without --dry-run to save results)');
@@ -358,7 +708,6 @@ async function main() {
   }
 
   console.log(`\n→ Run /career-ops pipeline to evaluate new offers.`);
-  console.log('→ Share results and get help: https://discord.gg/8pRpHETxa4');
 }
 
 main().catch(err => {

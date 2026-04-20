@@ -19,20 +19,17 @@ REPORTS_DIR = Path(__file__).parent / "reports"
 
 # Search queries optimized for Varun's profile
 SEARCH_QUERIES = [
-    # Core analytical chemistry roles
-    '"Analytical Development" scientist "PhD" biotech',
-    '"CMC Analytical" scientist pharmaceutical',
-    '"Quality Control" scientist chemistry "PhD"',
-    '"Formulation" scientist analytical chemistry',
-    '"Materials Characterization" scientist PhD',
-    # Specific companies
-    'site:linkedin.com/jobs "Genentech" "Scientist" analytical',
-    'site:linkedin.com/jobs "Amgen" "Scientist" chemistry',
-    'site:linkedin.com/jobs "Gilead" "Scientist" analytical',
-    'site:linkedin.com/jobs "BMS" "Scientist" analytical',
-    # Job boards
-    'site:jobs.lever.co "Scientist" analytical chemistry',
-    'site:boards.greenhouse.io "Scientist" analytical development',
+    '("Materials Scientist" OR "Materials Engineer" OR "Characterization Engineer") thin film OR coatings OR polymer',
+    '("Failure Analysis Engineer" OR "Reliability Engineer" OR "Reliability Scientist") materials OR semiconductor OR chemistry',
+    '("Process Development Scientist" OR "Process Chemist" OR "Formulation Scientist") polymer OR coatings OR scale-up',
+    '("Applications Scientist" OR "Field Application Scientist") spectroscopy OR chromatography OR materials',
+    '("Analytical Development" OR "CMC Analytical" OR "Analytical Scientist") "small molecule"',
+    '("Process Engineer" OR metrology OR deposition OR "Characterization Engineer") semiconductor OR thin film',
+    'site:careers.gene.com ("Scientist" OR analytical OR materials OR formulation)',
+    'site:careers.agilent.com ("Applications Scientist" OR spectroscopy OR chromatography OR materials)',
+    'site:jobs.waters.com ("Applications Scientist" OR LC-MS OR analytical)',
+    'site:ppg.com/careers (coatings OR formulation OR materials OR chemist)',
+    'site:quantumscape.com/careers (materials OR electrochemist OR characterization OR process)',
 ]
 
 def load_jobs():

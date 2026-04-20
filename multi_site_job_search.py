@@ -18,35 +18,37 @@ from job_freshness import assess_job_freshness
 SEARCH_CONFIG = {
     "linkedin": {
         "queries": [
-            'site:linkedin.com/jobs "Senior Scientist" "Analytical Chemistry"',
-            'site:linkedin.com/jobs "Scientist" "CMC Analytical"',
-            'site:linkedin.com/jobs "Analytical Development" scientist biotech',
-            'site:linkedin.com/jobs "Formulation Scientist" pharmaceutical',
-            'site:linkedin.com/jobs "Materials Characterization" scientist',
+            'site:linkedin.com/jobs ("Materials Scientist" OR "Materials Engineer" OR "Characterization Engineer") thin film OR coatings OR polymer',
+            'site:linkedin.com/jobs ("Failure Analysis Engineer" OR "Reliability Engineer" OR "Reliability Scientist") materials OR semiconductor OR chemistry',
+            'site:linkedin.com/jobs ("Process Development Scientist" OR "Process Chemist" OR "Formulation Scientist") polymer OR coatings OR scale-up',
+            'site:linkedin.com/jobs ("Applications Scientist" OR "Field Application Scientist") spectroscopy OR chromatography OR materials',
+            'site:linkedin.com/jobs ("Analytical Development" OR "CMC Analytical" OR "Analytical Scientist") "small molecule"',
+            'site:linkedin.com/jobs ("Process Engineer" OR metrology OR deposition OR "Characterization Engineer") semiconductor OR thin film',
         ],
         "results_per_query": 5
     },
     "indeed": {
         "queries": [
-            'site:indeed.com "Scientist" "Analytical Chemistry" biotech',
-            'site:indeed.com "Analytical Development Scientist"',
-            'site:indeed.com "CMC" "Analytical" scientist',
-            'site:indeed.com "Quality Control" chemist pharmaceutical',
+            'site:indeed.com ("Materials Scientist" OR "Analytical Scientist") polymer OR coatings OR characterization',
+            'site:indeed.com ("Failure Analysis" OR "Reliability Engineer") materials OR chemistry OR semiconductor',
+            'site:indeed.com ("Process Chemist" OR "Development Chemist" OR "Formulation Scientist") polymer OR coating OR chemistry',
+            'site:indeed.com ("Applications Scientist" OR spectroscopy OR chromatography) materials OR chemistry',
         ],
         "results_per_query": 5
     },
     "wellfound": {
         "queries": [
-            'site:wellfound.com/jobs "analytical" scientist biotech',
-            'site:wellfound.com/jobs "chemist" startup',
-            'site:angel.co/jobs "scientist" chemistry',  # Legacy URL
+            'site:wellfound.com/jobs ("materials scientist" OR chemist OR analytical) startup biotech OR battery OR semiconductor',
+            'site:wellfound.com/jobs (polymer OR coatings OR characterization OR "applications scientist")',
+            'site:angel.co/jobs ("scientist" OR "materials" OR chemist) startup',
         ],
-        "results_per_query": 3
+        "results_per_query": 4
     },
     "biospace": {
         "queries": [
-            'site:biospace.com jobs "Analytical Development"',
-            'site:biospace.com jobs "CMC" scientist',
+            'site:biospace.com jobs ("Analytical Development" OR "CMC Analytical") "small molecule"',
+            'site:biospace.com jobs ("Formulation Scientist" OR "Process Development") chemistry OR materials',
+            'site:biospace.com jobs ("Applications Scientist" OR "Analytical Scientist")',
         ],
         "results_per_query": 5
     }
