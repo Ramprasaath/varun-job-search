@@ -1,0 +1,112 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "Analytical Chemist and Materials Scientist (PhD) with deep expertise in solid-state characterization (XRPD, DSC, TGA, DLS), particle sizing, and analytical method development. Proven track record in developing, validating, and troubleshooting analytical methods for diverse material systems. Experienced in cross-functional collaboration bridging formulation, process development, and quality functions. Strong background in spectroscopic and chromatographic techniques with hands-on instrument operation and data analysis.",
+  "competencies": [
+    "X-Ray Powder Diffraction (XRPD)",
+    "Particle Size Analysis (PSD/DLS)",
+    "Analytical Method Development & Validation",
+    "Thermal Analysis (DSC/TGA/DVS)",
+    "Chromatography (HPLC/UPLC/GC)",
+    "Spectroscopic Characterization",
+    "Solid-State Characterization",
+    "Root Cause Investigation & Troubleshooting",
+    "Technical Report Writing",
+    "Cross-functional Collaboration"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 \u2013 Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Leading chemical process development and optimization for novel bio-based polymer systems, applying statistical experimental design to identify critical process parameters, improve yield and product quality, and establish reproducible process specifications for scale-up."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 \u2013 July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Assessed material-level reliability risks in functional electrochromic systems by identifying high-risk failure modes including oxidative degradation, interface delamination, and redox instability, applying systematic root cause analysis to develop design and process mitigations.",
+        "Developed and executed stress test conditions based on material physics of failure, evaluating long-term stability and degradation behavior of 15+ organic and organometallic material variants under controlled electrochemical and optical stress conditions."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 \u2013 July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led AFOSR-funded process development for high-performance molecular thin-film coatings for defense optical applications, developing surface preparation protocols and CVD-based deposition strategies to achieve controlled film morphology and device performance."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 \u2013 July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Developed and optimized CVD-based polymer thin-film deposition processes using DOE strategies and in-situ QCM-D process monitoring, establishing process control parameters and characterizing film growth kinetics to improve coating reproducibility and uniformity."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 \u2013 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed process development laboratory operations for a 15-member research group; implemented equipment tracking and calibration systems improving instrument uptime by 30%, developed SOPs and safety protocols, and coordinated cross-functional resource planning across multiple concurrent projects."
+      ]
+    }
+  ],
+  "projects": [],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024.",
+    "Decoupling Redox and Color for High-Contrast Electrochromics, Excited State Processes Conference, Santa Fe, NM, June 2023.",
+    "Electrochromism: Decoupling Color and Redox in Rhodamine-Based Systems, Rocky Mountain Solid State Chemistry Workshop, Boulder, CO, January 2023."
+  ],
+  "skills": {
+    "Analytical Techniques": "XRPD, DSC, TGA, DLS, HPLC/UPLC, GC, FTIR, Raman, UV-Vis, SEM, TEM",
+    "Particle Characterization": "Laser diffraction (Malvern Mastersizer), DLS, flow imaging microscopy",
+    "Method Development": "ICH Q2 guidelines, method validation, tech transfer, GMP environment",
+    "Software": "Jade (XRPD), TOPAS, Origin, ChemStation, GraphPad Prism, JMP",
+    "Data Analysis": "Statistical analysis, DOE, multivariate analysis, regulatory documentation"
+  },
+  "certifications": [
+    "Statistical Process Control (SPC) \u2013 Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)",
+    "97.12 Percentile \u2013 IIT JEE Mains (2015)",
+    "All India Rank 144 \u2013 NEST (2014)"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019\u20132021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  }
+}

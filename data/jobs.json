@@ -1915,5 +1915,119 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
+  },
+  {
+    "id": 62,
+    "url": "https://jobrxiv.org/job/senior-scientist-analytical-projects-device-particle-size-and-xrpd/",
+    "company": "GSK",
+    "title": "Senior Scientist, Analytical Projects \u2013 Device, Particle Size and XRPD",
+    "location": "United States (Hybrid)",
+    "date_found": "2026-04-21",
+    "score": 4.0,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-gsk-senior-scientist-analytical-projects-xrp-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong match. GSK Analytical Projects group focuses on device characterization, particle sizing (PSD), and XRPD \u2014 direct overlap with Varun's solid-state characterization expertise. PhD preferred. Hybrid work. Involves method development, validation, mentoring juniors, and cross-functional collaboration with formulation/engineering/quality teams. XRPD and particle sizing are core techniques in Varun's toolkit.",
+    "evaluation": {
+      "cv_match": 3.8,
+      "north_star": 4.2,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.0,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Device testing experience (inhalation devices) not explicitly in background",
+        "Regulated environment / quality systems experience may be limited",
+        "Industry experience is 0 years (fresh PhD)"
+      ],
+      "strengths": [
+        "XRPD expertise directly matches core requirement",
+        "Particle sizing / solid-state characterization experience",
+        "Analytical method development and validation skills",
+        "PhD in relevant discipline (Chemistry/Materials)",
+        "Cross-functional collaboration experience from postdoc"
+      ],
+      "recommendation": "APPLY - Strong XRPD and particle sizing alignment. PhD preferred. Stretch on device testing but core analytical skills transfer well."
+    },
+    "tailored_resume": "tailored_gsk_xrpd"
+  },
+  {
+    "id": 63,
+    "url": "https://jobrxiv.org/job/senior-scientist-high-throughput-mass-spectrometry-automation/",
+    "company": "Takeda",
+    "title": "Senior Scientist, High-Throughput Mass Spectrometry (Automation)",
+    "location": "Boston, MA",
+    "date_found": "2026-04-21",
+    "score": 3.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Takeda's 'Lab of the Future' initiative. Focus on designing and executing bioanalytical assays on fully automated robotic platforms in 384/1536-well formats. High-throughput MS platforms (Acoustic MS, RapidFire, MALDI-MS). Cross-functional with DMPK, medicinal chemistry, data sciences. Varun has strong MS background but limited high-throughput automation experience. Interesting role but requires specific automation/robotics skills.",
+    "evaluation": {
+      "cv_match": 3.0,
+      "north_star": 3.5,
+      "comp": 3.8,
+      "cultural": 3.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "No high-throughput automation / robotic platform experience",
+        "384/1536-well assay formats not in background",
+        "Lab automation integration (LIMS/ELN) not demonstrated",
+        "DMTA cycle experience limited"
+      ],
+      "strengths": [
+        "Mass spectrometry expertise (HRMS, LC-MS)",
+        "Analytical method development skills",
+        "Cross-functional collaboration",
+        "Statistical analysis capabilities"
+      ],
+      "recommendation": "CONSIDER - Strong MS foundation but automation/HT gap is significant. Could be a growth role if Varun is interested in automation."
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 64,
+    "url": "https://jobrxiv.org/job/associate-principal-scientist-chemistry-5/",
+    "company": "Merck",
+    "title": "Associate Principal Scientist, Chemistry (Supply Analytical Sciences)",
+    "location": "United States",
+    "date_found": "2026-04-21",
+    "score": 3.8,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Merck Supply Analytical Sciences (SAS) \u2013 Analytical Chemistry in Development and Supply (ACDS). Technical leadership in analytical chemistry: impurity isolation, trace impurity quantitation (nitrosamines), unknown peak identification, degradation pathway characterization. Uses MS and spectroscopic techniques. PhD + 4 years experience required (stretch for fresh PhD). GMP/regulatory environment with CMO/CRO management. Strong analytical chemistry alignment but seniority is a gap.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 4.0,
+      "comp": 3.8,
+      "cultural": 3.8,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Requires 4+ years industry experience (Varun is fresh PhD)",
+        "Deep GMP/regulatory compliance experience expected",
+        "CMO/CRO management experience not demonstrated",
+        "Impurity isolation/trace quantitation at industrial scale"
+      ],
+      "strengths": [
+        "Analytical chemistry expertise with MS and spectroscopy",
+        "Structure characterization and problem-solving skills",
+        "PhD in relevant discipline",
+        "Technical report writing capabilities"
+      ],
+      "recommendation": "STRETCH APPLY - Excellent analytical chemistry alignment but 4+ years industry requirement is a hurdle. Worth applying if role considers strong PhD candidates."
+    },
+    "tailored_resume": null
   }
 ]
