@@ -499,5 +499,47 @@
     "date_contacted": null,
     "response": null,
     "notes": "Find team members in Merck ACDS doing impurity characterization and trace analysis"
+  },
+  {
+    "id": 36,
+    "job_id": 66,
+    "company": "Eli Lilly",
+    "name": "LinkedIn Search: PAT Science Lead, Lilly Medicine Foundry",
+    "title": "Search placeholder - PAT/science leadership at Lilly Medicine Foundry",
+    "linkedin_url": "https://www.linkedin.com/search/results/?keywords=Eli%20Lilly%20Medicine%20Foundry%20PAT%20process%20analytical%20scientist",
+    "contact_type": "search_placeholder",
+    "message_draft": null,
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search for PAT science leadership at the new Medicine Foundry in Lebanon, IN"
+  },
+  {
+    "id": 37,
+    "job_id": 66,
+    "company": "Eli Lilly",
+    "name": "LinkedIn Search: Analytical Development Leadership, Lilly",
+    "title": "Search placeholder - Analytical development leaders at Lilly",
+    "linkedin_url": "https://www.linkedin.com/search/results/?keywords=Eli%20Lilly%20analytical%20development%20scientist%20Lebanon%20Indiana",
+    "contact_type": "search_placeholder",
+    "message_draft": null,
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search for analytical development scientists/managers at the Medicine Foundry"
+  },
+  {
+    "id": 38,
+    "job_id": 66,
+    "company": "Eli Lilly",
+    "name": "LinkedIn Search: Recruiter, Lilly Manufacturing Sciences",
+    "title": "Search placeholder - Recruiters for Lilly Manufacturing/Analytical",
+    "linkedin_url": "https://www.linkedin.com/search/results/?keywords=Eli%20Lilly%20recruiter%20manufacturing%20science%20analytical",
+    "contact_type": "recruiter",
+    "message_draft": "Hi, I'm a PhD Chemist with extensive spectroscopy and process development experience. I noticed the Scientist, Process Analytical Technologies role at the new Lilly Medicine Foundry in Lebanon, IN. My background in FT-IR, UV-Vis-NIR, DOE, and SPC directly aligns with the PAT implementation responsibilities. I'd appreciate any insights on the team structure and timeline for this new facility.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Recruiter outreach for the PAT Scientist role"
   }
 ]
