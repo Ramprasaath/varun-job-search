@@ -3,17 +3,17 @@
   "email": "varunprasaath@gmail.com",
   "phone": "(+1) 678-207-9914",
   "linkedin": "linkedin.com/in/varunprasaath-rs",
-  "summary": "PhD chemist and materials scientist with 6+ years of experience developing and characterizing polymer and thin-film materials, establishing structure-property-processing relationships, and driving process optimization through DOE and multi-technique analysis. Expertise spans FT-IR, thermal analysis (TGA, DSC), ellipsometry, QCM-D, GPC, and hypothesis-driven materials problem solving for high-performance polymer systems.",
+  "summary": "PhD chemist and materials scientist with 6+ years of experience developing and characterizing polymer and thin-film materials, translating structure-property-processing relationships into material-selection and process-development decisions for high-performance systems. Hands-on expertise in FT-IR, UV-Vis-NIR, ellipsometry, QCM-D, GPC, TGA, DSC, DOE, and multi-project execution across polymer chemistry, coatings, and surface-functionalized materials.",
   "competencies": [
     "Polymer Materials",
-    "Materials Characterization",
+    "Materials Selection & Characterization",
     "Structure-Property-Processing",
-    "Process Development",
-    "Surface Functionalization",
+    "Process Development & Optimization",
     "Thin Films & Coatings",
-    "FT-IR, TGA & DSC",
-    "Ellipsometry & QCM-D",
+    "Surface Functionalization",
     "DOE & Statistical Analysis",
+    "Root Cause Analysis",
+    "Sustainable Materials",
     "Cross-Functional Execution"
   ],
   "education": [
@@ -36,8 +36,8 @@
       "period": "July 2025 – Present",
       "role": "Postdoctoral Researcher",
       "bullets": [
-        "Lead process development for novel bio-based polymer systems, applying DOE to identify critical parameters, improve yield and product quality, and establish reproducible process windows for scale-up.",
-        "Translate material performance targets into experimental plans and analytical workflows, using thermal and spectroscopic data to guide material and process decisions."
+        "Lead process development for novel bio-based polymer systems, applying DOE to identify critical process parameters, improve yield and material quality, and define reproducible process windows for scale-up.",
+        "Convert performance requirements into experimental plans and analytical workflows, using FT-IR, thermal analysis, and spectroscopic data to guide materials decisions across multiple concurrent projects."
       ]
     },
     {
@@ -46,7 +46,7 @@
       "role": "Graduate Researcher",
       "bullets": [
         "Established structure-property relationships in functional organic material systems through FT-IR, UV-Vis-NIR, electrochemical, TGA, and DSC characterization, guiding materials design and performance optimization.",
-        "Diagnosed degradation and interface-instability mechanisms in thin-film material systems through hypothesis-driven experiments, then proposed design and process mitigations to improve durability and performance."
+        "Diagnosed degradation, adhesion, and interface-instability mechanisms in thin-film systems through hypothesis-driven experiments, then translated findings into design and process recommendations to improve durability and performance."
       ]
     },
     {
@@ -62,7 +62,7 @@
       "period": "May 2017 – July 2017",
       "role": "Research Assistant",
       "bullets": [
-        "Developed and optimized polymer thin-film deposition processes using DOE and in-situ QCM-D monitoring, establishing process controls that improved coating reproducibility and growth uniformity."
+        "Developed and optimized polymer thin-film deposition processes using DOE and in-situ QCM-D monitoring, establishing process controls that improved coating reproducibility and uniformity."
       ]
     }
   ],
@@ -72,8 +72,16 @@
       "period": "2021 – 2025",
       "role": "Laboratory Operations Manager",
       "bullets": [
-        "Managed a 15-member research laboratory operating multiple analytical instruments and parallel materials projects, implemented equipment tracking/calibration systems, and improved instrument uptime by 30%.",
+        "Managed a 15-member research laboratory operating multiple analytical instruments and parallel materials projects, implemented equipment tracking and calibration systems, and improved instrument uptime by 30%.",
         "Authored SOPs and coordinated technical workflows across concurrent projects with tight quality and timeline requirements."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "2019 – 2021",
+      "role": "Teaching Assistant, Organic Chemistry I & Lab",
+      "bullets": [
+        "Mentored 120+ undergraduates and developed supplemental teaching materials that improved exam performance by 15%."
       ]
     }
   ],
@@ -81,13 +89,13 @@
     {
       "title": "Bio-based Polymer Process Development",
       "badge": "Process Chemistry",
-      "description": "Led chemical process development for novel bio-based polymer systems using statistical experimental design to improve reproducibility, yield, and material quality.",
+      "description": "Led process development for bio-based polymer systems, using statistical experimental design to improve reproducibility, yield, and material quality.",
       "tech": "DOE, Process Optimization, Polymer Chemistry"
     },
     {
       "title": "Thin-Film Coatings for Optical Hardware",
       "badge": "AFOSR Funded",
-      "description": "Co-led development of high-performance molecular thin-film coatings, tuning deposition and surface-preparation conditions to meet optical and materials-performance targets.",
+      "description": "Co-led development of high-performance molecular thin-film coatings, tuning deposition and surface-preparation conditions to meet demanding materials-performance targets.",
       "tech": "CVD, Surface Chemistry, Materials Characterization"
     }
   ],
@@ -106,7 +114,7 @@
     "Polymer & Materials Characterization": "FT-IR, UV-Vis-NIR, ellipsometry, TGA, DSC, QCM-D, GPC, NMR, spectroelectrochemistry",
     "Materials Expertise": "Polymer systems, thin films, coatings, surface functionalization, structure-property-processing relationships, degradation analysis",
     "Process & Data": "DOE, SPC, statistical data analysis, process optimization, root cause analysis, technical documentation",
-    "Execution": "Multi-project management, cross-functional communication, stakeholder updates, experimental planning"
+    "Execution & Communication": "Multi-project management, cross-functional communication, stakeholder updates, experimental planning"
   },
   "certifications": [
     "Statistical Process Control (SPC) – Coursera, 2026"

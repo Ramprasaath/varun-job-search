@@ -55,6 +55,12 @@ def build_resume_html(resume, company=""):
         "{{CERTIFICATIONS}}": "",
     }
     
+    certs = resume.get("certifications", [])
+    if certs:
+        r["{{CERTIFICATIONS}}"] = "\n".join(
+            f'<div class="cert-item"><span class="cert-title">{c}</span></div>' for c in certs
+        )
+    
     # Competencies
     comps = resume.get("competencies", [])
     if comps:
