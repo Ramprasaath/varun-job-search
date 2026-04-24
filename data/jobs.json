@@ -2233,5 +2233,131 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
+  },
+  {
+    "id": 70,
+    "source": "lever-direct",
+    "url": "https://jobs.lever.co/seranbio/8664ab0e-15f1-409a-9e53-450a791678a3",
+    "company": "Serán BioScience",
+    "title": "Analytical Development Scientist II",
+    "location": "Bend, Oregon",
+    "date_found": "2026-04-24",
+    "date_posted": "2026-04-23",
+    "freshness_verified": true,
+    "freshness_reason": "Active Lever page is live and JSON-LD datePosted is 2026-04-23.",
+    "job_id": "8664ab0e-15f1-409a-9e53-450a791678a3",
+    "score": 4.1,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-seran-bioscience-analytical-development-scientist-ii-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Lever role posted 2026-04-23. Strong analytical-development fit with small-molecule method development, UHPLC/HPLC plus dissolution/KF testing, method transfer to QC, GMP release and stability support, and regulatory-ready documentation. Main gaps are explicit GMP tenure, deeper Empower usage, and direct small-molecule CMC-industry experience.",
+    "evaluation": {
+      "recommendation": "APPLY - Strong analytical-development / CMC fit at an accessible scientist level.",
+      "strengths": [
+        "Direct overlap with analytical development, method optimization, and method transfer work",
+        "HPLC-adjacent, spectroscopy, thermal-analysis, and technical-documentation background maps well",
+        "Cross-functional process-development experience fits the role’s QC, QA, and project-management interfaces",
+        "Fresh live Lever posting with explicit posted date"
+      ],
+      "gaps": [
+        "Role asks for explicit GMP lab experience",
+        "Waters Empower and routine LC/GC production experience are more adjacent than direct",
+        "Most prior work is academic/postdoctoral rather than pharma-industry CMC execution"
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.1,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_seran_analytical_dev"
+  },
+  {
+    "id": 71,
+    "source": "lever-direct",
+    "url": "https://jobs.lever.co/seranbio/22f257cc-ac4b-4e33-ad4d-50b426ef9dfd",
+    "company": "Serán BioScience",
+    "title": "Senior Scientist, Product Development",
+    "location": "Bend, Oregon",
+    "date_found": "2026-04-24",
+    "date_posted": "2026-01-27",
+    "freshness_verified": true,
+    "freshness_reason": "Active Lever page is live and JSON-LD datePosted is 2026-01-27.",
+    "job_id": "22f257cc-ac4b-4e33-ad4d-50b426ef9dfd",
+    "score": 4.0,
+    "archetype": "Formulation Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-seran-bioscience-senior-scientist,-product-development-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Lever role posted 2026-01-27. Strong formulation and process-development match with DOE-guided scale-up work, prototype evaluation, cross-functional collaboration, technical reporting, and data-driven next-step planning. Biggest gaps are direct oral-solid-dose product-development depth and prior pharmaceutical formulation ownership.",
+    "evaluation": {
+      "recommendation": "APPLY - Good formulation/process-development fit with manageable domain gaps.",
+      "strengths": [
+        "Current postdoctoral work maps well to process optimization, scale-up thinking, and experimental design",
+        "Strong analytical-characterization background supports prototype evaluation and troubleshooting",
+        "Technical reporting and cross-functional execution are clear strengths",
+        "Fresh live Lever posting with explicit posted date"
+      ],
+      "gaps": [
+        "Role wants deeper direct formulation-science and drug-product-development experience",
+        "No direct oral solid dosage ownership to date",
+        "External client-facing development leadership is more adjacent than explicit"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.1,
+      "comp": 3.9,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_seran_product_dev"
+  },
+  {
+    "id": 72,
+    "source": "greenhouse-direct",
+    "url": "https://job-boards.greenhouse.io/citytherapeutics/jobs/5153187008",
+    "company": "City Therapeutics",
+    "title": "Senior/Principal Scientist, CMC Process Development and Manufacturing",
+    "location": "Cambridge, MA",
+    "date_found": "2026-04-24",
+    "date_posted": "2026-03-13",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Greenhouse page is active and page metadata shows published_at 2026-03-13T10:35:48-04:00.",
+    "job_id": 5153187008,
+    "score": 3.8,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Active Greenhouse posting published 2026-03-13. Relevant for process development, scale-up, technical protocols and reports, batch-documentation support, CMO coordination, and CMC cross-functional work. Main gaps are direct oligonucleotide synthesis and downstream-processing depth plus the stated 5+ years pharma-industry preference.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Strong process-development alignment, but modality and seniority are real gaps.",
+      "strengths": [
+        "Current polymer scale-up work provides direct process-development and optimization credibility",
+        "Strong documentation, troubleshooting, and cross-functional execution background",
+        "Experience translating analytical data into development decisions maps to CMC workflows",
+        "Fresh live Greenhouse posting with explicit published date"
+      ],
+      "gaps": [
+        "Role strongly prefers direct oligonucleotide chemistry and solid-phase synthesis experience",
+        "CMC manufacturing and CMO-management exposure is adjacent rather than direct",
+        "Seniority expectation is higher than Varun’s current profile"
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 3.9,
+      "cultural": 4.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
   }
 ]
