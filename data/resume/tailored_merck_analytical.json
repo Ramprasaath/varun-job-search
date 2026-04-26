@@ -1,0 +1,112 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD Chemist with 6+ years of experience in analytical method development, multi-technique materials characterization, and quality-focused process development. Expertise in chromatographic techniques (HPLC, GC-MS, GPC), spectroscopic methods (FT-IR, UV-Vis-NIR, NMR), and thermal analysis (TGA, DSC) for small molecule and polymer systems. Proficient in statistical data analysis (DOE, SPC, JMP) and experienced in method validation, specification development, and cross-functional technical communication. Strong track record in cGMP-aligned laboratory management and documentation.",
+  "competencies": [
+    "Analytical Chemistry & Method Development",
+    "Chromatographic Analysis (HPLC, GC-MS, GPC)",
+    "Spectroscopic Characterization (FT-IR, UV-Vis, NMR)",
+    "Thermal Analysis (TGA, DSC)",
+    "cGMP & Quality Systems",
+    "Statistical DOE & Process Optimization"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 \u2013 Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Leading analytical method development for polymer process development, designing HPLC, GPC, and spectroscopic protocols to monitor reaction progress, assess product purity, and establish quality control specifications for scale-up.",
+        "Developing and validating thermal analysis methods (TGA, DSC) for thermal stability assessment and degradation profiling of bio-based polymer materials.",
+        "Applying statistical experimental design (DOE) to identify critical process parameters, optimize reaction conditions, and establish reproducible process control specifications."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 \u2013 July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed and executed multi-technique analytical characterization protocols (FT-IR, UV-Vis-NIR, cyclic voltammetry, spectroelectrochemistry, ellipsometry) to evaluate material properties and identify failure mechanisms in 15+ organic and organometallic compound variants.",
+        "Designed and performed accelerated stability studies under controlled stress conditions, analyzing degradation pathways and impurity profiles to inform material selection and process optimization decisions.",
+        "Authored comprehensive technical reports communicating analytical findings, root cause analyses, and design recommendations to cross-functional teams of chemists and engineers."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 \u2013 July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led AFOSR-funded process development for molecular thin-film coatings, developing surface preparation protocols and CVD deposition strategies with in-situ analytical monitoring to achieve controlled film morphology and reproducible device performance."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 \u2013 July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Developed and optimized polymer thin-film deposition processes using DOE strategies and in-situ QCM-D process monitoring, establishing process control parameters and characterizing film growth kinetics to improve coating reproducibility."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 \u2013 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed analytical instrumentation and process development laboratory operations for a 15-member research group; implemented equipment tracking, calibration, and qualification systems improving instrument uptime by 30%; developed SOPs for method execution, data documentation, and safety protocols aligned with best practices for analytical data integrity."
+      ]
+    }
+  ],
+  "skills": {
+    "Analytical Techniques": "HPLC, GC-MS, GPC, FT-IR, UV-Vis-NIR, NMR, TGA, DSC, ellipsometry, cyclic voltammetry, spectroelectrochemistry, QCM-D",
+    "Method Development": "Analytical method development and validation, impurity profiling, specification setting, stability testing, assay development, dissolution testing (familiarity)",
+    "Statistical Tools": "DOE, Statistical Process Control (SPC), JMP (basic), Python (basic), Excel (advanced), Weibull analysis (familiarity)",
+    "Quality & Regulatory": "cGMP awareness, SOP development, data integrity principles, technical documentation, cross-functional communication",
+    "Materials Expertise": "Small molecule characterization, polymer analysis, thin-film materials, organic/organometallic compounds, surface analysis"
+  },
+  "certifications": [
+    "Statistical Process Control (SPC) \u2013 Coursera, 2026"
+  ],
+  "projects": [
+    {
+      "title": "Analytical Method Development for Polymer Quality Control",
+      "badge": "Analytical Chemistry",
+      "description": "Led development of chromatographic and spectroscopic methods for monitoring polymer synthesis, characterizing product quality, and establishing release specifications for novel bio-based polymer materials.",
+      "tech": "HPLC, GPC, FT-IR, TGA, DSC, DOE"
+    },
+    {
+      "title": "Multi-Variant Material Reliability Assessment",
+      "badge": "Failure Analysis",
+      "description": "Designed and executed systematic analytical evaluation of 15+ material variants using accelerated stability testing and multi-technique characterization to identify degradation pathways and inform material selection.",
+      "tech": "UV-Vis-NIR, FT-IR, Cyclic Voltammetry, Statistical Analysis"
+    },
+    {
+      "title": "AFOSR Thin-Film Coatings Process Development",
+      "badge": "Process Chemistry",
+      "description": "Co-led process development for defense optical coating application, developing deposition protocols with analytical monitoring to ensure consistent film quality and performance.",
+      "tech": "CVD, QCM-D, Ellipsometry, DOE"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558\u20135568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048\u201320055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ]
+}
