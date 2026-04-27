@@ -145,7 +145,70 @@ def _build_resume_html(resume, company=""):
 
 # ================================================================
 st.markdown("# 🎯 Varun's Job Pipeline")
-tab_tracker, tab_resume = st.tabs(["📋 Tracker", "📝 Resume Builder"])
+tab_new, tab_tracker, tab_resume = st.tabs(["🆕 Today's New", "📋 Tracker", "📝 Resume Builder"])
+
+# ================================================================
+# TODAY'S NEW JOBS
+# ================================================================
+with tab_new:
+    import datetime as _dt
+    _all_jobs = load_jobs()
+    _today = _dt.date.today().isoformat()
+    _yesterday = (_dt.date.today() - _dt.timedelta(days=1)).isoformat()
+    _today_jobs = [j for j in _all_jobs if j.get("date_found") == _today]
+    _yesterday_jobs = [j for j in _all_jobs if j.get("date_found") == _yesterday]
+    _recent = _today_jobs if _today_jobs else _yesterday_jobs
+    _recent_label = "Today" if _today_jobs else "Yesterday"
+
+    if not _recent:
+        st.info("No new jobs found today or yesterday. The next daily sweep will populate this tab.")
+    else:
+        st.markdown(f"### 📅 {_recent_label}'s New Jobs ({len(_recent)})")
+        st.caption(f"{_recent_label}, {_today if _today_jobs else _yesterday}")
+
+        # Quick metrics
+        _scored = [j for j in _recent if isinstance(j.get("score"), (int, float))]
+        _high = [j for j in _recent if isinstance(j.get("score"), (int, float)) and j["score"] >= 4.0]
+        _mc1, _mc2, _mc3 = st.columns(3)
+        _mc1.metric("New jobs", len(_recent))
+        _mc2.metric("Avg score", f"{sum(j['score'] for j in _scored)/len(_scored):.1f}" if _scored else "—")
+        _mc3.metric("⭐ Strong (4.0+)", len(_high))
+
+        st.markdown("---")
+
+        # Job cards
+        for j in _recent:
+            _score = j.get("score")
+            _score_str = f"{_score:.1f}" if isinstance(_score, (int, float)) else "—"
+            _score_color = "🟢" if isinstance(_score, (int, float)) and _score >= 4.0 else ("🟡" if isinstance(_score, (int, float)) and _score >= 3.5 else "⚪")
+            _status = j.get("status", "discovered")
+            _status_emoji = S_EMOJI.get(_status, "⚪")
+            _has_resume = "📄" if j.get("pdf_path") else ""
+            _has_contacts = bool([c for c in load_contacts() if c.get("job_id") == j.get("id")])
+            _contacts_icon = "👥" if _has_contacts else ""
+
+            with st.container(border=True):
+                _tc1, _tc2 = st.columns([4, 1])
+                with _tc1:
+                    st.markdown(f"**{j.get('company', '?')}** — {j.get('title', 'Untitled')}")
+                    st.caption(f"📍 {j.get('location', 'N/A')} | {_status_emoji} {_status} | {_score_color} Score: {_score_str} | {_has_resume} {_has_contacts}")
+                    if j.get("notes"):
+                        st.markdown(f"> {j['notes'][:300]}")
+                    if j.get("evaluation"):
+                        ev = j["evaluation"]
+                        rec = ev.get("recommendation", "")
+                        if rec:
+                            st.markdown(f"**Recommendation:** {rec}")
+                with _tc2:
+                    if j.get("url"):
+                        st.link_button("🔗 View Posting", j["url"])
+                    if j.get("pdf_path"):
+                        _pdf_path = Path(j["pdf_path"])
+                        if not _pdf_path.is_absolute():
+                            _pdf_path = BASE_DIR / _pdf_path
+                        if _pdf_path.exists():
+                            with open(_pdf_path, "rb") as _pf:
+                                st.download_button("📄 Download CV", _pf.read(), _pdf_path.name, mime="application/pdf", key=f"dl_new_{j['id']}")
 
 # ================================================================
 # TRACKER

@@ -6,7 +6,7 @@ st.set_page_config(page_title="Varun's Job Pipeline", page_icon="🎯", layout="
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
-CAREER_OPS_DIR = BASE_DIR
+CAREER_OPS_DIR = BASE_DIR.parent
 RESUME_DIR = DATA_DIR / "resume"
 
 def lj(path, default=None):
@@ -145,7 +145,70 @@ def _build_resume_html(resume, company=""):
 
 # ================================================================
 st.markdown("# 🎯 Varun's Job Pipeline")
-tab_tracker, tab_resume = st.tabs(["📋 Tracker", "📝 Resume Builder"])
+tab_new, tab_tracker, tab_resume = st.tabs(["🆕 Today's New", "📋 Tracker", "📝 Resume Builder"])
+
+# ================================================================
+# TODAY'S NEW JOBS
+# ================================================================
+with tab_new:
+    import datetime as _dt
+    _all_jobs = load_jobs()
+    _today = _dt.date.today().isoformat()
+    _yesterday = (_dt.date.today() - _dt.timedelta(days=1)).isoformat()
+    _today_jobs = [j for j in _all_jobs if j.get("date_found") == _today]
+    _yesterday_jobs = [j for j in _all_jobs if j.get("date_found") == _yesterday]
+    _recent = _today_jobs if _today_jobs else _yesterday_jobs
+    _recent_label = "Today" if _today_jobs else "Yesterday"
+
+    if not _recent:
+        st.info("No new jobs found today or yesterday. The next daily sweep will populate this tab.")
+    else:
+        st.markdown(f"### 📅 {_recent_label}'s New Jobs ({len(_recent)})")
+        st.caption(f"{_recent_label}, {_today if _today_jobs else _yesterday}")
+
+        # Quick metrics
+        _scored = [j for j in _recent if isinstance(j.get("score"), (int, float))]
+        _high = [j for j in _recent if isinstance(j.get("score"), (int, float)) and j["score"] >= 4.0]
+        _mc1, _mc2, _mc3 = st.columns(3)
+        _mc1.metric("New jobs", len(_recent))
+        _mc2.metric("Avg score", f"{sum(j['score'] for j in _scored)/len(_scored):.1f}" if _scored else "—")
+        _mc3.metric("⭐ Strong (4.0+)", len(_high))
+
+        st.markdown("---")
+
+        # Job cards
+        for j in _recent:
+            _score = j.get("score")
+            _score_str = f"{_score:.1f}" if isinstance(_score, (int, float)) else "—"
+            _score_color = "🟢" if isinstance(_score, (int, float)) and _score >= 4.0 else ("🟡" if isinstance(_score, (int, float)) and _score >= 3.5 else "⚪")
+            _status = j.get("status", "discovered")
+            _status_emoji = S_EMOJI.get(_status, "⚪")
+            _has_resume = "📄" if j.get("pdf_path") else ""
+            _has_contacts = bool([c for c in load_contacts() if c.get("job_id") == j.get("id")])
+            _contacts_icon = "👥" if _has_contacts else ""
+
+            with st.container(border=True):
+                _tc1, _tc2 = st.columns([4, 1])
+                with _tc1:
+                    st.markdown(f"**{j.get('company', '?')}** — {j.get('title', 'Untitled')}")
+                    st.caption(f"📍 {j.get('location', 'N/A')} | {_status_emoji} {_status} | {_score_color} Score: {_score_str} | {_has_resume} {_has_contacts}")
+                    if j.get("notes"):
+                        st.markdown(f"> {j['notes'][:300]}")
+                    if j.get("evaluation"):
+                        ev = j["evaluation"]
+                        rec = ev.get("recommendation", "")
+                        if rec:
+                            st.markdown(f"**Recommendation:** {rec}")
+                with _tc2:
+                    if j.get("url"):
+                        st.link_button("🔗 View Posting", j["url"])
+                    if j.get("pdf_path"):
+                        _pdf_path = Path(j["pdf_path"])
+                        if not _pdf_path.is_absolute():
+                            _pdf_path = BASE_DIR / _pdf_path
+                        if _pdf_path.exists():
+                            with open(_pdf_path, "rb") as _pf:
+                                st.download_button("📄 Download CV", _pf.read(), _pdf_path.name, mime="application/pdf", key=f"dl_new_{j['id']}")
 
 # ================================================================
 # TRACKER
@@ -161,10 +224,9 @@ with tab_tracker:
         ev = [j for j in jobs if j.get("score")]
         avg = sum(j["score"] for j in ev)/len(ev) if ev else 0
         high_score = len([j for j in jobs if j.get("score") and j["score"] >= 4.0])
-        today_iso = datetime.date.today().isoformat()
-        new_jobs = len([j for j in jobs if j.get("date_found") == today_iso])
+        new_jobs = len([j for j in jobs if j.get("status") == "discovered"])
         not_applied = len([j for j in jobs if j.get("status") not in ("applied", "interviewing", "offer", "rejected")])
-        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=today_iso and j["status"] in("applied","interviewing")]
+        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=datetime.date.today().isoformat() and j["status"] in("applied","interviewing")]
         c1,c2,c3,c4,c5,c6 = st.columns(6)
         c1.metric("Total",len(jobs)); c2.metric("Avg",f"{avg:.1f}"); c3.metric("⭐ 4.0+",high_score)
         c4.metric("🆕 New",new_jobs); c5.metric("📋 To Apply",not_applied); c6.metric("⚠️ Due",len(od))
@@ -229,9 +291,10 @@ with tab_tracker:
         
         st.markdown("---")
     
-    # -- Simple native tracker --
+    # -- AgGrid clickable tracker --
     if jobs:
         import pandas as pd
+        from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, ColumnsAutoSizeMode, JsCode
 
         st.markdown("### 📊 Tracker")
         
@@ -248,7 +311,8 @@ with tab_tracker:
         
         # Filter by recent only
         if show_recent_only:
-            cutoff = (datetime.datetime.now() - datetime.timedelta(days=7)).strftime("%Y-%m-%d")
+            from datetime import datetime, timedelta
+            cutoff = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
             filtered_jobs = [j for j in filtered_jobs if j.get("date_found", "") >= cutoff]
         
         # Filter by high priority only
@@ -270,89 +334,84 @@ with tab_tracker:
         # Show filter summary
         st.caption(f"Showing {len(filtered_jobs)} of {len(jobs)} jobs")
         
-        # Build display dataframe with index as job ID
-        today = datetime.datetime.now().strftime("%Y-%m-%d")
-        
         rows = []
         for j in filtered_jobs:
+            # Format dates properly (empty string if None)
             applied = j.get("applied_date") if j.get("applied_date") else ""
             followup = j.get("follow_up_date") if j.get("follow_up_date") else ""
+            # Has PDF indicator
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
-            # Add NEW badge for today's jobs
-            is_new = "🆕 " if j.get("date_found") == today else ""
-            score_val = j.get("score")
-            rows.append({
-                "ID": j["id"],
-                "Company": is_new + j.get("company",""),
-                "Role": j.get("title","")[:50],
-                "Score": "—" if score_val is None else round(score_val, 1),
-                "Status": j.get("status","discovered"),
-                "Location": j.get("location",""),
-                "Found": j.get("date_found",""),
-                "Applied": applied,
-                "Follow": followup,
-                "PDF": has_pdf
-            })
+            rows.append({"ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
+                "Score":j.get("score") or 0,"Status":j.get("status","discovered"),
+                "Location":j.get("location",""),"Found":j.get("date_found",""),
+                "Applied":applied,"Follow-up":followup,
+                "Notes":j.get("notes",""),"PDF":has_pdf})
         df = pd.DataFrame(rows)
 
-        # Use st.dataframe with row selection
-        selection = st.dataframe(
-            df,
-            hide_index=True,
-            use_container_width=True,
-            on_select="rerun",
-            selection_mode="single-row",
-            column_config={
-                "ID": st.column_config.NumberColumn("ID"),
-                "Score": st.column_config.Column("Score"),
-                "PDF": st.column_config.Column("PDF")
-            },
-            key="job_table"
-        )
-        
-        # Get selected job from row click
-        j = None
-        if selection.selection.rows:
-            selected_idx = selection.selection.rows[0]
-            selected_id = int(df.iloc[selected_idx]["ID"])
+        gb = GridOptionsBuilder.from_dataframe(df)
+        gb.configure_selection(selection_mode="single", use_checkbox=False)
+        gb.configure_column("ID", width=50, pinned="left")
+        gb.configure_column("Company", pinned="left", width=140)
+        gb.configure_column("Role", width=220)
+        gb.configure_column("Score", type=["numericColumn"], width=70)
+        gb.configure_column("Status", width=110, editable=True, cellEditor='agSelectCellEditor', cellEditorParams={'values': STATUS})
+        gb.configure_column("Location", width=130)
+        gb.configure_column("Found", width=95)
+        gb.configure_column("Applied", width=100, editable=True)
+        gb.configure_column("Follow-up", width=100, editable=True)
+        gb.configure_column("Notes", width=200)
+        gb.configure_column("PDF", width=50)
+
+        go = gb.build()
+        ag = AgGrid(df, gridOptions=go, update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.VALUE_CHANGED,
+            columns_auto_size_mode=ColumnsAutoSizeMode.NO_AUTOSIZE,
+            height=min(150+len(filtered_jobs)*50, 600), fit_columns_on_grid_load=False,
+            theme="alpine", key="tracker_grid", reload_data=False,
+            pre_selected_rows=[st.session_state.get("selected_job_id","")] if st.session_state.get("selected_job_id") else [])
+
+        # Save edited dates and status back to jobs
+        edited_df = ag.get("data", pd.DataFrame())
+        if edited_df is not None and len(edited_df) > 0:
+            changed = False
+            for _, row in edited_df.iterrows():
+                job = next((j for j in jobs if j["id"] == row["ID"]), None)
+                if job:
+                    new_applied = row.get("Applied")
+                    if isinstance(new_applied, pd.Timestamp):
+                        new_applied = new_applied.strftime("%Y-%m-%d")
+                    elif new_applied and not isinstance(new_applied, str):
+                        new_applied = str(new_applied)[:10]
+                    if job.get("applied_date") != new_applied and new_applied:
+                        job["applied_date"] = new_applied
+                        changed = True
+                    
+                    new_followup = row.get("Follow-up")
+                    if isinstance(new_followup, pd.Timestamp):
+                        new_followup = new_followup.strftime("%Y-%m-%d")
+                    elif new_followup and not isinstance(new_followup, str):
+                        new_followup = str(new_followup)[:10]
+                    if job.get("follow_up_date") != new_followup and new_followup:
+                        job["follow_up_date"] = new_followup
+                        changed = True
+                    
+                    if job.get("status") != row.get("Status"):
+                        job["status"] = row["Status"] if row.get("Status") else "discovered"
+                        changed = True
+            if changed:
+                save_jobs(jobs)
+
+        # Get selected row (from filtered jobs for display, but look up in full jobs for editing)
+        sel_df = ag.get("selected_rows", pd.DataFrame())
+        if sel_df is not None and len(sel_df) > 0:
+            selected_id = sel_df.iloc[0]["ID"]
             st.session_state["selected_job_id"] = selected_id
             j = next((x for x in jobs if x["id"]==selected_id), None)
         elif st.session_state.get("selected_job_id"):
             j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
-        
-        # Edit section for selected job
-        if j:
-            with st.expander(f"✏️ Edit {j['company']} - Status & Dates", expanded=True):
-                c1, c2, c3 = st.columns(3)
-                with c1:
-                    new_status = st.selectbox("Status", STATUS, index=STATUS.index(j.get("status","discovered")), key=f"edit_status_{j['id']}")
-                with c2:
-                    new_applied = st.text_input("Applied Date", value=j.get("applied_date",""), key=f"edit_applied_{j['id']}")
-                with c3:
-                    new_follow = st.text_input("Follow-up Date", value=j.get("follow_up_date",""), key=f"edit_follow_{j['id']}")
-                if st.button("💾 Save Changes", key=f"save_{j['id']}"):
-                    j["status"] = new_status
-                    j["applied_date"] = new_applied if new_applied else None
-                    j["follow_up_date"] = new_follow if new_follow else None
-                    save_jobs(jobs)
-                    st.success("Saved!")
         else:
-            st.info("👆 Click any row to view and edit job details")
+            j = None
 
-        # Export CSV
-        csv_df = pd.DataFrame([{
-            "Company": j.get("company",""),
-            "Title": j.get("title",""),
-            "Score": j.get("score"),
-            "Status": j.get("status","discovered"),
-            "Location": j.get("location",""),
-            "Date_Found": j.get("date_found",""),
-            "Applied_Date": j.get("applied_date",""),
-            "Follow_Up_Date": j.get("follow_up_date",""),
-            "Notes": j.get("notes",""),
-            "URL": j.get("url","")
-        } for j in filtered_jobs])
-        csv = csv_df.to_csv(index=False).encode("utf-8")
+        csv = df.drop(columns=["ID","PDF"]).to_csv(index=False).encode("utf-8")
         st.download_button("📥 Export CSV", csv, "varun-job-tracker.csv", "text/csv")
     else:
         j = None
@@ -381,10 +440,7 @@ with tab_tracker:
                         pdf_bytes = f.read()
                     st.download_button("📄 Download Resume", pdf_bytes, pdf_path.name, "application/pdf", key=f"dlr_{j['id']}")
         
-        date_bits = [f"📍 {j.get('location','—')}", f"📅 Found: {j.get('date_found','—')}"]
-        if j.get('date_posted'):
-            date_bits.append(f"🕒 Posted: {j.get('date_posted')}")
-        st.caption(" | ".join(date_bits))
+        st.caption(f"📍 {j.get('location','—')} | 📅 Found: {j.get('date_found','—')}")
         
         # Edit fields
         st.markdown("#### Update Job")
@@ -545,17 +601,13 @@ with tab_tracker:
                 title_slug=j.get("title","").lower().replace(" ","-").replace("/","-")[:40]
                 pdf_name=f"cv-{slug}-{title_slug}-2026.pdf"
                 pdf_out=CAREER_OPS_DIR/"output"/pdf_name
-                repo_pdf_out=CAREER_OPS_DIR/"data"/"output"/pdf_name
                 tmp_html=f"/tmp/cv-tailored-{slug}.html"
                 html_content=_build_resume_html(cur, j.get("company",""))
                 with open(tmp_html,"w") as f: f.write(html_content)
                 try:
                     result=subprocess.run(["node",str(CAREER_OPS_DIR/"generate-pdf.mjs"),tmp_html,str(pdf_out),"--format=letter"],capture_output=True,text=True,timeout=30,cwd=str(CAREER_OPS_DIR))
                     if result.returncode==0:
-                        repo_pdf_out.parent.mkdir(parents=True, exist_ok=True)
-                        with open(pdf_out, "rb") as src, open(repo_pdf_out, "wb") as dst:
-                            dst.write(src.read())
-                        j["pdf_path"]=f"data/output/{pdf_name}"; save_jobs(jobs)
+                        j["pdf_path"]=f"output/{pdf_name}"; save_jobs(jobs)
                         st.success(f"✅ PDF generated: {pdf_name}")
                         st.rerun()
                     else: st.error(f"PDF failed: {result.stderr[:300]}")
@@ -692,7 +744,7 @@ with tab_resume:
         sv=st.selectbox("Version",vers,key="pvs")
         ch=load_resume(sv)
         if ch: st.markdown(f"**Summary:** {ch.get('summary','')[:150]}...")
-        pdf_dir=CAREER_OPS_DIR/"data"/"output"
+        pdf_dir=CAREER_OPS_DIR/"output"
         if pdf_dir.exists():
             pdfs=sorted(pdf_dir.glob("*.pdf"),key=os.path.getmtime,reverse=True)
             if pdfs:
@@ -701,50 +753,3 @@ with tab_resume:
                     mt=datetime.datetime.fromtimestamp(os.path.getmtime(p)).strftime("%Y-%m-%d %H:%M")
                     st.markdown(f"📎 [{p.name}]({p}) ({sz:.0f}KB, {mt})")
             else: st.info("No PDFs yet.")
-
-# --- Archived Jobs Section ---
-st.markdown("---")
-with st.expander("📦 Archived Jobs (stale/closed or > 6 months old) - Click to view"):
-    archived = lj(DATA_DIR / "archived_jobs.json", [])
-    if archived:
-        st.markdown(f"**{len(archived)} archived jobs**")
-        
-        # Build dataframe
-        import pandas as pd
-        rows = []
-        for j in archived:
-            rows.append({
-                "ID": j["id"],
-                "Company": j.get("company",""),
-                "Role": j.get("title","")[:50],
-                "Score": "—" if j.get("score") is None else j.get("score"),
-                "Date": j.get("date_found",""),
-                "Status": j.get("status","discovered")
-            })
-        df = pd.DataFrame(rows)
-        
-        st.dataframe(df, use_container_width=True, hide_index=True)
-        
-        # Select archived job to view
-        opts = {f"{j['id']}: {j['company']} - {j['title'][:40]}": j for j in archived}
-        sel = st.selectbox("Select archived job to view:", [""] + list(opts.keys()), key="arch_sel")
-        if sel:
-            aj = opts[sel]
-            archive_reason = aj.get('archive_reason')
-            st.markdown(f"### {aj['company']} — {aj['title']}")
-            if aj.get('date_posted'):
-                st.markdown(f"**Date Posted:** {aj.get('date_posted')}")
-            st.markdown(f"**Discovered:** {aj.get('date_found','Unknown')}")
-            st.markdown(f"**Original Score:** {aj.get('score','N/A')}")
-            if archive_reason:
-                st.warning(f"Archived reason: {archive_reason}")
-            if aj.get('url'):
-                closed_reason = (archive_reason or '').lower()
-                label = "🔗 Original listing URL" if any(x in closed_reason for x in ['stale', 'closed', 'not found', 'no longer accepting']) else "🔗 Check if still open"
-                st.link_button(label, aj['url'])
-            if archive_reason:
-                st.markdown("**💡 Tip:** Prefer fresh or directly-posted roles over archived wrappers unless you have a specific outreach reason.")
-            else:
-                st.markdown("**💡 Tip:** Reach out to the company's talent acquisition team to ask if this role is still active or if similar positions are open.")
-    else:
-        st.info("No archived jobs yet. Jobs older than 6 months will appear here.")
