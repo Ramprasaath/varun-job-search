@@ -288,7 +288,7 @@ with tab_tracker:
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
             is_new = j.get("date_found", "") in (_today, _yesterday)
             new_flag = "🆕 NEW" if is_new else ""
-            rows.append({"":new_flag,"ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
+            rows.append({"New":new_flag,"ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
                 "Score":j.get("score") or 0,"Status":j.get("status","discovered"),
                 "Location":j.get("location",""),"Found":j.get("date_found",""),
                 "Applied":applied,"Follow-up":followup,
@@ -297,7 +297,7 @@ with tab_tracker:
 
         gb = GridOptionsBuilder.from_dataframe(df)
         gb.configure_selection(selection_mode="single", use_checkbox=False)
-        gb.configure_column("", width=70, pinned="left")
+        gb.configure_column("New", width=70, pinned="left")
         gb.configure_column("ID", width=50, pinned="left")
         gb.configure_column("Company", pinned="left", width=140)
         gb.configure_column("Role", width=220)
