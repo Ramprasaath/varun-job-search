@@ -256,17 +256,20 @@ with tab_tracker:
         if show_high_priority:
             filtered_jobs = [j for j in filtered_jobs if (j.get("score") or 0) >= 4.0]
         
+        _td = datetime.date.today().isoformat()
+        _yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+
         # Apply sorting
         if sort_by == "Score (High to Low)":
-            filtered_jobs.sort(key=lambda x: (x.get("score") or 0, x.get("date_found", "")), reverse=True)
+            filtered_jobs.sort(key=lambda x: (x.get("date_found", "") in (_td, _yd), x.get("score") or 0, x.get("date_found", "")), reverse=True)
         elif sort_by == "Date Found (Newest)":
-            filtered_jobs.sort(key=lambda x: (x.get("date_found", ""), x.get("score") or 0), reverse=True)
+            filtered_jobs.sort(key=lambda x: (x.get("date_found", "") in (_td, _yd), x.get("date_found", ""), x.get("score") or 0), reverse=True)
         elif sort_by == "Date Found (Oldest)":
-            filtered_jobs.sort(key=lambda x: x.get("date_found", ""))
+            filtered_jobs.sort(key=lambda x: (not (x.get("date_found", "") in (_td, _yd)), x.get("date_found", "")))
         elif sort_by == "Company (A-Z)":
-            filtered_jobs.sort(key=lambda x: x.get("company", "").lower())
+            filtered_jobs.sort(key=lambda x: (not (x.get("date_found", "") in (_td, _yd)), x.get("company", "").lower()))
         elif sort_by == "Status":
-            filtered_jobs.sort(key=lambda x: x.get("status", "discovered"))
+            filtered_jobs.sort(key=lambda x: (not (x.get("date_found", "") in (_td, _yd)), x.get("status", "discovered")))
         
         # Show filter summary
         st.caption(f"Showing {len(filtered_jobs)} of {len(jobs)} jobs")
@@ -278,10 +281,8 @@ with tab_tracker:
             followup = j.get("follow_up_date") if j.get("follow_up_date") else ""
             # Has PDF indicator
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
-            _td = datetime.date.today().isoformat()
-            _yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
             is_new = j.get("date_found","") in (_td, _yd)
-            rows.append({"New":"NEW" if is_new else "","ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
+            rows.append({"ID":j["id"],"New":is_new,"Company":j.get("company",""),"Role":j.get("title",""),
                 "Score":j.get("score") or 0,"Status":j.get("status","discovered"),
                 "Location":j.get("location",""),"Found":j.get("date_found",""),
                 "Applied":applied,"Follow-up":followup,
@@ -290,8 +291,8 @@ with tab_tracker:
 
         gb = GridOptionsBuilder.from_dataframe(df)
         gb.configure_selection(selection_mode="single", use_checkbox=False)
-        gb.configure_column("New", width=50, pinned="left")
         gb.configure_column("ID", width=50, pinned="left")
+        gb.configure_column("New", width=60, type=["booleanColumn"], pinned="left")
         gb.configure_column("Company", pinned="left", width=140)
         gb.configure_column("Role", width=220)
         gb.configure_column("Score", type=["numericColumn"], width=70)
