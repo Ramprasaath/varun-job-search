@@ -297,8 +297,7 @@ with tab_tracker:
 
         gb = GridOptionsBuilder.from_dataframe(df)
         gb.configure_selection(selection_mode="single", use_checkbox=False)
-        gb.configure_column("", width=70, pinned="left",
-            cellStyle=JsCode("""function(params) { if(params.value==='🆕 NEW') return {color:'#22c55e',fontWeight:'bold'}; return {};}"""))
+        gb.configure_column("", width=70, pinned="left")
         gb.configure_column("ID", width=50, pinned="left")
         gb.configure_column("Company", pinned="left", width=140)
         gb.configure_column("Role", width=220)
