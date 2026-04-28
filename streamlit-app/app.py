@@ -57,6 +57,13 @@ S_EMOJI = {"discovered":"⚪","evaluated":"🟡","interested":"🟠","applying":
 CT_STAT = ["not_contacted","request_sent","responded","call_scheduled","met"]
 CT_TYPES = {"hiring_manager":"👔 Hiring Mgr","recruiter":"🔍 Recruiter","peer":"🤝 Peer","ceo":"🏢 CEO"}
 
+# Try AgGrid, fall back to plain dataframe
+try:
+    from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, ColumnsAutoSizeMode, JsCode
+    HAS_AGGRID = True
+except ImportError:
+    HAS_AGGRID = False
+
 st.markdown("""<style>
 .apply-btn{display:inline-block;background:#2563EB;color:#fff!important;padding:6px 16px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px}
 .apply-btn:hover{background:#1D4ED8}
@@ -145,38 +152,62 @@ def _build_resume_html(resume, company=""):
 
 # ================================================================
 st.markdown("# 🎯 Varun's Job Pipeline")
-tab_new, tab_tracker, tab_resume = st.tabs(["🆕 Today's New", "📋 Tracker", "📝 Resume Builder"])
+tab_tracker, tab_resume = st.tabs(["📋 Job Tracker", "📝 Resume Builder"])
 
 # ================================================================
-# TODAY'S NEW JOBS
+# JOB TRACKER (with Today's New section built in)
 # ================================================================
-with tab_new:
+with tab_tracker:
+    jobs = load_jobs()
+    contacts = load_contacts()
     import datetime as _dt
-    _all_jobs = load_jobs()
+    import pandas as pd
+
     _today = _dt.date.today().isoformat()
     _yesterday = (_dt.date.today() - _dt.timedelta(days=1)).isoformat()
-    _today_jobs = [j for j in _all_jobs if j.get("date_found") == _today]
-    _yesterday_jobs = [j for j in _all_jobs if j.get("date_found") == _yesterday]
+    _today_jobs = [j for j in jobs if j.get("date_found") == _today]
+    _yesterday_jobs = [j for j in jobs if j.get("date_found") == _yesterday]
+
+    # -- Top-level metrics --
+    if jobs:
+        sc = {}
+        for j in jobs: sc[j.get("status","discovered")] = sc.get(j.get("status","discovered"),0)+1
+        ev = [j for j in jobs if j.get("score")]
+        avg = sum(j["score"] for j in ev)/len(ev) if ev else 0
+        high_score = len([j for j in jobs if j.get("score") and j["score"] >= 4.0])
+        new_jobs = len(_today_jobs)
+        not_applied = len([j for j in jobs if j.get("status") not in ("applied", "interviewing", "offer", "rejected")])
+        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=_dt.date.today().isoformat() and j["status"] in("applied","interviewing")]
+        c1,c2,c3,c4,c5,c6 = st.columns(6)
+        c1.metric("Total",len(jobs)); c2.metric("Avg",f"{avg:.1f}"); c3.metric("⭐ 4.0+",high_score)
+        c4.metric("🆕 Today",new_jobs); c5.metric("📋 To Apply",not_applied); c6.metric("⚠️ Due",len(od))
+    else:
+        st.info("Add your first job below!"); od=[]
+
+    # -- Overdue alerts --
+    if od:
+        st.markdown("---")
+        for j in od:
+            d=(_dt.date.today()-_dt.date.fromisoformat(j["follow_up_date"])).days
+            st.warning(f"⚠️ **{j['company']}** — {j['title']} — follow-up **{d} days overdue**")
+
+    # ================================================================
+    # TODAY'S NEW JOBS (prominent section)
+    # ================================================================
     _recent = _today_jobs if _today_jobs else _yesterday_jobs
     _recent_label = "Today" if _today_jobs else "Yesterday"
 
-    if not _recent:
-        st.info("No new jobs found today or yesterday. The next daily sweep will populate this tab.")
-    else:
-        st.markdown(f"### 📅 {_recent_label}'s New Jobs ({len(_recent)})")
-        st.caption(f"{_recent_label}, {_today if _today_jobs else _yesterday}")
-
-        # Quick metrics
+    if _recent:
+        st.markdown("---")
         _scored = [j for j in _recent if isinstance(j.get("score"), (int, float))]
         _high = [j for j in _recent if isinstance(j.get("score"), (int, float)) and j["score"] >= 4.0]
-        _mc1, _mc2, _mc3 = st.columns(3)
-        _mc1.metric("New jobs", len(_recent))
-        _mc2.metric("Avg score", f"{sum(j['score'] for j in _scored)/len(_scored):.1f}" if _scored else "—")
-        _mc3.metric("⭐ Strong (4.0+)", len(_high))
+        st.markdown(f"### 🆕 {_recent_label}'s New Jobs ({len(_recent)})")
 
-        st.markdown("---")
+        _rc1, _rc2, _rc3 = st.columns(3)
+        _rc1.metric("New jobs", len(_recent))
+        _rc2.metric("Avg score", f"{sum(j['score'] for j in _scored)/len(_scored):.1f}" if _scored else "—")
+        _rc3.metric("⭐ Strong (4.0+)", len(_high))
 
-        # Job cards
         for j in _recent:
             _score = j.get("score")
             _score_str = f"{_score:.1f}" if isinstance(_score, (int, float)) else "—"
@@ -184,14 +215,14 @@ with tab_new:
             _status = j.get("status", "discovered")
             _status_emoji = S_EMOJI.get(_status, "⚪")
             _has_resume = "📄" if j.get("pdf_path") else ""
-            _has_contacts = bool([c for c in load_contacts() if c.get("job_id") == j.get("id")])
+            _has_contacts = bool([c for c in contacts if c.get("job_id") == j.get("id")])
             _contacts_icon = "👥" if _has_contacts else ""
 
             with st.container(border=True):
                 _tc1, _tc2 = st.columns([4, 1])
                 with _tc1:
                     st.markdown(f"**{j.get('company', '?')}** — {j.get('title', 'Untitled')}")
-                    st.caption(f"📍 {j.get('location', 'N/A')} | {_status_emoji} {_status} | {_score_color} Score: {_score_str} | {_has_resume} {_has_contacts}")
+                    st.caption(f"📍 {j.get('location', 'N/A')} | {_status_emoji} {_status} | {_score_color} Score: {_score_str} | {_has_resume} {_contacts_icon}")
                     if j.get("notes"):
                         st.markdown(f"> {j['notes'][:300]}")
                     if j.get("evaluation"):
@@ -210,28 +241,7 @@ with tab_new:
                             with open(_pdf_path, "rb") as _pf:
                                 st.download_button("📄 Download CV", _pf.read(), _pdf_path.name, mime="application/pdf", key=f"dl_new_{j['id']}")
 
-# ================================================================
-# TRACKER
-# ================================================================
-with tab_tracker:
-    jobs = load_jobs()
-    contacts = load_contacts()
-
-    # -- Metrics --
-    if jobs:
-        sc = {}
-        for j in jobs: sc[j.get("status","discovered")] = sc.get(j.get("status","discovered"),0)+1
-        ev = [j for j in jobs if j.get("score")]
-        avg = sum(j["score"] for j in ev)/len(ev) if ev else 0
-        high_score = len([j for j in jobs if j.get("score") and j["score"] >= 4.0])
-        new_jobs = len([j for j in jobs if j.get("status") == "discovered"])
-        not_applied = len([j for j in jobs if j.get("status") not in ("applied", "interviewing", "offer", "rejected")])
-        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=datetime.date.today().isoformat() and j["status"] in("applied","interviewing")]
-        c1,c2,c3,c4,c5,c6 = st.columns(6)
-        c1.metric("Total",len(jobs)); c2.metric("Avg",f"{avg:.1f}"); c3.metric("⭐ 4.0+",high_score)
-        c4.metric("🆕 New",new_jobs); c5.metric("📋 To Apply",not_applied); c6.metric("⚠️ Due",len(od))
-    else:
-        st.info("Add your first job below!"); od=[]
+    st.markdown("---")
 
     # -- Add job --
     with st.expander("➕ Add New Job"):
@@ -246,20 +256,13 @@ with tab_tracker:
             if st.form_submit_button("Add", type="primary"):
                 if a_url and a_co and a_ti:
                     jobs.append({"id":nid(jobs),"url":a_url,"company":a_co,"title":a_ti,"location":a_loc,
-                        "date_found":datetime.date.today().isoformat(),"score":a_sc if a_sc>0 else None,
+                        "date_found":_dt.date.today().isoformat(),"score":a_sc if a_sc>0 else None,
                         "status":"discovered","report_path":None,"pdf_path":None,"applied_date":None,
                         "follow_up_date":None,"tailored_resume":None,"notes":a_no,"evaluation":None,"archetype":None})
                     save_jobs(jobs); st.success(f"✅ Added {a_co}"); st.rerun()
                 else: st.error("URL, Company, Title required")
 
     st.markdown("---")
-
-    # -- Overdue alerts --
-    if od:
-        for j in od:
-            d=(datetime.date.today()-datetime.date.fromisoformat(j["follow_up_date"])).days
-            st.warning(f"⚠️ **{j['company']}** — {j['title']} — follow-up **{d} days overdue**")
-        st.markdown("---")
 
     # -- Sorting & Filtering Controls --
     if jobs:
@@ -291,31 +294,18 @@ with tab_tracker:
         
         st.markdown("---")
     
-    # -- AgGrid clickable tracker --
+    # -- Tracker table --
     if jobs:
-        import pandas as pd
-        from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, ColumnsAutoSizeMode, JsCode
-
-        st.markdown("### 📊 Tracker")
-        
         # Apply filters
         filtered_jobs = jobs.copy()
         
-        # Filter by status
         if filter_status:
             filtered_jobs = [j for j in filtered_jobs if j.get("status", "discovered") in filter_status]
-        
-        # Filter by minimum score
         if min_score > 0:
             filtered_jobs = [j for j in filtered_jobs if (j.get("score") or 0) >= min_score]
-        
-        # Filter by recent only
         if show_recent_only:
-            from datetime import datetime, timedelta
-            cutoff = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
+            cutoff = (_dt.date.today() - _dt.timedelta(days=7)).isoformat()
             filtered_jobs = [j for j in filtered_jobs if j.get("date_found", "") >= cutoff]
-        
-        # Filter by high priority only
         if show_high_priority:
             filtered_jobs = [j for j in filtered_jobs if (j.get("score") or 0) >= 4.0]
         
@@ -331,15 +321,12 @@ with tab_tracker:
         elif sort_by == "Status":
             filtered_jobs.sort(key=lambda x: x.get("status", "discovered"))
         
-        # Show filter summary
         st.caption(f"Showing {len(filtered_jobs)} of {len(jobs)} jobs")
         
         rows = []
         for j in filtered_jobs:
-            # Format dates properly (empty string if None)
             applied = j.get("applied_date") if j.get("applied_date") else ""
             followup = j.get("follow_up_date") if j.get("follow_up_date") else ""
-            # Has PDF indicator
             has_pdf = "📄" if j.get("pdf_path") and (CAREER_OPS_DIR / j["pdf_path"]).exists() else ""
             rows.append({"ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
                 "Score":j.get("score") or 0,"Status":j.get("status","discovered"),
@@ -348,68 +335,76 @@ with tab_tracker:
                 "Notes":j.get("notes",""),"PDF":has_pdf})
         df = pd.DataFrame(rows)
 
-        gb = GridOptionsBuilder.from_dataframe(df)
-        gb.configure_selection(selection_mode="single", use_checkbox=False)
-        gb.configure_column("ID", width=50, pinned="left")
-        gb.configure_column("Company", pinned="left", width=140)
-        gb.configure_column("Role", width=220)
-        gb.configure_column("Score", type=["numericColumn"], width=70)
-        gb.configure_column("Status", width=110, editable=True, cellEditor='agSelectCellEditor', cellEditorParams={'values': STATUS})
-        gb.configure_column("Location", width=130)
-        gb.configure_column("Found", width=95)
-        gb.configure_column("Applied", width=100, editable=True)
-        gb.configure_column("Follow-up", width=100, editable=True)
-        gb.configure_column("Notes", width=200)
-        gb.configure_column("PDF", width=50)
+        if HAS_AGGRID:
+            gb = GridOptionsBuilder.from_dataframe(df)
+            gb.configure_selection(selection_mode="single", use_checkbox=False)
+            gb.configure_column("ID", width=50, pinned="left")
+            gb.configure_column("Company", pinned="left", width=140)
+            gb.configure_column("Role", width=220)
+            gb.configure_column("Score", type=["numericColumn"], width=70)
+            gb.configure_column("Status", width=110, editable=True, cellEditor='agSelectCellEditor', cellEditorParams={'values': STATUS})
+            gb.configure_column("Location", width=130)
+            gb.configure_column("Found", width=95)
+            gb.configure_column("Applied", width=100, editable=True)
+            gb.configure_column("Follow-up", width=100, editable=True)
+            gb.configure_column("Notes", width=200)
+            gb.configure_column("PDF", width=50)
 
-        go = gb.build()
-        ag = AgGrid(df, gridOptions=go, update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.VALUE_CHANGED,
-            columns_auto_size_mode=ColumnsAutoSizeMode.NO_AUTOSIZE,
-            height=min(150+len(filtered_jobs)*50, 600), fit_columns_on_grid_load=False,
-            theme="alpine", key="tracker_grid", reload_data=False,
-            pre_selected_rows=[st.session_state.get("selected_job_id","")] if st.session_state.get("selected_job_id") else [])
+            go = gb.build()
+            ag = AgGrid(df, gridOptions=go, update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.VALUE_CHANGED,
+                columns_auto_size_mode=ColumnsAutoSizeMode.NO_AUTOSIZE,
+                height=min(150+len(filtered_jobs)*50, 600), fit_columns_on_grid_load=False,
+                theme="alpine", key="tracker_grid", reload_data=False,
+                pre_selected_rows=[st.session_state.get("selected_job_id","")] if st.session_state.get("selected_job_id") else [])
 
-        # Save edited dates and status back to jobs
-        edited_df = ag.get("data", pd.DataFrame())
-        if edited_df is not None and len(edited_df) > 0:
-            changed = False
-            for _, row in edited_df.iterrows():
-                job = next((j for j in jobs if j["id"] == row["ID"]), None)
-                if job:
-                    new_applied = row.get("Applied")
-                    if isinstance(new_applied, pd.Timestamp):
-                        new_applied = new_applied.strftime("%Y-%m-%d")
-                    elif new_applied and not isinstance(new_applied, str):
-                        new_applied = str(new_applied)[:10]
-                    if job.get("applied_date") != new_applied and new_applied:
-                        job["applied_date"] = new_applied
-                        changed = True
-                    
-                    new_followup = row.get("Follow-up")
-                    if isinstance(new_followup, pd.Timestamp):
-                        new_followup = new_followup.strftime("%Y-%m-%d")
-                    elif new_followup and not isinstance(new_followup, str):
-                        new_followup = str(new_followup)[:10]
-                    if job.get("follow_up_date") != new_followup and new_followup:
-                        job["follow_up_date"] = new_followup
-                        changed = True
-                    
-                    if job.get("status") != row.get("Status"):
-                        job["status"] = row["Status"] if row.get("Status") else "discovered"
-                        changed = True
-            if changed:
-                save_jobs(jobs)
+            # Save edited dates and status back to jobs
+            edited_df = ag.get("data", pd.DataFrame())
+            if edited_df is not None and len(edited_df) > 0:
+                changed = False
+                for _, row in edited_df.iterrows():
+                    job = next((j for j in jobs if j["id"] == row["ID"]), None)
+                    if job:
+                        new_applied = row.get("Applied")
+                        if isinstance(new_applied, pd.Timestamp):
+                            new_applied = new_applied.strftime("%Y-%m-%d")
+                        elif new_applied and not isinstance(new_applied, str):
+                            new_applied = str(new_applied)[:10]
+                        if job.get("applied_date") != new_applied and new_applied:
+                            job["applied_date"] = new_applied
+                            changed = True
+                        
+                        new_followup = row.get("Follow-up")
+                        if isinstance(new_followup, pd.Timestamp):
+                            new_followup = new_followup.strftime("%Y-%m-%d")
+                        elif new_followup and not isinstance(new_followup, str):
+                            new_followup = str(new_followup)[:10]
+                        if job.get("follow_up_date") != new_followup and new_followup:
+                            job["follow_up_date"] = new_followup
+                            changed = True
+                        
+                        if job.get("status") != row.get("Status"):
+                            job["status"] = row["Status"] if row.get("Status") else "discovered"
+                            changed = True
+                if changed:
+                    save_jobs(jobs)
 
-        # Get selected row (from filtered jobs for display, but look up in full jobs for editing)
-        sel_df = ag.get("selected_rows", pd.DataFrame())
-        if sel_df is not None and len(sel_df) > 0:
-            selected_id = sel_df.iloc[0]["ID"]
-            st.session_state["selected_job_id"] = selected_id
-            j = next((x for x in jobs if x["id"]==selected_id), None)
-        elif st.session_state.get("selected_job_id"):
-            j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
+            # Get selected row
+            sel_df = ag.get("selected_rows", pd.DataFrame())
+            if sel_df is not None and len(sel_df) > 0:
+                selected_id = sel_df.iloc[0]["ID"]
+                st.session_state["selected_job_id"] = selected_id
+                j = next((x for x in jobs if x["id"]==selected_id), None)
+            elif st.session_state.get("selected_job_id"):
+                j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
+            else:
+                j = None
         else:
-            j = None
+            # Fallback: plain dataframe with clickable selectbox
+            st.markdown("### 📊 Tracker")
+            st.dataframe(df, use_container_width=True, hide_index=True)
+            job_opts = {f"ID {j['id']} | {j.get('company','')} — {j.get('title','')[:50]} | Score: {j.get('score','—')}": j for j in filtered_jobs}
+            sel = st.selectbox("Select a job to view details", list(job_opts.keys()), key="job_select_fallback")
+            j = job_opts.get(sel)
 
         csv = df.drop(columns=["ID","PDF"]).to_csv(index=False).encode("utf-8")
         st.download_button("📥 Export CSV", csv, "varun-job-tracker.csv", "text/csv")
@@ -448,9 +443,9 @@ with tab_tracker:
         with ed1:
             ns = st.selectbox("Status", STATUS, index=STATUS.index(j.get("status","discovered")), key=f"s_{j['id']}")
         with ed2:
-            na = st.date_input("Applied", value=datetime.date.fromisoformat(j["applied_date"]) if j.get("applied_date") else None, key=f"ja_{j['id']}")
+            na = st.date_input("Applied", value=_dt.date.fromisoformat(j["applied_date"]) if j.get("applied_date") else None, key=f"ja_{j['id']}")
         with ed3:
-            nf = st.date_input("Follow-up", value=datetime.date.fromisoformat(j["follow_up_date"]) if j.get("follow_up_date") else datetime.date.today()+datetime.timedelta(days=7), key=f"jf_{j['id']}")
+            nf = st.date_input("Follow-up", value=_dt.date.fromisoformat(j["follow_up_date"]) if j.get("follow_up_date") else _dt.date.today()+_dt.timedelta(days=7), key=f"jf_{j['id']}")
         with ed4:
             st.markdown("<br>", unsafe_allow_html=True)
             if st.button("💾 Save", key=f"sv_{j['id']}"):
@@ -505,7 +500,7 @@ with tab_tracker:
                         ncs=st.selectbox("Status",CT_STAT,index=CT_STAT.index(c.get("status","not_contacted")),key=f"cs_{j['id']}_{c['id']}")
                         if st.button("💾",key=f"csv_{j['id']}_{c['id']}"):
                             c["status"]=ncs
-                            if ncs=="request_sent" and not c.get("date_contacted"): c["date_contacted"]=datetime.date.today().isoformat()
+                            if ncs=="request_sent" and not c.get("date_contacted"): c["date_contacted"]=_dt.date.today().isoformat()
                             save_contacts(contacts); st.rerun()
             with st.expander("➕ Add Contact"):
                 with st.form(f"ac_{j['id']}"):
@@ -750,6 +745,6 @@ with tab_resume:
             if pdfs:
                 for p in pdfs[:10]:
                     sz=os.path.getsize(p)/1024
-                    mt=datetime.datetime.fromtimestamp(os.path.getmtime(p)).strftime("%Y-%m-%d %H:%M")
+                    mt=_dt.datetime.fromtimestamp(os.path.getmtime(p)).strftime("%Y-%m-%d %H:%M")
                     st.markdown(f"📎 [{p.name}]({p}) ({sz:.0f}KB, {mt})")
             else: st.info("No PDFs yet.")
