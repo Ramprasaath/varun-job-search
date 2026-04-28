@@ -281,7 +281,7 @@ with tab_tracker:
             _td = datetime.date.today().isoformat()
             _yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
             is_new = j.get("date_found","") in (_td, _yd)
-            rows.append({"New":"🆕" if is_new else "","ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
+            rows.append({"New":"NEW" if is_new else "","ID":j["id"],"Company":j.get("company",""),"Role":j.get("title",""),
                 "Score":j.get("score") or 0,"Status":j.get("status","discovered"),
                 "Location":j.get("location",""),"Found":j.get("date_found",""),
                 "Applied":applied,"Follow-up":followup,
