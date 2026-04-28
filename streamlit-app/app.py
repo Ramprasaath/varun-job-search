@@ -170,6 +170,18 @@ with tab_tracker:
     else:
         st.info("Add your first job below!"); od=[]
 
+    # -- Today's new jobs --
+    if jobs:
+        import pandas as pd
+        _td = datetime.date.today().isoformat()
+        _yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+        _new = [j for j in jobs if j.get("date_found") in (_td, _yd)]
+        if _new:
+            st.markdown(f"### 🆕 New Jobs ({len(_new)})")
+            _rows = [{"Company":j.get("company",""),"Role":j.get("title",""),"Score":f"{j['score']:.1f}" if isinstance(j.get("score"),(int,float)) else "—","Location":j.get("location",""),"Found":j.get("date_found","")} for j in _new]
+            st.dataframe(pd.DataFrame(_rows), use_container_width=True, hide_index=True)
+            st.markdown("---")
+
     # -- Add job --
     with st.expander("➕ Add New Job"):
         with st.form("add_j"):
