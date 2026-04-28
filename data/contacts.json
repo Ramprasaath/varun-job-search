@@ -856,5 +856,50 @@
     "name": "TBD - Search LinkedIn for 'AstraZeneca recruiter analytical scientist Durham NC'",
     "title_guess": "Talent Acquisition Partner, AstraZeneca R&D",
     "connection_message": "Hi, I'm a PhD chemist specializing in analytical characterization and method development. I recently found the Senior Scientist Analytical Project Lead role in Durham and would appreciate connecting to discuss my fit for the position."
+  },
+  {
+    "id": 57,
+    "job_id": 80,
+    "company": "Pharmaron",
+    "name": "Search for: Pharmaron analytical chemistry hiring manager",
+    "title": "Associate Director / Director, Analytical Chemistry",
+    "linkedin_url": "",
+    "linkedin_search": "Pharmaron analytical chemistry hiring manager Coventry RI",
+    "contact_type": "hiring_manager",
+    "message_draft": "Hi [Name], I came across Pharmaron's Associate Principal Scientist, Analytical Chemistry opening in Coventry. My PhD background centers on analytical method development, impurity-focused characterization, and cross-functional technical problem solving, and I'd love to learn more about the team's priorities for this role.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search placeholder tied to this requisition. Prioritize the functional analytical-development lead supporting API programs."
+  },
+  {
+    "id": 58,
+    "job_id": 80,
+    "company": "Pharmaron",
+    "name": "Search for: Pharmaron recruiter analytical chemistry",
+    "title": "Recruiter / Talent Acquisition Partner",
+    "linkedin_url": "",
+    "linkedin_search": "Pharmaron recruiter analytical chemistry Coventry RI",
+    "contact_type": "recruiter",
+    "message_draft": "Hi [Name], I'm reaching out about Pharmaron's Associate Principal Scientist, Analytical Chemistry role. My background combines HPLC-centric analytical development, materials characterization, and technical reporting, and I'd appreciate any guidance on fit or current hiring priorities for the opening.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search placeholder for the recruiter or talent partner attached to the Coventry analytical chemistry opening."
+  },
+  {
+    "id": 59,
+    "job_id": 80,
+    "company": "Pharmaron",
+    "name": "Search for: Pharmaron analytical chemistry peer",
+    "title": "Senior Scientist / Principal Scientist, Analytical Chemistry",
+    "linkedin_url": "",
+    "linkedin_search": "Pharmaron senior scientist analytical chemistry Coventry RI",
+    "contact_type": "peer",
+    "message_draft": "Hi [Name], I'm exploring Pharmaron's analytical chemistry opening in Coventry because it looks closely aligned with my experience in method development, impurity-focused characterization, and process-support analytics. If you're open to it, I'd love to hear how the team works across process chemistry, manufacturing, and quality.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search placeholder for a likely analytical-chemistry peer on the target team."
   }
 ]

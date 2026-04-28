@@ -2530,5 +2530,90 @@
     "tailored_resume": null,
     "pdf_path": null,
     "contacts": []
+  },
+  {
+    "id": 80,
+    "source": "physicstoday",
+    "url": "https://jobs.physicstoday.org/job/41955523/associate-principal-scientist-analytical-chemistry/",
+    "company": "Pharmaron",
+    "title": "Associate Principal Scientist - Analytical Chemistry",
+    "location": "Coventry, RI",
+    "date_found": "2026-04-28",
+    "date_posted": "2026-04-25",
+    "freshness_verified": true,
+    "freshness_reason": "Active jobs.physicstoday listing fetched on 2026-04-28; Brave result labeled it published 3 days ago.",
+    "job_id": "41955523",
+    "salary_range": "$120,000 - $140,000",
+    "score": 4.0,
+    "archetype": "Analytical / CMC Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-pharmaron-associate-principal-scientist---analytic-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh analytical-chemistry leadership role supporting API development and manufacturing at Pharmaron's Coventry site. Strong match on HPLC-centric method development, impurity-focused characterization, technical reporting, and cross-functional analytical support. Main gaps are the role's explicit 6+ years of pharma-industry experience, direct client-facing CDMO leadership, and deeper LC-MS/GMP manufacturing tenure than Varun currently has.",
+    "evaluation": {
+      "recommendation": "APPLY - strong technical fit, with industry seniority as the main stretch.",
+      "strengths": [
+        "Direct overlap with analytical method development, impurity-focused characterization, and technical problem solving",
+        "API development, scale-up support, and cross-functional communication map well to Varun's process-development narrative",
+        "PhD analytical-chemistry profile aligns with the academic bar for the role",
+        "Compensation range is solid and the posting is fresh/live"
+      ],
+      "gaps": [
+        "Role explicitly prefers 6+ years of pharmaceutical industry experience beyond Varun's academic/postdoctoral background",
+        "LC-MS depth, GMP manufacturing execution, and CDMO client leadership are stronger asks than the current resume proves directly",
+        "Mentoring and multi-program ownership expectations are a mild stretch at this level"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.1,
+      "comp": 3.9,
+      "cultural": 3.8,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_pharmaron_analytical"
+  },
+  {
+    "id": 81,
+    "source": "biospace",
+    "url": "https://jobs.biospace.com/job/2989120/atyr-pharma-senior-scientist-cmc-analytical-development-and-validation/?LinkSource=PremiumListing",
+    "company": "aTyr Pharma",
+    "title": "Senior Scientist, CMC Analytical Development and Validation",
+    "location": "Remote, United States; San Diego preferred",
+    "date_found": "2026-04-28",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Live BioSpace premium listing fetched on 2026-04-28; exact posted date was not exposed in extracted text.",
+    "job_id": "2989120",
+    "salary_range": "$140,000 - $165,000",
+    "score": 2.8,
+    "archetype": "Analytical / CMC Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh live BioSpace listing for a late-phase/commercial biologics CMC analytical role supporting efzofitimod across CSPs. The role is attractive on remote flexibility and analytical rigor, but it heavily favors protein analytics, GMP method transfer/validation, QC release/stability work, and vendor-management experience that are materially beyond Varun's current small-molecule/materials-centered background.",
+    "evaluation": {
+      "recommendation": "PASS / LOW PRIORITY - analytically relevant, but the biologics and GMP-vendor-management requirements are too specific.",
+      "strengths": [
+        "Analytical method-development mindset and technical documentation background are transferable",
+        "CMC analytical framing and problem-solving orientation are directionally aligned",
+        "Live current posting with a clearly defined compensation band"
+      ],
+      "gaps": [
+        "Protein analytical chemistry modalities like CE, icIEF, ELISA, and biologics-focused MS are major gaps",
+        "Role expects direct bench QC/method-validation experience inside GMP environments",
+        "CSP/vendor management and late-phase commercial biologics ownership are stronger than Varun's current profile"
+      ],
+      "cv_match": 2.7,
+      "north_star": 3.0,
+      "comp": 4.1,
+      "cultural": 3.3,
+      "red_flags": -0.6,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
   }
 ]
