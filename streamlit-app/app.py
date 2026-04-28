@@ -170,24 +170,6 @@ with tab_tracker:
     else:
         st.info("Add your first job below!"); od=[]
 
-    # -- Today's new jobs table --
-    if jobs:
-        _today = datetime.date.today().isoformat()
-        _yesterday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
-        _today_jobs = [j for j in jobs if j.get("date_found") == _today]
-        _recent = _today_jobs if _today_jobs else [j for j in jobs if j.get("date_found") == _yesterday]
-        _label = "Today" if _today_jobs else "Yesterday"
-        if _recent:
-            import pandas as pd
-            st.markdown(f"### 🆕 {_label}'s New Jobs ({len(_recent)})")
-            _rows = []
-            for j in _recent:
-                _sc = f"{j['score']:.1f}" if isinstance(j.get('score'), (int, float)) else "—"
-                _rows.append({"Company": j.get("company",""), "Role": j.get("title",""),
-                    "Score": _sc, "Location": j.get("location",""), "Status": j.get("status","discovered")})
-            st.dataframe(pd.DataFrame(_rows), use_container_width=True, hide_index=True)
-            st.markdown("---")
-
     # -- Add job --
     with st.expander("➕ Add New Job"):
         with st.form("add_j"):
@@ -249,11 +231,7 @@ with tab_tracker:
     # -- AgGrid clickable tracker --
     if jobs:
         import pandas as pd
-        try:
-            from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, ColumnsAutoSizeMode, JsCode
-            _has_aggrid = True
-        except ImportError:
-            _has_aggrid = False
+        from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, ColumnsAutoSizeMode, JsCode
 
         st.markdown("### 📊 Tracker")
         
@@ -307,75 +285,68 @@ with tab_tracker:
                 "Notes":j.get("notes",""),"PDF":has_pdf})
         df = pd.DataFrame(rows)
 
-        if _has_aggrid:
-            gb = GridOptionsBuilder.from_dataframe(df)
-            gb.configure_selection(selection_mode="single", use_checkbox=False)
-            gb.configure_column("ID", width=50, pinned="left")
-            gb.configure_column("Company", pinned="left", width=140)
-            gb.configure_column("Role", width=220)
-            gb.configure_column("Score", type=["numericColumn"], width=70)
-            gb.configure_column("Status", width=110, editable=True, cellEditor='agSelectCellEditor', cellEditorParams={'values': STATUS})
-            gb.configure_column("Location", width=130)
-            gb.configure_column("Found", width=95)
-            gb.configure_column("Applied", width=100, editable=True)
-            gb.configure_column("Follow-up", width=100, editable=True)
-            gb.configure_column("Notes", width=200)
-            gb.configure_column("PDF", width=50)
+        gb = GridOptionsBuilder.from_dataframe(df)
+        gb.configure_selection(selection_mode="single", use_checkbox=False)
+        gb.configure_column("ID", width=50, pinned="left")
+        gb.configure_column("Company", pinned="left", width=140)
+        gb.configure_column("Role", width=220)
+        gb.configure_column("Score", type=["numericColumn"], width=70)
+        gb.configure_column("Status", width=110, editable=True, cellEditor='agSelectCellEditor', cellEditorParams={'values': STATUS})
+        gb.configure_column("Location", width=130)
+        gb.configure_column("Found", width=95)
+        gb.configure_column("Applied", width=100, editable=True)
+        gb.configure_column("Follow-up", width=100, editable=True)
+        gb.configure_column("Notes", width=200)
+        gb.configure_column("PDF", width=50)
 
-            go = gb.build()
-            ag = AgGrid(df, gridOptions=go, update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.VALUE_CHANGED,
-                columns_auto_size_mode=ColumnsAutoSizeMode.NO_AUTOSIZE,
-                height=min(150+len(filtered_jobs)*50, 600), fit_columns_on_grid_load=False,
-                theme="alpine", key="tracker_grid", reload_data=False,
-                pre_selected_rows=[st.session_state.get("selected_job_id","")] if st.session_state.get("selected_job_id") else [])
+        go = gb.build()
+        ag = AgGrid(df, gridOptions=go, update_mode=GridUpdateMode.SELECTION_CHANGED | GridUpdateMode.VALUE_CHANGED,
+            columns_auto_size_mode=ColumnsAutoSizeMode.NO_AUTOSIZE,
+            height=min(150+len(filtered_jobs)*50, 600), fit_columns_on_grid_load=False,
+            theme="alpine", key="tracker_grid", reload_data=False,
+            pre_selected_rows=[st.session_state.get("selected_job_id","")] if st.session_state.get("selected_job_id") else [])
 
-            # Save edited dates and status back to jobs
-            edited_df = ag.get("data", pd.DataFrame())
-            if edited_df is not None and len(edited_df) > 0:
-                changed = False
-                for _, row in edited_df.iterrows():
-                    job = next((j for j in jobs if j["id"] == row["ID"]), None)
-                    if job:
-                        new_applied = row.get("Applied")
-                        if isinstance(new_applied, pd.Timestamp):
-                            new_applied = new_applied.strftime("%Y-%m-%d")
-                        elif new_applied and not isinstance(new_applied, str):
-                            new_applied = str(new_applied)[:10]
-                        if job.get("applied_date") != new_applied and new_applied:
-                            job["applied_date"] = new_applied
-                            changed = True
-                        
-                        new_followup = row.get("Follow-up")
-                        if isinstance(new_followup, pd.Timestamp):
-                            new_followup = new_followup.strftime("%Y-%m-%d")
-                        elif new_followup and not isinstance(new_followup, str):
-                            new_followup = str(new_followup)[:10]
-                        if job.get("follow_up_date") != new_followup and new_followup:
-                            job["follow_up_date"] = new_followup
-                            changed = True
-                        
-                        if job.get("status") != row.get("Status"):
-                            job["status"] = row["Status"] if row.get("Status") else "discovered"
-                            changed = True
-                if changed:
-                    save_jobs(jobs)
+        # Save edited dates and status back to jobs
+        edited_df = ag.get("data", pd.DataFrame())
+        if edited_df is not None and len(edited_df) > 0:
+            changed = False
+            for _, row in edited_df.iterrows():
+                job = next((j for j in jobs if j["id"] == row["ID"]), None)
+                if job:
+                    new_applied = row.get("Applied")
+                    if isinstance(new_applied, pd.Timestamp):
+                        new_applied = new_applied.strftime("%Y-%m-%d")
+                    elif new_applied and not isinstance(new_applied, str):
+                        new_applied = str(new_applied)[:10]
+                    if job.get("applied_date") != new_applied and new_applied:
+                        job["applied_date"] = new_applied
+                        changed = True
+                    
+                    new_followup = row.get("Follow-up")
+                    if isinstance(new_followup, pd.Timestamp):
+                        new_followup = new_followup.strftime("%Y-%m-%d")
+                    elif new_followup and not isinstance(new_followup, str):
+                        new_followup = str(new_followup)[:10]
+                    if job.get("follow_up_date") != new_followup and new_followup:
+                        job["follow_up_date"] = new_followup
+                        changed = True
+                    
+                    if job.get("status") != row.get("Status"):
+                        job["status"] = row["Status"] if row.get("Status") else "discovered"
+                        changed = True
+            if changed:
+                save_jobs(jobs)
 
-            # Get selected row (from filtered jobs for display, but look up in full jobs for editing)
-            sel_df = ag.get("selected_rows", pd.DataFrame())
-            if sel_df is not None and len(sel_df) > 0:
-                selected_id = sel_df.iloc[0]["ID"]
-                st.session_state["selected_job_id"] = selected_id
-                j = next((x for x in jobs if x["id"]==selected_id), None)
-            elif st.session_state.get("selected_job_id"):
-                j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
-            else:
-                j = None
+        # Get selected row (from filtered jobs for display, but look up in full jobs for editing)
+        sel_df = ag.get("selected_rows", pd.DataFrame())
+        if sel_df is not None and len(sel_df) > 0:
+            selected_id = sel_df.iloc[0]["ID"]
+            st.session_state["selected_job_id"] = selected_id
+            j = next((x for x in jobs if x["id"]==selected_id), None)
+        elif st.session_state.get("selected_job_id"):
+            j = next((x for x in jobs if x["id"]==st.session_state["selected_job_id"]), None)
         else:
-            # Fallback: plain dataframe + selectbox
-            st.dataframe(df, use_container_width=True, hide_index=True)
-            job_opts = {f"ID {j['id']} | {j.get('company','')} — {j.get('title','')[:50]} | Score: {j.get('score','—')}": j for j in filtered_jobs}
-            sel = st.selectbox("Select a job to view details", list(job_opts.keys()), key="job_select_fallback")
-            j = job_opts.get(sel)
+            j = None
 
         csv = df.drop(columns=["ID","PDF"]).to_csv(index=False).encode("utf-8")
         st.download_button("📥 Export CSV", csv, "varun-job-tracker.csv", "text/csv")
