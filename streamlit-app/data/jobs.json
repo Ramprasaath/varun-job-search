@@ -2233,5 +2233,302 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
+  },
+  {
+    "id": 70,
+    "source": "lever-direct",
+    "url": "https://jobs.lever.co/seranbio/8664ab0e-15f1-409a-9e53-450a791678a3",
+    "company": "Serán BioScience",
+    "title": "Analytical Development Scientist II",
+    "location": "Bend, Oregon",
+    "date_found": "2026-04-24",
+    "date_posted": "2026-04-23",
+    "freshness_verified": true,
+    "freshness_reason": "Active Lever page is live and JSON-LD datePosted is 2026-04-23.",
+    "job_id": "8664ab0e-15f1-409a-9e53-450a791678a3",
+    "score": 4.1,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-seran-bioscience-analytical-development-scientist-ii-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Lever role posted 2026-04-23. Strong analytical-development fit with small-molecule method development, UHPLC/HPLC plus dissolution/KF testing, method transfer to QC, GMP release and stability support, and regulatory-ready documentation. Main gaps are explicit GMP tenure, deeper Empower usage, and direct small-molecule CMC-industry experience.",
+    "evaluation": {
+      "recommendation": "APPLY - Strong analytical-development / CMC fit at an accessible scientist level.",
+      "strengths": [
+        "Direct overlap with analytical development, method optimization, and method transfer work",
+        "HPLC-adjacent, spectroscopy, thermal-analysis, and technical-documentation background maps well",
+        "Cross-functional process-development experience fits the role’s QC, QA, and project-management interfaces",
+        "Fresh live Lever posting with explicit posted date"
+      ],
+      "gaps": [
+        "Role asks for explicit GMP lab experience",
+        "Waters Empower and routine LC/GC production experience are more adjacent than direct",
+        "Most prior work is academic/postdoctoral rather than pharma-industry CMC execution"
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.1,
+      "comp": 4.0,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_seran_analytical_dev"
+  },
+  {
+    "id": 71,
+    "source": "lever-direct",
+    "url": "https://jobs.lever.co/seranbio/22f257cc-ac4b-4e33-ad4d-50b426ef9dfd",
+    "company": "Serán BioScience",
+    "title": "Senior Scientist, Product Development",
+    "location": "Bend, Oregon",
+    "date_found": "2026-04-24",
+    "date_posted": "2026-01-27",
+    "freshness_verified": true,
+    "freshness_reason": "Active Lever page is live and JSON-LD datePosted is 2026-01-27.",
+    "job_id": "22f257cc-ac4b-4e33-ad4d-50b426ef9dfd",
+    "score": 4.0,
+    "archetype": "Formulation Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-seran-bioscience-senior-scientist,-product-development-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Lever role posted 2026-01-27. Strong formulation and process-development match with DOE-guided scale-up work, prototype evaluation, cross-functional collaboration, technical reporting, and data-driven next-step planning. Biggest gaps are direct oral-solid-dose product-development depth and prior pharmaceutical formulation ownership.",
+    "evaluation": {
+      "recommendation": "APPLY - Good formulation/process-development fit with manageable domain gaps.",
+      "strengths": [
+        "Current postdoctoral work maps well to process optimization, scale-up thinking, and experimental design",
+        "Strong analytical-characterization background supports prototype evaluation and troubleshooting",
+        "Technical reporting and cross-functional execution are clear strengths",
+        "Fresh live Lever posting with explicit posted date"
+      ],
+      "gaps": [
+        "Role wants deeper direct formulation-science and drug-product-development experience",
+        "No direct oral solid dosage ownership to date",
+        "External client-facing development leadership is more adjacent than explicit"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.1,
+      "comp": 3.9,
+      "cultural": 4.0,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_seran_product_dev"
+  },
+  {
+    "id": 72,
+    "source": "greenhouse-direct",
+    "url": "https://job-boards.greenhouse.io/citytherapeutics/jobs/5153187008",
+    "company": "City Therapeutics",
+    "title": "Senior/Principal Scientist, CMC Process Development and Manufacturing",
+    "location": "Cambridge, MA",
+    "date_found": "2026-04-24",
+    "date_posted": "2026-03-13",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Greenhouse page is active and page metadata shows published_at 2026-03-13T10:35:48-04:00.",
+    "job_id": 5153187008,
+    "score": 3.8,
+    "archetype": "Process Development Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Active Greenhouse posting published 2026-03-13. Relevant for process development, scale-up, technical protocols and reports, batch-documentation support, CMO coordination, and CMC cross-functional work. Main gaps are direct oligonucleotide synthesis and downstream-processing depth plus the stated 5+ years pharma-industry preference.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Strong process-development alignment, but modality and seniority are real gaps.",
+      "strengths": [
+        "Current polymer scale-up work provides direct process-development and optimization credibility",
+        "Strong documentation, troubleshooting, and cross-functional execution background",
+        "Experience translating analytical data into development decisions maps to CMC workflows",
+        "Fresh live Greenhouse posting with explicit published date"
+      ],
+      "gaps": [
+        "Role strongly prefers direct oligonucleotide chemistry and solid-phase synthesis experience",
+        "CMC manufacturing and CMO-management exposure is adjacent rather than direct",
+        "Seniority expectation is higher than Varun’s current profile"
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 3.9,
+      "cultural": 4.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null
+  },
+  {
+    "id": 73,
+    "company": "Merck",
+    "title": "Senior Scientist, Analytical Chemistry (ACT - Analytical Commercialization Technology)",
+    "url": "https://jobrxiv.org/job/senior-scientist-analytical-chemistry-5/",
+    "location": "Rahway, NJ / West Point, PA",
+    "date_found": "2026-04-26",
+    "date_posted": "2026-04-25",
+    "score": 4.4,
+    "status": "evaluated",
+    "salary_range": "$117,000 - $184,200",
+    "notes": "Strong fit. ACT group in ACDS focuses on late-stage pharmaceutical drug product development and commercialization. Requires PhD in Analytical Chemistry. Varun's multi-technique characterization expertise (HPLC, GC, spectroscopy, chromatography) is directly relevant. cGMP environment, CMC regulatory document preparation, method development/validation. Merck is a top-tier pharma with excellent R&D culture. Salary range exceeds target.",
+    "evaluation": {
+      "recommendation": "Strong match -- apply promptly",
+      "strengths": [
+        "PhD in Analytical Chemistry required -- direct match",
+        "HPLC/UPLC, GC, UV/IR spectroscopy, Karl Fischer, dissolution -- Varun has hands-on experience with most",
+        "CMC regulatory documentation and cGMP environment align with pharmaceutical career path",
+        "Merck is a top global pharma with excellent R&D resources and career growth",
+        "Salary $117K-$184K well above target range",
+        "Method development and validation is core to Varun's skillset"
+      ],
+      "gaps": [
+        "Limited direct pharmaceutical industry experience (academic/postdoc background)",
+        "May need to quickly get up to speed on cGMP specifics and regulatory filing workflows",
+        "Drug product testing in cGMP environment would be new, though analytically similar"
+      ]
+    },
+    "tailored_resume": "data/resume/tailored_merck_analytical.json",
+    "pdf_path": "data/output/cv-merck-sr-scientist-analytical-chemistry-2026.pdf"
+  },
+  {
+    "id": 74,
+    "company": "AstraZeneca",
+    "title": "Senior Scientist - Analytical Project Lead, Global Product Development",
+    "url": "https://careers.astrazeneca.com/job/durham/senior-scientist-analytical-project-lead-global-product-development/7684/94325711088",
+    "location": "Durham, NC",
+    "date_found": "2026-04-26",
+    "date_posted": "2026-04-22",
+    "score": 3.8,
+    "status": "evaluated",
+    "salary_range": null,
+    "notes": "Good fit but stretch role. AZ PT&D Global Product Development group in Durham, NC. Analytical project lead for oral solid dosage forms from early development through commercialization. PhD required in Analytical Chemistry or related. HPLC/UPLC, LC-MS, dissolution, impurity profiling, CMC regulatory. The significant pharma experience and leadership expectations suggest above entry-level. Worth applying as stretch role.",
+    "evaluation": {
+      "recommendation": "Worth applying -- stretch role with strong technical alignment",
+      "strengths": [
+        "PhD in Analytical Chemistry or related -- direct match",
+        "HPLC/UPLC, LC-MS, dissolution, impurity profiling -- within Varun's analytical skillset",
+        "CMC content for IND/NDA/MAA -- valuable experience to gain",
+        "AstraZeneca is a top-tier global pharma with strong R&D culture",
+        "Durham NC is a growing pharma hub with lower COL than NJ/CA",
+        "Lab automation and AI/ML tools signal modern innovative team"
+      ],
+      "gaps": [
+        "Significant pharma analytical science experience expected -- Varun has limited direct pharma experience",
+        "Project/team leadership across global teams -- stretch for entry-level PhD",
+        "Oral solid dosage form experience would be new",
+        "Establishing laboratory capabilities at Durham site suggests seniority beyond entry-level"
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "company": "Kenvue",
+    "title": "Senior Scientist, Product Development (Self-Care)",
+    "url": "https://jobs.kenvue.com/senior-scientist-product-development/job/F20E9E5A4C1B60F1767338FDF235BEA7",
+    "location": "Summit, NJ",
+    "date_found": "2026-04-26",
+    "date_posted": "2026-04-19",
+    "score": 3.6,
+    "status": "evaluated",
+    "salary_range": null,
+    "notes": "Decent fit for formulation/process development in consumer health OTC. PhD + 0-2yr experience level matches. Requires formulation science, process development, GxP compliance. Varun's materials characterization and statistical DOE transfer well, but no direct formulation/pharmaceutical product development experience. Kenvue (J&J spinoff) is a stable consumer health company. Hybrid role in Summit NJ.",
+    "evaluation": {
+      "recommendation": "Consider applying -- decent fit but formulation-heavy with no direct experience",
+      "strengths": [
+        "PhD + 0-2 years matches Varun's level perfectly",
+        "Chemistry/Materials Engineering degree accepted",
+        "Process optimization and experimental design align with Varun's DOE experience",
+        "GxP compliance environment -- transferable from academic lab management",
+        "Kenvue is a well-established consumer health company (J&J spinoff)",
+        "Cross-functional collaboration with R&D, QA, Regulatory"
+      ],
+      "gaps": [
+        "Formulation science is not Varun's core strength -- primarily a characterization/analytical background",
+        "OTC medication and dietary supplement development experience would be entirely new",
+        "No direct product development experience in consumer health or pharma",
+        "Manufacturing process optimization at scale is different from lab-scale polymer processing"
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "company": "Merck (MSD)",
+    "title": "Sr. Scientist, Analytical R&D – Vaccine Separations & Biochemical Analytics",
+    "url": "https://jobrxiv.org/job/sr-scientist-analytical-rd-9/",
+    "location": "West Point, PA",
+    "date_found": "2026-04-27",
+    "date_posted": null,
+    "status": "evaluated",
+    "score": 3.5,
+    "notes": "Merck Vaccine Analytical R&D. PhD analytical chemistry/biochemistry. Lab-based role focused on separations (HPLC, CE, FPLC), spectroscopy (NMR, UV-Vis, IR, Fluorescence), and wet chemistry for vaccine development. Strong match for analytical chemistry skills. Gap: vaccine/biologics focus, may need protein characterization experience (SPR, ITC, MALS). West Point, PA. Salary competitive.",
+    "evaluation": {
+      "recommendation": "Strong candidate for analytical chemistry skills. Vaccine/biologics context is a pivot from small-molecule/materials science but analytical techniques overlap significantly. Worth applying if Varun is open to vaccine R&D.",
+      "strengths": "Direct PhD-level analytical role. HPLC, CE, spectroscopy are core strengths. Lab-based with method development. Merck brand. Publications track record valued.",
+      "gaps": "Vaccine-specific knowledge may be needed. Protein characterization experience preferred. Lab informatics and coding preferred."
+    },
+    "tailored_resume": null,
+    "pdf_path": null,
+    "contacts": []
+  },
+  {
+    "id": 77,
+    "company": "Pfizer",
+    "title": "Senior Associate Scientist – Chem Analytical (Drug Product Analytics)",
+    "url": "https://jobrxiv.org/job/senior-associate-scientist-chem-analytical-2/",
+    "location": "Not specified (likely CT or MA)",
+    "date_found": "2026-04-27",
+    "date_posted": null,
+    "status": "evaluated",
+    "score": 3.3,
+    "notes": "Pfizer drug product analytics team. Forensic analysis and materials characterization: microscopy (optical, electron, X-ray), spectroscopy (FTIR, Raman, NIR), particle characterization. Excellent technical alignment with Varun's materials characterization expertise. Caveat: BS+3 / MS+0 level role – Varun may be considered overqualified with PhD.",
+    "evaluation": {
+      "recommendation": "Technically excellent match for materials characterization skills, but role level is below PhD. Varun could apply but may want to negotiate up or use as foot-in-door at Pfizer. Consider reaching out to see if higher-level roles exist in same group.",
+      "strengths": "Materials characterization, spectroscopy, microscopy directly match Varun's core expertise. Drug product crystallization, solid dispersion, dissolution assessments are relevant. Pfizer brand.",
+      "gaps": "BS/MS level role. Controlled substance handling required. May be seen as overqualified."
+    },
+    "tailored_resume": null,
+    "pdf_path": null,
+    "contacts": []
+  },
+  {
+    "id": 78,
+    "company": "Merck (MSD)",
+    "title": "Associate Principal Scientist, Process Analytical Technologies (PAT)",
+    "url": "https://jobrxiv.org/job/associate-principal-scientist-process-analytical-technologies/",
+    "location": "Not specified (likely Rahway, NJ or West Point, PA)",
+    "date_found": "2026-04-27",
+    "date_posted": null,
+    "status": "evaluated",
+    "score": 3.0,
+    "notes": "Merck PAT team. PhD+4 years. Develops in-line/on-line/at-line PAT solutions. Spectroscopy (Raman, FTIR, NIR), chromatography, chemometrics. Spectroscopy expertise aligns with Varun's background. Gap: requires 4+ years specific PAT industry experience and manufacturing scale-up knowledge.",
+    "evaluation": {
+      "recommendation": "Moderate fit. Spectroscopy and analytical skills transfer well, but requires deep PAT-specific experience (in-line/on-line implementation, commercial manufacturing). Only pursue if Varun can demonstrate PAT-adjacent experience.",
+      "strengths": "Spectroscopy (Raman, FTIR, NIR) is directly relevant. Chemometrics/modeling experience valued. PhD-level role.",
+      "gaps": "4+ years PAT industry experience required. Commercial manufacturing and scale-up experience needed. Regulatory filing experience preferred."
+    },
+    "tailored_resume": null,
+    "pdf_path": null,
+    "contacts": []
+  },
+  {
+    "id": 79,
+    "company": "Merck (MSD)",
+    "title": "Associate Principal Scientist, Analytical Chemistry – Inhalation Product Development",
+    "url": "https://jobrxiv.org/job/associate-principal-scientist-analytical-chemistry-inhalation-product-development/",
+    "location": "Rahway, NJ or West Point, PA",
+    "date_found": "2026-04-27",
+    "date_posted": null,
+    "status": "evaluated",
+    "score": 2.8,
+    "notes": "Merck Analytical Commercialization Technology. PhD+3 years. Analytical method development/validation, cGMP, CMC regulatory docs. Focus on inhalation products (APSD, DDU, MDU, PSD). Salary: $142K-224K. Gap: requires specific inhalation product development experience which Varun lacks.",
+    "evaluation": {
+      "recommendation": "Low-moderate fit. Core analytical chemistry and CMC skills transfer, but inhalation-specific experience is a hard requirement. Would need to make a strong case for transferable analytical skills.",
+      "strengths": "Analytical method development/validation, HPLC, GC, spectroscopy, dissolution are transferable. CMC document preparation aligns. Strong salary range.",
+      "gaps": "Inhalation product development (APSD, DDU, DPI) is required. Specific inhalation testing knowledge needed."
+    },
+    "tailored_resume": null,
+    "pdf_path": null,
+    "contacts": []
   }
 ]
