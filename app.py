@@ -145,7 +145,24 @@ def _build_resume_html(resume, company=""):
 
 # ================================================================
 st.markdown("# 🎯 Varun's Job Pipeline")
-tab_tracker, tab_resume = st.tabs(["📋 Tracker", "📝 Resume Builder"])
+tab_new, tab_tracker, tab_resume = st.tabs(["🆕 New Jobs", "📋 Tracker", "📝 Resume Builder"])
+
+# ================================================================
+# NEW JOBS
+# ================================================================
+with tab_new:
+    import pandas as pd
+    _all = load_jobs()
+    _td = datetime.date.today().isoformat()
+    _yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+    _new = [j for j in _all if j.get("date_found") in (_td, _yd)]
+    _label = "Today" if any(j.get("date_found")==_td for j in _new) else "Yesterday"
+    if _new:
+        st.markdown(f"### {_label}'s New Jobs ({len(_new)})")
+        _rows = [{"Company":j.get("company",""),"Role":j.get("title",""),"Score":f"{j['score']:.1f}" if isinstance(j.get("score"),(int,float)) else "—","Location":j.get("location",""),"Found":j.get("date_found",""),"Status":j.get("status","")} for j in _new]
+        st.dataframe(pd.DataFrame(_rows), use_container_width=True, hide_index=True)
+    else:
+        st.info("No new jobs today or yesterday.")
 
 # ================================================================
 # TRACKER
@@ -169,18 +186,6 @@ with tab_tracker:
         c4.metric("🆕 New",new_jobs); c5.metric("📋 To Apply",not_applied); c6.metric("⚠️ Due",len(od))
     else:
         st.info("Add your first job below!"); od=[]
-
-    # -- Today's new jobs --
-    if jobs:
-        import pandas as pd
-        _td = datetime.date.today().isoformat()
-        _yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
-        _new = [j for j in jobs if j.get("date_found") in (_td, _yd)]
-        if _new:
-            st.markdown(f"### 🆕 New Jobs ({len(_new)})")
-            _rows = [{"Company":j.get("company",""),"Role":j.get("title",""),"Score":f"{j['score']:.1f}" if isinstance(j.get("score"),(int,float)) else "—","Location":j.get("location",""),"Found":j.get("date_found","")} for j in _new]
-            st.dataframe(pd.DataFrame(_rows), use_container_width=True, hide_index=True)
-            st.markdown("---")
 
     # -- Add job --
     with st.expander("➕ Add New Job"):
