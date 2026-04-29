@@ -271,5 +271,86 @@
     "archive_reason": "User-verified stale LinkedIn posting: listed as 3 years old and no longer accepting applications.",
     "freshness_verified": true,
     "freshness_reason": "User-verified stale LinkedIn posting: listed as 3 years old and no longer accepting applications."
+  },
+  {
+    "id": 57,
+    "source": "full_scan_validated_import",
+    "url": "https://jobs.ashbyhq.com/periodic-labs/e90c6050-e544-4a2b-ae30-7c41e5eb4f16",
+    "company": "Periodic Labs",
+    "title": "Research Scientist, Materials Characterization",
+    "location": "Menlo Park, CA",
+    "date_found": "2026-04-20",
+    "date_posted": "2025-09-22",
+    "freshness_verified": true,
+    "freshness_reason": "Verified on 2026-04-29: Ashby JobPosting datePosted=2025-09-22, older than active-search freshness window.",
+    "job_id": null,
+    "score": 4.5,
+    "archetype": "Materials Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong fit. Direct match on materials characterization. Menlo Park. Full-time, 12-month term.",
+    "evaluation": {
+      "recommendation": "APPLY - Strong fit",
+      "strengths": [
+        "Direct materials characterization match",
+        "Bay Area location",
+        "Good alignment with Varun's characterization toolkit"
+      ],
+      "gaps": [
+        "12-month term role"
+      ],
+      "cv_match": 4.5,
+      "north_star": 4.5,
+      "comp": 4.5,
+      "cultural": 4.5,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null,
+    "archive_reason": "Direct Ashby posting remains reachable, but datePosted 2025-09-22 is older than the 6-month freshness window for active search."
+  },
+  {
+    "id": 59,
+    "source": "full_scan_validated_import",
+    "url": "https://job-boards.greenhouse.io/kailera/jobs/5016908008",
+    "company": "Kailera Therapeutics",
+    "title": "Senior Scientist, Process Development Chemist",
+    "location": "Waltham, MA",
+    "date_found": "2026-04-20",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Verified on 2026-04-29: role missing from Greenhouse boards API and direct URL redirects to board error page.",
+    "job_id": null,
+    "score": 3.8,
+    "archetype": "Process Development Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Relevant process-development chemistry role. Good small-molecule / analytical overlap, but asks for 5-8 years industry experience and onsite in Waltham 3-4 days/week.",
+    "evaluation": {
+      "recommendation": "CONSIDER - Good fit with some gaps",
+      "strengths": [
+        "Small-molecule and analytical chemistry overlap",
+        "Process development role",
+        "Real active Greenhouse posting"
+      ],
+      "gaps": [
+        "5-8 years industry experience requested",
+        "Onsite in Waltham, MA"
+      ],
+      "cv_match": 3.8,
+      "north_star": 3.8,
+      "comp": 3.8,
+      "cultural": 3.8,
+      "red_flags": 0,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null,
+    "archive_reason": "Direct Greenhouse role is no longer listed and now redirects to the Kailera board with error=true; treated as closed on 2026-04-29."
   }
 ]

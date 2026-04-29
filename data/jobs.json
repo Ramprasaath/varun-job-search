@@ -1719,45 +1719,6 @@
     "tailored_resume": null
   },
   {
-    "id": 57,
-    "source": "full_scan_validated_import",
-    "url": "https://jobs.ashbyhq.com/periodic-labs/e90c6050-e544-4a2b-ae30-7c41e5eb4f16",
-    "company": "Periodic Labs",
-    "title": "Research Scientist, Materials Characterization",
-    "location": "Menlo Park, CA",
-    "date_found": "2026-04-20",
-    "date_posted": null,
-    "freshness_verified": true,
-    "freshness_reason": "Verified active via liveness check on 2026-04-20",
-    "job_id": null,
-    "score": 4.5,
-    "archetype": "Materials Scientist",
-    "status": "discovered",
-    "report_path": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Strong fit. Direct match on materials characterization. Menlo Park. Full-time, 12-month term.",
-    "evaluation": {
-      "recommendation": "APPLY - Strong fit",
-      "strengths": [
-        "Direct materials characterization match",
-        "Bay Area location",
-        "Good alignment with Varun's characterization toolkit"
-      ],
-      "gaps": [
-        "12-month term role"
-      ],
-      "cv_match": 4.5,
-      "north_star": 4.5,
-      "comp": 4.5,
-      "cultural": 4.5,
-      "red_flags": 0,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": null
-  },
-  {
     "id": 58,
     "source": "full_scan_validated_import",
     "url": "https://jobs.ashbyhq.com/periodic-labs/7f36ea6e-3e67-40df-82c6-5540859a2ac5",
@@ -1765,76 +1726,39 @@
     "title": "Research Scientist, Thin Films",
     "location": "Menlo Park, CA",
     "date_found": "2026-04-20",
-    "date_posted": null,
+    "date_posted": "2025-10-31",
     "freshness_verified": true,
-    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "freshness_reason": "Verified active on 2026-04-29 via direct Ashby page; JobPosting datePosted=2025-10-31 (borderline but still within freshness window).",
     "job_id": null,
-    "score": 4.4,
+    "score": 4.1,
     "archetype": "Materials Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
-    "pdf_path": null,
+    "pdf_path": "data/output/cv-periodic-labs-research-scientist-thin-films-2026.pdf",
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Strong fit. Thin films is directly aligned with Varun's coatings / surface / thin-film background. Menlo Park.",
+    "notes": "Fresh-enough but borderline opening at Periodic Labs, verified active on 2026-04-29 via direct Ashby page. Excellent thin-film and characterization alignment, especially with coatings, CVD, spectroscopy, and structure-property work. Main stretch is the JD's explicit PVD/PLD/MBE depth and autonomous lab build-out emphasis.",
     "evaluation": {
-      "recommendation": "APPLY - Strong fit",
+      "recommendation": "APPLY - strong fit if Varun is comfortable positioning into a more synthesis-heavy thin-film role.",
       "strengths": [
-        "Thin films is a direct domain match",
-        "Bay Area location",
-        "Strong overlap with coatings and materials background"
+        "Direct thin-film, coatings, and materials-characterization overlap",
+        "Strong Bay Area strategic fit with advanced materials / AI lab exposure",
+        "Varun can credibly tell a materials-discovery story across CU Boulder, Georgia Tech, and ETH Zurich",
+        "Cross-functional experimental design background fits an AI-guided discovery environment"
       ],
       "gaps": [
-        "Role details on term length not fully extracted"
+        "JD explicitly names sputtering, PLD, and MBE; Varun is stronger in CVD and characterization than those exact platforms",
+        "Role asks for deep thin-film synthesis ownership and may prefer more direct hardware / vacuum-systems depth",
+        "Posting is right at the 6-month freshness boundary, so speed matters if pursuing"
       ],
-      "cv_match": 4.4,
-      "north_star": 4.4,
-      "comp": 4.4,
-      "cultural": 4.4,
-      "red_flags": 0,
+      "cv_match": 4.2,
+      "north_star": 4.5,
+      "comp": 4.1,
+      "cultural": 4.0,
+      "red_flags": -0.2,
       "legitimacy": "High Confidence"
     },
-    "tailored_resume": null
-  },
-  {
-    "id": 59,
-    "source": "full_scan_validated_import",
-    "url": "https://job-boards.greenhouse.io/kailera/jobs/5016908008",
-    "company": "Kailera Therapeutics",
-    "title": "Senior Scientist, Process Development Chemist",
-    "location": "Waltham, MA",
-    "date_found": "2026-04-20",
-    "date_posted": null,
-    "freshness_verified": true,
-    "freshness_reason": "Verified active via liveness check on 2026-04-20",
-    "job_id": null,
-    "score": 3.8,
-    "archetype": "Process Development Scientist",
-    "status": "discovered",
-    "report_path": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Relevant process-development chemistry role. Good small-molecule / analytical overlap, but asks for 5-8 years industry experience and onsite in Waltham 3-4 days/week.",
-    "evaluation": {
-      "recommendation": "CONSIDER - Good fit with some gaps",
-      "strengths": [
-        "Small-molecule and analytical chemistry overlap",
-        "Process development role",
-        "Real active Greenhouse posting"
-      ],
-      "gaps": [
-        "5-8 years industry experience requested",
-        "Onsite in Waltham, MA"
-      ],
-      "cv_match": 3.8,
-      "north_star": 3.8,
-      "comp": 3.8,
-      "cultural": 3.8,
-      "red_flags": 0,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": null
+    "tailored_resume": "tailored_periodic_thin_films"
   },
   {
     "id": 60,
@@ -1846,32 +1770,33 @@
     "date_found": "2026-04-20",
     "date_posted": null,
     "freshness_verified": true,
-    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "freshness_reason": "Verified active on 2026-04-29 via direct Greenhouse detail page; posting updated_at=2026-04-27.",
     "job_id": null,
     "score": 3.9,
     "archetype": "Materials Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Interesting materials role with strong characterization relevance. Red flag: SpaceX roles typically carry ITAR / U.S. person constraints.",
+    "notes": "Direct Greenhouse posting verified active on 2026-04-29. Strong materials-engineering fit around material selection, processing, failure troubleshooting, and scale-up for high-volume hardware. Biggest practical risk is likely ITAR / U.S.-person eligibility and the role being more manufacturing-engineering oriented than Varun's core chemistry path.",
     "evaluation": {
-      "recommendation": "CONSIDER - Strong technical fit, check eligibility",
+      "recommendation": "CONSIDER - technically compelling, but confirm work authorization / export-control eligibility first.",
       "strengths": [
-        "Materials characterization relevance",
-        "High-upside hardware/materials role",
-        "Verified active"
+        "Materials selection, process troubleshooting, and characterization map well to Varun's background",
+        "High-upside hardware environment with real scale and ownership",
+        "Direct live Greenhouse posting and very recent activity signal a real opening"
       ],
       "gaps": [
-        "Likely ITAR / U.S. person requirement",
-        "More engineering-oriented than core chemistry roles"
+        "Likely ITAR or U.S.-person requirement could be a hard blocker",
+        "Role leans more toward hardware/manufacturing engineering than pure chemistry or analytical development",
+        "Supplier and production-floor execution may be a steeper transition than biotech/materials-science roles"
       ],
       "cv_match": 3.9,
-      "north_star": 3.9,
-      "comp": 3.9,
-      "cultural": 3.9,
-      "red_flags": 0,
+      "north_star": 4.0,
+      "comp": 4.2,
+      "cultural": 3.8,
+      "red_flags": -0.2,
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
@@ -1884,34 +1809,35 @@
     "title": "Principal Scientist - Synthetic Molecule Process Chemistry",
     "location": "South San Francisco, CA",
     "date_found": "2026-04-20",
-    "date_posted": null,
+    "date_posted": "2026-03-14",
     "freshness_verified": true,
-    "freshness_reason": "Verified active via liveness check on 2026-04-20",
+    "freshness_reason": "Verified active on 2026-04-29 via direct Genentech page; JobPosting datePosted=2026-03-14.",
     "job_id": null,
     "score": 3.3,
     "archetype": "Process Development Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": null,
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Very relevant domain, local, and high-quality employer, but principal level is likely a stretch for Varun right now.",
+    "notes": "Direct Genentech posting verified active on 2026-04-29. Excellent company and domain quality, but this is still a principal-level process chemistry role with API development leadership expectations that likely overshoot Varun's current level.",
     "evaluation": {
-      "recommendation": "LOW PRIORITY - Strong domain, likely too senior",
+      "recommendation": "LOW PRIORITY - great employer and domain, but the level mismatch remains significant.",
       "strengths": [
-        "Synthetic molecule process chemistry is relevant",
-        "South San Francisco location",
-        "Verified active"
+        "Synthetic molecule process chemistry is strategically relevant",
+        "South San Francisco location matches relocation targets",
+        "Fresh direct employer posting at a top-tier biotech"
       ],
       "gaps": [
-        "Principal level likely too senior",
-        "May require substantial direct industry leadership experience"
+        "Principal-scientist bar likely expects deeper industry leadership and direct API process-chemistry ownership",
+        "Route selection and clinical API supply are stronger asks than the current resume proves directly",
+        "Better used as calibration than a primary application target"
       ],
       "cv_match": 3.3,
-      "north_star": 3.3,
-      "comp": 3.3,
-      "cultural": 3.3,
-      "red_flags": 0,
+      "north_star": 3.4,
+      "comp": 4.2,
+      "cultural": 3.8,
+      "red_flags": -0.3,
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null
@@ -2039,16 +1965,16 @@
     "date_found": "2026-04-21",
     "date_posted": "2026-04-16",
     "freshness_verified": true,
-    "freshness_reason": "Verified active on Apple Careers and pasted JD reviewed on 2026-04-21",
+    "freshness_reason": "Verified active on 2026-04-29 on Apple Careers; direct job page still live.",
     "job_id": "200658288-0836",
     "score": 4.5,
     "archetype": "Materials Scientist",
-    "status": "discovered",
+    "status": "evaluated",
     "report_path": null,
     "pdf_path": "data/output/cv-apple-materials-engineer-polymers-2026.pdf",
     "applied_date": null,
     "follow_up_date": null,
-    "notes": "Strong polymer/materials fit. Apple Product Design Materials Engineering role focused on plastics materials, material selection, process development, and supplier-facing execution. Main gap is explicit plastics manufacturing industry experience (e.g. injection molding).",
+    "notes": "Direct Apple Careers posting remains active. Strong polymer/materials-characterization fit spanning plastics materials, material selection, process development, and supplier-facing problem solving. Main gap is lack of explicit plastics manufacturing or injection-molding tenure, but the core structure-property-processing story is excellent.",
     "evaluation": {
       "recommendation": "APPLY - Strong fit",
       "strengths": [
@@ -2475,21 +2401,37 @@
     "id": 77,
     "company": "Pfizer",
     "title": "Senior Associate Scientist – Chem Analytical (Drug Product Analytics)",
-    "url": "https://jobrxiv.org/job/senior-associate-scientist-chem-analytical-2/",
-    "location": "Not specified (likely CT or MA)",
+    "url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Associate-Scientist--Chem-Analytical_4955324-3",
+    "location": "Groton, CT (Onsite)",
     "date_found": "2026-04-27",
-    "date_posted": null,
+    "date_posted": "2026-04-20",
     "status": "evaluated",
     "score": 3.3,
-    "notes": "Pfizer drug product analytics team. Forensic analysis and materials characterization: microscopy (optical, electron, X-ray), spectroscopy (FTIR, Raman, NIR), particle characterization. Excellent technical alignment with Varun's materials characterization expertise. Caveat: BS+3 / MS+0 level role – Varun may be considered overqualified with PhD.",
+    "notes": "Direct Pfizer Workday posting verified active on 2026-04-29. The role is a strong technical match on microscopy-adjacent materials characterization, FTIR/Raman/NIR, particle investigations, and drug-product analytics. It still looks like a mild level mismatch because the requisition is framed closer to a BS/MS scientist band than a PhD-level hire.",
     "evaluation": {
-      "recommendation": "Technically excellent match for materials characterization skills, but role level is below PhD. Varun could apply but may want to negotiate up or use as foot-in-door at Pfizer. Consider reaching out to see if higher-level roles exist in same group.",
-      "strengths": "Materials characterization, spectroscopy, microscopy directly match Varun's core expertise. Drug product crystallization, solid dispersion, dissolution assessments are relevant. Pfizer brand.",
-      "gaps": "BS/MS level role. Controlled substance handling required. May be seen as overqualified."
+      "recommendation": "CONSIDER - strong technical overlap, but likely a level-down move unless Pfizer is flexible on leveling.",
+      "strengths": [
+        "Direct materials characterization and spectroscopy overlap",
+        "Forensic / particle-investigation framing plays to Varun's analytical problem-solving strengths",
+        "Fresh direct employer posting with explicit datePosted and validThrough dates"
+      ],
+      "gaps": [
+        "Role band looks junior relative to a newly minted PhD",
+        "Microscopy depth is more central here than in the current resume",
+        "Controlled-substance handling and pharma-environment specifics would need to be learned quickly"
+      ],
+      "cv_match": 3.6,
+      "north_star": 3.1,
+      "comp": 3.4,
+      "cultural": 3.7,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
     },
     "tailored_resume": null,
     "pdf_path": null,
-    "contacts": []
+    "contacts": [],
+    "freshness_verified": true,
+    "freshness_reason": "Verified active on 2026-04-29 via direct Pfizer Workday page; JobPosting datePosted=2026-04-20, validThrough=2026-05-04."
   },
   {
     "id": 78,
