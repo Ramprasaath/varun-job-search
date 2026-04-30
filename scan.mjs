@@ -22,6 +22,7 @@ const PORTALS_PATH = 'portals.yml';
 const SCAN_HISTORY_PATH = 'data/scan-history.tsv';
 const PIPELINE_PATH = 'data/pipeline.md';
 const APPLICATIONS_PATH = 'data/applications.md';
+const JOBS_PATH = 'data/jobs.json';
 
 mkdirSync('data', { recursive: true });
 
@@ -239,12 +240,21 @@ function parseLever(json, companyName) {
 
 function parseWorkday(json, companyName, endpoint) {
   const origin = endpoint.siteUrl ? new URL(endpoint.siteUrl).origin : new URL(endpoint.url).origin;
-  return (json.jobPostings || []).map(j => ({
-    title: j.title || '',
-    url: normalizeUrl(j.externalPath ? new URL(j.externalPath, origin).toString() : ''),
-    company: companyName,
-    location: j.locationsText || j.location || '',
-  }));
+  const siteBase = endpoint.siteUrl ? endpoint.siteUrl.replace(/\/$/, '') : origin;
+  return (json.jobPostings || []).map(j => {
+    let resolvedUrl = '';
+    if (j.externalPath) {
+      resolvedUrl = /^https?:\/\//i.test(j.externalPath)
+        ? j.externalPath
+        : `${siteBase}${j.externalPath}`;
+    }
+    return {
+      title: j.title || '',
+      url: normalizeUrl(resolvedUrl),
+      company: companyName,
+      location: j.locationsText || j.location || '',
+    };
+  });
 }
 
 async function fetchWorkdayJobs(endpoint, companyName) {
@@ -276,6 +286,17 @@ const PARSERS = {
 function loadSeenUrls() {
   const seen = new Set();
 
+  if (existsSync(JOBS_PATH)) {
+    try {
+      const jobs = JSON.parse(readFileSync(JOBS_PATH, 'utf-8'));
+      for (const job of jobs) {
+        if (job?.url) seen.add(normalizeUrl(job.url));
+      }
+    } catch {
+      // noop
+    }
+  }
+
   if (existsSync(SCAN_HISTORY_PATH)) {
     const lines = readFileSync(SCAN_HISTORY_PATH, 'utf-8').split('\n');
     for (const line of lines.slice(1)) {
@@ -303,6 +324,20 @@ function loadSeenUrls() {
 
 function loadSeenCompanyRoles() {
   const seen = new Set();
+
+  if (existsSync(JOBS_PATH)) {
+    try {
+      const jobs = JSON.parse(readFileSync(JOBS_PATH, 'utf-8'));
+      for (const job of jobs) {
+        const company = (job?.company || '').trim().toLowerCase();
+        const role = (job?.title || '').trim().toLowerCase();
+        if (company && role) seen.add(`${company}::${role}`);
+      }
+    } catch {
+      // noop
+    }
+  }
+
   if (!existsSync(APPLICATIONS_PATH)) return seen;
 
   const text = readFileSync(APPLICATIONS_PATH, 'utf-8');
