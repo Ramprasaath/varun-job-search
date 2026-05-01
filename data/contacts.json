@@ -1036,5 +1036,50 @@
     "response": null,
     "notes": "Peer outreach should focus on cross-functional execution and supplier-facing expectations.",
     "id": 68
+  },
+  {
+    "job_id": 86,
+    "company": "AstraZeneca",
+    "name": "Tomas Leek",
+    "title": "Hiring Manager, Physical and Analytical Chemistry",
+    "linkedin_url": "",
+    "linkedin_search": "Tomas Leek AstraZeneca analytical chemistry Gothenburg",
+    "contact_type": "hiring_manager",
+    "message_draft": "Hi Tomas, I came across AstraZeneca's Senior Scientist in Analytical Chemistry opening in Gothenburg. My PhD background combines analytical characterization, method development, and troubleshooting across complex material systems, and I'd love to learn more about the team's priorities for this role.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Placeholder tied to the hiring-manager name listed on the AstraZeneca posting. Verify LinkedIn profile before outreach.",
+    "id": 69
+  },
+  {
+    "job_id": 86,
+    "company": "AstraZeneca",
+    "name": "Search for: AstraZeneca recruiter analytical chemistry Gothenburg",
+    "title": "Recruiter / Talent Acquisition Partner",
+    "linkedin_url": "",
+    "linkedin_search": "AstraZeneca recruiter analytical chemistry Gothenburg",
+    "contact_type": "recruiter",
+    "message_draft": "Hi [Name], I'm exploring AstraZeneca's Senior Scientist in Analytical Chemistry role in Gothenburg. My background spans analytical characterization, method development, and cross-functional scientific troubleshooting, and I'd appreciate any guidance on fit or current hiring priorities for the opening.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search placeholder for the recruiter or talent partner supporting the Gothenburg analytical chemistry opening.",
+    "id": 70
+  },
+  {
+    "job_id": 86,
+    "company": "AstraZeneca",
+    "name": "Search for: AstraZeneca analytical chemistry scientist Gothenburg",
+    "title": "Senior Scientist / Analytical Chemistry Peer",
+    "linkedin_url": "",
+    "linkedin_search": "AstraZeneca analytical chemistry scientist Gothenburg",
+    "contact_type": "peer",
+    "message_draft": "Hi [Name], I'm looking closely at AstraZeneca's analytical chemistry opening in Gothenburg because it matches my experience in instrumentation-driven problem solving and method development. If you're open to it, I'd love to hear how the team works across discovery chemistry and analytical support.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Search placeholder for a likely peer in the Physical and Analytical Chemistry team.",
+    "id": 71
   }
 ]

@@ -2645,5 +2645,133 @@
     "report_path": "reports/083-pfizer-2026-04-30.md",
     "pdf_path": null,
     "tailored_resume": null
+  },
+  {
+    "company": "Relay Therapeutics",
+    "title": "Associate Director, CMC Regulatory",
+    "location": "Cambridge, MA",
+    "url": "https://job-boards.greenhouse.io/relaytherapeutics/jobs/5983866004",
+    "source": "greenhouse-api",
+    "date_found": "2026-05-01",
+    "date_posted": "2026-04-30",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Relay Therapeutics Greenhouse posting with a fresh 2026-04-30 published_at timestamp in page source.",
+    "job_id": 5983866004,
+    "status": "evaluated",
+    "score": 2.6,
+    "archetype": "CMC / Regulatory",
+    "applied_date": null,
+    "follow_up_date": null,
+    "salary_range": "$145,000 - $207,000",
+    "notes": "Fresh direct Relay Therapeutics CMC posting in Cambridge with strong biotech geography and compensation, but the role is fundamentally a regulatory-submissions leadership job. The biggest blockers are associate-director seniority plus specific CTD/eCTD/RIM/Veeva ownership that Varun's current research and postdoctoral background does not show.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY. Legitimate and fresh, but this is a regulatory-lead stretch rather than a core analytical, formulation, or materials-characterization fit.",
+      "strengths": [
+        "Direct employer posting in a strong biotech hub with visible salary range",
+        "Technical writing and cross-functional scientific communication transfer reasonably well",
+        "Broad CMC adjacency makes it worth tracking for completeness"
+      ],
+      "gaps": [
+        "Associate Director seniority is well above the current demonstrated level",
+        "CTD Module 2/3, eCTD, regulatory-submission strategy, and Veeva/RIM ownership are not established on the resume",
+        "Role is more regulatory strategy than hands-on analytical chemistry or formulation work"
+      ],
+      "cv_match": 2.4,
+      "north_star": 2.3,
+      "comp": 3.8,
+      "cultural": 2.9,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "report_path": "reports/084-relay-therapeutics-2026-05-01.md",
+    "pdf_path": null,
+    "tailored_resume": null,
+    "id": 84
+  },
+  {
+    "company": "Pfizer",
+    "title": "Associate Scientist (Innovation)",
+    "location": "United States - New York - Pearl River",
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---New-York---Pearl-River/Associate-Scientist--Innovation-_4955272-1",
+    "source": "workday-api",
+    "date_found": "2026-05-01",
+    "date_posted": "2026-05-01",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday posting with structured metadata showing datePosted 2026-05-01 and validThrough 2026-05-08.",
+    "job_id": 4955272,
+    "status": "evaluated",
+    "score": 3.3,
+    "archetype": "R&D Process / Lab Innovation",
+    "applied_date": null,
+    "follow_up_date": null,
+    "salary_range": null,
+    "notes": "Fresh direct Pfizer R&D posting in Pearl River focused on scientific and automation-driven lab improvements, workflow modernization, data quality, and scalability. There is useful overlap with Varun's process-optimization and lab-operations story, but the role appears more assay-automation and scientific-operations oriented than a clear analytical chemistry, QC, formulation, or materials-characterization target.",
+    "evaluation": {
+      "recommendation": "TRACK. Fresh, direct, and U.S.-based, but it is more lab-innovation/automation than a clean chemistry-first target.",
+      "strengths": [
+        "Direct Pfizer R&D role in the U.S. with a near-term close date",
+        "Process optimization, troubleshooting, and lab-improvement themes map reasonably well to current postdoctoral work",
+        "Cross-functional communication and scientific operations framing are transferable"
+      ],
+      "gaps": [
+        "Posting emphasizes automation and workflow modernization more than core analytical chemistry or materials characterization",
+        "Current resume shows limited scripting and automation depth",
+        "Role domain appears somewhat off-center from Varun's highest-conviction target themes"
+      ],
+      "cv_match": 3.2,
+      "north_star": 3.1,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "report_path": "reports/085-pfizer-2026-05-01.md",
+    "pdf_path": null,
+    "tailored_resume": null,
+    "id": 85
+  },
+  {
+    "company": "AstraZeneca",
+    "title": "Senior Scientist in Analytical Chemistry",
+    "location": "Gothenburg, Västra Götaland County, Sweden",
+    "url": "https://careers.astrazeneca.com/job/gothenburg/senior-scientist-in-analytical-chemistry/7684/94538677216",
+    "source": "brave-web",
+    "date_found": "2026-05-01",
+    "date_posted": "2026-04-28",
+    "freshness_verified": true,
+    "freshness_reason": "Direct AstraZeneca careers posting shows a late-April 2026 posting date and a visible 2026-05-15 closing date.",
+    "job_id": "R-251161",
+    "status": "evaluated",
+    "score": 3.8,
+    "archetype": "Analytical / Small-Molecule Discovery",
+    "applied_date": null,
+    "follow_up_date": null,
+    "salary_range": null,
+    "notes": "This is the best thematic fit from today's scan: a fresh AstraZeneca analytical-chemistry role covering LC-UV-MS, NMR, spectroscopy, method development, troubleshooting, and workflow improvement in discovery sciences. The main constraints are Sweden-based relocation and the role's stronger-than-current-resume expectations around automation and Python-enabled lab workflows.",
+    "evaluation": {
+      "recommendation": "HIGH TRACK / CONDITIONAL APPLY. Strong analytical-chemistry fit if Sweden relocation is genuinely in scope.",
+      "strengths": [
+        "Direct overlap on analytical chemistry, characterization, and instrumentation-heavy problem solving",
+        "LC-UV-MS, NMR, spectroscopy, and workflow-improvement language maps well to Varun's analytical narrative",
+        "Fresh direct employer posting with visible closing date",
+        "PhD-level scientific environment is aligned with his background"
+      ],
+      "gaps": [
+        "Role is more explicit about routine LC-UV-MS ownership than the resume currently proves",
+        "Automation, scripting, and FAIR-data expectations are only lightly supported by the current resume",
+        "Sweden location introduces genuine relocation and visa friction",
+        "Direct pharma discovery analytics experience is less explicit than the posting likely prefers"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.2,
+      "comp": 3.3,
+      "cultural": 3.9,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "report_path": "reports/086-astrazeneca-2026-05-01.md",
+    "pdf_path": null,
+    "tailored_resume": null,
+    "id": 86
   }
 ]
