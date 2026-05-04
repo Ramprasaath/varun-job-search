@@ -2927,5 +2927,118 @@
     },
     "tailored_resume": null,
     "pdf_path": null
+  },
+  {
+    "id": 92,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Washington---Bothell/Principal-Scientist--Analytical-Research-and-Development_4955825-1",
+    "company": "Pfizer",
+    "title": "Principal Scientist, Analytical Research and Development",
+    "location": "Bothell, WA (Onsite 2.5 days/week)",
+    "date_found": "2026-05-04",
+    "date_posted": null,
+    "score": 3.5,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Strong analytical role at Pfizer Bothell campus managing GMP analytical readiness for small molecule drug development. Focus on separations/chromatography, outsourcing, vendor oversight. PhD+4yr. Deadline May 12. Hybrid onsite.",
+    "evaluation": {
+      "cv_match": 3.5,
+      "north_star": 3.8,
+      "comp": 3.5,
+      "cultural": 3.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "No GMP experience",
+        "No pharmaceutical analytical method development (HPLC/UPLC)",
+        "No outsourcing/CDMO vendor management",
+        "Limited chromatography beyond GPC"
+      ],
+      "strengths": [
+        "PhD in Chemistry with extensive analytical characterization experience",
+        "Strong background in FT-IR, UV-Vis, NMR, DSC, TGA, GPC",
+        "Multi-disciplinary team collaboration",
+        "Postdoc in biopolymer process development (process mindset)",
+        "Small molecule drug development focus matches long-term goals"
+      ],
+      "recommendation": "Apply — Strong role alignment for Varun's analytical chemistry career path. GMP/method development gaps are learnable on the job. Principal Scientist level is appropriate."
+    }
+  },
+  {
+    "id": 93,
+    "url": "https://job-boards.greenhouse.io/kailera/jobs/5177136008",
+    "company": "Kailera Therapeutics",
+    "title": "Associate Director, Analytical Development and Quality Control",
+    "location": "Waltham, MA (Hybrid, 3-4 days onsite)",
+    "date_found": "2026-05-04",
+    "date_posted": null,
+    "score": 2.2,
+    "archetype": "CMC / Regulatory",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Senior-level AD role at obesity therapeutics startup. Peptide chemistry required. BS+10yr or advanced+5yr pharma. $155-190K. Overseeing CDMO analytical activities, IND/NDA/MAA filings. Too senior and peptide-specific for Varun.",
+    "evaluation": {
+      "cv_match": 1.8,
+      "north_star": 2.5,
+      "comp": 3.0,
+      "cultural": 2.5,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "No peptide chemistry experience (required)",
+        "No regulatory filing experience (IND/NDA/MAA)",
+        "No CDMO oversight experience",
+        "Too senior — requires 10+ years industry",
+        "No pharmaceutical QC operations background"
+      ],
+      "strengths": [
+        "Analytical development is adjacent to Varun's characterization skills",
+        "Growing obesity therapeutics space"
+      ],
+      "recommendation": "Skip — Hard requirement for peptide chemistry and 10+ years pharma industry experience. Not a realistic match."
+    }
+  },
+  {
+    "id": 94,
+    "url": "https://job-boards.greenhouse.io/alumis/jobs/5202439008",
+    "company": "Alumis",
+    "title": "Senior Scientist, Drug Product Development",
+    "location": "South San Francisco, CA (Onsite 3-5 days)",
+    "date_found": "2026-05-04",
+    "date_posted": null,
+    "score": 2.5,
+    "archetype": "Formulation / Drug Product",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Drug product development at autoimmune precision medicine company. PhD+8yr industry. Solid oral dosage forms, pre-formulation, HPLC/UPLC, DSC, XRPD. CDMO management. $139-169K. Requires significant pharma formulation industry experience.",
+    "evaluation": {
+      "cv_match": 2.0,
+      "north_star": 2.8,
+      "comp": 3.0,
+      "cultural": 2.5,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Requires 8+ years pharmaceutical industry experience",
+        "No formulation/pre-formulation experience",
+        "No pharmaceutical CDMO management",
+        "Limited HPLC/UPLC method development",
+        "No solid oral dosage form development experience"
+      ],
+      "strengths": [
+        "DSC and solid-state characterization overlap",
+        "Analytical instrumentation experience transfers"
+      ],
+      "recommendation": "Skip — 8+ years pharma formulation experience is a hard blocker. Varun's academic characterization skills don't translate to this level of industry formulation expertise."
+    }
   }
 ]
