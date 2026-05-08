@@ -352,5 +352,48 @@
     },
     "tailored_resume": null,
     "archive_reason": "Direct Greenhouse role is no longer listed and now redirects to the Kailera board with error=true; treated as closed on 2026-04-29."
+  },
+  {
+    "id": 58,
+    "source": "full_scan_validated_import",
+    "url": "https://jobs.ashbyhq.com/periodic-labs/7f36ea6e-3e67-40df-82c6-5540859a2ac5",
+    "company": "Periodic Labs",
+    "title": "Research Scientist, Thin Films",
+    "location": "Menlo Park, CA",
+    "date_found": "2026-04-20",
+    "date_posted": "2025-10-31",
+    "freshness_verified": true,
+    "freshness_reason": "Verified active on 2026-04-29 via direct Ashby page; JobPosting datePosted=2025-10-31 (borderline but still within freshness window).",
+    "job_id": null,
+    "score": 4.1,
+    "archetype": "Materials Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-periodic-labs-research-scientist-thin-films-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh-enough but borderline opening at Periodic Labs, verified active on 2026-04-29 via direct Ashby page. Excellent thin-film and characterization alignment, especially with coatings, CVD, spectroscopy, and structure-property work. Main stretch is the JD's explicit PVD/PLD/MBE depth and autonomous lab build-out emphasis.",
+    "evaluation": {
+      "recommendation": "APPLY - strong fit if Varun is comfortable positioning into a more synthesis-heavy thin-film role.",
+      "strengths": [
+        "Direct thin-film, coatings, and materials-characterization overlap",
+        "Strong Bay Area strategic fit with advanced materials / AI lab exposure",
+        "Varun can credibly tell a materials-discovery story across CU Boulder, Georgia Tech, and ETH Zurich",
+        "Cross-functional experimental design background fits an AI-guided discovery environment"
+      ],
+      "gaps": [
+        "JD explicitly names sputtering, PLD, and MBE; Varun is stronger in CVD and characterization than those exact platforms",
+        "Role asks for deep thin-film synthesis ownership and may prefer more direct hardware / vacuum-systems depth",
+        "Posting is right at the 6-month freshness boundary, so speed matters if pursuing"
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.5,
+      "comp": 4.1,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_periodic_thin_films",
+    "archive_reason": "older than 6 months"
   }
 ]
