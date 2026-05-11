@@ -4,7 +4,8 @@
   "description": "AI-powered job search pipeline built on Claude Code",
   "scripts": {
     "doctor": "node doctor.mjs",
-    "verify": "node verify-pipeline.mjs",
+    "verify": "node verify-pipeline.mjs && node validate_varun_tracker.mjs",
+    "verify:varun": "node validate_varun_tracker.mjs",
     "normalize": "node normalize-statuses.mjs",
     "dedup": "node dedup-tracker.mjs",
     "merge": "node merge-tracker.mjs",

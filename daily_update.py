@@ -19,13 +19,14 @@ ARCHIVE_FILE = DATA_DIR / "archived_jobs.json"
 
 def load_jobs():
     if JOBS_FILE.exists():
-        with open(JOBS_FILE) as f:
+        with open(JOBS_FILE, encoding="utf-8") as f:
             return json.load(f)
     return []
 
 def save_jobs(jobs):
-    with open(JOBS_FILE, 'w') as f:
-        json.dump(jobs, f, indent=2)
+    with open(JOBS_FILE, 'w', encoding="utf-8") as f:
+        json.dump(jobs, f, indent=2, ensure_ascii=False)
+        f.write("\n")
 
 def archive_old_jobs(jobs, days=180):
     """Move jobs older than 6 months to archive."""
@@ -42,17 +43,23 @@ def archive_old_jobs(jobs, days=180):
     if old:
         archived = []
         if ARCHIVE_FILE.exists():
-            with open(ARCHIVE_FILE) as f:
+            with open(ARCHIVE_FILE, encoding="utf-8") as f:
                 archived = json.load(f)
         
         # Add old jobs to archive (avoid duplicates)
+        existing_ids = {j.get('id') for j in archived}
         existing_urls = {j.get('url') for j in archived}
         for job in old:
-            if job.get('url') not in existing_urls:
-                archived.append(job)
+            if job.get('id') in existing_ids or job.get('url') in existing_urls:
+                continue
+            archived_job = dict(job)
+            archived_job.setdefault("archive_reason", f"Older than {days} days based on {best_reference_date(job)}")
+            archived_job.setdefault("archived_date", datetime.now().strftime('%Y-%m-%d'))
+            archived.append(archived_job)
         
-        with open(ARCHIVE_FILE, 'w') as f:
-            json.dump(archived, f, indent=2)
+        with open(ARCHIVE_FILE, 'w', encoding="utf-8") as f:
+            json.dump(archived, f, indent=2, ensure_ascii=False)
+            f.write("\n")
         
         print(f"Archived {len(old)} old jobs to {ARCHIVE_FILE}")
     

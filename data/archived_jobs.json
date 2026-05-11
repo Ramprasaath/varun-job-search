@@ -53,10 +53,10 @@
     "follow_up_date": null,
     "notes": "PhD with 0-3+ years experience. LC-MS focus for biotherapeutics. Strong growth potential. User-verified dead direct link: careers.regeneron.com job URL returns Page Not Found.",
     "evaluation": {
-      "cv_match": 4.0,
+      "cv_match": 4,
       "north_star": 4.2,
-      "comp": 4.0,
-      "cultural": 4.0,
+      "comp": 4,
+      "cultural": 4,
       "red_flags": -0.1,
       "legitimacy": "High Confidence",
       "gaps": [
@@ -92,9 +92,9 @@
     "follow_up_date": null,
     "notes": "Strong match! Established biotech (NASDAQ: NBIX), CMC analytical focus. Need to verify small vs large molecule. User-verified stale LinkedIn posting: reposted 1 year ago on LinkedIn.",
     "evaluation": {
-      "cv_match": 4.0,
-      "north_star": 4.0,
-      "comp": 4.0,
+      "cv_match": 4,
+      "north_star": 4,
+      "comp": 4,
       "cultural": 4.5,
       "red_flags": -0.4,
       "legitimacy": "High Confidence",
@@ -132,8 +132,8 @@
     "notes": "Perfect match for spectroscopy background. Top analytical instrumentation company. Customer-facing technical role. User-verified stale LinkedIn posting: reposted 1 year ago and no longer accepting applications.",
     "evaluation": {
       "cv_match": 4.5,
-      "north_star": 4.0,
-      "comp": 4.0,
+      "north_star": 4,
+      "comp": 4,
       "cultural": 4.5,
       "red_flags": -0.2,
       "legitimacy": "High Confidence",
@@ -170,10 +170,10 @@
     "follow_up_date": null,
     "notes": "Micro X-ray fluorescence product line. Materials characterization focus. Leading scientific instrumentation company. User-verified stale LinkedIn posting: reposted 3 years ago and no longer accepting applications.",
     "evaluation": {
-      "cv_match": 4.0,
+      "cv_match": 4,
       "north_star": 4.5,
-      "comp": 4.0,
-      "cultural": 4.0,
+      "comp": 4,
+      "cultural": 4,
       "red_flags": -0.1,
       "legitimacy": "High Confidence",
       "gaps": [
@@ -211,8 +211,8 @@
     "evaluation": {
       "cv_match": 4.8,
       "north_star": 4.5,
-      "comp": 4.0,
-      "cultural": 4.0,
+      "comp": 4,
+      "cultural": 4,
       "red_flags": -0.1,
       "legitimacy": "High Confidence",
       "gaps": [
@@ -249,10 +249,10 @@
     "follow_up_date": null,
     "notes": "PhD with 0-5 years experience accepted. Small molecule process development. CMC focus. Large pharma. User-verified stale LinkedIn posting: listed as 3 years old and no longer accepting applications.",
     "evaluation": {
-      "cv_match": 4.0,
-      "north_star": 4.0,
+      "cv_match": 4,
+      "north_star": 4,
       "comp": 4.5,
-      "cultural": 4.0,
+      "cultural": 4,
       "red_flags": -0.1,
       "legitimacy": "High Confidence",
       "gaps": [
@@ -389,11 +389,43 @@
       "cv_match": 4.2,
       "north_star": 4.5,
       "comp": 4.1,
-      "cultural": 4.0,
+      "cultural": 4,
       "red_flags": -0.2,
       "legitimacy": "High Confidence"
     },
     "tailored_resume": "tailored_periodic_thin_films",
     "archive_reason": "older than 6 months"
+  },
+  {
+    "id": 95,
+    "company": "Pharmaron",
+    "title": "Associate Principal Scientist, Analytical Chemistry",
+    "location": "Coventry, RI",
+    "url": "https://jobs.physicstoday.org/job/41955523/associate-principal-scientist-analytical-chemistry/",
+    "date_found": "2026-05-05",
+    "date_posted": null,
+    "status": "evaluated",
+    "score": 3.2,
+    "notes": "CRO/CDMO analytical chemistry role supporting API development and manufacturing. Strong instrument match: HPLC/UPLC, LC-MS, GC, NMR, impurity profiling. Leads analytical strategies across client projects. CDMO environment provides broad exposure to diverse molecules and clients. Salary $120-140k. Gaps: Requires 6+ years industry experience (Varun is early-career); cGMP/GMP manufacturing experience unclear; CDMO environment demands client-facing skills.",
+    "evaluation": {
+      "recommendation": "Consider — strong technical alignment on analytical instruments and characterization, but experience level requirement (6+ yrs industry) may be a stretch. Worth applying if Varun can frame academic/consulting work as relevant.",
+      "strengths": [
+        "HPLC/UPLC, LC-MS, GC, NMR — all core instruments Varun has used",
+        "Impurity profiling and API characterization align with analytical chemistry background",
+        "Coventry RI is a growing pharma hub",
+        "CRO/CDMO provides diverse project exposure"
+      ],
+      "gaps": [
+        "6+ years industry experience required — Varun is early-career",
+        "GMP manufacturing and regulatory compliance experience may be limited",
+        "Client-facing CDMO project management experience unclear",
+        "Mentorship/supervisory expectations may be above current level"
+      ]
+    },
+    "tailored_resume": null,
+    "pdf_path": null,
+    "source": "Physics Today Jobs / Pharmaron careers",
+    "archive_reason": "Duplicate active tracker entry for job #80; same Pharmaron posting URL and normalized role.",
+    "archived_date": "2026-05-11"
   }
 ]

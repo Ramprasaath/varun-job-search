@@ -59,6 +59,8 @@ layer.
 
 ```bash
 npm run verify
+# Varun JSON tracker only
+npm run verify:varun
 
 # optional dashboard build
 cd dashboard && go build ./...

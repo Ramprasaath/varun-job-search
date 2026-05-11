@@ -14,7 +14,6 @@ INACTIVE_KEYWORDS = [
     "no longer accepting applications",
     "position filled",
     "position has been filled",
-    "closed",
     "expired",
     "archived",
     "no longer available",
@@ -23,6 +22,12 @@ INACTIVE_KEYWORDS = [
     "requisition closed",
     "job is no longer available",
     "posting has expired",
+]
+
+INACTIVE_PATTERNS = [
+    r"\b(?:job|posting|position|role|requisition|application)\s+(?:is\s+|has\s+been\s+)?closed\b",
+    r"\bclosed\s+(?:job|posting|position|role|requisition|application)\b",
+    r"\bstatus\s*:\s*closed\b",
 ]
 
 NOT_FOUND_KEYWORDS = [
@@ -64,16 +69,15 @@ def _extract_relative_age(text: str) -> Optional[Dict[str, Any]]:
     lower = text.lower()
     now = datetime.now()
 
-    quick_tokens = {
-        "just posted": 0,
-        "just now": 0,
-        "today": 0,
-        "yesterday": 1,
-    }
-    for token, days_old in quick_tokens.items():
-        if token in lower:
+    quick_patterns = [
+        (r"\b(?:just\s+posted|posted\s+just\s+now|reposted\s+just\s+now)\b", 0, "just posted"),
+        (r"\b(?:posted|reposted|listed|published)\s+today\b", 0, "posted today"),
+        (r"\b(?:posted|reposted|listed|published)\s+yesterday\b", 1, "posted yesterday"),
+    ]
+    for pattern, days_old, age_text in quick_patterns:
+        if re.search(pattern, lower):
             posted = (now - timedelta(days=days_old)).strftime("%Y-%m-%d")
-            return {"days_old": days_old, "date_posted": posted, "age_text": token}
+            return {"days_old": days_old, "date_posted": posted, "age_text": age_text}
 
     patterns = [
         (r"(?:reposted|posted)?\s*(\d+)\+?\s+day[s]?\s+ago", 1, "days"),
@@ -130,6 +134,17 @@ def assess_job_freshness(
                 "date_posted": _coerce_iso_date(explicit_date_posted),
                 "days_old": None,
                 "reason": f"Listing content indicates the job is inactive: {keyword}",
+            }
+
+    for pattern in INACTIVE_PATTERNS:
+        if re.search(pattern, lower):
+            return {
+                "keep": False,
+                "active": False,
+                "verified": True,
+                "date_posted": _coerce_iso_date(explicit_date_posted),
+                "days_old": None,
+                "reason": f"Listing content indicates the job is inactive: {pattern}",
             }
 
     explicit_iso = _coerce_iso_date(explicit_date_posted)

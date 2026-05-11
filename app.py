@@ -1,6 +1,16 @@
 import streamlit as st
-import copy, json, os, datetime, subprocess
+import copy, json, os, datetime
 from pathlib import Path
+
+from generate_resume_pdf import generate_pdf
+from resume_renderer import (
+    build_resume_html,
+    load_resume as load_resume_file,
+    normalize_resume_version,
+    resume_paths,
+    resume_version_for_job,
+    save_resume as save_resume_file,
+)
 
 st.set_page_config(page_title="Varun's Job Pipeline", page_icon="🎯", layout="wide", initial_sidebar_state="collapsed")
 
@@ -17,34 +27,11 @@ def lj(path, default=None):
 def sj(path, data):
     with open(path, "w") as f: json.dump(data, f, indent=2, ensure_ascii=False)
 
-def _deep_merge(base, override):
-    if isinstance(base, dict) and isinstance(override, dict):
-        merged = dict(base)
-        for k, v in override.items():
-            merged[k] = _deep_merge(merged.get(k), v) if k in merged else v
-        return merged
-    return override if override is not None else base
-
-def _resume_paths(version="base"):
-    if version == "base":
-        return RESUME_DIR / "base_resume.json", RESUME_DIR / "base.json"
-    return RESUME_DIR / f"{version}.json", None
-
 def load_resume(version="base"):
-    primary, legacy = _resume_paths(version)
-    primary_data = lj(primary, {})
-    legacy_data = lj(legacy, {}) if legacy else {}
-    if version == "base":
-        if primary_data and legacy_data:
-            return _deep_merge(primary_data, legacy_data)
-        return primary_data or legacy_data or {}
-    return primary_data or {}
+    return load_resume_file(version)
 
 def save_resume(data, version="base"):
-    primary, legacy = _resume_paths(version)
-    sj(primary, data)
-    if legacy and legacy.exists():
-        sj(legacy, data)
+    save_resume_file(data, version)
 
 load_jobs = lambda: lj(DATA_DIR / "jobs.json", [])
 save_jobs = lambda d: sj(DATA_DIR / "jobs.json", d)
@@ -54,8 +41,25 @@ def nid(items): return max((i.get("id",0) for i in items), default=0) + 1
 
 STATUS = ["discovered","evaluated","interested","applying","applied","interviewing","offer","rejected","withdrawn"]
 S_EMOJI = {"discovered":"⚪","evaluated":"🟡","interested":"🟠","applying":"🔵","applied":"🔷","interviewing":"🟢","offer":"🎉","rejected":"🔴","withdrawn":"⚫"}
-CT_STAT = ["not_contacted","request_sent","responded","call_scheduled","met"]
-CT_TYPES = {"hiring_manager":"👔 Hiring Mgr","recruiter":"🔍 Recruiter","peer":"🤝 Peer","ceo":"🏢 CEO"}
+CT_STAT = ["not_contacted","search_placeholder","request_sent","responded","call_scheduled","met"]
+CT_TYPES = {"hiring_manager":"👔 Hiring Mgr","team_lead":"🧪 Team Lead","recruiter":"🔍 Recruiter","peer":"🤝 Peer","ceo":"🏢 CEO","search_placeholder":"🔎 Search Target"}
+
+def option_index(options, value, default=0):
+    try:
+        return options.index(value)
+    except ValueError:
+        return default
+
+def parse_iso_date(value):
+    if not value:
+        return None
+    try:
+        return datetime.date.fromisoformat(str(value)[:10])
+    except ValueError:
+        return None
+
+def linked_resume_version(job):
+    return normalize_resume_version(job.get("tailored_resume")) or resume_version_for_job(job)
 
 st.markdown("""<style>
 .apply-btn{display:inline-block;background:#2563EB;color:#fff!important;padding:6px 16px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px}
@@ -64,84 +68,7 @@ st.markdown("""<style>
 
 # --- Resume HTML builder ---
 def _build_resume_html(resume, company=""):
-    template_path = CAREER_OPS_DIR / "templates" / "cv-template.html"
-    if not template_path.exists():
-        return f"<html><body><h1>{resume.get('name','')}</h1><p>Template missing.</p></body></html>"
-    with open(template_path) as f: tpl = f.read()
-    name,email,phone = resume.get("name",""), resume.get("email",""), resume.get("phone","")
-    linkedin = resume.get("linkedin","")
-    linkedin_url = linkedin if linkedin.startswith("http") else f"https://{linkedin}"
-    linkedin_display = linkedin.replace("https://","").replace("http://","")
-
-    r = {
-        "{{LANG}}":"en","{{NAME}}":name,"{{PAGE_WIDTH}}":"8.5in",
-        "{{EMAIL}}":email,"{{EMAIL_MAILTO}}":f"mailto:{email}",
-        "{{PHONE}}":phone,"{{PHONE_TEL}}":f"tel:{phone}",
-        "{{LINKEDIN_URL}}":linkedin_url,"{{LINKEDIN_DISPLAY}}":linkedin_display,
-        "{{PORTFOLIO_URL}}":"#","{{PORTFOLIO_DISPLAY}}":"","{{LOCATION}}":"",
-        "{{SECTION_SUMMARY}}":"PROFESSIONAL SUMMARY","{{SECTION_COMPETENCIES}}":"CORE COMPETENCIES",
-        "{{SECTION_EXPERIENCE}}":"WORK EXPERIENCE","{{SECTION_PROJECTS}}":"KEY PROJECTS",
-        "{{SECTION_EDUCATION}}":"EDUCATION","{{SECTION_CERTIFICATIONS}}":"CERTIFICATIONS",
-        "{{SECTION_SKILLS}}":"TECHNICAL SKILLS","{{SUMMARY_TEXT}}":resume.get("summary",""),
-        "{{COMPETENCIES}}":"","{{CERTIFICATIONS}}":"",
-    }
-
-    certs = resume.get("certifications",[])
-    if certs:
-        r["{{CERTIFICATIONS}}"] = "\n".join(f'<div class="cert-item"><span class="cert-title">{c}</span></div>' for c in certs)
-
-    comps = resume.get("competencies",[])
-    if comps: r["{{COMPETENCIES}}"] = "\n".join(f'<span class="competency-tag">{c}</span>' for c in comps)
-
-    exp_blocks = []
-    for key in ["experience","leadership"]:
-        for exp in resume.get(key,[]):
-            bullets = "".join(f"<li>{b}</li>" for b in exp.get("bullets",[]))
-            exp_blocks.append(f'<div class="job"><div class="job-header"><span class="job-company">{exp.get("company","")}</span><span class="job-period">{exp.get("period","")}</span></div><div class="job-role">{exp.get("role","")}</div><ul>{bullets}</ul></div>')
-    r["{{EXPERIENCE}}"] = "\n".join(exp_blocks)
-
-    proj_blocks = []
-    for pr in resume.get("projects",[]):
-        badge = f'<span class="project-badge">{pr["badge"]}</span>' if pr.get("badge") else ""
-        tech = f'<div class="project-tech">{pr["tech"]}</div>' if pr.get("tech") else ""
-        proj_blocks.append(f'<div class="project"><div class="project-title">{pr.get("title","")} {badge}</div><div class="project-desc">{pr.get("description","")}</div>{tech}</div>')
-    r["{{PROJECTS}}"] = "\n".join(proj_blocks)
-
-    edu_blocks = []
-    for edu in resume.get("education",[]):
-        details = "<br>".join(edu.get("details","").split("\n")) if edu.get("details") else ""
-        edu_blocks.append(f'<div class="edu-item"><div class="edu-header"><span class="edu-title">{edu.get("degree","")} - {edu.get("school","")}</span><span class="edu-year">{edu.get("year","")}</span></div><div class="edu-desc">{details}</div></div>')
-    r["{{EDUCATION}}"] = "\n".join(edu_blocks)
-
-    skill_blocks = []
-    for cat,val in resume.get("skills",{}).items():
-        skill_blocks.append(f'<div class="skill-row"><span class="skill-category">{cat}:</span> {val}</div>')
-    r["{{SKILLS}}"] = "\n".join(skill_blocks)
-
-    for k,v in r.items(): tpl = tpl.replace(k,v)
-
-    # Remove empty certifications section
-    if not certs:
-        tpl = tpl.replace('  <!-- CERTIFICATIONS -->\n  <div class="section avoid-break">\n    <div class="section-title">{{SECTION_CERTIFICATIONS}}</div>\n    {{CERTIFICATIONS}}\n  </div>\n\n', '')
-
-    extra = ""
-    pubs = resume.get("publications",[])
-    if pubs:
-        extra += '<div class="section"><div class="section-title">JOURNAL PUBLICATIONS</div>\n'
-        for i,p in enumerate(pubs,1): extra += f'<div class="pub-entry">{i}. {p}</div>\n'
-        extra += '</div>\n'
-    confs = resume.get("conferences",[])
-    if confs:
-        extra += '<div class="section"><div class="section-title">CONFERENCE PRESENTATIONS</div>\n'
-        for c in confs: extra += f'<div class="conf-entry">{c}</div>\n'
-        extra += '</div>\n'
-    honors = resume.get("honors",[])
-    if honors:
-        extra += '<div class="section"><div class="section-title">HONORS & AWARDS</div>\n'
-        extra += '<div class="honors-entry">' + " &nbsp;|&nbsp; ".join(honors) + '</div>\n'
-        extra += '</div>\n'
-    if extra: tpl = tpl.replace("</div>\n</body>", extra + "\n</div>\n</body>")
-    return tpl
+    return build_resume_html(resume, CAREER_OPS_DIR / "templates" / "cv-template.html")
 
 # ================================================================
 st.markdown("# 🎯 Varun's Job Pipeline")
@@ -158,13 +85,18 @@ with tab_tracker:
     if jobs:
         sc = {}
         for j in jobs: sc[j.get("status","discovered")] = sc.get(j.get("status","discovered"),0)+1
-        ev = [j for j in jobs if j.get("score")]
+        ev = [j for j in jobs if isinstance(j.get("score"), (int, float))]
         avg = sum(j["score"] for j in ev)/len(ev) if ev else 0
-        high_score = len([j for j in jobs if j.get("score") and j["score"] >= 4.0])
+        high_score = len([j for j in jobs if isinstance(j.get("score"), (int, float)) and j["score"] >= 4.0])
         today_iso = datetime.date.today().isoformat()
         new_jobs = len([j for j in jobs if j.get("date_found") == today_iso])
         not_applied = len([j for j in jobs if j.get("status") not in ("applied", "interviewing", "offer", "rejected")])
-        od = [j for j in jobs if j.get("follow_up_date") and j["follow_up_date"]<=today_iso and j["status"] in("applied","interviewing")]
+        od = [
+            j for j in jobs
+            if parse_iso_date(j.get("follow_up_date"))
+            and parse_iso_date(j.get("follow_up_date")).isoformat() <= today_iso
+            and j.get("status") in ("applied","interviewing")
+        ]
         c1,c2,c3,c4,c5,c6 = st.columns(6)
         c1.metric("Total",len(jobs)); c2.metric("Avg",f"{avg:.1f}"); c3.metric("⭐ 4.0+",high_score)
         c4.metric("🆕 New",new_jobs); c5.metric("📋 To Apply",not_applied); c6.metric("⚠️ Due",len(od))
@@ -195,7 +127,8 @@ with tab_tracker:
     # -- Overdue alerts --
     if od:
         for j in od:
-            d=(datetime.date.today()-datetime.date.fromisoformat(j["follow_up_date"])).days
+            follow_date = parse_iso_date(j.get("follow_up_date")) or datetime.date.today()
+            d=(datetime.date.today()-follow_date).days
             st.warning(f"⚠️ **{j['company']}** — {j['title']} — follow-up **{d} days overdue**")
         st.markdown("---")
 
@@ -285,7 +218,7 @@ with tab_tracker:
                 "ID": j["id"],
                 "Company": is_new + j.get("company",""),
                 "Role": j.get("title","")[:50],
-                "Score": "—" if score_val is None else round(score_val, 1),
+                "Score": "—" if score_val is None else f"{score_val:.1f}",
                 "Status": j.get("status","discovered"),
                 "Location": j.get("location",""),
                 "Found": j.get("date_found",""),
@@ -299,7 +232,7 @@ with tab_tracker:
         selection = st.dataframe(
             df,
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
             on_select="rerun",
             selection_mode="single-row",
             column_config={
@@ -325,7 +258,7 @@ with tab_tracker:
             with st.expander(f"✏️ Edit {j['company']} - Status & Dates", expanded=True):
                 c1, c2, c3 = st.columns(3)
                 with c1:
-                    new_status = st.selectbox("Status", STATUS, index=STATUS.index(j.get("status","discovered")), key=f"edit_status_{j['id']}")
+                    new_status = st.selectbox("Status", STATUS, index=option_index(STATUS, j.get("status","discovered")), key=f"edit_status_{j['id']}")
                 with c2:
                     new_applied = st.text_input("Applied Date", value=j.get("applied_date",""), key=f"edit_applied_{j['id']}")
                 with c3:
@@ -343,7 +276,7 @@ with tab_tracker:
         csv_df = pd.DataFrame([{
             "Company": j.get("company",""),
             "Title": j.get("title",""),
-            "Score": j.get("score"),
+            "Score": "—" if j.get("score") is None else f"{j.get('score'):.1f}",
             "Status": j.get("status","discovered"),
             "Location": j.get("location",""),
             "Date_Found": j.get("date_found",""),
@@ -364,7 +297,7 @@ with tab_tracker:
     if j:
         jcts = [c for c in contacts if c.get("job_id")==j["id"]]
         em = S_EMOJI.get(j.get("status","discovered"),"⚪")
-        sc_str = f"⭐{j['score']:.1f}" if j.get("score") else ""
+        sc_str = f"⭐{j['score']:.1f}" if isinstance(j.get("score"), (int, float)) else ""
 
         st.markdown(f"## {em} {j['company']} — {j['title']} {sc_str}")
 
@@ -390,11 +323,11 @@ with tab_tracker:
         st.markdown("#### Update Job")
         ed1, ed2, ed3, ed4 = st.columns([1.5,1.5,1.5,1])
         with ed1:
-            ns = st.selectbox("Status", STATUS, index=STATUS.index(j.get("status","discovered")), key=f"s_{j['id']}")
+            ns = st.selectbox("Status", STATUS, index=option_index(STATUS, j.get("status","discovered")), key=f"s_{j['id']}")
         with ed2:
-            na = st.date_input("Applied", value=datetime.date.fromisoformat(j["applied_date"]) if j.get("applied_date") else None, key=f"ja_{j['id']}")
+            na = st.date_input("Applied", value=parse_iso_date(j.get("applied_date")), key=f"ja_{j['id']}")
         with ed3:
-            nf = st.date_input("Follow-up", value=datetime.date.fromisoformat(j["follow_up_date"]) if j.get("follow_up_date") else datetime.date.today()+datetime.timedelta(days=7), key=f"jf_{j['id']}")
+            nf = st.date_input("Follow-up", value=parse_iso_date(j.get("follow_up_date")) or datetime.date.today()+datetime.timedelta(days=7), key=f"jf_{j['id']}")
         with ed4:
             st.markdown("<br>", unsafe_allow_html=True)
             if st.button("💾 Save", key=f"sv_{j['id']}"):
@@ -412,21 +345,24 @@ with tab_tracker:
         with et:
             if j.get("evaluation"):
                 ev=j["evaluation"]
-                e1,e2,e3,e4=st.columns(4)
-                e1.metric("CV Match",f"{ev.get('cv_match','—')}/5")
-                e2.metric("Fit",f"{ev.get('north_star','—')}/5")
-                e3.metric("Comp",f"{ev.get('comp','—')}/5")
-                e4.metric("Legit",ev.get("legitimacy","—"))
-                if ev.get("recommendation"): st.info(f"💡 {ev['recommendation']}")
-                s1,s2=st.columns(2)
-                with s1:
-                    if ev.get("strengths"):
-                        st.markdown("**Strengths:**")
-                        for s in ev["strengths"]: st.markdown(f"- ✅ {s}")
-                with s2:
-                    if ev.get("gaps"):
-                        st.markdown("**Gaps:**")
-                        for g in ev["gaps"]: st.markdown(f"- ⚠️ {g}")
+                if isinstance(ev, dict):
+                    e1,e2,e3,e4=st.columns(4)
+                    e1.metric("CV Match",f"{ev.get('cv_match','—')}/5")
+                    e2.metric("Fit",f"{ev.get('north_star','—')}/5")
+                    e3.metric("Comp",f"{ev.get('comp','—')}/5")
+                    e4.metric("Legit",ev.get("legitimacy","—"))
+                    if ev.get("recommendation"): st.info(f"💡 {ev['recommendation']}")
+                    s1,s2=st.columns(2)
+                    with s1:
+                        if ev.get("strengths"):
+                            st.markdown("**Strengths:**")
+                            for s in ev["strengths"]: st.markdown(f"- ✅ {s}")
+                    with s2:
+                        if ev.get("gaps"):
+                            st.markdown("**Gaps:**")
+                            for g in ev["gaps"]: st.markdown(f"- ⚠️ {g}")
+                else:
+                    st.markdown(str(ev))
             else:
                 st.markdown("*Not yet evaluated.*")
             if j.get("report_path") and os.path.exists(CAREER_OPS_DIR/j["report_path"]):
@@ -444,11 +380,12 @@ with tab_tracker:
                         if c.get("linkedin_url"): st.markdown(f"🔗 [LinkedIn]({c['linkedin_url']})")
                         if c.get("message_draft"):
                             st.markdown("**Draft:**"); st.code(c["message_draft"])
-                        st.text_input("Notes",value=c.get("notes",""),key=f"cn_{j['id']}_{c['id']}")
+                        contact_notes = st.text_input("Notes",value=c.get("notes",""),key=f"cn_{j['id']}_{c['id']}")
                     with cc2:
-                        ncs=st.selectbox("Status",CT_STAT,index=CT_STAT.index(c.get("status","not_contacted")),key=f"cs_{j['id']}_{c['id']}")
+                        ncs=st.selectbox("Status",CT_STAT,index=option_index(CT_STAT, c.get("status","not_contacted")),key=f"cs_{j['id']}_{c['id']}")
                         if st.button("💾",key=f"csv_{j['id']}_{c['id']}"):
                             c["status"]=ncs
+                            c["notes"]=contact_notes
                             if ncs=="request_sent" and not c.get("date_contacted"): c["date_contacted"]=datetime.date.today().isoformat()
                             save_contacts(contacts); st.rerun()
             with st.expander("➕ Add Contact"):
@@ -466,9 +403,8 @@ with tab_tracker:
 
         # RESUME
         with rt:
-            slug=j.get("company","").lower().replace(" ","-").replace(".","")
-            tver=f"tailored_{slug}"
-            tp=RESUME_DIR/f"{tver}.json"
+            tver=linked_resume_version(j)
+            tp,_=resume_paths(tver)
             base=load_resume("base")
             if tp.exists():
                 st.markdown("✅ Editing tailored version")
@@ -542,24 +478,14 @@ with tab_tracker:
                 st.success(f"✅ Saved tailored resume for {j['company']}!")
 
             if st.button("📄 Generate PDF",key=f"rgen_{j['id']}"):
-                title_slug=j.get("title","").lower().replace(" ","-").replace("/","-")[:40]
-                pdf_name=f"cv-{slug}-{title_slug}-2026.pdf"
-                pdf_out=CAREER_OPS_DIR/"output"/pdf_name
-                repo_pdf_out=CAREER_OPS_DIR/"data"/"output"/pdf_name
-                tmp_html=f"/tmp/cv-tailored-{slug}.html"
-                html_content=_build_resume_html(cur, j.get("company",""))
-                with open(tmp_html,"w") as f: f.write(html_content)
-                try:
-                    result=subprocess.run(["node",str(CAREER_OPS_DIR/"generate-pdf.mjs"),tmp_html,str(pdf_out),"--format=letter"],capture_output=True,text=True,timeout=30,cwd=str(CAREER_OPS_DIR))
-                    if result.returncode==0:
-                        repo_pdf_out.parent.mkdir(parents=True, exist_ok=True)
-                        with open(pdf_out, "rb") as src, open(repo_pdf_out, "wb") as dst:
-                            dst.write(src.read())
-                        j["pdf_path"]=f"data/output/{pdf_name}"; save_jobs(jobs)
-                        st.success(f"✅ PDF generated: {pdf_name}")
-                        st.rerun()
-                    else: st.error(f"PDF failed: {result.stderr[:300]}")
-                except Exception as e: st.error(f"Error: {e}")
+                save_resume(cur,tver); j["tailored_resume"]=tver
+                pdf_path=generate_pdf(tver, j.get("company",""), j.get("title",""))
+                if pdf_path:
+                    j["pdf_path"]=pdf_path; save_jobs(jobs)
+                    st.success(f"✅ PDF generated: {Path(pdf_path).name}")
+                    st.rerun()
+                else:
+                    st.error("PDF generation failed. Check the terminal output for details.")
 
             if j.get("pdf_path"):
                 pdf_path = CAREER_OPS_DIR / j["pdf_path"]
@@ -659,9 +585,8 @@ with tab_resume:
             opts={f"{j['id']}: {j['company']} — {j['title']}":j for j in jl}
             sel=st.selectbox("Select Job",list(opts.keys()),key="tjsel")
             sj=opts[sel]
-            slug=sj.get("company","").lower().replace(" ","-").replace(".","")
-            tver=f"tailored_{slug}"
-            tp=RESUME_DIR/f"{tver}.json"
+            tver=linked_resume_version(sj)
+            tp,_=resume_paths(tver)
             cur=load_resume(tver) if tp.exists() else copy.deepcopy(load_resume("base"))
             if tp.exists(): st.markdown("✅ Editing tailored version")
             else: st.markdown("Editing from base")
@@ -717,13 +642,13 @@ with st.expander("📦 Archived Jobs (stale/closed or > 6 months old) - Click to
                 "ID": j["id"],
                 "Company": j.get("company",""),
                 "Role": j.get("title","")[:50],
-                "Score": "—" if j.get("score") is None else j.get("score"),
+                "Score": "—" if j.get("score") is None else f"{j.get('score'):.1f}",
                 "Date": j.get("date_found",""),
                 "Status": j.get("status","discovered")
             })
         df = pd.DataFrame(rows)
         
-        st.dataframe(df, use_container_width=True, hide_index=True)
+        st.dataframe(df, width="stretch", hide_index=True)
         
         # Select archived job to view
         opts = {f"{j['id']}: {j['company']} - {j['title'][:40]}": j for j in archived}
