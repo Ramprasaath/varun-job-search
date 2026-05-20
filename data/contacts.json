@@ -1275,5 +1275,47 @@
     "date_contacted": null,
     "response": null,
     "notes": "Possible talent/networking contact from LinkedIn search result; verify before sending."
+  },
+  {
+    "id": 89,
+    "job_id": 98,
+    "name": "Raheel Shah",
+    "title": "Recruiting Manager, Pfizer",
+    "linkedin_url": "https://www.linkedin.com/in/raheelshah/",
+    "contact_type": "recruiter",
+    "message_draft": "PhD chemist with 6+ yrs in materials characterization, polymers, DOE, and stability analysis. Pfizer's La Jolla Early Formulation role looks aligned - happy to share my CV if this fits the search.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Broad Pfizer recruiting contact from LinkedIn search; verify ownership before sending.",
+    "company": "Pfizer"
+  },
+  {
+    "id": 90,
+    "job_id": 98,
+    "name": "Michael Collins",
+    "title": "Associate Research Fellow, Pfizer La Jolla",
+    "linkedin_url": "https://www.linkedin.com/in/michael-collins-76700911/",
+    "contact_type": "team_lead",
+    "message_draft": "I noticed Pfizer's La Jolla Early Formulation role focuses on developability and material science. My work connects structure-property data, stability, and DOE in organic/polymer systems; would love your take on the team.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "La Jolla Pfizer senior R&D contact from LinkedIn search; exact EFS-DD connection unconfirmed.",
+    "company": "Pfizer"
+  },
+  {
+    "id": 91,
+    "job_id": 98,
+    "name": "Naveed Shaik",
+    "title": "Senior Director, Clinical Pharmacology, Pfizer",
+    "linkedin_url": "https://www.linkedin.com/in/naveedshaik/",
+    "contact_type": "peer",
+    "message_draft": "Pfizer's EFS-DD role seems tightly connected to Clinical Pharmacology and bio-performance. I work on materials characterization, stability, and DOE; would value your perspective on how those groups partner.",
+    "status": "not_contacted",
+    "date_contacted": null,
+    "response": null,
+    "notes": "Adjacent Pfizer Clinical Pharmacology contact in San Diego from LinkedIn/search results; JD explicitly names Clinical Pharmacology as a partner group.",
+    "company": "Pfizer"
   }
 ]

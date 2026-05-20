@@ -2843,5 +2843,38 @@
     },
     "archive_reason": "verified closed/expired by check-liveness on 2026-05-18: pattern matched: the page you are looking for doesn.t exist",
     "archived_date": "2026-05-18"
+  },
+  {
+    "id": 3,
+    "url": "https://job-boards.greenhouse.io/relaytherapeutics/jobs/5830349004",
+    "company": "Relay Therapeutics",
+    "title": "Director, Analytical Development and Quality Control",
+    "location": "Cambridge, MA",
+    "date_found": "2026-04-13",
+    "score": 3.2,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "discovered",
+    "report_path": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Director level likely too senior. Requires extensive industry experience.",
+    "evaluation": {
+      "recommendation": "LOW PRIORITY - Significant gaps",
+      "strengths": [
+        "See notes for details"
+      ],
+      "gaps": [
+        "See notes for details"
+      ],
+      "cv_match": 3.2,
+      "north_star": 3.2,
+      "comp": 3.2,
+      "cultural": 3.2,
+      "red_flags": 0,
+      "legitimacy": "Medium Confidence"
+    },
+    "archive_reason": "verified closed/expired by check-liveness on 2026-05-20: Greenhouse redirects to relaytherapeutics?error=true",
+    "archived_date": "2026-05-20"
   }
 ]

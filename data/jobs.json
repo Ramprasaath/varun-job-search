@@ -71,37 +71,6 @@
     }
   },
   {
-    "id": 3,
-    "url": "https://job-boards.greenhouse.io/relaytherapeutics/jobs/5830349004",
-    "company": "Relay Therapeutics",
-    "title": "Director, Analytical Development and Quality Control",
-    "location": "Cambridge, MA",
-    "date_found": "2026-04-13",
-    "score": 3.2,
-    "archetype": "Analytical / Quality Scientist",
-    "status": "discovered",
-    "report_path": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Director level likely too senior. Requires extensive industry experience.",
-    "evaluation": {
-      "recommendation": "LOW PRIORITY - Significant gaps",
-      "strengths": [
-        "See notes for details"
-      ],
-      "gaps": [
-        "See notes for details"
-      ],
-      "cv_match": 3.2,
-      "north_star": 3.2,
-      "comp": 3.2,
-      "cultural": 3.2,
-      "red_flags": 0,
-      "legitimacy": "Medium Confidence"
-    }
-  },
-  {
     "id": 5,
     "url": "https://careers.abbvie.com/en/job/sr-scientist-i-analytical-research-and-development-in-north-chicago-il-jid-1208",
     "company": "AbbVie",
@@ -803,5 +772,47 @@
     "archetype": "materials_science",
     "legitimacy_tier": "High Confidence - direct Ashby posting published 2026-03-30, verified 2026-05-18",
     "next_action": "Apply with new materials-synthesis resume; message a Periodic materials scientist or talent contact first if Ram approves."
+  },
+  {
+    "id": 98,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---La-Jolla/Senior-Scientist--Early-Formulation-Science-and-Drug-Delivery--Drug-Product-Design_4956649-1",
+    "company": "Pfizer",
+    "title": "Senior Scientist, Early Formulation Science and Drug Delivery, Drug Product Design",
+    "location": "La Jolla, CA (On Premise)",
+    "date_found": "2026-05-20",
+    "date_posted": "2026-05-19",
+    "score": 4.1,
+    "archetype": "Materials / Process Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/098-pfizer-early-formulation-science-drug-delivery-2026-05-20.md",
+    "pdf_path": "data/output/cv-pfizer-senior-scientist-early-formulation-science-and-dru-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Best new direct lead this sweep. Entry-PhD-friendly Pfizer EFS-DD role focused on small-molecule developability, material science/physicochemical assessment, stability risk, polymorph/salt screens, and preclinical formulation. Varun maps strongly through materials characterization, thermal/spectroscopic/electrochemical analysis, DOE, polymer process development, and stability/failure-mode work; main gaps are direct pharmaceutics/drug-delivery modeling and regulated formulation experience.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER RAM REVIEW - Use tailored early-formulation/materials-science resume and outreach first.",
+      "strengths": [
+        "Direct fit to recent PhD / 0-3 year postdoc level requirement",
+        "Small-molecule material science, physicochemical properties, stability, dissolution/precipitation, and solid-state risk language maps to Varun's materials characterization story",
+        "DOE/process-development and polymer scale-up work support developability and manufacturability framing",
+        "La Jolla / San Diego is within Varun's stated relocation targets",
+        "Direct Workday posting is fresh and marked canApply=true"
+      ],
+      "gaps": [
+        "No direct pharma pre-formulation or clinical drug-product design role yet",
+        "GastroPlus / PK modeling and in vivo/in vitro biopharmaceutics are not proven skills",
+        "Polymorph and salt screening should be framed as adjacent solid-state/materials characterization, not claimed as direct experience",
+        "Limited regulated/GMP formulation-development evidence"
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.3,
+      "comp": 4.0,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS posting verified 2026-05-20 (canApply=true, postedOn=Posted Yesterday, startDate=2026-05-19).",
+    "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves."
   }
 ]
