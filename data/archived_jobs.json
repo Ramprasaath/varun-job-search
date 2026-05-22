@@ -2876,5 +2876,45 @@
     },
     "archive_reason": "verified closed/expired by check-liveness on 2026-05-20: Greenhouse redirects to relaytherapeutics?error=true",
     "archived_date": "2026-05-20"
+  },
+  {
+    "id": 5,
+    "url": "https://careers.abbvie.com/en/job/sr-scientist-i-analytical-research-and-development-in-north-chicago-il-jid-1208",
+    "company": "AbbVie",
+    "title": "Sr. Scientist I, Analytical Research & Development",
+    "location": "North Chicago, IL",
+    "date_found": "2026-04-14",
+    "score": 4,
+    "archetype": "Analytical / Quality Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-abbvie-sr.-scientist-i,-analytical-research-&-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "PhD 0+ years accepted. Strong analytical chemistry focus. Large pharma stability.",
+    "evaluation": {
+      "cv_match": 4,
+      "north_star": 3.8,
+      "comp": 4.2,
+      "cultural": 4,
+      "red_flags": 0,
+      "legitimacy": "High Confidence",
+      "gaps": [
+        "Pharma industry experience",
+        "Regulatory submission experience"
+      ],
+      "strengths": [
+        "PhD-level analytical chemistry",
+        "Method development expertise",
+        "0+ years industry experience accepted",
+        "Strong match with Varun's characterization background"
+      ],
+      "recommendation": "APPLY - Good entry point into big pharma"
+    },
+    "tailored_resume": "tailored_abbvie",
+    "legitimacy_tier": "High Confidence - direct AbbVie careers page returned 200 with apply content on 2026-05-18",
+    "next_action": "Apply as PhD-entry analytical R&D path; use Analytical R&D leadership/recruiting outreach first if Ram approves.",
+    "archive_reason": "verified closed/expired by direct browser check on 2026-05-22: AbbVie careers page says \"This vacancy has now expired.\"",
+    "archived_date": "2026-05-22"
   }
 ]
