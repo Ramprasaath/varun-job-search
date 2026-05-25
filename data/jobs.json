@@ -122,9 +122,9 @@
     "title": "Materials Engineer, Satellites (Starlink)",
     "location": "Redmond, WA",
     "date_found": "2026-04-20",
-    "date_posted": null,
+    "date_posted": "2026-03-31",
     "freshness_verified": true,
-    "freshness_reason": "Verified active on 2026-04-29 via direct Greenhouse detail page; posting updated_at=2026-04-27.",
+    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-03-31T20:38:45-04:00 and updated_at=2026-04-30T13:10:25-04:00.",
     "job_id": null,
     "score": 3.9,
     "archetype": "Materials Scientist",
@@ -153,7 +153,9 @@
       "red_flags": -0.2,
       "legitimacy": "High Confidence"
     },
-    "tailored_resume": null
+    "tailored_resume": null,
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-03-31, verified 2026-05-25.",
+    "next_action": "Compare with #102 senior satellite-materials role; use outreach to clarify level, export-control eligibility, and whether the non-senior track is the better application path."
   },
   {
     "id": 65,
@@ -460,7 +462,7 @@
     "url": "https://boards.greenhouse.io/spacex/jobs/8393663002?gh_jid=8393663002",
     "location": "Starbase, TX (Boca Chica)",
     "date_found": "2026-05-02",
-    "date_posted": null,
+    "date_posted": "2026-01-28",
     "status": "evaluated",
     "score": 3.9,
     "notes": "SpaceX Materials Engineer role focused on polymer material systems for Starship. Hands-on implementation and troubleshooting of adhesives, sealants, coatings, and non-metallic materials. Requires characterization using SEM-EDS, FTIR, DSC, TGA, DMA, TMA, rheometry \u2014 Varun has extensive experience with most of these techniques from his PhD. PhD preferred. Strong alignment with Varun's materials characterization superpower. Caveats: Starbase TX is remote, SpaceX known for intense work culture and potentially lower comp (~$95K-$130K range typical). Root cause failure investigation SME work aligns well with Varun's failure analysis experience.",
@@ -484,7 +486,11 @@
     },
     "tailored_resume": null,
     "pdf_path": null,
-    "contacts": []
+    "contacts": [],
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-01-28T12:27:43-05:00 and updated_at=2026-04-30T13:10:25-04:00.",
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-01-28, verified 2026-05-25.",
+    "next_action": "Keep as a lower-priority SpaceX polymers option due Starbase location; prioritize #103 Starlink polymers first if Ram approves SpaceX outreach."
   },
   {
     "id": 90,
@@ -906,5 +912,245 @@
     "tailored_resume": null,
     "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published=2026-03-31, updated=2026-04-30, verified 2026-05-25.",
     "next_action": "Use SpaceX recruiter/peer outreach to clarify export-control eligibility and whether PhD/postdoc materials experience offsets the 5+ year seniority requirement."
+  },
+  {
+    "id": 103,
+    "url": "https://job-boards.greenhouse.io/spacex/jobs/8532221002",
+    "company": "SpaceX",
+    "title": "Materials Engineer, Polymers (Starlink)",
+    "location": "Bastrop, TX",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-05-01",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-05-01T16:13:05-04:00 and updated_at=2026-05-01T16:13:05-04:00.",
+    "score": 4.1,
+    "archetype": "Materials Scientist / Polymer Reliability Engineer",
+    "status": "evaluated",
+    "report_path": "reports/103-spacex-starlink-polymers-2026-05-25.md",
+    "tailored_resume": "tailored_spacex_starlink_polymers",
+    "pdf_path": "data/output/cv-spacex-materials-engineer-polymers-starlink-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct SpaceX Starlink polymers role focused on polymer material selection, testing, injection-molded part scale-up, polymer failure investigations, and FTIR/DSC/TGA/rheometry-style characterization. Strong fit to Varun's polymer process-development, thin-film/coatings, DOE/SPC, thermal/spectroscopic characterization, and root-cause narrative; main risks are SpaceX work cadence, Bastrop relocation, and ITAR/export-control eligibility.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - strongest new SpaceX path because it is non-senior, polymer-specific, and directly values characterization plus failure analysis.",
+      "strengths": [
+        "Polymer material development, testing, and performance evaluation are close to Varun's polymer/materials lane",
+        "Preferred PhD plus FTIR, DSC, TGA, rheometry, microscopy, mechanical testing, and failure-mode language map well to his characterization story",
+        "Prototype-to-production scale-up, process improvements, and technical documentation align with DOE/SPC and lab-operations experience"
+      ],
+      "gaps": [
+        "Consumer-electronics or production injection-molding experience is preferred, not a core documented strength",
+        "Bastrop/TX relocation, SpaceX hours, and ITAR/export-control gates need clarification before application investment"
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.2,
+      "comp": 3.9,
+      "cultural": 3.8,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-05-01, verified 2026-05-25.",
+    "next_action": "Use SpaceX recruiter/peer outreach to confirm ITAR eligibility and level fit; if cleared, apply with Starlink-polymers tailored resume/PDF."
+  },
+  {
+    "id": 104,
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4192775009",
+    "company": "Lila Sciences",
+    "title": "Scientist I/II, Process Chemistry",
+    "location": "Cambridge, MA",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-03-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Lila Sciences Greenhouse API active on 2026-05-25; first_published=2026-03-25T14:43:03-04:00 and updated_at=2026-05-14T17:07:37-04:00.",
+    "score": 4.0,
+    "archetype": "Process Development / Process Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/104-lila-sciences-process-chemistry-2026-05-25.md",
+    "tailored_resume": "tailored_lila_process_chemistry",
+    "pdf_path": "data/output/cv-lila-sciences-scientist-i-ii-process-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Greenhouse role for process-relevant chemical transformations, reaction/process workflows, analytical readouts, reproducibility, and AI-ready experimental data. Strong adjacent fit to Varun's organic/materials chemistry, DOE-guided process development, analytical interpretation, and reproducible scale-up work. Gaps: explicit HTE, automation/robotics, and digital chemistry workflow experience are stretch areas.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - worth applying if Varun wants the process-chemistry/autonomous-lab branch, with resume emphasizing DOE, structured data, and analytical readouts without overstating HTE.",
+      "strengths": [
+        "PhD organic/process/medicinal/chemical-engineering related disciplines accepted with postdoc or industry experience",
+        "Process design, optimization, troubleshooting, sample handling, purification, and analytical interpretation map to Varun's process-development and chemistry background",
+        "Cambridge location and $108K-$170K posted range are attractive for a PhD-level transition"
+      ],
+      "gaps": [
+        "High-throughput experimentation and robotics-enabled workflows are requested and should be framed as adjacent, not claimed",
+        "Small-molecule discovery process chemistry is adjacent to Varun's materials/organic research rather than direct industry process chemistry"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.1,
+      "comp": 4.0,
+      "cultural": 4.1,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Lila Greenhouse posting active, first_published 2026-03-25, updated 2026-05-14, verified 2026-05-25.",
+    "next_action": "Message Lila technical talent/process-chemistry peers to clarify HTE/automation weighting; apply with process-chemistry tailored resume if Ram approves."
+  },
+  {
+    "id": 105,
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4192713009",
+    "company": "Lila Sciences",
+    "title": "Senior Scientist, Analytical Chemistry",
+    "location": "Cambridge, MA",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-03-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Lila Sciences Greenhouse API active on 2026-05-25; first_published=2026-03-25T14:43:20-04:00 and updated_at=2026-05-14T17:07:37-04:00.",
+    "score": 4.0,
+    "archetype": "Analytical Chemistry / Molecular Characterization Scientist",
+    "status": "evaluated",
+    "report_path": "reports/105-lila-sciences-analytical-chemistry-2026-05-25.md",
+    "tailored_resume": "tailored_lila_analytical_chemistry",
+    "pdf_path": "data/output/cv-lila-sciences-senior-scientist-analytical-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Greenhouse posting for analytical/multimodal characterization supporting discovery chemistry: LC/MS, NMR, impurity/purity assessment, reaction monitoring, rapid analytical turnaround, and structured datasets for AI workflows. Excellent analytical narrative fit, but seniority (5-8+ years industry/high-performance research) and automation/high-throughput expectations make outreach-first prudent.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - strong analytical fit if Lila values deep PhD/postdoc characterization experience; clarify seniority and automation expectations before submission.",
+      "strengths": [
+        "LC/MS, NMR, orthogonal characterization, reaction monitoring, purity/impurity profiling, and data interpretation are close to Varun's analytical strengths",
+        "Discovery/synthetic chemistry interface is credible given organic/materials chemistry research and publication record",
+        "$148K-$198K posted range and Cambridge location are high-value positives"
+      ],
+      "gaps": [
+        "JD asks for 5-8+ years industry or high-performance research experience; Varun should position PhD/postdoc work carefully",
+        "High-throughput/automated discovery workflows and data-pipeline integration are stretch areas"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.1,
+      "comp": 4.3,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Lila Greenhouse posting active, first_published 2026-03-25, updated 2026-05-14, verified 2026-05-25.",
+    "next_action": "Use Lila recruiter/peer outreach to test whether PhD/postdoc analytical characterization satisfies the seniority bar; apply with analytical tailored resume if yes."
+  },
+  {
+    "id": 106,
+    "url": "https://job-boards.greenhouse.io/spacex/jobs/8498761002",
+    "company": "SpaceX",
+    "title": "Failure Analysis Engineer, Microelectronics (Starlink)",
+    "location": "Bastrop, TX",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-04-09",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-04-09T16:10:19-04:00 and updated_at=2026-04-30T13:10:25-04:00.",
+    "score": 3.9,
+    "archetype": "Reliability / Failure Analysis Engineer",
+    "status": "evaluated",
+    "report_path": "reports/106-spacex-failure-analysis-microelectronics-2026-05-25.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct SpaceX Starlink role in microelectronics root-cause failure analysis, physics-of-failure, SEM/FIB/EDS/SAM/cross-sectioning, and corrective actions. Varun's failure-analysis, materials characterization, technical writing, and DOE/JMP narrative are relevant, but microelectronics FA, electrical fault isolation, JEDEC/AEC standards, and ITAR eligibility are significant stretch/gating items.",
+    "evaluation": {
+      "recommendation": "CURATED STRETCH / OUTREACH FIRST - keep active for reliability/failure-analysis track, but clarify microelectronics tool expectations before applying.",
+      "strengths": [
+        "Failure-mode/root-cause language aligns with Varun's materials reliability story",
+        "Materials characterization and technical-reporting requirements are credible matches",
+        "Basic qualification accepts materials science/chemical engineering plus 2+ years characterization/FA experience"
+      ],
+      "gaps": [
+        "Direct SEM/FIB/SAM/electrical fault isolation and semiconductor reliability standards are not core documented skills",
+        "Bastrop location, overtime/weekend expectation, and ITAR/export-control gates need pre-checks"
+      ],
+      "cv_match": 3.7,
+      "north_star": 4.0,
+      "comp": 3.9,
+      "cultural": 3.7,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-04-09, verified 2026-05-25.",
+    "next_action": "Use SpaceX FA/recruiter outreach to ask whether materials-characterization PhD backgrounds without deep FIB/electrical FA are viable."
+  },
+  {
+    "id": 107,
+    "url": "https://job-boards.greenhouse.io/spacex/jobs/8553017002",
+    "company": "SpaceX",
+    "title": "Sr. Materials Engineer, Electronic Materials",
+    "location": "Bastrop, TX",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-05-18",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-05-18T16:16:44-04:00 and updated_at=2026-05-18T16:16:44-04:00.",
+    "score": 3.8,
+    "archetype": "Electronic Materials / Semiconductor Process Engineer",
+    "status": "evaluated",
+    "report_path": "reports/107-spacex-electronic-materials-2026-05-25.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct SpaceX role for semiconductor/electronic materials, CVD/PVD/device fabrication, metrology, materials failure analysis, and solar-cell/PCB/packaging process development. Good partial match to Varun's CVD thin-film, optical spectroscopy/ellipsometry, FTIR/DSC, materials failure, and process-development story, but the 5+ years microelectronics device/manufacturing requirement makes it a senior stretch.",
+    "evaluation": {
+      "recommendation": "CURATED STRETCH / OUTREACH ONLY - useful for Starlink electronic-materials networking, but not a first application unless recruiter confirms level flexibility.",
+      "strengths": [
+        "CVD/thin-film coatings, optical spectroscopy, ellipsometry, and materials failure analysis overlap with Varun's background",
+        "PhD is preferred and the work sits in a high-value materials/process lane",
+        "Fresh direct posting from 2026-05-18"
+      ],
+      "gaps": [
+        "Basic qualification asks 5+ years microelectronics device research or manufacturing",
+        "Semiconductor device physics, photovoltaics, PCB/panel-level packaging, and extensive PVD/fabrication are significant stretch areas"
+      ],
+      "cv_match": 3.6,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 3.7,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-05-18, verified 2026-05-25.",
+    "next_action": "Do outreach only; ask whether PhD thin-film/materials characterization experience is enough despite limited microelectronics device-manufacturing depth."
+  },
+  {
+    "id": 108,
+    "url": "https://jobs.ashbyhq.com/periodic-labs/21b61a4d-92ff-4f98-9a7c-251f02966988",
+    "company": "Periodic Labs",
+    "title": "Process Engineer, Powder",
+    "location": "Menlo Park, CA",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-05-08",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Periodic Labs Ashby posting API active on 2026-05-25; publishedAt=2026-05-08T22:58:42.650+00:00.",
+    "score": 4.0,
+    "archetype": "Process Development / Materials Process Engineer",
+    "status": "evaluated",
+    "report_path": "reports/108-periodic-labs-process-engineer-powder-2026-05-25.md",
+    "tailored_resume": "tailored_periodic_process_engineer_powder",
+    "pdf_path": "data/output/cv-periodic-labs-process-engineer-powder-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Ashby posting for owning high-mix powder synthesis workflow controls: dispensing, mixing, pressing, reaction, recovery, characterization, failure-mode mapping, SPC, DOE, root-cause troubleshooting, documentation, and data integrity. Strong process-control and materials characterization fit; primary gap is explicit solid-state/ceramics/powder-processing depth versus Varun's stronger polymer/thin-film/organic materials background.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - better Periodic process-engineering fit than the semiconductor-equipment Process Development Engineer role; use resume emphasizing DOE/SPC, failure modes, lab operations, and characterization workflow control.",
+      "strengths": [
+        "DOE, SPC, root-cause analysis, process documentation, and high-variation R&D workflow stabilization map closely to Varun's profile",
+        "Chemistry/materials science degree is accepted and the role values hands-on process ownership plus characterization tools",
+        "AI-driven materials discovery mission aligns with current Periodic #97 target and Menlo Park geography"
+      ],
+      "gaps": [
+        "Solid-state chemistry, ceramics, and powder-processing experience are not Varun's strongest documented domains",
+        "Role is operational/process-heavy and early-stage; outreach should clarify training expectations"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.2,
+      "comp": 4.3,
+      "cultural": 4.1,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Periodic Labs Ashby posting active, published 2026-05-08, verified 2026-05-25.",
+    "next_action": "Use Periodic peer/talent outreach to clarify powder-processing ramp expectations; apply with process-engineering tailored resume if Ram approves."
   }
 ]

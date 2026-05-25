@@ -1,0 +1,127 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "https://linkedin.com/in/varunprasaath-rs",
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024.",
+    "Decoupling Redox and Color for High-Contrast Electrochromics, Excited State Processes Conference, Santa Fe, NM, June 2023.",
+    "Electrochromism: Decoupling Color and Redox in Rhodamine-Based Systems, Rocky Mountain Solid State Chemistry Workshop, Boulder, CO, January 2023."
+  ],
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)",
+    "97.12 Percentile – IIT JEE Mains (2015)",
+    "All India Rank 144 – NEST (2014)"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019–2021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  },
+  "summary": "PhD chemist/materials scientist with 6+ years in process development, materials characterization, and failure/root-cause analysis across polymers, thin films, and functional molecular materials. Applies DOE/SPC, SOP/control-plan thinking, and multi-technique analytical readouts to stabilize high-variation R&D workflows and define reproducible process windows.",
+  "competencies": [
+    "Process Engineering",
+    "DOE/SPC",
+    "Root Cause Analysis",
+    "Materials Characterization",
+    "Workflow Control",
+    "Lab Operations",
+    "Data Integrity"
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 - Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead DOE-guided bio-based polymer process development, defining process inputs/outputs, material-quality specifications, and reproducible operating windows for scale-up."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 - July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Assessed failure modes and structure-property-performance relationships across 15+ functional material variants using spectroscopy, electrochemistry, thermal analysis, chromatography, and MS."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 - July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Drove thin-film process development for AFOSR-funded coating systems, translating surface-preparation and CVD variables into controlled morphology and optical performance."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 - July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Developed reproducible CVD polymer thin-film workflows with DOE and in-situ QCM-D monitoring, connecting equipment conditions to growth kinetics and film quality."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 - 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed characterization/process-development lab operations for a 15-member group; implemented calibration, SOP, and safety systems that improved instrument uptime by 30%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bio-Based Polymer Scale-Up Process",
+      "badge": "Current",
+      "description": "Stabilized process variables and material-quality readouts for reproducible polymer scale-up using DOE/SPC and technical documentation.",
+      "tech": "DOE, SPC, process windows, characterization"
+    },
+    {
+      "title": "Electrochromic Material Reliability Study",
+      "badge": "Chemistry of Materials 2025",
+      "description": "Mapped failure modes, degradation behavior, and performance across functional materials with orthogonal characterization.",
+      "tech": "FT-IR, UV-Vis-NIR, CV, TGA/DSC, NMR, GPC, MS"
+    },
+    {
+      "title": "AFOSR Defense Thin-Film Coatings",
+      "badge": "DoD Funded",
+      "description": "Built controlled thin-film workflows by connecting CVD process variables to morphology, interfaces, and optical performance.",
+      "tech": "CVD, QCM-D, surface prep, thin films"
+    }
+  ],
+  "skills": {
+    "Process Engineering": "DOE, SPC, process windows, root cause analysis, control plans, SOPs, technical reports, reproducibility studies",
+    "Characterization": "FT-IR, UV-Vis-NIR, ellipsometry, QCM-D, TGA, DSC, NMR, GPC/SEC, LC-MS, GC-MS, cyclic voltammetry",
+    "Materials": "Polymers, organic/organometallic materials, thin films, coatings, surface functionalization, structure-property-processing relationships",
+    "Data & Statistics": "JMP (basic), Python (basic), Excel, structured experimental records, trend analysis, data integrity",
+    "Operations": "Lab operations, equipment tracking, calibration systems, safety/SOP systems, cross-functional resource planning"
+  }
+}
