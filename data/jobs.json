@@ -326,94 +326,6 @@
     "tailored_resume": "tailored_seran_product_dev"
   },
   {
-    "id": 82,
-    "company": "Pfizer",
-    "title": "Process Development Scientist",
-    "location": "Singapore - Tuas",
-    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/Singapore---Tuas/Process-Development-Scientist_4955802-1",
-    "source": "workday-api",
-    "date_found": "2026-04-30",
-    "date_posted": "2026-04-30",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday posting marked Posted Today on 2026-04-30.",
-    "job_id": null,
-    "status": "evaluated",
-    "score": 3,
-    "archetype": "Process Development",
-    "applied_date": null,
-    "follow_up_date": null,
-    "salary_range": null,
-    "notes": "Direct Pfizer Workday posting for the Singapore Tuas manufacturing expansion. There is meaningful overlap on analytical chemistry, organic synthesis, lab operations, process troubleshooting, and technical documentation, but the role is heavily oriented toward on-site GMP manufacturing support, validation, investigations, and site execution. The biggest blockers are Singapore-only location and limited evidence of direct commercial pharma manufacturing/LIMS/QTS ownership in Varun's background.",
-    "evaluation": {
-      "recommendation": "LOW PRIORITY / APPLY ONLY IF SINGAPORE RELOCATION AND GMP SITE OPERATIONS ARE GENUINELY IN SCOPE.",
-      "strengths": [
-        "Analytical chemistry and organic synthesis language maps to Varun's core training",
-        "Process monitoring, troubleshooting, and technical reporting align reasonably well with his current process-scale-up and characterization work",
-        "Lab operations leadership and SOP mindset help with the operational side of the role",
-        "Direct employer posting marked fresh/live today"
-      ],
-      "gaps": [
-        "Role is tied to Singapore site expansion, which is outside Varun's stated target geographies",
-        "Commercial GMP manufacturing, validation, compliance investigations, and audit support are stronger than the resume currently proves",
-        "LIMS/quality-system experience is preferred and not clearly demonstrated",
-        "The role looks more site-operations focused than an ideal PhD-level analytical or materials-science trajectory"
-      ],
-      "cv_match": 3.3,
-      "north_star": 2.6,
-      "comp": 2.8,
-      "cultural": 3.2,
-      "red_flags": -0.4,
-      "legitimacy": "High Confidence"
-    },
-    "report_path": "reports/082-pfizer-2026-04-30.md",
-    "pdf_path": null,
-    "tailored_resume": null
-  },
-  {
-    "id": 83,
-    "company": "Pfizer",
-    "title": "Senior QC Chemist (AS&T)",
-    "location": "Singapore - Tuas",
-    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/Singapore---Tuas/QC-AS-T-Chemist_4952501-1",
-    "source": "workday-api",
-    "date_found": "2026-04-30",
-    "date_posted": "2026-04-29",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday posting marked Posted Yesterday on 2026-04-30 (date posted 2026-04-29).",
-    "job_id": null,
-    "status": "evaluated",
-    "score": 3.5,
-    "archetype": "Analytical / Quality Scientist",
-    "applied_date": null,
-    "follow_up_date": null,
-    "salary_range": null,
-    "notes": "Fresh Pfizer QC analytical posting for the Tuas site with direct emphasis on method transfer, method validation/verification, HPLC/GC, investigations, CAPA, SOPs, and GMP/GLP documentation. Technically this is closer to Varun's analytical background than the Pfizer process-development role, but it still skews toward commercial QC execution in Singapore and expects stronger hands-on GMP/compendial/QTS ownership than the resume currently demonstrates.",
-    "evaluation": {
-      "recommendation": "MODERATE-LOW PRIORITY. Track it, and only apply if Singapore relocation plus a GMP/QC-heavy path are genuinely acceptable.",
-      "strengths": [
-        "Direct analytical-chemistry overlap on method work, data review, root-cause thinking, and technical documentation",
-        "Varun's SOP, lab-operations, and training experience transfer well to the QC environment",
-        "HPLC/GC and method-validation language are directionally aligned with his characterization toolkit",
-        "Direct employer posting with explicit fresh date and clear responsibilities"
-      ],
-      "gaps": [
-        "Role expects day-to-day GMP/GLP QC ownership, investigations, CAPA, and change-control depth beyond the current resume signal",
-        "Compendial-method and QTS experience are not clearly proven",
-        "Singapore-only location is outside Varun's stated target geographies",
-        "Routine commercial QC work may be less aligned with his preferred process-development/materials trajectory"
-      ],
-      "cv_match": 3.7,
-      "north_star": 2.9,
-      "comp": 2.8,
-      "cultural": 3.4,
-      "red_flags": -0.3,
-      "legitimacy": "High Confidence"
-    },
-    "report_path": "reports/083-pfizer-2026-04-30.md",
-    "pdf_path": null,
-    "tailored_resume": null
-  },
-  {
     "company": "Relay Therapeutics",
     "title": "Associate Director, CMC Regulatory",
     "location": "Cambridge, MA",
@@ -553,43 +465,6 @@
     "pdf_path": null
   },
   {
-    "id": 93,
-    "url": "https://job-boards.greenhouse.io/kailera/jobs/5177136008",
-    "company": "Kailera Therapeutics",
-    "title": "Associate Director, Analytical Development and Quality Control",
-    "location": "Waltham, MA (Hybrid, 3-4 days onsite)",
-    "date_found": "2026-05-04",
-    "date_posted": null,
-    "score": 2.2,
-    "archetype": "CMC / Regulatory",
-    "status": "evaluated",
-    "report_path": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Senior-level AD role at obesity therapeutics startup. Peptide chemistry required. BS+10yr or advanced+5yr pharma. $155-190K. Overseeing CDMO analytical activities, IND/NDA/MAA filings. Too senior and peptide-specific for Varun.",
-    "evaluation": {
-      "cv_match": 1.8,
-      "north_star": 2.5,
-      "comp": 3,
-      "cultural": 2.5,
-      "red_flags": -0.5,
-      "legitimacy": "High Confidence",
-      "gaps": [
-        "No peptide chemistry experience (required)",
-        "No regulatory filing experience (IND/NDA/MAA)",
-        "No CDMO oversight experience",
-        "Too senior \u2014 requires 10+ years industry",
-        "No pharmaceutical QC operations background"
-      ],
-      "strengths": [
-        "Analytical development is adjacent to Varun's characterization skills",
-        "Growing obesity therapeutics space"
-      ],
-      "recommendation": "Skip \u2014 Hard requirement for peptide chemistry and 10+ years pharma industry experience. Not a realistic match."
-    }
-  },
-  {
     "id": 94,
     "url": "https://job-boards.greenhouse.io/alumis/jobs/5202439008",
     "company": "Alumis",
@@ -714,7 +589,7 @@
     "title": "Senior Scientist, Early Formulation Science and Drug Delivery, Drug Product Design",
     "location": "La Jolla, CA (On Premise)",
     "date_found": "2026-05-20",
-    "date_posted": "2026-05-19",
+    "date_posted": "2026-05-20",
     "score": 4.1,
     "archetype": "Materials / Process Development Scientist",
     "status": "evaluated",
@@ -746,8 +621,10 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS posting verified 2026-05-20 (canApply=true, postedOn=Posted Yesterday, startDate=2026-05-19).",
-    "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves."
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS posting verified active on 2026-05-27 (canApply=true, req 4956649, startDate=2026-05-20).",
+    "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves.",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting re-checked active on 2026-05-27; canApply=true, req 4956649, startDate=2026-05-20. Playwright liveness produced a Workday SPA false positive."
   },
   {
     "id": 99,
@@ -1152,5 +1029,131 @@
     },
     "legitimacy_tier": "High Confidence - direct Periodic Labs Ashby posting active, published 2026-05-08, verified 2026-05-25.",
     "next_action": "Use Periodic peer/talent outreach to clarify powder-processing ramp expectations; apply with process-engineering tailored resume if Ram approves."
+  },
+  {
+    "id": 109,
+    "url": "https://job-boards.greenhouse.io/nurix/jobs/8546724002",
+    "company": "Nurix Therapeutics",
+    "title": "Scientist, Analytical Development and Quality Control",
+    "location": "Brisbane, CA (Onsite)",
+    "date_found": "2026-05-27",
+    "date_posted": "2026-05-12",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Nurix Greenhouse/API posting active on 2026-05-27; first_published=2026-05-12T20:03:47-04:00.",
+    "score": 4.4,
+    "archetype": "Analytical / CMC Scientist",
+    "status": "evaluated",
+    "report_path": "reports/109-nurix-analytical-development-qc-2026-05-27.md",
+    "tailored_resume": "tailored_nurix_analytical_development_qc",
+    "pdf_path": "data/output/cv-nurix-therapeutics-scientist-analytical-development-and-quality-contr-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Nurix Greenhouse role in CMC analytical development/QC. Strong fit for Varun: material characterization, impurity/degradation analysis, HRMS/LC-MS, HPLC method development, QbD/DOE, stability studies, technical reports, and cross-functional CMC work. Main gaps are direct 2D-LC/Orbitrap ownership, regulated CDMO/CTL oversight, and the posting language that applicants should be legally entitled to work for any US employer.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER RAM REVIEW - highest-priority new lead; use analytical/CMC resume and contact CMC analytical peers/recruiters first.",
+      "strengths": [
+        "PhD with up to 4 years relevant experience is explicitly in range for Varun's stage",
+        "Material characterization, impurity structures, degradation mechanisms, predictive stability, HPLC method development, and QbD/DOE map tightly to his analytical/materials background",
+        "LC-MS/GC-MS/NMR/FTIR/solid-state adjacency supports the required characterization toolkit",
+        "Brisbane/Bay Area location is within preferred relocation geography and compensation is transparent ($123K-$161K)"
+      ],
+      "gaps": [
+        "Role asks for demonstrated mass-spectrometer operation/maintenance and values Orbitrap Tribrid/2D-LC depth; Varun should frame LC-MS/GC-MS honestly and not overclaim HRMS/2D-LC",
+        "CDMO/CTL oversight, cGMP, ICH, reference standards, and validation are adjacent rather than proven ownership areas",
+        "Posting says applicants should be legally entitled to work for any US employer; confirm work-authorization fit before investing heavily"
+      ],
+      "cv_match": 4.4,
+      "north_star": 4.5,
+      "comp": 4.2,
+      "cultural": 4.3,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Nurix Greenhouse posting active, first_published 2026-05-12, verified 2026-05-27.",
+    "next_action": "Apply with the Nurix analytical/CMC resume after Ram review; outreach should clarify MS/2D-LC depth and work-authorization expectations."
+  },
+  {
+    "id": 110,
+    "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/US-CA-Folsom/Analytical-Chemist_4037344",
+    "company": "Agilent",
+    "title": "Analytical Chemist",
+    "location": "Folsom, CA or Wilmington, DE (Site-based)",
+    "date_found": "2026-05-27",
+    "date_posted": "2026-05-26",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Agilent Workday CXS posting active on 2026-05-27; canApply=true, req 4037344, startDate=2026-05-26.",
+    "score": 4.2,
+    "archetype": "Analytical Chemist / MSAT Scientist",
+    "status": "evaluated",
+    "report_path": "reports/110-agilent-analytical-chemist-2026-05-27.md",
+    "tailored_resume": "tailored_agilent_analytical_chemist",
+    "pdf_path": "data/output/cv-agilent-analytical-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Agilent MSAT role supporting chromatography consumables/performance chemistries across LC/GC method lifecycle, troubleshooting, validation/transfer, DOE, investigations, CAPA, NPI, and technical documentation. Excellent technical and product-quality fit for Varun's analytical characterization/process-control story; main concern is the stated 8+ years hands-on LC/GC industry depth and regulated manufacturing ownership.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - strong analytical-method and MSAT fit; outreach should test seniority flexibility.",
+      "strengths": [
+        "Direct overlap with LC/GC method development, troubleshooting, validation/transfer, MS adjunct techniques, DOE, and technical writing",
+        "MSAT/NPI/manufacturing-investigation context maps to Varun's process-window, lab operations, SOP, and reproducibility experience",
+        "Agilent brand fits analytical-instrumentation credibility and Folsom CA is a viable West Coast location",
+        "Posting is very fresh and direct Workday canApply=true"
+      ],
+      "gaps": [
+        "8+ years hands-on LC/GC experience and regulated manufacturing investigations may be above Varun's current industry tenure",
+        "Direct CAPA/deviation/change-control ownership should be positioned as adjacent SOP/lab-operations experience",
+        "Role may value chromatography consumables/product-support depth that is not yet explicit in the resume"
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.2,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Agilent Workday posting active, canApply=true, posted 2026-05-26, verified 2026-05-27.",
+    "next_action": "Apply with Agilent analytical/MSAT resume after Ram review; contact Agilent chemistry/MSAT peers to clarify seniority and LC/GC depth."
+  },
+  {
+    "id": 111,
+    "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Sr-Scientist--Process-Development_R0052310-1",
+    "company": "Gilead Sciences",
+    "title": "Sr Scientist, Process Development",
+    "location": "Foster City, CA",
+    "date_found": "2026-05-27",
+    "date_posted": "2026-05-11",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-05-27; canApply=true, req R0052310, startDate=2026-05-11.",
+    "score": 4.0,
+    "archetype": "Process Development / Process Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/111-gilead-sr-scientist-process-development-2026-05-27.md",
+    "tailored_resume": "tailored_gilead_sr_scientist_process_development",
+    "pdf_path": "data/output/cv-gilead-sciences-sr-scientist-process-development-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Gilead process-development role for drug-substance chemical process development, route/step optimization, scale-up support, technical reports, MBR-style documentation, and cGMP manufacturing support. Strong company/location and acceptable PhD level; Varun maps through organic chemistry, analytical characterization, DOE-guided process development, and scale-up documentation. Gaps are direct pharma process-chemistry industry execution, pilot-plant/MBR ownership, and multi-step synthesis scale-up depth.",
+    "evaluation": {
+      "recommendation": "APPLY SELECTIVELY / OUTREACH FIRST - attractive Gilead process-chemistry lead, but validate level and synthesis scale-up expectations before spending application time.",
+      "strengths": [
+        "PhD is accepted at 0+ years in basic qualifications and preferred PhD 2-10 years overlaps Varun's postdoc stage",
+        "Organic chemistry, analytical techniques (HPLC/LC-MS/NMR), DOE, process understanding, and technical documentation align with his synthetic-materials/process-development narrative",
+        "Foster City is a strong Bay Area target and Gilead compensation range is transparent ($146K-$190K)",
+        "Cross-functional analytical/process/manufacturing interface matches his lab-operations and documentation story"
+      ],
+      "gaps": [
+        "Role is more classic pharma process chemistry than materials characterization; Varun needs to foreground organic synthesis and process optimization",
+        "Pilot-plant, cGMP manufacturing, master batch records, process validation, and regulatory filing experience are stretch areas",
+        "Day-to-day project/team oversight expectations may be senior for an early-career PhD"
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.1,
+      "comp": 4.3,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, canApply=true, posted 2026-05-11, verified 2026-05-27.",
+    "next_action": "Use Gilead process-chemistry outreach first; ask whether PhD academic process-development plus analytical characterization can meet the scale-up/process-chemistry bar."
   }
 ]

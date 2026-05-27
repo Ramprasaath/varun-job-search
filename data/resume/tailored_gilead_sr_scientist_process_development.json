@@ -1,0 +1,126 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD organic/materials chemist with 6+ years in synthesis-informed materials characterization, DOE-guided process development, scale-up documentation, and analytical troubleshooting. Connects organic chemistry, LC-MS/NMR/GPC, spectroscopy, thermal analysis, and process controls to define reproducible chemistry and material-quality outcomes.",
+  "competencies": [
+    "Organic Process Development",
+    "Route / Step Optimization",
+    "Scale-Up Readiness",
+    "HPLC / LC-MS / NMR",
+    "DOE / SPC",
+    "Technical Reports",
+    "SOPs & Safety",
+    "Cross-Functional CMC"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 – Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead DOE-guided bio-based polymer process development, identifying critical process parameters and translating material-quality data into reproducible process windows and scale-up specifications."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 – July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Designed, synthesized, and characterized organic molecular materials across 15+ variants, connecting structure, purity, stability, and performance through NMR/GPC, LC-MS, spectroscopy, thermal analysis, and electrochemistry."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 – July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Drove process development for AFOSR-funded molecular thin-film coatings, optimizing surface preparation and CVD conditions to control morphology, interfaces, and optical performance."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 – July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Optimized CVD polymer thin-film deposition with DOE and in-situ QCM-D monitoring, defining growth kinetics and process-control parameters for reproducible coatings."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 – 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed process-development and characterization lab operations for a 15-member group; implemented calibration, SOP, safety, and resource-planning systems that improved instrument uptime by 30%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "DOE-Guided Process Development",
+      "badge": "Current",
+      "description": "Built process windows and material-quality specifications for reproducible bio-based polymer scale-up.",
+      "tech": "DOE, SPC, process parameters, technical reports"
+    },
+    {
+      "title": "Organic Materials Structure-Property Mapping",
+      "badge": "Chemistry of Materials 2025",
+      "description": "Connected synthetic design, purity, stability, and performance across xanthene-based organic materials.",
+      "tech": "Organic synthesis, NMR, LC-MS, GPC, FT-IR, UV-Vis-NIR"
+    },
+    {
+      "title": "AFOSR Thin-Film Scale-Up Controls",
+      "badge": "DoD Funded",
+      "description": "Established process-property relationships for CVD/surface-preparation workflows and reproducible thin-film quality.",
+      "tech": "CVD, QCM-D, surface prep, thin films"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024.",
+    "Decoupling Redox and Color for High-Contrast Electrochromics, Excited State Processes Conference, Santa Fe, NM, June 2023.",
+    "Electrochromism: Decoupling Color and Redox in Rhodamine-Based Systems, Rocky Mountain Solid State Chemistry Workshop, Boulder, CO, January 2023."
+  ],
+  "skills": {
+    "Organic & Process Chemistry": "Organic synthesis, route/step optimization, purification, process windows, scale-up documentation, SOPs",
+    "Analytical Characterization": "LC-MS, GC-MS, NMR, GPC/SEC, FT-IR, UV-Vis-NIR, TGA, DSC, QCM-D, cyclic voltammetry",
+    "Process & Documentation": "DOE, SPC, JMP (basic), Python (basic), Excel, protocols, technical reports, lab safety and quality systems"
+  },
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)",
+    "97.12 Percentile – IIT JEE Mains (2015)",
+    "All India Rank 144 – NEST (2014)"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019–2021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  }
+}

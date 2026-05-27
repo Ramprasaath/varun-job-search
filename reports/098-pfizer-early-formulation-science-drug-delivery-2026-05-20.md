@@ -6,9 +6,9 @@
 **Location:** La Jolla, CA (On Premise)  
 **URL:** https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---La-Jolla/Senior-Scientist--Early-Formulation-Science-and-Drug-Delivery--Drug-Product-Design_4956649-1  
 **Date Evaluated:** 2026-05-20  
-**Date Posted:** 2026-05-19 (`postedOn`: Posted Yesterday; Workday `startDate`: 2026-05-19)  
+**Date Posted:** 2026-05-20 (`startDate` from Workday CXS re-check)  
 **Overall Score:** 4.1 / 5.0  
-**Legitimacy:** High Confidence - direct Pfizer Workday CXS posting, `canApply=true`, verified 2026-05-20  
+**Legitimacy:** High Confidence - direct Pfizer Workday CXS posting, `canApply=true`, verified 2026-05-27  
 
 ---
 
@@ -109,7 +109,7 @@ No posting-legitimacy red flags.
 
 - Direct Pfizer Workday posting
 - Workday CXS API returned `canApply=true`
-- `postedOn`: Posted Yesterday; `startDate`: 2026-05-19
+- Workday CXS re-check on 2026-05-27: `canApply=true`; `startDate`: 2026-05-20
 - Detailed JD, salary band, location, and req ID 4956649
 - Wrapper copies were ignored; tracker uses only the direct employer/ATS URL
 
