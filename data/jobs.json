@@ -111,8 +111,10 @@
     "tailored_resume": "tailored_genentech_smac",
     "id": 41,
     "date_posted": "2026-04-25",
-    "legitimacy_tier": "High Confidence - direct Genentech careers schema/date verified 2026-05-18",
-    "next_action": "Top-priority apply with SMAC resume; emphasize nanoparticle process development plus analytical characterization."
+    "legitimacy_tier": "High Confidence - direct Genentech/Roche careers posting has applyUrl, datePosted 2026-04-25, re-verified 2026-06-01.",
+    "next_action": "Top-priority apply with SMAC resume; emphasize nanoparticle process development plus analytical characterization.",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Genentech careers page re-verified active on 2026-06-01; embedded structured data exposes applyUrl and datePosted=2026-04-25 (jobSeqNo GENEUS202603107743EXTERNALENUS)."
   },
   {
     "id": 60,
@@ -166,7 +168,7 @@
     "date_found": "2026-04-21",
     "date_posted": "2026-04-16",
     "freshness_verified": true,
-    "freshness_reason": "Verified active on 2026-04-29 on Apple Careers; direct job page still live.",
+    "freshness_reason": "Direct Apple jobs page re-verified reachable on 2026-06-01; Apple JS-rendered page exposes active job-detail shell and Submit Resume copy. Playwright apply-control detector remains uncertain because Apple renders controls client-side.",
     "job_id": "200658288-0836",
     "score": 4.5,
     "archetype": "Materials Scientist",
@@ -196,7 +198,7 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": "tailored_apple_polymers",
-    "legitimacy_tier": "High Confidence - direct Apple careers posting, posted 2026-04-16 and verified 2026-05-18",
+    "legitimacy_tier": "High Confidence - direct Apple jobs page reachable with active submit-resume job shell, posted 2026-04-16, re-verified 2026-06-01.",
     "next_action": "Top-priority materials application; emphasize polymers, process windows, and failure/root-cause characterization."
   },
   {
@@ -621,10 +623,10 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS posting verified active on 2026-05-27 (canApply=true, req 4956649, startDate=2026-05-20).",
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS canApply=true, posted 2026-05-20, re-verified 2026-06-01.",
     "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves.",
     "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS posting re-checked active on 2026-05-27; canApply=true, req 4956649, startDate=2026-05-20. Playwright liveness produced a Workday SPA false positive."
+    "freshness_reason": "Direct Pfizer Workday CXS re-verified active on 2026-06-01; jobReqId=4956649, startDate=2026-05-20, postedOn=\"Posted 12 Days Ago\", canApply=true. Playwright liveness can false-negative this Workday SPA as nav/footer-only."
   },
   {
     "id": 99,
@@ -718,7 +720,7 @@
     "date_found": "2026-05-25",
     "date_posted": "2026-04-25",
     "freshness_verified": true,
-    "freshness_reason": "Direct Genentech careers page active on 2026-05-25; embedded JobPosting schema lists datePosted=2026-04-25 and identifier 202603-108077.",
+    "freshness_reason": "Direct Genentech careers page re-verified active on 2026-06-01; embedded structured data exposes applyUrl and datePosted=2026-04-25.",
     "score": 3.9,
     "archetype": "Medicinal / Synthetic Chemistry Scientist",
     "status": "evaluated",
@@ -746,7 +748,7 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": null,
-    "legitimacy_tier": "High Confidence - direct Genentech careers posting active, schema datePosted=2026-04-25, verified 2026-05-25.",
+    "legitimacy_tier": "High Confidence - direct Genentech careers posting has applyUrl, datePosted 2026-04-25, re-verified 2026-06-01.",
     "next_action": "Use Genentech discovery-chemistry outreach to validate fit; apply only if Ram wants Varun to pursue the medicinal/synthetic chemistry branch."
   },
   {
@@ -1155,5 +1157,130 @@
     },
     "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, canApply=true, posted 2026-05-11, verified 2026-05-27.",
     "next_action": "Use Gilead process-chemistry outreach first; ask whether PhD academic process-development plus analytical characterization can meet the scale-up/process-chemistry bar."
+  },
+  {
+    "id": 112,
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4209819009",
+    "company": "Lila Sciences",
+    "title": "Scientist I/II, Drug Delivery Chemistry",
+    "location": "Cambridge, MA",
+    "date_found": "2026-06-01",
+    "date_posted": "2026-04-27",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Lila Sciences Greenhouse/API posting active on 2026-06-01; first_published=2026-04-27T13:33:42-04:00 and updated_at=2026-05-14T17:07:40-04:00.",
+    "score": 4.1,
+    "archetype": "Drug Delivery / Medicinal Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/112-lila-drug-delivery-chemistry-2026-06-01.md",
+    "tailored_resume": "tailored_lila_drug_delivery_chemistry",
+    "pdf_path": "data/output/cv-lila-sciences-scientist-i-ii-drug-delivery-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Lila Physical Sciences role spanning high-throughput organic synthesis, novel lipids/small molecules for drug delivery, analytical optimization, CDMO scale-up, and data-driven/automated experimentation. Strong match to Varun's PhD chemistry, organic/materials synthesis, LC-MS/GC-MS/NMR/GPC/FTIR characterization, DOE/SPC, and polymer/materials process-development story. Main risks are lipid-drug-delivery specificity, autonomous-lab/automation depth, and Cambridge relocation.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - best new chemistry-forward lead from this sweep; use drug-delivery/process-chemistry resume and ask Lila contacts about lipid/automation expectations.",
+      "strengths": [
+        "PhD in Chemistry/Chemical Engineering is explicitly requested and fits Varun's stage",
+        "Organic synthesis, compound-library optimization, analytical readouts, and data-driven SAR map to his molecular materials and process-development background",
+        "CDMO scale-up, reproducibility, and assay/data-quality language align with DOE/SPC, SOP, and technical-documentation experience",
+        "Salary range is transparent ($108K-$170K) and direct Greenhouse listing is current"
+      ],
+      "gaps": [
+        "Specific lipid design and drug-delivery biology/tolerability language is adjacent rather than core documented experience",
+        "Role values automation/AI-driven lab workflows; Varun should frame DOE/data workflows honestly without overclaiming robotics ownership",
+        "Cambridge relocation and early-stage startup pace need confirmation"
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.2,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Lila Sciences Greenhouse posting active, first_published 2026-04-27, re-verified 2026-06-01.",
+    "next_action": "Send Lila recruiter/peer outreach to clarify lipid-drug-delivery depth and automation expectations; if fit is acceptable, apply with the Lila drug-delivery resume/PDF."
+  },
+  {
+    "id": 113,
+    "url": "https://jobs.ashbyhq.com/periodic-labs/77f48dbb-a1b7-4f2c-9434-06be4a6c0d3e",
+    "company": "Periodic Labs",
+    "title": "Process Development Engineer",
+    "location": "Menlo Park, CA",
+    "date_found": "2026-06-01",
+    "date_posted": "2026-03-26",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Periodic Labs Ashby posting API active on 2026-06-01; publishedAt=2026-03-26T22:37:13.675+00:00 and isListed=true.",
+    "score": 3.9,
+    "archetype": "Materials Process Development / Semiconductor Process Engineer",
+    "status": "evaluated",
+    "report_path": "reports/113-periodic-process-development-engineer-2026-06-01.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Periodic Labs Ashby role in AI-accelerated materials/semiconductor process development: DOE, SPC/FDC, recipe structures, thin-film/semiconductor lab scale-up, hardware characterization, technical documentation, and customer/vendor troubleshooting. Varun matches the materials/process-control/data-rich experimentation lane, but extensive semiconductor manufacturing, vacuum/deposition/etch hardware, and cross-module integration are real stretch areas.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - keep active because the AI/materials/process-control lane is excellent, but test semiconductor equipment depth before applying.",
+      "strengths": [
+        "Materials Science/PhD background is explicitly acceptable and the company sponsors visas",
+        "DOE, SPC, FDC, process-control metrics, technical documentation, and lab scale-up map to Varun's process-development narrative",
+        "Menlo Park location and Periodic's AI + physical sciences focus are strong strategic fits",
+        "Compensation is transparent and high ($175K-$275K)"
+      ],
+      "gaps": [
+        "JD asks for extensive semiconductor manufacturing/equipment-engineering experience",
+        "High-vacuum deposition/etch platform hardware design and cross-module process integration are not core documented strengths",
+        "Customer-facing process-engineering responsibilities may require industry credibility beyond postdoc work"
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.2,
+      "comp": 4.4,
+      "cultural": 4.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Periodic Labs Ashby posting active/isListed, published 2026-03-26, re-verified 2026-06-01.",
+    "next_action": "Use Periodic materials/process contacts to ask whether PhD materials DOE/thin-film process work can substitute for semiconductor-fab equipment depth; apply only if they signal flexibility."
+  },
+  {
+    "id": 114,
+    "url": "https://boards.greenhouse.io/spacex/jobs/8569040002?gh_jid=8569040002",
+    "company": "SpaceX",
+    "title": "Failure Analysis Engineer (Starshield)",
+    "location": "Hawthorne, CA",
+    "date_found": "2026-06-01",
+    "date_posted": "2026-05-28",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse/API posting active on 2026-06-01; first_published=2026-05-28T16:22:23-04:00 and updated_at=2026-05-28T16:39:09-04:00.",
+    "score": 3.9,
+    "archetype": "Reliability / Failure Analysis Engineer",
+    "status": "evaluated",
+    "report_path": "reports/114-spacex-starshield-failure-analysis-2026-06-01.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct SpaceX Starshield FA role in destructive/non-destructive analysis of PCBA/EEE hardware, nonconforming material investigations, quality/reliability support, and production-to-flight hardware root cause. Varun can credibly position materials failure analysis, spectroscopy/thermal/microscopy-adjacent characterization, DOE/SPC, and technical reporting, but semiconductor package/PCBA FA, electrical fault isolation, defense/ITAR constraints, and SpaceX cadence are meaningful gates.",
+    "evaluation": {
+      "recommendation": "CURATED STRETCH / OUTREACH FIRST - strong CA failure-analysis signal, but do not apply cold until PCBA/semiconductor tool expectations and export-control eligibility are clear.",
+      "strengths": [
+        "Basic qualifications accept materials science plus 1+ years reliability/failure-analysis experience",
+        "Root-cause, destructive/non-destructive analysis, nonconforming material, and quality/reliability language match Varun's materials FA narrative",
+        "Hawthorne CA is a stronger location than many SpaceX materials roles and posting is very fresh"
+      ],
+      "gaps": [
+        "Direct PCBA/EEE semiconductor-package failure analysis, cross-sectioning, CSAM/CT/X-ray, and electrical fault isolation are stretch areas",
+        "Starshield government work likely increases ITAR/export-control gating",
+        "SpaceX extended-hours cadence should be discussed before application investment"
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 3.9,
+      "cultural": 3.8,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-05-28, verified 2026-06-01.",
+    "next_action": "Use SpaceX FA/recruiter outreach to ask whether materials-characterization PhD backgrounds without deep PCBA/electrical FA are viable and to pre-check ITAR/export-control constraints."
   }
 ]
