@@ -3080,5 +3080,47 @@
       "recommendation": "Skip \u2014 Hard requirement for peptide chemistry and 10+ years pharma industry experience. Not a realistic match."
     },
     "archive_reason": "closed/expired verified by liveness check on 2026-05-27"
+  },
+  {
+    "id": 101,
+    "url": "https://careers.gene.com/us/en/job/202603-108077/Principal-Scientist-Medicinal-Chemistry",
+    "company": "Genentech",
+    "title": "Principal Scientist, Medicinal Chemistry",
+    "location": "South San Francisco, CA",
+    "date_found": "2026-05-25",
+    "date_posted": "2026-04-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Genentech careers page re-verified active on 2026-06-01; embedded structured data exposes applyUrl and datePosted=2026-04-25.",
+    "score": 3.9,
+    "archetype": "Medicinal / Synthetic Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/101-genentech-principal-scientist-medicinal-chemistry-2026-05-25.md",
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Genentech medicinal chemistry posting for PhD + 0-6 years post-PhD in small-molecule discovery. Strong adjacent fit to Varun's organic synthesis and first-author publication profile; less direct than analytical/materials/process roles, so use outreach before applying.",
+    "evaluation": {
+      "recommendation": "CURATED APPLY / OUTREACH FIRST - Strong Genentech medicinal/synthetic chemistry branch, but not ahead of the SMAC analytical/materials role.",
+      "strengths": [
+        "Direct priority-employer posting in South San Francisco with PhD + 0-6 years post-PhD fit",
+        "Modern synthetic organic chemistry and property-driven small-molecule design map to Varun's chemistry foundation",
+        "First-author publication and cross-functional research profile support the required research-summary package"
+      ],
+      "gaps": [
+        "Medicinal chemistry is adjacent rather than Varun's primary materials/analytical/process lane",
+        "Needs a synthesis/property-driven discovery narrative, not an analytical-only narrative"
+      ],
+      "cv_match": 3.8,
+      "north_star": 3.9,
+      "comp": 4.2,
+      "cultural": 3.9,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": null,
+    "legitimacy_tier": "High Confidence - direct Genentech careers posting has applyUrl, datePosted 2026-04-25, re-verified 2026-06-01.",
+    "next_action": "Use Genentech discovery-chemistry outreach to validate fit; apply only if Ram wants Varun to pursue the medicinal/synthetic chemistry branch.",
+    "archive_reason": "expired by liveness check 2026-06-03: direct Genentech page returned HTTP 410",
+    "archived_at": "2026-06-03"
   }
 ]
