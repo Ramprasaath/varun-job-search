@@ -14,6 +14,7 @@ title_filter:
     - "Analytical Scientist"
     - "Spectroscopy"
     - "Surface Science"
+    - "Materials Development"
     - "Thin Film"
     - "Thin Films"
     - "Polymer"
@@ -485,5 +486,5 @@ tracked_companies:
     careers_url: https://silanano.com/careers
     scan_method: websearch
     scan_query: 'site:silanano.com "Scientist" OR "Materials" OR "Characterization" OR "Process"'
-    notes: "Alameda, CA. Battery materials."
+    notes: "Alameda, CA. Battery materials. Greenhouse board manually checked 2026-06-05; API not enabled because broad battery titles add noise."
     enabled: true

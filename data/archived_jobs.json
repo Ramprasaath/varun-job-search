@@ -3122,5 +3122,97 @@
     "next_action": "Use Genentech discovery-chemistry outreach to validate fit; apply only if Ram wants Varun to pursue the medicinal/synthetic chemistry branch.",
     "archive_reason": "expired by liveness check 2026-06-03: direct Genentech page returned HTTP 410",
     "archived_at": "2026-06-03"
+  },
+  {
+    "id": 98,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---La-Jolla/Senior-Scientist--Early-Formulation-Science-and-Drug-Delivery--Drug-Product-Design_4956649-1",
+    "company": "Pfizer",
+    "title": "Senior Scientist, Early Formulation Science and Drug Delivery, Drug Product Design",
+    "location": "La Jolla, CA (On Premise)",
+    "date_found": "2026-05-20",
+    "date_posted": "2026-05-20",
+    "score": 4.1,
+    "archetype": "Materials / Process Development Scientist",
+    "status": "archived",
+    "report_path": "reports/098-pfizer-early-formulation-science-drug-delivery-2026-05-20.md",
+    "pdf_path": "data/output/cv-pfizer-senior-scientist-early-formulation-science-and-dru-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Best new direct lead this sweep. Entry-PhD-friendly Pfizer EFS-DD role focused on small-molecule developability, material science/physicochemical assessment, stability risk, polymorph/salt screens, and preclinical formulation. Varun maps strongly through materials characterization, thermal/spectroscopic/electrochemical analysis, DOE, polymer process development, and stability/failure-mode work; main gaps are direct pharmaceutics/drug-delivery modeling and regulated formulation experience.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER RAM REVIEW - Use tailored early-formulation/materials-science resume and outreach first.",
+      "strengths": [
+        "Direct fit to recent PhD / 0-3 year postdoc level requirement",
+        "Small-molecule material science, physicochemical properties, stability, dissolution/precipitation, and solid-state risk language maps to Varun's materials characterization story",
+        "DOE/process-development and polymer scale-up work support developability and manufacturability framing",
+        "La Jolla / San Diego is within Varun's stated relocation targets",
+        "Direct Workday posting is fresh and marked canApply=true"
+      ],
+      "gaps": [
+        "No direct pharma pre-formulation or clinical drug-product design role yet",
+        "GastroPlus / PK modeling and in vivo/in vitro biopharmaceutics are not proven skills",
+        "Polymorph and salt screening should be framed as adjacent solid-state/materials characterization, not claimed as direct experience",
+        "Limited regulated/GMP formulation-development evidence"
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.3,
+      "comp": 4.0,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS, posted 2026-05-20, re-verified active 2026-06-03.",
+    "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves.",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS re-verified active on 2026-06-03; searchText=4956649 returned total=1 with matching externalPath. Playwright liveness can false-negative this Workday SPA as nav/footer-only.",
+    "date_archived": "2026-06-05",
+    "archive_reason": "expired on direct Workday page during 2026-06-05 liveness check",
+    "archived_date": "2026-06-05"
+  },
+  {
+    "id": 99,
+    "url": "https://careers.amgen.com/en/job/cambridge/analytical-scientist/87/94873677584",
+    "company": "Amgen",
+    "title": "Analytical Scientist",
+    "location": "Cambridge, MA / Thousand Oaks, CA (On Site)",
+    "date_found": "2026-05-22",
+    "date_posted": "2026-05-21",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Amgen careers page showed Apply Now, req R-244500, DATE POSTED May. 21, 2026, and Workday apply URL on 2026-05-22.",
+    "score": 4.2,
+    "archetype": "Analytical / CMC Scientist",
+    "status": "archived",
+    "report_path": "reports/099-amgen-analytical-scientist-2026-05-22.md",
+    "pdf_path": "data/output/cv-amgen-analytical-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Amgen careers/Workday-linked posting for synthetic-product analytical development. PhD accepted; strong overlap with Varun's organic/materials chemistry, LC-MS/NMR/FTIR/GPC/thermal characterization, structure-property/stability analysis, DOE, and process-development documentation. Main gaps are direct GMP/ICH regulatory filing ownership, HPLC/UPLC depth beyond LC-MS, and CMO/late-stage tech-transfer experience.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER RAM REVIEW - Use the Amgen analytical/CMC resume and outreach first.",
+      "strengths": [
+        "Direct Amgen role with doctorate accepted and no stated industry-years floor for PhD candidates",
+        "Small-molecule analysis, structure elucidation, solid-state characterization, chromatography/MS/UV/NMR/FTIR language maps closely to Varun's analytical/materials toolkit",
+        "Drug substance / drug product process-development partnership fits his DOE-guided process-window and scale-up documentation story",
+        "Cambridge/Thousand Oaks locations are reasonable relocation targets, with Cambridge matching preferred Boston-area geography"
+      ],
+      "gaps": [
+        "Limited direct GMP/GLP, ICH/FDA method-transfer/validation, and regulatory-submission experience",
+        "HPLC/UPLC and oral-solid dosage release/stability testing should be framed as adjacent to LC-MS/materials characterization unless Varun confirms direct ownership",
+        "CMO management and late-stage clinical control-strategy ownership are stretch areas"
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.2,
+      "comp": 4.1,
+      "cultural": 4.1,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_amgen_analytical_scientist",
+    "legitimacy_tier": "High Confidence - direct Amgen careers page with Workday apply link, req R-244500, Apply Now visible, posted 2026-05-21, verified 2026-05-22.",
+    "next_action": "Apply with the Amgen analytical/CMC resume; use analytical/process-development peer and recruiter outreach first if Ram approves.",
+    "date_archived": "2026-06-05",
+    "archive_reason": "HTTP 404 on direct careers page during 2026-06-05 liveness check",
+    "archived_date": "2026-06-05"
   }
 ]

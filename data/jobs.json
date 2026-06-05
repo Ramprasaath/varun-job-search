@@ -211,7 +211,7 @@
     "date_found": "2026-04-23",
     "date_posted": "2026-03-13",
     "freshness_verified": true,
-    "freshness_reason": "Direct Greenhouse job page is active and page metadata shows published_at 2026-03-13T10:55:19-04:00.",
+    "freshness_reason": "Direct City Therapeutics Greenhouse/API posting re-verified active on 2026-06-05; first_published=2026-03-13T10:55:19-04:00 and updated_at=2026-05-06T15:37:12-04:00.",
     "job_id": 5153226008,
     "score": 4,
     "archetype": "Analytical / Quality Scientist",
@@ -241,7 +241,9 @@
       "red_flags": -0.1,
       "legitimacy": "High Confidence"
     },
-    "tailored_resume": "tailored_city_qc"
+    "tailored_resume": "tailored_city_qc",
+    "legitimacy_tier": "High Confidence - direct City Therapeutics Greenhouse posting active, first_published 2026-03-13, re-verified 2026-06-05.",
+    "next_action": "Use City CMC/QC outreach to test seniority, oligonucleotide/CMC depth, and regulatory expectations; apply with the existing CMC/QC resume if Ram approves."
   },
   {
     "id": 70,
@@ -253,7 +255,7 @@
     "date_found": "2026-04-24",
     "date_posted": "2026-04-23",
     "freshness_verified": true,
-    "freshness_reason": "Active Lever page is live and JSON-LD datePosted is 2026-04-23.",
+    "freshness_reason": "Direct Serán BioScience Lever API posting re-verified active on 2026-06-05; createdAt=2026-04-23T00:05:42.175Z.",
     "job_id": "8664ab0e-15f1-409a-9e53-450a791678a3",
     "score": 4.1,
     "archetype": "Analytical / Quality Scientist",
@@ -283,7 +285,9 @@
       "red_flags": -0.1,
       "legitimacy": "High Confidence"
     },
-    "tailored_resume": "tailored_seran_analytical_dev"
+    "tailored_resume": "tailored_seran_analytical_dev",
+    "legitimacy_tier": "High Confidence - direct Serán BioScience Lever posting active, created 2026-04-23, re-verified 2026-06-05.",
+    "next_action": "Apply/outreach first with the Serán analytical-development resume; clarify Bend onsite expectations, HPLC/GMP depth, and work-authorization constraints before applying."
   },
   {
     "id": 71,
@@ -295,7 +299,7 @@
     "date_found": "2026-04-24",
     "date_posted": "2026-01-27",
     "freshness_verified": true,
-    "freshness_reason": "Active Lever page is live and JSON-LD datePosted is 2026-01-27.",
+    "freshness_reason": "Direct Serán BioScience Lever API posting re-verified active on 2026-06-05; createdAt=2026-01-27T20:58:36.920Z.",
     "job_id": "22f257cc-ac4b-4e33-ad4d-50b426ef9dfd",
     "score": 4,
     "archetype": "Formulation Scientist",
@@ -325,7 +329,9 @@
       "red_flags": -0.1,
       "legitimacy": "High Confidence"
     },
-    "tailored_resume": "tailored_seran_product_dev"
+    "tailored_resume": "tailored_seran_product_dev",
+    "legitimacy_tier": "High Confidence - direct Serán BioScience Lever posting active, created 2026-01-27, re-verified 2026-06-05.",
+    "next_action": "Use Serán product-development outreach to test formulation/product-design fit plus Bend onsite and sponsorship constraints; apply with the product-development PDF if cleared."
   },
   {
     "company": "Relay Therapeutics",
@@ -510,7 +516,7 @@
     "location": "Boston, MA",
     "url": "https://job-boards.greenhouse.io/strandtherapeutics/jobs/5988826004",
     "date_found": "2026-05-18",
-    "date_posted": null,
+    "date_posted": "2026-05-07",
     "date_updated": "2026-05-07",
     "status": "evaluated",
     "score": 3.8,
@@ -541,8 +547,10 @@
       "legitimacy": "High Confidence"
     },
     "archetype": "analytical_development",
-    "legitimacy_tier": "High Confidence - direct Greenhouse posting verified 2026-05-18",
-    "next_action": "If Ram approves, request an informational/referral touchpoint with Strand analytical/bioanalytical peers before applying. No tailored PDF required at 3.8."
+    "legitimacy_tier": "High Confidence - direct Strand Therapeutics Greenhouse posting active, first_published 2026-05-07, re-verified 2026-06-05.",
+    "next_action": "If Ram approves, request an informational/referral touchpoint with Strand analytical/bioanalytical peers before applying. No tailored PDF required at 3.8.",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Strand Therapeutics Greenhouse/API posting re-verified active on 2026-06-05; first_published=2026-05-07T09:36:52-04:00."
   },
   {
     "id": 97,
@@ -583,92 +591,6 @@
     "archetype": "materials_science",
     "legitimacy_tier": "High Confidence - direct Ashby posting published 2026-03-30, verified 2026-05-18",
     "next_action": "Apply with new materials-synthesis resume; message a Periodic materials scientist or talent contact first if Ram approves."
-  },
-  {
-    "id": 98,
-    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---La-Jolla/Senior-Scientist--Early-Formulation-Science-and-Drug-Delivery--Drug-Product-Design_4956649-1",
-    "company": "Pfizer",
-    "title": "Senior Scientist, Early Formulation Science and Drug Delivery, Drug Product Design",
-    "location": "La Jolla, CA (On Premise)",
-    "date_found": "2026-05-20",
-    "date_posted": "2026-05-20",
-    "score": 4.1,
-    "archetype": "Materials / Process Development Scientist",
-    "status": "evaluated",
-    "report_path": "reports/098-pfizer-early-formulation-science-drug-delivery-2026-05-20.md",
-    "pdf_path": "data/output/cv-pfizer-senior-scientist-early-formulation-science-and-dru-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Best new direct lead this sweep. Entry-PhD-friendly Pfizer EFS-DD role focused on small-molecule developability, material science/physicochemical assessment, stability risk, polymorph/salt screens, and preclinical formulation. Varun maps strongly through materials characterization, thermal/spectroscopic/electrochemical analysis, DOE, polymer process development, and stability/failure-mode work; main gaps are direct pharmaceutics/drug-delivery modeling and regulated formulation experience.",
-    "evaluation": {
-      "recommendation": "APPLY AFTER RAM REVIEW - Use tailored early-formulation/materials-science resume and outreach first.",
-      "strengths": [
-        "Direct fit to recent PhD / 0-3 year postdoc level requirement",
-        "Small-molecule material science, physicochemical properties, stability, dissolution/precipitation, and solid-state risk language maps to Varun's materials characterization story",
-        "DOE/process-development and polymer scale-up work support developability and manufacturability framing",
-        "La Jolla / San Diego is within Varun's stated relocation targets",
-        "Direct Workday posting is fresh and marked canApply=true"
-      ],
-      "gaps": [
-        "No direct pharma pre-formulation or clinical drug-product design role yet",
-        "GastroPlus / PK modeling and in vivo/in vitro biopharmaceutics are not proven skills",
-        "Polymorph and salt screening should be framed as adjacent solid-state/materials characterization, not claimed as direct experience",
-        "Limited regulated/GMP formulation-development evidence"
-      ],
-      "cv_match": 4.1,
-      "north_star": 4.3,
-      "comp": 4.0,
-      "cultural": 4.2,
-      "red_flags": -0.3,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS, posted 2026-05-20, re-verified active 2026-06-03.",
-    "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves.",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS re-verified active on 2026-06-03; searchText=4956649 returned total=1 with matching externalPath. Playwright liveness can false-negative this Workday SPA as nav/footer-only."
-  },
-  {
-    "id": 99,
-    "url": "https://careers.amgen.com/en/job/cambridge/analytical-scientist/87/94873677584",
-    "company": "Amgen",
-    "title": "Analytical Scientist",
-    "location": "Cambridge, MA / Thousand Oaks, CA (On Site)",
-    "date_found": "2026-05-22",
-    "date_posted": "2026-05-21",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Amgen careers page showed Apply Now, req R-244500, DATE POSTED May. 21, 2026, and Workday apply URL on 2026-05-22.",
-    "score": 4.2,
-    "archetype": "Analytical / CMC Scientist",
-    "status": "evaluated",
-    "report_path": "reports/099-amgen-analytical-scientist-2026-05-22.md",
-    "pdf_path": "data/output/cv-amgen-analytical-scientist-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh direct Amgen careers/Workday-linked posting for synthetic-product analytical development. PhD accepted; strong overlap with Varun's organic/materials chemistry, LC-MS/NMR/FTIR/GPC/thermal characterization, structure-property/stability analysis, DOE, and process-development documentation. Main gaps are direct GMP/ICH regulatory filing ownership, HPLC/UPLC depth beyond LC-MS, and CMO/late-stage tech-transfer experience.",
-    "evaluation": {
-      "recommendation": "APPLY AFTER RAM REVIEW - Use the Amgen analytical/CMC resume and outreach first.",
-      "strengths": [
-        "Direct Amgen role with doctorate accepted and no stated industry-years floor for PhD candidates",
-        "Small-molecule analysis, structure elucidation, solid-state characterization, chromatography/MS/UV/NMR/FTIR language maps closely to Varun's analytical/materials toolkit",
-        "Drug substance / drug product process-development partnership fits his DOE-guided process-window and scale-up documentation story",
-        "Cambridge/Thousand Oaks locations are reasonable relocation targets, with Cambridge matching preferred Boston-area geography"
-      ],
-      "gaps": [
-        "Limited direct GMP/GLP, ICH/FDA method-transfer/validation, and regulatory-submission experience",
-        "HPLC/UPLC and oral-solid dosage release/stability testing should be framed as adjacent to LC-MS/materials characterization unless Varun confirms direct ownership",
-        "CMO management and late-stage clinical control-strategy ownership are stretch areas"
-      ],
-      "cv_match": 4.2,
-      "north_star": 4.2,
-      "comp": 4.1,
-      "cultural": 4.1,
-      "red_flags": -0.2,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": "tailored_amgen_analytical_scientist",
-    "legitimacy_tier": "High Confidence - direct Amgen careers page with Workday apply link, req R-244500, Apply Now visible, posted 2026-05-21, verified 2026-05-22.",
-    "next_action": "Apply with the Amgen analytical/CMC resume; use analytical/process-development peer and recruiter outreach first if Ram approves."
   },
   {
     "id": 100,
@@ -1367,5 +1289,215 @@
     "legitimacy_tier": "High Confidence - direct Lila Sciences Greenhouse posting active, first_published 2026-06-01, verified 2026-06-03.",
     "next_action": "Use Lila materials-science outreach to ask whether thin-film/polymer failure-analysis backgrounds can substitute for deep metallurgy/tribology; do not prioritize a cold apply until clarified.",
     "id": 117
+  },
+  {
+    "url": "https://job-boards.greenhouse.io/silananotechnologies/jobs/7808057",
+    "company": "Sila Nanotechnologies",
+    "title": "Materials Development Engineer",
+    "location": "Alameda, CA",
+    "date_found": "2026-06-05",
+    "date_posted": "2026-04-22",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Sila Nanotechnologies Greenhouse/API posting active on 2026-06-05; first_published=2026-04-22T18:47:17-04:00 and updated_at=2026-04-23T11:16:20-04:00.",
+    "score": 4.2,
+    "archetype": "Materials Scientist / Process Development Engineer",
+    "status": "evaluated",
+    "report_path": "reports/118-sila-materials-development-engineer-2026-06-05.md",
+    "tailored_resume": "tailored_sila_materials_development",
+    "pdf_path": "data/output/cv-sila-nanotechnologies-materials-development-engineer-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Sila Greenhouse role developing advanced Li-ion battery anode materials from lab-scale synthesis toward manufacturing-ready processes. Strong fit to Varun's materials synthesis, polymer/thin-film process development, structure-property characterization, DOE/SPC, electrochemical materials analysis, and scale-up documentation. Main gaps are direct battery/anode industry experience, pilot-to-factory tech-transfer ownership, and the posting's PhD/MS plus 5+ years industry expectation.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / OUTREACH FIRST - Use the Sila materials-development resume and ask Sila materials/analytics peers whether Varun's PhD/postdoc synthesis, DOE, and characterization experience can offset limited battery-industry depth.",
+      "strengths": [
+        "Direct Sila Greenhouse posting is active and located in Alameda, a strong Bay Area target.",
+        "Role centers on synthesis/process optimization, hands-on materials characterization, analytics, DOE/JMP/Python-style data analysis, and lab-to-scale-up integration.",
+        "Varun can credibly lead with bio-based polymer process development, functional electrochemical materials, thin-film/coatings process work, spectroscopy/thermal analysis, DOE/SPC, and lab safety/SOP ownership.",
+        "Battery-materials mission is a strong north-star fit for materials science, clean energy, and manufacturing-facing R&D."
+      ],
+      "gaps": [
+        "Direct Li-ion battery/anode materials industry experience is not proven and should not be overclaimed.",
+        "Posting asks for PhD/MS plus 5+ years hands-on industry experience and explicit technology-transfer/manufacturing scale-up track record.",
+        "Advanced composites, pilot reactor/factory-floor integration, and battery-specific analytical methods should be framed as adjacent until Varun confirms depth."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.5,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Sila Nanotechnologies Greenhouse posting active, first_published 2026-04-22, verified 2026-06-05.",
+    "next_action": "Send Sila materials/analytics peer and talent outreach to test battery/anode depth and industry-years flexibility; if positive, apply with the Sila Materials Development PDF.",
+    "id": 118
+  },
+  {
+    "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Totowa-NJ/Research-Chemist_2635564",
+    "company": "KLA",
+    "title": "Research Chemist",
+    "location": "Totowa, NJ",
+    "date_found": "2026-06-05",
+    "date_posted": "2026-06-03",
+    "freshness_verified": true,
+    "freshness_reason": "Direct KLA Workday CXS posting active on 2026-06-05; jobReqId=2635564, startDate=2026-06-03, postedOn=\"Posted 2 Days Ago\", canApply=true.",
+    "score": 4.5,
+    "archetype": "Analytical / Electrochemical Method Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/119-kla-research-chemist-2026-06-05.md",
+    "tailored_resume": "tailored_kla_research_chemist",
+    "pdf_path": "data/output/cv-kla-research-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct KLA Workday role developing chemical analyzers for semiconductor process fluids. Excellent fit to Varun's analytical chemistry, electrochemical materials, cyclic-voltammetry experience, DOE/SPC process-development mindset, validation/documentation discipline, and semiconductor-adjacent materials/process controls. Main gaps are direct semiconductor process-fluid product experience and industrial analyzer development ownership.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - Very strong PhD-0 analytical/electrochemical method-development fit with direct Workday freshness.",
+      "strengths": [
+        "PhD in Chemistry/Analytical Chemistry accepted with 0 years related work experience.",
+        "Role explicitly centers on analytical-method development, optimization, validation, documentation, and process-control measurements for semiconductor process fluids.",
+        "Cyclic voltammetry and electrochemical methods are strongly preferred, matching Varun's electrochemical materials dissertation work.",
+        "KLA is an innovation-heavy semiconductor equipment leader with strong R&D investment and a process-control mission adjacent to Varun's materials/process-development profile."
+      ],
+      "gaps": [
+        "Direct semiconductor process-fluid analyzer product development is not proven.",
+        "Industrial method validation and productized instrument-development ownership should be framed as adjacent academic/process-development rigor.",
+        "Totowa, NJ is useful but lower location fit than Bay Area/Boston/Colorado targets."
+      ],
+      "cv_match": 4.6,
+      "north_star": 4.4,
+      "comp": 4.5,
+      "cultural": 4.4,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct KLA Workday posting active, posted 2026-06-03, canApply=true, verified 2026-06-05.",
+    "next_action": "Send KLA analytical/electrochem peer and emerging-talent recruiter outreach; if they confirm PhD-0 candidates are in range, apply with the KLA analytical/electrochem resume.",
+    "id": 119
+  },
+  {
+    "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Scientist--Analytical-Ops_R0052578-1",
+    "company": "Gilead Sciences",
+    "title": "Scientist, Analytical Ops",
+    "location": "Foster City, CA",
+    "date_found": "2026-06-05",
+    "date_posted": "2026-06-04",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-05; jobReqId=R0052578, startDate=2026-06-04, postedOn=\"Posted Yesterday\", canApply=true.",
+    "score": 4.4,
+    "archetype": "Analytical Development / Characterization Scientist",
+    "status": "evaluated",
+    "report_path": "reports/120-gilead-scientist-analytical-ops-2026-06-05.md",
+    "tailored_resume": "tailored_gilead_scientist_analytical_ops",
+    "pdf_path": "data/output/cv-gilead-scientist-analytical-ops-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Gilead Analytical Ops scientist role focused on analytical testing and characterization, LC/GC/MS methods, extractables/leachables, impurity ID, method development/validation, and cross-functional support for device/packaging, process development, and formulation. Strong fit to Varun's analytical/materials characterization, LC-MS/GC-MS exposure, structure-property/stability work, and process-development documentation. Gaps are direct E&L, ICP-MS, toxicology/AET, and regulated pharma depth.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - Excellent PhD-0 analytical-characterization role at a major Bay Area pharma.",
+      "strengths": [
+        "PhD in Analytical Chemistry/Pharmaceutical Sciences or related field with 0+ years fits Varun's level.",
+        "JD emphasizes LC-UV/MS, LC-MS/MS, GC-MS, impurity identification, method development/validation, and analytical characterization.",
+        "Cross-functional links to process development and formulation align with Varun's DOE/process-window and technical-documentation story.",
+        "Foster City is a strong Bay Area relocation target and Gilead is a high-quality pharma platform."
+      ],
+      "gaps": [
+        "Direct extractables/leachables and Analytical Evaluation Threshold experience is not proven.",
+        "ICP-MS and pharma toxicology collaboration should be treated as learnable adjacent gaps.",
+        "Regulated GMP/ICH validation ownership is limited relative to industry candidates."
+      ],
+      "cv_match": 4.4,
+      "north_star": 4.5,
+      "comp": 4.4,
+      "cultural": 4.3,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, posted 2026-06-04, canApply=true, verified 2026-06-05.",
+    "next_action": "Use Gilead analytical-sciences outreach to confirm E&L/ICP-MS expectations; apply with the Analytical Ops PDF if the team values adjacent materials/LC-MS characterization depth.",
+    "id": 120
+  },
+  {
+    "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Scientist--FPD_R0052826-1",
+    "company": "Gilead Sciences",
+    "title": "Scientist, FPD",
+    "location": "Foster City, CA",
+    "date_found": "2026-06-05",
+    "date_posted": "2026-06-05",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-05; jobReqId=R0052826, startDate=2026-06-05, postedOn=\"Posted Today\", canApply=true.",
+    "score": 4.2,
+    "archetype": "Formulation / Process Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/121-gilead-scientist-fpd-2026-06-05.md",
+    "tailored_resume": "tailored_gilead_scientist_fpd",
+    "pdf_path": "data/output/cv-gilead-scientist-fpd-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Gilead FPD role in small-molecule formulation and process development, including compound screening, physicochemical assessment, form selection, formulation/process control strategy, GMP documentation, scale-up, and technical reports. Strong adjacent fit to Varun's polymer/materials process development, solid-state/thermal/spectroscopic characterization, DOE, and scale-up documentation. Gaps are direct pharma formulation, GMP batch oversight, and regulatory filing authorship.",
+    "evaluation": {
+      "recommendation": "HIGH PRIORITY / OUTREACH FIRST - Very fresh PhD-0 small-molecule formulation/process-development role, with pharma-domain gaps to validate.",
+      "strengths": [
+        "PhD with 0+ years is explicitly in range.",
+        "Role maps to process development, physicochemical characterization, formulation/process control strategy, GMP documentation, and technical reporting.",
+        "Varun can lead with polymer process-development, thermal/spectroscopic characterization, stability/failure-mode analysis, and DOE-guided process-window work.",
+        "Foster City and Gilead platform are strong geography/brand fits."
+      ],
+      "gaps": [
+        "Direct small-molecule drug-product formulation and GMP batch oversight are not proven.",
+        "Regulatory filing authorship from IND to NDA is a stretch and should not be overclaimed.",
+        "This is more pharma/process than pure materials; outreach should clarify openness to adjacent materials PhD profiles."
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.3,
+      "comp": 4.3,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, posted 2026-06-05, canApply=true, verified 2026-06-05.",
+    "next_action": "Use Gilead FPD/process contacts to test whether Varun's materials/process-development profile can substitute for direct pharma formulation experience; apply with FPD PDF if yes.",
+    "id": 121
+  },
+  {
+    "url": "https://job-boards.greenhouse.io/silananotechnologies/jobs/7866520",
+    "company": "Sila Nanotechnologies",
+    "title": "Senior Applications Engineer, Concept Development",
+    "location": "Alameda, CA",
+    "date_found": "2026-06-05",
+    "date_posted": "2026-04-30",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Sila Nanotechnologies Greenhouse/API posting active on 2026-06-05; first_published=2026-04-30T13:29:31-04:00 and updated_at=2026-04-30T13:29:31-04:00.",
+    "score": 4.1,
+    "archetype": "Battery Materials / Applications & Metrology Engineer",
+    "status": "evaluated",
+    "report_path": "reports/122-sila-senior-applications-engineer-concept-development-2026-06-05.md",
+    "tailored_resume": "tailored_sila_senior_applications_engineer_concept_development",
+    "pdf_path": "data/output/cv-sila-senior-applications-engineer-concept-development-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Sila concept-development applications role spanning battery materials, metrology, cell testing, failure analysis, DOE, structure/process/property relationships, and commercialization support. Strong clean-energy/materials fit to Varun's electrochemical materials, DOE, characterization, failure-mode analysis, and process-development background. Gaps are direct Li-ion cell/battery engineering, customer/product applications ownership, and senior-level battery metrology depth.",
+    "evaluation": {
+      "recommendation": "HIGH PRIORITY / OUTREACH FIRST - Strong Sila clean-energy fit, but more battery-applications/customer/metrology specific than #118.",
+      "strengths": [
+        "Direct Greenhouse posting in Alameda with clean-energy battery-materials mission.",
+        "JD emphasizes metrology, battery characterization/test methods, failure analysis, DOE, yield optimization, and structure/process/property relationships.",
+        "Varun's electrochemical materials, DOE, spectroscopy/thermal analysis, reliability/failure-mode work, and process-development story are highly relevant.",
+        "Pairs well with Sila #118 as a two-role outreach thread to calibrate best fit."
+      ],
+      "gaps": [
+        "Direct Li-ion cell testing, electrode preparation, and battery performance target ownership are not proven.",
+        "Senior applications/customer-facing concept-development responsibilities may exceed Varun's current industry experience.",
+        "Battery metrology language should be framed as adjacent analytical/materials expertise until confirmed."
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.5,
+      "comp": 4.1,
+      "cultural": 4.3,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Sila Nanotechnologies Greenhouse posting active, first_published 2026-04-30, verified 2026-06-05.",
+    "next_action": "Treat as outreach-first alongside Sila #118: ask Sila peers whether Varun's materials/electrochemistry + DOE background can bridge limited direct Li-ion cell testing experience.",
+    "id": 122
   }
 ]

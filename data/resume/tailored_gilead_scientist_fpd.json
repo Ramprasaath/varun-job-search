@@ -1,0 +1,132 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD chemist/materials scientist with DOE-guided process-development, physicochemical characterization, stability analysis, and scale-up documentation experience across polymer, thin-film, and electrochemical materials. Frames formulation/process questions through structure-property data, technical reports, and reproducible lab workflows.",
+  "competencies": [
+    "Formulation & Process Development",
+    "Physicochemical Characterization",
+    "DOE/SPC",
+    "Thermal & Spectroscopic Analysis",
+    "Stability / Failure Modes",
+    "Scale-Up Documentation",
+    "GMP Documentation Awareness",
+    "Small-Molecule Materials"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 - Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead DOE-guided process development for bio-based polymer systems, defining processing windows, material-quality attributes, and reproducible procedures relevant to scale-up.",
+        "Use FT-IR, spectroscopy, and thermal analysis to connect processing conditions with physicochemical material properties and stability-relevant performance.",
+        "Prepare technical reports and SOP-ready documentation to support process transfer, safety, and repeatable lab execution."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 - July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Synthesized and characterized 15+ functional organic/organometallic materials, evaluating structure-property relationships, solid-state/stability behavior, and degradation mechanisms using spectroscopic, electrochemical, and thermal methods.",
+        "Executed stability and stress-test studies to identify oxidative degradation, interface delamination, and redox instability, then proposed material/process mitigations.",
+        "Documented experimental methods, characterization results, and risk assessments in formats suitable for technical decision-making."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 - July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Developed CVD-based molecular coating processes and surface-preparation protocols, linking process parameters to morphology and device performance for scale-relevant thin-film workflows."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 - July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Optimized polymer thin-film deposition under flow using DOE and in-situ QCM-D monitoring to improve coating uniformity and reproducibility."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 - 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed operations for a 15-member process-development laboratory, implementing equipment tracking, calibration routines, SOPs, and safety protocols that improved instrument uptime by 30%.",
+        "Trained researchers on instrument workflows, experimental documentation, and safe handling while coordinating multiple concurrent materials-development projects."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Polymer Process Development and Scale-Up Readiness",
+      "badge": "FPD Adjacent",
+      "description": "Led process-window definition for bio-based polymer systems, linking processing conditions to material quality attributes and reproducible procedures.",
+      "tech": "DOE, SPC, FT-IR, thermal analysis, SOPs"
+    },
+    {
+      "title": "Functional Materials Stability Studies",
+      "badge": "Physicochemical Assessment",
+      "description": "Evaluated degradation and stability behavior of organic/organometallic materials under electrochemical and optical stress conditions.",
+      "tech": "UV-Vis-NIR, cyclic voltammetry, TGA, DSC, FT-IR"
+    },
+    {
+      "title": "CVD Thin-Film Process Optimization",
+      "badge": "Process Transfer",
+      "description": "Developed controlled coating workflows and surface-preparation protocols, translating process parameters into material morphology and performance.",
+      "tech": "CVD, QCM-D, spectroscopy, technical reports"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024.",
+    "Decoupling Redox and Color for High-Contrast Electrochromics, Excited State Processes Conference, Santa Fe, NM, June 2023.",
+    "Electrochromism: Decoupling Color and Redox in Rhodamine-Based Systems, Rocky Mountain Solid State Chemistry Workshop, Boulder, CO, January 2023."
+  ],
+  "skills": {
+    "Process Development": "DOE, SPC, process windows, scale-up documentation, SOPs, technical reports, safety protocols",
+    "Characterization": "FT-IR, UV-Vis-NIR, TGA, DSC, cyclic voltammetry, spectroelectrochemistry, NMR, GPC, LC/GC-MS exposure",
+    "Materials & Formulation Adjacent": "Polymer systems, small-molecule organic materials, thin films, coatings, solid-state/stability assessment, physicochemical properties",
+    "Regulatory-Adjacent": "GMP documentation awareness, method reproducibility, risk assessments, development reports, cross-functional handoffs"
+  },
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)",
+    "97.12 Percentile – IIT JEE Mains (2015)",
+    "All India Rank 144 – NEST (2014)"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019–2021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  }
+}
