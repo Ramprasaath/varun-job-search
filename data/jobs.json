@@ -957,48 +957,6 @@
     "next_action": "Apply with the Nurix analytical/CMC resume after Ram review; outreach should clarify MS/2D-LC depth and work-authorization expectations."
   },
   {
-    "id": 110,
-    "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/US-CA-Folsom/Analytical-Chemist_4037344",
-    "company": "Agilent",
-    "title": "Analytical Chemist",
-    "location": "Folsom, CA or Wilmington, DE (Site-based)",
-    "date_found": "2026-05-27",
-    "date_posted": "2026-05-26",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Agilent Workday CXS posting active on 2026-05-27; canApply=true, req 4037344, startDate=2026-05-26.",
-    "score": 4.2,
-    "archetype": "Analytical Chemist / MSAT Scientist",
-    "status": "evaluated",
-    "report_path": "reports/110-agilent-analytical-chemist-2026-05-27.md",
-    "tailored_resume": "tailored_agilent_analytical_chemist",
-    "pdf_path": "data/output/cv-agilent-analytical-chemist-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh Agilent MSAT role supporting chromatography consumables/performance chemistries across LC/GC method lifecycle, troubleshooting, validation/transfer, DOE, investigations, CAPA, NPI, and technical documentation. Excellent technical and product-quality fit for Varun's analytical characterization/process-control story; main concern is the stated 8+ years hands-on LC/GC industry depth and regulated manufacturing ownership.",
-    "evaluation": {
-      "recommendation": "APPLY / OUTREACH FIRST - strong analytical-method and MSAT fit; outreach should test seniority flexibility.",
-      "strengths": [
-        "Direct overlap with LC/GC method development, troubleshooting, validation/transfer, MS adjunct techniques, DOE, and technical writing",
-        "MSAT/NPI/manufacturing-investigation context maps to Varun's process-window, lab operations, SOP, and reproducibility experience",
-        "Agilent brand fits analytical-instrumentation credibility and Folsom CA is a viable West Coast location",
-        "Posting is very fresh and direct Workday canApply=true"
-      ],
-      "gaps": [
-        "8+ years hands-on LC/GC experience and regulated manufacturing investigations may be above Varun's current industry tenure",
-        "Direct CAPA/deviation/change-control ownership should be positioned as adjacent SOP/lab-operations experience",
-        "Role may value chromatography consumables/product-support depth that is not yet explicit in the resume"
-      ],
-      "cv_match": 4.2,
-      "north_star": 4.2,
-      "comp": 4.1,
-      "cultural": 4.2,
-      "red_flags": -0.3,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct Agilent Workday posting active, canApply=true, posted 2026-05-26, verified 2026-05-27.",
-    "next_action": "Apply with Agilent analytical/MSAT resume after Ram review; contact Agilent chemistry/MSAT peers to clarify seniority and LC/GC depth."
-  },
-  {
     "id": 111,
     "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Sr-Scientist--Process-Development_R0052310-1",
     "company": "Gilead Sciences",
@@ -1007,7 +965,7 @@
     "date_found": "2026-05-27",
     "date_posted": "2026-05-11",
     "freshness_verified": true,
-    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-05-27; canApply=true, req R0052310, startDate=2026-05-11.",
+    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-08; searchText=R0052310 returned total=1 and job detail endpoint returned canApply=true. Browser liveness can false-negative Workday SPA pages.",
     "score": 4.0,
     "archetype": "Process Development / Process Chemistry Scientist",
     "status": "evaluated",
@@ -1037,7 +995,7 @@
       "red_flags": -0.4,
       "legitimacy": "High Confidence"
     },
-    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, canApply=true, posted 2026-05-11, verified 2026-05-27.",
+    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, canApply=true, posted 2026-05-11, re-verified 2026-06-08.",
     "next_action": "Use Gilead process-chemistry outreach first; ask whether PhD academic process-development plus analytical characterization can meet the scale-up/process-chemistry bar."
   },
   {
@@ -1424,7 +1382,7 @@
     "date_found": "2026-06-05",
     "date_posted": "2026-06-05",
     "freshness_verified": true,
-    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-05; jobReqId=R0052826, startDate=2026-06-05, postedOn=\"Posted Today\", canApply=true.",
+    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-08; searchText=R0052826 returned total=1 and job detail endpoint returned canApply=true. Browser liveness can false-negative Workday SPA pages.",
     "score": 4.2,
     "archetype": "Formulation / Process Development Scientist",
     "status": "evaluated",
@@ -1454,7 +1412,7 @@
       "red_flags": -0.3,
       "legitimacy": "High Confidence"
     },
-    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, posted 2026-06-05, canApply=true, verified 2026-06-05.",
+    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, canApply=true, posted 2026-06-05, re-verified 2026-06-08.",
     "next_action": "Use Gilead FPD/process contacts to test whether Varun's materials/process-development profile can substitute for direct pharma formulation experience; apply with FPD PDF if yes.",
     "id": 121
   },
@@ -1499,5 +1457,131 @@
     "legitimacy_tier": "High Confidence - direct Sila Nanotechnologies Greenhouse posting active, first_published 2026-04-30, verified 2026-06-05.",
     "next_action": "Treat as outreach-first alongside Sila #118: ask Sila peers whether Varun's materials/electrochemistry + DOE background can bridge limited direct Li-ion cell testing experience.",
     "id": 122
+  },
+  {
+    "id": 123,
+    "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/US-CA-Folsom/Process-Chemist_4037847",
+    "company": "Agilent",
+    "title": "Process Chemist",
+    "location": "Folsom, CA",
+    "date_found": "2026-06-08",
+    "date_posted": "2026-06-01",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Agilent Workday CXS posting active on 2026-06-08; jobReqId=4037847, startDate=2026-06-01, postedOn=\"Posted 7 Days Ago\", canApply=true.",
+    "score": 3.9,
+    "archetype": "Analytical / Process Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/123-agilent-process-chemist-2026-06-08.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Agilent Process Chemist role supporting GC-heavy analytical troubleshooting, DOE/robustness studies, root-cause investigations, CAPA/deviation support, method robustness, technical documentation, and manufacturing/quality stakeholders. Strong fit to Varun's analytical characterization, LC-MS/GC-MS-adjacent method work, DOE/SPC, polymer/materials process development, SOPs, and lab operations. Kept at 3.9 because the posting asks for 8+ years direct GC/HPLC industrial manufacturing depth plus polymer/monomer formulation ownership.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - promising Agilent replacement after #110 closed, but clarify seniority and GC/HPLC manufacturing depth before applying.",
+      "strengths": [
+        "Direct Agilent Workday posting is active and fresh; canApply=true on 2026-06-08.",
+        "Role centers on GC/LC/MS analytical troubleshooting, DOE, robustness studies, investigations, technical writing, data integrity, and cross-functional manufacturing support.",
+        "Varun can credibly map analytical characterization, polymer process development, DOE/SPC, SOPs, lab quality systems, and root-cause analysis.",
+        "Folsom CA and Agilent brand are strong analytical-instrumentation/process-quality signals."
+      ],
+      "gaps": [
+        "8+ years hands-on GC/HPLC in industrial manufacturing is above Varun's industry tenure.",
+        "CAPA/deviation/change-control ownership and manufacturing-floor troubleshooting are adjacent, not directly proven.",
+        "Industrial polymer/monomer synthesis and formulation depth should not be overstated."
+      ],
+      "cv_match": 3.9,
+      "north_star": 4.0,
+      "comp": 4.1,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Agilent Workday posting active, posted 2026-06-01, canApply=true, verified 2026-06-08.",
+    "next_action": "Use Agilent MSAT/process chemistry contacts to test whether Varun's PhD analytical/materials process-development experience can offset the stated 8+ year GC/HPLC manufacturing requirement; apply only if seniority is flexible."
+  },
+  {
+    "id": 124,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Scientist--Process-Development_4959084-1",
+    "company": "Pfizer",
+    "title": "Senior Scientist, Process Development",
+    "location": "Groton, CT",
+    "date_found": "2026-06-08",
+    "date_posted": "2026-06-05",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-08; jobReqId=4959084, startDate=2026-06-05, postedOn=\"Posted 3 Days Ago\", canApply=true.",
+    "score": 3.9,
+    "archetype": "Process Development / Biocatalysis Scientist",
+    "status": "evaluated",
+    "report_path": "reports/124-pfizer-senior-scientist-process-development-2026-06-08.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Pfizer CRD Biocatalysis Center of Excellence role for enzyme-enabled API precursor process development, enzyme screening, reaction optimization, kinetics, scale-up, ELN/technical reports, and collaboration with chemists, analysts, biochemists, and chemical engineers. Varun maps through organic/materials chemistry, DOE-guided process development, analytical characterization, documentation, and scale-up mindset. Main gap is direct enzyme/biocatalysis/protein-engineering experience, so this is outreach-first.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - strong process-development platform, but validate the enzyme/biocatalysis gap before applying.",
+      "strengths": [
+        "Direct Pfizer Workday posting is very fresh; canApply=true on 2026-06-08.",
+        "Minimum qualifications accept PhD Chemistry or Chemical Biology with 0-5 years.",
+        "Responsibilities include process development, reaction optimization, scale-up, ELN documentation, technical reports, and cross-functional analytical/process collaboration.",
+        "Pfizer CRD/Groton is a high-quality API process-development environment."
+      ],
+      "gaps": [
+        "Hands-on enzyme screening, protein engineering, and biocatalytic workflow development are not in Varun's core evidence bank.",
+        "Groton CT is useful but lower location fit than Bay Area/Boston/Colorado targets.",
+        "Should not be positioned as a pure materials role; the pitch needs organic/process chemistry plus learnability."
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 4.1,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-05, canApply=true, verified 2026-06-08.",
+    "next_action": "Ask Pfizer CRD/biocatalysis contacts whether organic/materials process-development plus analytical characterization can bridge the enzyme-specific gap; apply only if the team is open to training into biocatalysis workflows."
+  },
+  {
+    "id": 125,
+    "url": "https://boards.greenhouse.io/spacex/jobs/8572162002?gh_jid=8572162002",
+    "company": "SpaceX",
+    "title": "Materials Engineer, Metals (Starship)",
+    "location": "Starbase, TX",
+    "date_found": "2026-06-08",
+    "date_posted": "2026-06-02",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse/API posting active on 2026-06-08; job id 8572162002, first_published=2026-06-02T01:01:48-04:00 and updated_at=2026-06-02T01:01:48-04:00.",
+    "score": 3.8,
+    "archetype": "Materials / Failure Analysis Engineer",
+    "status": "evaluated",
+    "report_path": "reports/125-spacex-materials-engineer-metals-starship-2026-06-08.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh SpaceX Starship metals role owning material outcomes from inception to flight, property development, root-cause investigations, fractography/metallography/testing, and reliability improvements. Relevant to Varun through materials characterization, failure-mode/root-cause analysis, thermal analysis, DOE/process thinking, and technical reporting, but metals/aerospace/mechanical-test depth, SEM/fractography/metallography, Starbase location, and ITAR/export-control are substantial gates.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - use SpaceX materials contacts to determine whether #115 Materials Laboratory remains the better SpaceX target.",
+      "strengths": [
+        "Direct SpaceX Greenhouse posting is fresh; first_published 2026-06-02.",
+        "The role is genuinely materials/failure-analysis focused: property development, root cause, reliability improvement, and manufacturing problem solving.",
+        "Varun can map failure-mode analysis, thermal/spectroscopic characterization, process-development mindset, and technical reporting.",
+        "Could be bundled with existing SpaceX materials-lab outreach."
+      ],
+      "gaps": [
+        "Metals, aerospace alloys, SEM/fractography, metallography, mechanical testing, and design allowables are not core documented strengths.",
+        "Starbase TX location and extended-hours cadence may be difficult.",
+        "ITAR/export-control eligibility must be clarified before any application."
+      ],
+      "cv_match": 3.7,
+      "north_star": 4.0,
+      "comp": 4.0,
+      "cultural": 3.9,
+      "red_flags": -0.6,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-06-02, verified 2026-06-08.",
+    "next_action": "Ask SpaceX materials contacts whether a chemistry/materials PhD with characterization and root-cause strength can fit a metals-heavy Starship role; prioritize #115 Materials Laboratory if metals depth is mandatory."
   }
 ]

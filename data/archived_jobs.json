@@ -3214,5 +3214,49 @@
     "date_archived": "2026-06-05",
     "archive_reason": "HTTP 404 on direct careers page during 2026-06-05 liveness check",
     "archived_date": "2026-06-05"
+  },
+  {
+    "id": 110,
+    "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/US-CA-Folsom/Analytical-Chemist_4037344",
+    "company": "Agilent",
+    "title": "Analytical Chemist",
+    "location": "Folsom, CA or Wilmington, DE (Site-based)",
+    "date_found": "2026-05-27",
+    "date_posted": "2026-05-26",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Agilent Workday CXS posting active on 2026-05-27; canApply=true, req 4037344, startDate=2026-05-26.",
+    "score": 4.2,
+    "archetype": "Analytical Chemist / MSAT Scientist",
+    "status": "evaluated",
+    "report_path": "reports/110-agilent-analytical-chemist-2026-05-27.md",
+    "tailored_resume": "tailored_agilent_analytical_chemist",
+    "pdf_path": "data/output/cv-agilent-analytical-chemist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Agilent MSAT role supporting chromatography consumables/performance chemistries across LC/GC method lifecycle, troubleshooting, validation/transfer, DOE, investigations, CAPA, NPI, and technical documentation. Excellent technical and product-quality fit for Varun's analytical characterization/process-control story; main concern is the stated 8+ years hands-on LC/GC industry depth and regulated manufacturing ownership.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - strong analytical-method and MSAT fit; outreach should test seniority flexibility.",
+      "strengths": [
+        "Direct overlap with LC/GC method development, troubleshooting, validation/transfer, MS adjunct techniques, DOE, and technical writing",
+        "MSAT/NPI/manufacturing-investigation context maps to Varun's process-window, lab operations, SOP, and reproducibility experience",
+        "Agilent brand fits analytical-instrumentation credibility and Folsom CA is a viable West Coast location",
+        "Posting is very fresh and direct Workday canApply=true"
+      ],
+      "gaps": [
+        "8+ years hands-on LC/GC experience and regulated manufacturing investigations may be above Varun's current industry tenure",
+        "Direct CAPA/deviation/change-control ownership should be positioned as adjacent SOP/lab-operations experience",
+        "Role may value chromatography consumables/product-support depth that is not yet explicit in the resume"
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.2,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Agilent Workday posting active, canApply=true, posted 2026-05-26, verified 2026-05-27.",
+    "next_action": "Apply with Agilent analytical/MSAT resume after Ram review; contact Agilent chemistry/MSAT peers to clarify seniority and LC/GC depth.",
+    "archive_reason": "closed/expired verified 2026-06-08: direct Agilent Workday page showed missing page and CXS search for req 4037344 returned total=0",
+    "date_archived": "2026-06-08"
   }
 ]
