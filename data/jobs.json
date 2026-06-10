@@ -957,48 +957,6 @@
     "next_action": "Apply with the Nurix analytical/CMC resume after Ram review; outreach should clarify MS/2D-LC depth and work-authorization expectations."
   },
   {
-    "id": 111,
-    "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Sr-Scientist--Process-Development_R0052310-1",
-    "company": "Gilead Sciences",
-    "title": "Sr Scientist, Process Development",
-    "location": "Foster City, CA",
-    "date_found": "2026-05-27",
-    "date_posted": "2026-05-11",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-08; searchText=R0052310 returned total=1 and job detail endpoint returned canApply=true. Browser liveness can false-negative Workday SPA pages.",
-    "score": 4.0,
-    "archetype": "Process Development / Process Chemistry Scientist",
-    "status": "evaluated",
-    "report_path": "reports/111-gilead-sr-scientist-process-development-2026-05-27.md",
-    "tailored_resume": "tailored_gilead_sr_scientist_process_development",
-    "pdf_path": "data/output/cv-gilead-sciences-sr-scientist-process-development-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Direct Gilead process-development role for drug-substance chemical process development, route/step optimization, scale-up support, technical reports, MBR-style documentation, and cGMP manufacturing support. Strong company/location and acceptable PhD level; Varun maps through organic chemistry, analytical characterization, DOE-guided process development, and scale-up documentation. Gaps are direct pharma process-chemistry industry execution, pilot-plant/MBR ownership, and multi-step synthesis scale-up depth.",
-    "evaluation": {
-      "recommendation": "APPLY SELECTIVELY / OUTREACH FIRST - attractive Gilead process-chemistry lead, but validate level and synthesis scale-up expectations before spending application time.",
-      "strengths": [
-        "PhD is accepted at 0+ years in basic qualifications and preferred PhD 2-10 years overlaps Varun's postdoc stage",
-        "Organic chemistry, analytical techniques (HPLC/LC-MS/NMR), DOE, process understanding, and technical documentation align with his synthetic-materials/process-development narrative",
-        "Foster City is a strong Bay Area target and Gilead compensation range is transparent ($146K-$190K)",
-        "Cross-functional analytical/process/manufacturing interface matches his lab-operations and documentation story"
-      ],
-      "gaps": [
-        "Role is more classic pharma process chemistry than materials characterization; Varun needs to foreground organic synthesis and process optimization",
-        "Pilot-plant, cGMP manufacturing, master batch records, process validation, and regulatory filing experience are stretch areas",
-        "Day-to-day project/team oversight expectations may be senior for an early-career PhD"
-      ],
-      "cv_match": 4.0,
-      "north_star": 4.1,
-      "comp": 4.3,
-      "cultural": 4.0,
-      "red_flags": -0.4,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, canApply=true, posted 2026-05-11, re-verified 2026-06-08.",
-    "next_action": "Use Gilead process-chemistry outreach first; ask whether PhD academic process-development plus analytical characterization can meet the scale-up/process-chemistry bar."
-  },
-  {
     "id": 112,
     "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4209819009",
     "company": "Lila Sciences",
@@ -1459,48 +1417,6 @@
     "id": 122
   },
   {
-    "id": 123,
-    "url": "https://agilent.wd5.myworkdayjobs.com/Agilent_Careers/job/US-CA-Folsom/Process-Chemist_4037847",
-    "company": "Agilent",
-    "title": "Process Chemist",
-    "location": "Folsom, CA",
-    "date_found": "2026-06-08",
-    "date_posted": "2026-06-01",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Agilent Workday CXS posting active on 2026-06-08; jobReqId=4037847, startDate=2026-06-01, postedOn=\"Posted 7 Days Ago\", canApply=true.",
-    "score": 3.9,
-    "archetype": "Analytical / Process Chemistry Scientist",
-    "status": "evaluated",
-    "report_path": "reports/123-agilent-process-chemist-2026-06-08.md",
-    "tailored_resume": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Direct Agilent Process Chemist role supporting GC-heavy analytical troubleshooting, DOE/robustness studies, root-cause investigations, CAPA/deviation support, method robustness, technical documentation, and manufacturing/quality stakeholders. Strong fit to Varun's analytical characterization, LC-MS/GC-MS-adjacent method work, DOE/SPC, polymer/materials process development, SOPs, and lab operations. Kept at 3.9 because the posting asks for 8+ years direct GC/HPLC industrial manufacturing depth plus polymer/monomer formulation ownership.",
-    "evaluation": {
-      "recommendation": "OUTREACH-FIRST STRETCH - promising Agilent replacement after #110 closed, but clarify seniority and GC/HPLC manufacturing depth before applying.",
-      "strengths": [
-        "Direct Agilent Workday posting is active and fresh; canApply=true on 2026-06-08.",
-        "Role centers on GC/LC/MS analytical troubleshooting, DOE, robustness studies, investigations, technical writing, data integrity, and cross-functional manufacturing support.",
-        "Varun can credibly map analytical characterization, polymer process development, DOE/SPC, SOPs, lab quality systems, and root-cause analysis.",
-        "Folsom CA and Agilent brand are strong analytical-instrumentation/process-quality signals."
-      ],
-      "gaps": [
-        "8+ years hands-on GC/HPLC in industrial manufacturing is above Varun's industry tenure.",
-        "CAPA/deviation/change-control ownership and manufacturing-floor troubleshooting are adjacent, not directly proven.",
-        "Industrial polymer/monomer synthesis and formulation depth should not be overstated."
-      ],
-      "cv_match": 3.9,
-      "north_star": 4.0,
-      "comp": 4.1,
-      "cultural": 4.0,
-      "red_flags": -0.4,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct Agilent Workday posting active, posted 2026-06-01, canApply=true, verified 2026-06-08.",
-    "next_action": "Use Agilent MSAT/process chemistry contacts to test whether Varun's PhD analytical/materials process-development experience can offset the stated 8+ year GC/HPLC manufacturing requirement; apply only if seniority is flexible."
-  },
-  {
     "id": 124,
     "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Scientist--Process-Development_4959084-1",
     "company": "Pfizer",
@@ -1583,5 +1499,90 @@
     },
     "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-06-02, verified 2026-06-08.",
     "next_action": "Ask SpaceX materials contacts whether a chemistry/materials PhD with characterization and root-cause strength can fit a metals-heavy Starship role; prioritize #115 Materials Laboratory if metals depth is mandatory."
+  },
+  {
+    "id": 126,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Washington--Bothell/Principal-Scientist--Process-Chemistry_4958939-1",
+    "company": "Pfizer",
+    "title": "Principal Scientist, Process Chemistry",
+    "location": "Bothell, WA",
+    "date_found": "2026-06-10",
+    "date_posted": "2026-06-09",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-10; jobReqId=4958939, startDate=2026-06-09, postedOn=\"Posted Yesterday\", canApply=true, last date to apply 2026-06-23.",
+    "score": 3.8,
+    "archetype": "Process Chemistry / Medicinal Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/126-pfizer-principal-scientist-process-chemistry-2026-06-10.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Pfizer CPAD Bothell role for ADC drug-linker process chemistry: route screening/selection, process development/characterization, high-throughput/data-rich experimentation, catalysis/continuous processing, analytical/purification interfaces, tech transfer, CDMO campaign execution, patents/regulatory documents, and scientific communication. Varun maps through organic chemistry, DOE-guided process development, analytical characterization, structure-property/stability work, documentation, and publication record. Kept at 3.8 because it is principal-level, asks PhD +4 years pharmaceutical process development plus GMP/regulatory authoring, and explicitly requires permanent U.S. work authorization with no sponsorship.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - strong Pfizer process-chemistry platform, but validate principal-level flexibility and work-authorization constraints before applying.",
+      "strengths": [
+        "Direct Pfizer Workday posting is fresh and active; canApply=true on 2026-06-10 and apply-by date is 2026-06-23.",
+        "Role sits exactly at the organic/process/analytical interface: route screening, scalable chemistry, process characterization, purification technologies, and CDMO tech transfer.",
+        "ADC drug-linker work lets Varun emphasize synthetic organic chemistry, NMR/LC-MS/GPC, DOE, stability/structure-property thinking, and publication/presentation record.",
+        "Bothell CPAD is a high-quality pharma process-development environment with transparent compensation and relocation assistance may be available."
+      ],
+      "gaps": [
+        "Principal Scientist level asks PhD +4 years direct pharmaceutical process development; Varun is an early-career PhD/postdoc without that industry tenure.",
+        "GMP deliveries, regulatory authoring, CDMO management, patents, and early-to-late phase pharma development are stretch areas.",
+        "Posting states permanent U.S. work authorization is required and visa sponsorship is not available now or in the future.",
+        "On-site five days/week in Bothell; relocation and authorization need to be cleared before application effort."
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.1,
+      "comp": 4.2,
+      "cultural": 4.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-09, canApply=true, apply by 2026-06-23, verified 2026-06-10.",
+    "next_action": "Use CPAD/ADC process-chemistry outreach first; ask whether academic organic/materials process-development evidence can bridge the principal-level pharma/GMP bar and confirm permanent work-authorization feasibility before applying."
+  },
+  {
+    "id": 127,
+    "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/Canada---Alberta---Edmonton/Scientist--Process-Development_R0052767",
+    "company": "Gilead Sciences",
+    "title": "Scientist, Process Development",
+    "location": "Edmonton, Alberta, Canada",
+    "date_found": "2026-06-10",
+    "date_posted": "2026-06-09",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Gilead Workday CXS posting active on 2026-06-10; jobReqId=R0052767, startDate=2026-06-09, postedOn=\"Posted Yesterday\", canApply=true.",
+    "score": 3.8,
+    "archetype": "Process Development / Process Safety Scientist",
+    "status": "evaluated",
+    "report_path": "reports/127-gilead-scientist-process-development-2026-06-10.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Gilead Edmonton Scientist role supporting process safety and process-development assessments for API manufacturing under cGMP, including DSC/ARC/RC1-style hazard evaluation, process hazard documentation, safe manufacturing strategy, scale-up, technical reports, SOPs, and site safety systems. Varun maps through organic chemistry, DOE/process-window development, thermal analysis, analytical characterization, technical documentation, and lab safety/operations. Kept at 3.8 because the role is Canada-based, process-safety specialized, and asks for pharma/fine-chemical manufacturing context beyond his direct industry record.",
+    "evaluation": {
+      "recommendation": "WATCH / OUTREACH-FIRST - scientifically relevant Gilead process-development lead, but clarify Canada relocation/authorization and process-safety depth before applying.",
+      "strengths": [
+        "Direct Gilead Workday posting is fresh and active; canApply=true on 2026-06-10.",
+        "PhD in chemistry/related science is accepted, and responsibilities connect chemical process development, scale-up, safe manufacturing, and technical documentation.",
+        "Thermal analysis, DOE-guided process development, organic chemistry, SOPs, and lab safety systems map to Varun's materials/process evidence bank.",
+        "Gilead brand and API process-development setting are strong for Varun's pharma/process trajectory."
+      ],
+      "gaps": [
+        "Edmonton, Canada raises relocation/work-authorization questions and is outside the preferred U.S. hubs.",
+        "Role centers on process safety assessments for cGMP API manufacturing; Varun has adjacent thermal/safety/process experience but not direct DSC/ARC/RC1 process-safety ownership.",
+        "Fine-chemical/pharma manufacturing and site process-safety systems are stretch areas that need honest positioning."
+      ],
+      "cv_match": 3.8,
+      "north_star": 3.9,
+      "comp": 3.8,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, posted 2026-06-09, canApply=true, verified 2026-06-10.",
+    "next_action": "Use Gilead Edmonton/process-chemistry outreach to test whether Varun's thermal analysis, DOE, organic chemistry, and lab-safety evidence can satisfy the process-safety bar; apply only if Canada relocation/authorization is feasible."
   }
 ]
