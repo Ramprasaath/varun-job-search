@@ -376,43 +376,6 @@
     "id": 84
   },
   {
-    "id": 88,
-    "company": "SpaceX",
-    "title": "Materials Engineer, Polymers",
-    "url": "https://boards.greenhouse.io/spacex/jobs/8393663002?gh_jid=8393663002",
-    "location": "Starbase, TX (Boca Chica)",
-    "date_found": "2026-05-02",
-    "date_posted": "2026-01-28",
-    "status": "evaluated",
-    "score": 3.9,
-    "notes": "SpaceX Materials Engineer role focused on polymer material systems for Starship. Hands-on implementation and troubleshooting of adhesives, sealants, coatings, and non-metallic materials. Requires characterization using SEM-EDS, FTIR, DSC, TGA, DMA, TMA, rheometry — Varun has extensive experience with most of these techniques from his PhD. PhD preferred. Strong alignment with Varun's materials characterization superpower. Caveats: Starbase TX is remote, SpaceX known for intense work culture and potentially lower comp (~$95K-$130K range typical). Root cause failure investigation SME work aligns well with Varun's failure analysis experience.",
-    "evaluation": {
-      "recommendation": "apply",
-      "strengths": [
-        "Polymer characterization techniques (FTIR, DSC, TGA, DMA, TMA, SEM-EDS) directly match Varun's expertise",
-        "Root cause failure investigation — aligns with Varun's failure analysis superpower",
-        "PhD preferred, entry-level appropriate",
-        "Coatings and adhesive experience from AFOSR project translates directly",
-        "Materials selection and testing responsibility",
-        "SpaceX brand value on resume even if short tenure"
-      ],
-      "gaps": [
-        "Starbase TX is extremely remote (Boca Chica, near Mexican border)",
-        "SpaceX work culture is notoriously demanding (60+ hour weeks typical)",
-        "Compensation may be below pharma ($95K-$130K range typical for PhD-level)",
-        "Manufacturing focus rather than R&D — different career trajectory",
-        "No small molecule/analytical chemistry relevance for future pharma pivot"
-      ]
-    },
-    "tailored_resume": null,
-    "pdf_path": null,
-    "contacts": [],
-    "freshness_verified": true,
-    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-01-28T12:27:43-05:00 and updated_at=2026-04-30T13:10:25-04:00.",
-    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-01-28, verified 2026-05-25.",
-    "next_action": "Keep as a lower-priority SpaceX polymers option due Starbase location; prioritize #103 Starlink polymers first if Ram approves SpaceX outreach."
-  },
-  {
     "id": 90,
     "company": "Alumis",
     "title": "Senior Scientist I, Analytical Development",
@@ -440,33 +403,6 @@
         "No CMO/CTL management experience explicitly",
         "No oral solid dosage form experience",
         "On-site requirement in expensive SF market at $112-135K may be tight"
-      ]
-    },
-    "tailored_resume": null,
-    "pdf_path": null
-  },
-  {
-    "id": 91,
-    "company": "Via Separations",
-    "title": "Research Scientist",
-    "location": "Boston, MA (hybrid)",
-    "url": "https://jobs.lever.co/viaseparations/b28ae78d-47c1-44bb-9ddb-4eb753707ed7",
-    "date_found": "2026-05-03",
-    "source": "Lever ATS (scan.mjs)",
-    "ats": "Lever (viaseparations)",
-    "status": "evaluated",
-    "score": 2.5,
-    "notes": "Via Separations is an industrial membrane separation company seeking a BS-level Research Scientist. Role focuses on membrane characterization, filtration, and industrial process development. Salary range $93-110K. Poor fit for Varun — industrial/membrane technology is outside his pharmaceutical/analytical chemistry career target. BS-level role with no PhD preferred. Boston location.",
-    "evaluation": {
-      "recommendation": "Skip — Poor alignment with target career direction. Industrial membrane technology, not pharma/analytical chemistry. BS-level role significantly below Varun's PhD qualifications.",
-      "strengths": [
-        "Analytical characterization skills somewhat transferable"
-      ],
-      "gaps": [
-        "Industrial membrane technology outside pharma/biotech target",
-        "BS-level role, no PhD preference",
-        "No pharmaceutical or biotech relevance",
-        "Compensation at lower end for Boston"
       ]
     },
     "tailored_resume": null,
