@@ -3414,5 +3414,49 @@
     "pdf_path": null,
     "archive_reason": "closed/expired: direct Via Separations Lever API returned 404 Document not found on 2026-06-12; archived before June 12 sweep updates.",
     "archived_at": "2026-06-12"
+  },
+  {
+    "id": 124,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Scientist--Process-Development_4959084-1",
+    "company": "Pfizer",
+    "title": "Senior Scientist, Process Development",
+    "location": "Groton, CT",
+    "date_found": "2026-06-08",
+    "date_posted": "2026-06-05",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-08; jobReqId=4959084, startDate=2026-06-05, postedOn=\"Posted 3 Days Ago\", canApply=true.",
+    "score": 3.9,
+    "archetype": "Process Development / Biocatalysis Scientist",
+    "status": "evaluated",
+    "report_path": "reports/124-pfizer-senior-scientist-process-development-2026-06-08.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Pfizer CRD Biocatalysis Center of Excellence role for enzyme-enabled API precursor process development, enzyme screening, reaction optimization, kinetics, scale-up, ELN/technical reports, and collaboration with chemists, analysts, biochemists, and chemical engineers. Varun maps through organic/materials chemistry, DOE-guided process development, analytical characterization, documentation, and scale-up mindset. Main gap is direct enzyme/biocatalysis/protein-engineering experience, so this is outreach-first.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - strong process-development platform, but validate the enzyme/biocatalysis gap before applying.",
+      "strengths": [
+        "Direct Pfizer Workday posting is very fresh; canApply=true on 2026-06-08.",
+        "Minimum qualifications accept PhD Chemistry or Chemical Biology with 0-5 years.",
+        "Responsibilities include process development, reaction optimization, scale-up, ELN documentation, technical reports, and cross-functional analytical/process collaboration.",
+        "Pfizer CRD/Groton is a high-quality API process-development environment."
+      ],
+      "gaps": [
+        "Hands-on enzyme screening, protein engineering, and biocatalytic workflow development are not in Varun's core evidence bank.",
+        "Groton CT is useful but lower location fit than Bay Area/Boston/Colorado targets.",
+        "Should not be positioned as a pure materials role; the pitch needs organic/process chemistry plus learnability."
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.0,
+      "comp": 4.1,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-05, canApply=true, verified 2026-06-08.",
+    "next_action": "Ask Pfizer CRD/biocatalysis contacts whether organic/materials process-development plus analytical characterization can bridge the enzyme-specific gap; apply only if the team is open to training into biocatalysis workflows.",
+    "archive_reason": "closed: direct Pfizer Workday CXS returns permission denied / page-not-found pattern on 2026-06-15",
+    "archived_at": "2026-06-15"
   }
 ]

@@ -1353,48 +1353,6 @@
     "id": 122
   },
   {
-    "id": 124,
-    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Scientist--Process-Development_4959084-1",
-    "company": "Pfizer",
-    "title": "Senior Scientist, Process Development",
-    "location": "Groton, CT",
-    "date_found": "2026-06-08",
-    "date_posted": "2026-06-05",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-08; jobReqId=4959084, startDate=2026-06-05, postedOn=\"Posted 3 Days Ago\", canApply=true.",
-    "score": 3.9,
-    "archetype": "Process Development / Biocatalysis Scientist",
-    "status": "evaluated",
-    "report_path": "reports/124-pfizer-senior-scientist-process-development-2026-06-08.md",
-    "tailored_resume": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh Pfizer CRD Biocatalysis Center of Excellence role for enzyme-enabled API precursor process development, enzyme screening, reaction optimization, kinetics, scale-up, ELN/technical reports, and collaboration with chemists, analysts, biochemists, and chemical engineers. Varun maps through organic/materials chemistry, DOE-guided process development, analytical characterization, documentation, and scale-up mindset. Main gap is direct enzyme/biocatalysis/protein-engineering experience, so this is outreach-first.",
-    "evaluation": {
-      "recommendation": "OUTREACH-FIRST STRETCH - strong process-development platform, but validate the enzyme/biocatalysis gap before applying.",
-      "strengths": [
-        "Direct Pfizer Workday posting is very fresh; canApply=true on 2026-06-08.",
-        "Minimum qualifications accept PhD Chemistry or Chemical Biology with 0-5 years.",
-        "Responsibilities include process development, reaction optimization, scale-up, ELN documentation, technical reports, and cross-functional analytical/process collaboration.",
-        "Pfizer CRD/Groton is a high-quality API process-development environment."
-      ],
-      "gaps": [
-        "Hands-on enzyme screening, protein engineering, and biocatalytic workflow development are not in Varun's core evidence bank.",
-        "Groton CT is useful but lower location fit than Bay Area/Boston/Colorado targets.",
-        "Should not be positioned as a pure materials role; the pitch needs organic/process chemistry plus learnability."
-      ],
-      "cv_match": 3.8,
-      "north_star": 4.0,
-      "comp": 4.1,
-      "cultural": 4.0,
-      "red_flags": -0.4,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-05, canApply=true, verified 2026-06-08.",
-    "next_action": "Ask Pfizer CRD/biocatalysis contacts whether organic/materials process-development plus analytical characterization can bridge the enzyme-specific gap; apply only if the team is open to training into biocatalysis workflows."
-  },
-  {
     "id": 125,
     "url": "https://boards.greenhouse.io/spacex/jobs/8572162002?gh_jid=8572162002",
     "company": "SpaceX",
@@ -1520,5 +1478,131 @@
     },
     "legitimacy_tier": "High Confidence - direct Gilead Workday posting active, posted 2026-06-09, canApply=true, verified 2026-06-10.",
     "next_action": "Use Gilead Edmonton/process-chemistry outreach to test whether Varun's thermal analysis, DOE, organic chemistry, and lab-safety evidence can satisfy the process-safety bar; apply only if Canada relocation/authorization is feasible."
+  },
+  {
+    "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Totowa-NJ/HPLC-Research-Scientist_2637283",
+    "company": "KLA",
+    "title": "HPLC Research Scientist",
+    "location": "Totowa, NJ",
+    "date_found": "2026-06-15",
+    "date_posted": "2026-06-10",
+    "freshness_verified": true,
+    "freshness_reason": "Direct KLA Workday CXS posting active on 2026-06-15; startDate=2026-06-10, postedOn=\"Posted 5 Days Ago\", canApply=true.",
+    "score": 4.1,
+    "archetype": "Analytical / Chromatography Method Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/128-kla-hplc-research-scientist-2026-06-15.md",
+    "tailored_resume": "tailored_kla_hplc_research_scientist",
+    "pdf_path": "data/output/cv-kla-hplc-research-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct KLA Workday role developing and validating chromatography analytical methods for semiconductor metal-deposition process solutions, with GLP-style experiments, QbD/DOE, reports, and support for commercial/prototype analyzers. Varun maps through analytical characterization, LC-MS/GC-MS exposure, electrochemistry, DOE/SPC, process-development documentation, and semiconductor-adjacent materials/process-control narrative. Main gap is direct HPLC/uPLC/IC method ownership, so position as chromatography-adjacent analytical-method development rather than overclaiming HPLC depth.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - Strong KLA analytical-method role; validate HPLC/uPLC depth expectations before applying.",
+      "strengths": [
+        "Direct KLA Workday posting is fresh and active; canApply=true on 2026-06-15.",
+        "Minimum qualifications accept doctorate with 0 years related experience, keeping Varun in range despite the preferred chromatography years.",
+        "Role centers on analytical-method development, validation, GLP-style experiments, QbD/DOE, documentation, and process-solution analysis for semiconductor manufacturing.",
+        "Varun can credibly pitch analytical characterization, LC-MS/GC-MS exposure, cyclic voltammetry/electrochemistry, DOE/SPC, and technical-report discipline."
+      ],
+      "gaps": [
+        "Preferred profile asks 3+ years chromatography experience across HPLC/uPLC, GC, IC, and MS; Varun has LC/GC-MS exposure but not proven deep HPLC/uPLC/IC ownership.",
+        "Commercial/prototype analyzer support and semiconductor process-fluid method validation are adjacent rather than direct evidence.",
+        "Totowa, NJ is a plausible relocation but lower preference than Bay Area/Boston/Colorado."
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.2,
+      "comp": 4.2,
+      "cultural": 4.1,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct KLA Workday posting active, posted 2026-06-10, canApply=true, verified 2026-06-15.",
+    "next_action": "Send KLA Totowa analytical/chromatography peer plus recruiter outreach to calibrate HPLC/uPLC depth; if the team values PhD analytical-method development over exact instrument years, apply with the KLA HPLC resume.",
+    "id": 128
+  },
+  {
+    "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Milpitas-CA/Manufacturing-Design-Engineer--Failure-Analysis-_2637104",
+    "company": "KLA",
+    "title": "Manufacturing Design Engineer (Failure Analysis)",
+    "location": "Milpitas, CA",
+    "date_found": "2026-06-15",
+    "date_posted": "2026-06-10",
+    "freshness_verified": true,
+    "freshness_reason": "Direct KLA Workday CXS posting active on 2026-06-15; startDate=2026-06-10, postedOn=\"Posted 5 Days Ago\", canApply=true.",
+    "score": 4.2,
+    "archetype": "Materials Failure Analysis / Characterization Engineer",
+    "status": "evaluated",
+    "report_path": "reports/129-kla-manufacturing-design-engineer-failure-analysis-2026-06-15.md",
+    "tailored_resume": "tailored_kla_failure_analysis",
+    "pdf_path": "data/output/cv-kla-manufacturing-design-engineer-failure-analysis-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct KLA Workday role leading failure-analysis investigations for contamination, coating/substrate damage, materials degradation, and supplier-related materials issues. Strong fit to Varun's materials chemistry, degradation/failure-mode work, thin-film/coating/polymer characterization, root-cause analysis, DOE/SPC, SOP/documentation, and cross-functional technical communication. Main gap is hands-on depth with KLA's advanced semiconductor FA toolkit (SEM/FIB, TEM, SIMS, XPS, Auger, Raman) and manufacturing-field issue ownership.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - Excellent materials/failure-analysis fit in Bay Area; validate advanced SEM/FIB/TEM/surface-analysis expectations.",
+      "strengths": [
+        "Direct KLA Workday posting is fresh and active; canApply=true on 2026-06-15.",
+        "Role explicitly asks for materials science or chemistry foundation, failure analysis, contamination/coating/substrate damage, materials degradation, root cause, and technical reporting.",
+        "Varun has a strong failure-analysis narrative: degradation mechanisms, thin-film/polymer materials, spectroscopy/thermal/electrochemical characterization, DOE/SPC, and SOP-ready documentation.",
+        "Milpitas, CA aligns well with Bay Area relocation and KLA is a strong semiconductor process-control employer."
+      ],
+      "gaps": [
+        "JD lists SEM/FIB, TEM, EDS, SIMS, XPS, Auger, Raman, UV-Vis, microscopy, interferometry, and GC/LC; Varun should not overclaim electron/surface-analysis tool ownership.",
+        "Manufacturing and field-critical issue ownership in high-reliability semiconductor environments is adjacent rather than proven.",
+        "Need to frame academic/postdoc root-cause work as transferable to supplier/process/manufacturing corrective actions."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.3,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct KLA Workday posting active, posted 2026-06-10, canApply=true, verified 2026-06-15.",
+    "next_action": "Send KLA Milpitas materials/failure-analysis peer outreach to test whether Varun’s spectroscopy/thermal/electrochemical root-cause background can bridge the SEM/FIB/TEM/surface-analysis stack; if yes, apply with the KLA failure-analysis resume.",
+    "id": 129
+  },
+  {
+    "url": "https://job-boards.greenhouse.io/nurix/jobs/8546901002",
+    "company": "Nurix Therapeutics",
+    "title": "Senior Scientist, Analytical Development and Quality Control (Drug Product)",
+    "location": "Brisbane, CA (Onsite)",
+    "date_found": "2026-06-15",
+    "date_posted": "2026-05-13",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Nurix Greenhouse/API posting active in 2026-06-15 sweep; first_published=2026-05-13 and updated_at=2026-05-13.",
+    "score": 3.8,
+    "archetype": "Analytical Development / CMC Drug Product Scientist",
+    "status": "evaluated",
+    "report_path": "reports/130-nurix-senior-scientist-ad-qc-drug-product-2026-06-15.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Nurix Greenhouse role for drug-product analytical development/QC, method development, method validation oversight at CDMOs/CROs, lifecycle management, regulatory-authoring support, and analytical strategy for oncology/I&I programs. Technically relevant to Varun's analytical characterization, stability/degradation, DOE/QbD, LC/GC-MS-adjacent evidence, and small-molecule CMC direction. Kept as outreach-first at 3.8 because the role asks PhD +8 years industrial CMC, drug-product validation, ASD/lipid formulation experience, CDMO oversight, regulatory submissions, and U.S. work authorization eligibility.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - relevant CMC/analytical direction, but the senior DP/regulatory bar is likely high; prioritize existing Nurix Scientist #109 first.",
+      "strengths": [
+        "Direct Nurix Greenhouse posting is active and Bay Area based.",
+        "Analytical development/QC, method development, validation oversight, stability, QbD/DOE, technical writing, and cross-functional CMC strategy align directionally with Varun’s profile.",
+        "Nurix is already a high-priority company in the tracker via the better-fit Scientist AD/QC role (#109).",
+        "Salary range is transparent and the role sits in a high-quality targeted-protein-degradation CMC environment."
+      ],
+      "gaps": [
+        "Senior Scientist bar is PhD +8 years industrial CMC; Varun is early-career and should not lead with this as the primary Nurix application.",
+        "Drug-product analytical validation, CDMO/CTL oversight, IND/IMPD/NDA authoring, ICH/cGMP ownership, ASD and lipid formulation experience are stretch areas.",
+        "Posting says applicants should be legally entitled to work for any U.S. employer; confirm work-authorization feasibility before investing heavily."
+      ],
+      "cv_match": 3.7,
+      "north_star": 4.0,
+      "comp": 4.2,
+      "cultural": 4.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Nurix Greenhouse posting active, first_published 2026-05-13, verified 2026-06-15.",
+    "next_action": "Use Nurix AD/QC contacts to ask whether the team has flexibility below PhD+8 and whether Varun should instead route effort to Scientist AD/QC #109; do not apply until seniority/work-authorization fit is clarified.",
+    "id": 130
   }
 ]
