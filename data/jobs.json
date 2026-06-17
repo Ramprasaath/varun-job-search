@@ -1,76 +1,5 @@
 [
   {
-    "id": 1,
-    "url": "https://jobs.lever.co/BreezeBio/b8f50bbe-2d60-4ca3-8357-e0fd3fc17f56",
-    "company": "BreezeBio",
-    "title": "Principal/Senior Scientist, Analytical Chemistry (Biopolymers)",
-    "location": "Brisbane, CA (Onsite)",
-    "date_found": "2026-04-13",
-    "score": 4.2,
-    "archetype": "Analytical / Quality Scientist",
-    "status": "evaluated",
-    "report_path": "reports/001-breezebio-principal-scientist-analytical-chemistry-2026-04-13.md",
-    "pdf_path": "data/output/cv-breezebio-principal-senior-scientist,-analytical-c-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": "2026-04-22",
-    "notes": "Best match. Postdoc = biopolymer process dev. Target Senior Scientist level. GPC/SEC-MALS, HPLC, nanoparticle characterization.",
-    "evaluation": {
-      "cv_match": 4,
-      "north_star": 4.5,
-      "comp": 4,
-      "cultural": 4.5,
-      "red_flags": -0.3,
-      "legitimacy": "High Confidence",
-      "gaps": [
-        "SEC-MALS specifically",
-        "DLS/NTA/Zeta potential",
-        "IND/regulatory (cGMP/ICH)"
-      ],
-      "strengths": [
-        "Postdoc is literally biopolymer process development",
-        "10+ characterization techniques",
-        "DOE expertise",
-        "Lab operations management"
-      ],
-      "recommendation": "APPLY - Target Senior Scientist level"
-    },
-    "tailored_resume": "tailored_breezebio",
-    "date_posted": "2026-04-01",
-    "legitimacy_tier": "High Confidence - direct Lever posting verified active 2026-05-18",
-    "next_action": "Apply with existing BreezeBio analytical-biopolymers resume; use CEO/scientist outreach first if Ram approves."
-  },
-  {
-    "id": 2,
-    "url": "https://jobs.lever.co/BreezeBio/b39d276b-16cd-452e-b81d-3dd126594074",
-    "company": "BreezeBio",
-    "title": "Associate Director / Director, Analytical Development",
-    "location": "Brisbane, CA (Onsite)",
-    "date_found": "2026-04-13",
-    "score": 3.5,
-    "archetype": "Analytical / Quality Scientist",
-    "status": "discovered",
-    "report_path": null,
-    "pdf_path": "data/output/cv-breezebio-associate-director---director--2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "10+ years industry required. May be too senior for Varun's profile.",
-    "evaluation": {
-      "recommendation": "CONSIDER - Good match with some gaps",
-      "strengths": [
-        "See notes for details"
-      ],
-      "gaps": [
-        "See notes for details"
-      ],
-      "cv_match": 3.5,
-      "north_star": 3.5,
-      "comp": 3.5,
-      "cultural": 3.5,
-      "red_flags": 0,
-      "legitimacy": "Medium Confidence"
-    }
-  },
-  {
     "url": "https://careers.gene.com/us/en/job/202603-107743/Senior-Principal-Scientist-Synthetic-Molecule-Analytical-Chemistry-Genentech-Research-and-Early-Development",
     "company": "Genentech",
     "title": "Senior/Principal Scientist - Synthetic Molecule Analytical Chemistry (SMAC)",
@@ -406,7 +335,12 @@
       ]
     },
     "tailored_resume": null,
-    "pdf_path": null
+    "pdf_path": null,
+    "date_posted": "2026-04-29",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Alumis Greenhouse API posting active on 2026-06-17; first_published=2026-04-29T23:47:47-04:00.",
+    "legitimacy_tier": "High Confidence - direct Alumis Greenhouse posting active, first published 2026-04-29, verified 2026-06-17.",
+    "next_action": "Keep as secondary/outreach-only: useful Bay Area CMC analytical role, but validate PhD-overqualification, dissolution/oral-solid expectations, and CMO/CTL ownership before applying."
   },
   {
     "id": 94,
@@ -1192,7 +1126,7 @@
     "date_found": "2026-06-05",
     "date_posted": "2026-06-03",
     "freshness_verified": true,
-    "freshness_reason": "Direct KLA Workday CXS posting active on 2026-06-05; jobReqId=2635564, startDate=2026-06-03, postedOn=\"Posted 2 Days Ago\", canApply=true.",
+    "freshness_reason": "Direct KLA Workday CXS posting active on 2026-06-17; jobReqId=2635564, startDate=2026-06-03, postedOn=\"Posted 14 Days Ago\", canApply=true.",
     "score": 4.5,
     "archetype": "Analytical / Electrochemical Method Development Scientist",
     "status": "evaluated",
@@ -1222,7 +1156,7 @@
       "red_flags": -0.2,
       "legitimacy": "High Confidence"
     },
-    "legitimacy_tier": "High Confidence - direct KLA Workday posting active, posted 2026-06-03, canApply=true, verified 2026-06-05.",
+    "legitimacy_tier": "High Confidence - direct KLA Workday posting active, posted 2026-06-03, canApply=true, re-verified 2026-06-17.",
     "next_action": "Send KLA analytical/electrochem peer and emerging-talent recruiter outreach; if they confirm PhD-0 candidates are in range, apply with the KLA analytical/electrochem resume.",
     "id": 119
   },
@@ -1403,7 +1337,7 @@
     "date_found": "2026-06-10",
     "date_posted": "2026-06-09",
     "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-10; jobReqId=4958939, startDate=2026-06-09, postedOn=\"Posted Yesterday\", canApply=true, last date to apply 2026-06-23.",
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-17; jobReqId=4958939, startDate=2026-06-10, postedOn=\"Posted 7 Days Ago\", canApply=true.",
     "score": 3.8,
     "archetype": "Process Chemistry / Medicinal Chemistry Scientist",
     "status": "evaluated",
@@ -1434,7 +1368,7 @@
       "red_flags": -0.5,
       "legitimacy": "High Confidence"
     },
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-09, canApply=true, apply by 2026-06-23, verified 2026-06-10.",
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-10, canApply=true, re-verified 2026-06-17.",
     "next_action": "Use CPAD/ADC process-chemistry outreach first; ask whether academic organic/materials process-development evidence can bridge the principal-level pharma/GMP bar and confirm permanent work-authorization feasibility before applying."
   },
   {
@@ -1604,5 +1538,137 @@
     "legitimacy_tier": "High Confidence - direct Nurix Greenhouse posting active, first_published 2026-05-13, verified 2026-06-15.",
     "next_action": "Use Nurix AD/QC contacts to ask whether the team has flexibility below PhD+8 and whether Varun should instead route effort to Scientist AD/QC #109; do not apply until seniority/work-authorization fit is clarified.",
     "id": 130
+  },
+  {
+    "id": 131,
+    "source": "greenhouse-direct",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8593326002?gh_jid=8593326002",
+    "company": "SpaceX",
+    "title": "Sr. Materials Engineer, Starshield",
+    "location": "Hawthorne, CA",
+    "date_found": "2026-06-17",
+    "date_posted": "2026-06-16",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API posting active on 2026-06-17; first_published=2026-06-16T16:25:23-04:00.",
+    "job_id": "8593326002",
+    "score": 4.2,
+    "archetype": "Materials Scientist / Failure Analysis Engineer",
+    "status": "evaluated",
+    "report_path": "reports/131-spacex-sr-materials-engineer-starshield-2026-06-17.md",
+    "tailored_resume": "tailored_spacex_starshield_materials",
+    "pdf_path": "data/output/cv-spacex-sr-materials-engineer-starshield-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct SpaceX Starshield role owning metals, polymers, coatings, joining/forming, thermal-control coatings, prototype process trials, characterization, and root-cause failure analysis for satellite hardware. Strong fit to Varun's polymer/thin-film materials, thermal/spectroscopic characterization, DOE/SPC process-window work, failure-mode analysis, and technical reporting. Main risk: SpaceX export-control/Top Secret clearance requirement plus advanced SEM-EDS/LFA/mechanical-test expectations.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / OUTREACH-FIRST - excellent materials/failure-analysis alignment; pre-check ITAR/U.S.-person and Top Secret clearance eligibility before applying.",
+      "strengths": [
+        "Direct SpaceX Greenhouse posting is brand-new and active, first published 2026-06-16.",
+        "Responsibilities explicitly include polymers, coatings, thermal-control/optical coatings, materials characterization, prototype process trials, and root-cause failure investigations.",
+        "Varun's PhD/postdoc story maps well through polymer/thin-film materials, FT-IR/UV-Vis, TGA/DSC, electrochemistry, GPC/MS, DOE/SPC, and failure-mode analysis.",
+        "Role values PhD-level materials/chemistry background and fast data-driven technical recommendations."
+      ],
+      "gaps": [
+        "Must be able to obtain a Top Secret clearance and satisfy ITAR/export-control requirements; Varun’s exact eligibility needs confirmation.",
+        "Hands-on SEM-EDS, LFA, hardness/mechanical testing, and aerospace flight-hardware qualification depth should not be overclaimed.",
+        "SpaceX pace/long-hours culture may be demanding; apply only after targeted outreach confirms level and eligibility fit."
+      ],
+      "cv_match": 4.3,
+      "north_star": 4.2,
+      "comp": 4.5,
+      "cultural": 4.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first published 2026-06-16, verified 2026-06-17.",
+    "next_action": "Pre-check ITAR/U.S.-person and Top Secret clearance eligibility; if cleared, apply with the Starshield materials resume and use SpaceX materials recruiter/peer outreach first."
+  },
+  {
+    "id": 132,
+    "source": "greenhouse-direct",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8593342002?gh_jid=8593342002",
+    "company": "SpaceX",
+    "title": "Manufacturing Engineer, Starship - Materials Production",
+    "location": "Hawthorne, CA",
+    "date_found": "2026-06-17",
+    "date_posted": "2026-06-16",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API posting active on 2026-06-17; first_published=2026-06-16T16:23:11-04:00, updated_at=2026-06-16T17:14:56-04:00.",
+    "job_id": "8593342002",
+    "score": 4.1,
+    "archetype": "Process Development / Materials Production Engineer",
+    "status": "evaluated",
+    "report_path": "reports/132-spacex-manufacturing-engineer-starship-materials-production-2026-06-17.md",
+    "tailored_resume": "tailored_spacex_materials_production",
+    "pdf_path": "data/output/cv-spacex-manufacturing-engineer-starship-materials-producti-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct SpaceX Dispensary/Starship materials-production role developing and optimizing chemical processing for silicone RTV adhesives, paints, ablatives, and thermal-protection materials. Very strong process-development signal: DOE, SPC, SOPs, process qualification/validation, control plans, raw-material specs, and root-cause troubleshooting. Main risk: engineering/manufacturing ownership, hazardous-material operations, aerospace production pace, and export-control constraints.",
+    "evaluation": {
+      "recommendation": "STRONG APPLY AFTER ELIGIBILITY CHECK - best new process/materials-production lead; tailor around DOE/SPC, SOPs, polymer processing, and scale-up controls.",
+      "strengths": [
+        "Direct SpaceX Greenhouse posting is fresh and active, first published 2026-06-16.",
+        "Role explicitly asks for formulated materials production, silicone/polymer processing, thermal-protection materials, process qualification, validation protocols, SOPs, control plans, DOE, and SPC.",
+        "Varun's postdoc bio-based polymer process-development and scale-up specifications map directly to process-window and reproducibility requirements.",
+        "Strong bridge between materials characterization, quality, production, and supplier/raw-material issue resolution."
+      ],
+      "gaps": [
+        "Direct hands-on chemical processing equipment ownership (mixers, reactors, degassers, vacuum systems, pumps) is adjacent rather than proven.",
+        "Aerospace manufacturing pace, hazardous-material compliance, and capital-equipment leadership may be stretch areas.",
+        "SpaceX ITAR/export-control eligibility should be pre-checked before investing application time."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.1,
+      "comp": 4.4,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first published 2026-06-16, verified 2026-06-17.",
+    "next_action": "Ask a SpaceX materials-production peer/recruiter whether PhD process-development backgrounds are in range and confirm ITAR/export-control fit; then apply with the materials-production resume."
+  },
+  {
+    "id": 133,
+    "source": "lever-direct",
+    "url": "https://jobs.lever.co/seranbio/fa756afc-10a4-4ffc-a511-9e0796dbad7a",
+    "company": "Serán BioScience",
+    "title": "Senior Engineer, Process Development",
+    "location": "Bend, Oregon",
+    "date_found": "2026-06-17",
+    "date_posted": "2026-04-24",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Serán BioScience Lever API posting active on 2026-06-17; createdAt=2026-04-24 and hostedUrl/applyUrl present.",
+    "job_id": "fa756afc-10a4-4ffc-a511-9e0796dbad7a",
+    "score": 4.0,
+    "archetype": "Process Development Scientist / Engineer",
+    "status": "evaluated",
+    "report_path": "reports/133-seran-senior-engineer-process-development-2026-06-17.md",
+    "tailored_resume": "tailored_seran_process_development_engineer",
+    "pdf_path": "data/output/cv-seran-bioscience-senior-engineer-process-development-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Serán BioScience Lever role supporting pharmaceutical drug-product process development from early clinical manufacturing through late-stage process validation. Good fit to Varun's DOE-guided process development, hypothesis-driven experimental design, data analysis, technical reporting, formulation/product-development adjacency, and cross-functional analytical/process work. Main gaps are relevant industrial pharmaceutical process-development experience, Bend onsite expectations, and potential client-facing CDMO pace.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER OUTREACH - strong CDMO process-development bridge; confirm PhD-with-limited-industry fit and onsite/sponsorship constraints.",
+      "strengths": [
+        "Direct Serán Lever posting is active and explicitly accepts PhD in science or engineering.",
+        "Core work is hypothesis-driven experimental design, process-development protocols, data analysis, out-of-trend investigation, technical reporting, and external partner communication.",
+        "Varun's current postdoc is DOE-guided polymer/process development with scale-up specifications and SOP-ready controls.",
+        "Existing Serán analytical/product-development roles in tracker make this a coherent company cluster for outreach."
+      ],
+      "gaps": [
+        "Preference for relevant industrial experience; Varun needs to frame academic/postdoc process work as industry-transferable.",
+        "Pharmaceutical drug-product validation and CDMO client-facing execution are adjacent rather than proven.",
+        "Bend onsite relocation and any work-authorization constraints should be clarified before applying."
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.0,
+      "comp": 3.8,
+      "cultural": 4.0,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Serán BioScience Lever posting active, created 2026-04-24, verified 2026-06-17.",
+    "next_action": "Use existing Serán cluster outreach to ask whether PhD process-development/postdoc backgrounds are in range; if yes, apply with the Serán process-development engineer resume."
   }
 ]
