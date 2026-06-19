@@ -46,49 +46,6 @@
     "freshness_reason": "Direct Genentech careers page re-verified active on 2026-06-01; embedded structured data exposes applyUrl and datePosted=2026-04-25 (jobSeqNo GENEUS202603107743EXTERNALENUS)."
   },
   {
-    "id": 60,
-    "source": "full_scan_validated_import",
-    "url": "https://job-boards.greenhouse.io/spacex/jobs/8487266002",
-    "company": "SpaceX",
-    "title": "Materials Engineer, Satellites (Starlink)",
-    "location": "Redmond, WA",
-    "date_found": "2026-04-20",
-    "date_posted": "2026-03-31",
-    "freshness_verified": true,
-    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-03-31T20:38:45-04:00 and updated_at=2026-04-30T13:10:25-04:00.",
-    "job_id": null,
-    "score": 3.9,
-    "archetype": "Materials Scientist",
-    "status": "evaluated",
-    "report_path": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Direct Greenhouse posting verified active on 2026-04-29. Strong materials-engineering fit around material selection, processing, failure troubleshooting, and scale-up for high-volume hardware. Biggest practical risk is likely ITAR / U.S.-person eligibility and the role being more manufacturing-engineering oriented than Varun's core chemistry path.",
-    "evaluation": {
-      "recommendation": "CONSIDER - technically compelling, but confirm work authorization / export-control eligibility first.",
-      "strengths": [
-        "Materials selection, process troubleshooting, and characterization map well to Varun's background",
-        "High-upside hardware environment with real scale and ownership",
-        "Direct live Greenhouse posting and very recent activity signal a real opening"
-      ],
-      "gaps": [
-        "Likely ITAR or U.S.-person requirement could be a hard blocker",
-        "Role leans more toward hardware/manufacturing engineering than pure chemistry or analytical development",
-        "Supplier and production-floor execution may be a steeper transition than biotech/materials-science roles"
-      ],
-      "cv_match": 3.9,
-      "north_star": 4,
-      "comp": 4.2,
-      "cultural": 3.8,
-      "red_flags": -0.2,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": null,
-    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-03-31, verified 2026-05-25.",
-    "next_action": "Compare with #102 senior satellite-materials role; use outreach to clarify level, export-control eligibility, and whether the non-senior track is the better application path."
-  },
-  {
     "id": 65,
     "url": "https://jobs.apple.com/en-us/details/200658288/materials-engineer-polymers",
     "company": "Apple",
@@ -173,50 +130,6 @@
     "tailored_resume": "tailored_city_qc",
     "legitimacy_tier": "High Confidence - direct City Therapeutics Greenhouse posting active, first_published 2026-03-13, re-verified 2026-06-05.",
     "next_action": "Use City CMC/QC outreach to test seniority, oligonucleotide/CMC depth, and regulatory expectations; apply with the existing CMC/QC resume if Ram approves."
-  },
-  {
-    "id": 70,
-    "source": "lever-direct",
-    "url": "https://jobs.lever.co/seranbio/8664ab0e-15f1-409a-9e53-450a791678a3",
-    "company": "Serán BioScience",
-    "title": "Analytical Development Scientist II",
-    "location": "Bend, Oregon",
-    "date_found": "2026-04-24",
-    "date_posted": "2026-04-23",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Serán BioScience Lever API posting re-verified active on 2026-06-05; createdAt=2026-04-23T00:05:42.175Z.",
-    "job_id": "8664ab0e-15f1-409a-9e53-450a791678a3",
-    "score": 4.1,
-    "archetype": "Analytical / Quality Scientist",
-    "status": "evaluated",
-    "report_path": null,
-    "pdf_path": "data/output/cv-seran-bioscience-analytical-development-scientist-ii-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh Lever role posted 2026-04-23. Strong analytical-development fit with small-molecule method development, UHPLC/HPLC plus dissolution/KF testing, method transfer to QC, GMP release and stability support, and regulatory-ready documentation. Main gaps are explicit GMP tenure, deeper Empower usage, and direct small-molecule CMC-industry experience.",
-    "evaluation": {
-      "recommendation": "APPLY - Strong analytical-development / CMC fit at an accessible scientist level.",
-      "strengths": [
-        "Direct overlap with analytical development, method optimization, and method transfer work",
-        "HPLC-adjacent, spectroscopy, thermal-analysis, and technical-documentation background maps well",
-        "Cross-functional process-development experience fits the role’s QC, QA, and project-management interfaces",
-        "Fresh live Lever posting with explicit posted date"
-      ],
-      "gaps": [
-        "Role asks for explicit GMP lab experience",
-        "Waters Empower and routine LC/GC production experience are more adjacent than direct",
-        "Most prior work is academic/postdoctoral rather than pharma-industry CMC execution"
-      ],
-      "cv_match": 4.2,
-      "north_star": 4.1,
-      "comp": 4,
-      "cultural": 4,
-      "red_flags": -0.1,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": "tailored_seran_analytical_dev",
-    "legitimacy_tier": "High Confidence - direct Serán BioScience Lever posting active, created 2026-04-23, re-verified 2026-06-05.",
-    "next_action": "Apply/outreach first with the Serán analytical-development resume; clarify Bend onsite expectations, HPLC/GMP depth, and work-authorization constraints before applying."
   },
   {
     "id": 71,
@@ -502,47 +415,6 @@
     "tailored_resume": null,
     "legitimacy_tier": "High Confidence - direct Greenhouse ATS posting active, first_published 2025-12-23, updated 2026-05-14, verified 2026-05-22.",
     "next_action": "Use outreach to clarify soft-materials vs automation/software weighting; apply only if Ram wants to pursue this stretch role."
-  },
-  {
-    "id": 102,
-    "url": "https://job-boards.greenhouse.io/spacex/jobs/8487323002",
-    "company": "SpaceX",
-    "title": "Sr. Materials Engineer, Satellites (Starlink)",
-    "location": "Redmond, WA",
-    "date_found": "2026-05-25",
-    "date_posted": "2026-03-31",
-    "freshness_verified": true,
-    "freshness_reason": "Direct SpaceX Greenhouse API active on 2026-05-25; first_published=2026-03-31T20:38:54-04:00 and updated_at=2026-04-30T13:10:25-04:00.",
-    "score": 3.9,
-    "archetype": "Materials Scientist / Reliability Engineer",
-    "status": "evaluated",
-    "report_path": "reports/102-spacex-sr-materials-engineer-satellites-2026-05-25.md",
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Direct SpaceX Starlink role focused on thermal-optical/inorganic/organic coatings, space-environment reliability testing, root-cause failure analysis, material selection, and production stabilization. Strong materials/reliability fit, but seniority, export-control, and SpaceX work-culture risks make outreach-first prudent.",
-    "evaluation": {
-      "recommendation": "CURATED STRETCH / OUTREACH FIRST - Track alongside the non-senior SpaceX Starlink materials role and clarify eligibility/level before applying.",
-      "strengths": [
-        "Coatings, materials characterization, reliability testing, and root-cause analysis align directly with Varun's narrative",
-        "PhD in chemistry/materials is preferred and compensation is strong",
-        "Direct Greenhouse posting is current and specific to Starlink materials"
-      ],
-      "gaps": [
-        "Basic qualification requests 5+ years professional materials experience",
-        "Space materials/electronic materials/RF-transparent materials and joining technologies are not core documented domains",
-        "Export-control eligibility and intense work cadence need clarification"
-      ],
-      "cv_match": 3.8,
-      "north_star": 4.0,
-      "comp": 4.1,
-      "cultural": 3.7,
-      "red_flags": -0.2,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": null,
-    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published=2026-03-31, updated=2026-04-30, verified 2026-05-25.",
-    "next_action": "Use SpaceX recruiter/peer outreach to clarify export-control eligibility and whether PhD/postdoc materials experience offsets the 5+ year seniority requirement."
   },
   {
     "id": 103,
@@ -1540,50 +1412,6 @@
     "id": 130
   },
   {
-    "id": 131,
-    "source": "greenhouse-direct",
-    "url": "https://boards.greenhouse.io/spacex/jobs/8593326002?gh_jid=8593326002",
-    "company": "SpaceX",
-    "title": "Sr. Materials Engineer, Starshield",
-    "location": "Hawthorne, CA",
-    "date_found": "2026-06-17",
-    "date_posted": "2026-06-16",
-    "freshness_verified": true,
-    "freshness_reason": "Direct SpaceX Greenhouse API posting active on 2026-06-17; first_published=2026-06-16T16:25:23-04:00.",
-    "job_id": "8593326002",
-    "score": 4.2,
-    "archetype": "Materials Scientist / Failure Analysis Engineer",
-    "status": "evaluated",
-    "report_path": "reports/131-spacex-sr-materials-engineer-starshield-2026-06-17.md",
-    "tailored_resume": "tailored_spacex_starshield_materials",
-    "pdf_path": "data/output/cv-spacex-sr-materials-engineer-starshield-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh direct SpaceX Starshield role owning metals, polymers, coatings, joining/forming, thermal-control coatings, prototype process trials, characterization, and root-cause failure analysis for satellite hardware. Strong fit to Varun's polymer/thin-film materials, thermal/spectroscopic characterization, DOE/SPC process-window work, failure-mode analysis, and technical reporting. Main risk: SpaceX export-control/Top Secret clearance requirement plus advanced SEM-EDS/LFA/mechanical-test expectations.",
-    "evaluation": {
-      "recommendation": "TOP PRIORITY / OUTREACH-FIRST - excellent materials/failure-analysis alignment; pre-check ITAR/U.S.-person and Top Secret clearance eligibility before applying.",
-      "strengths": [
-        "Direct SpaceX Greenhouse posting is brand-new and active, first published 2026-06-16.",
-        "Responsibilities explicitly include polymers, coatings, thermal-control/optical coatings, materials characterization, prototype process trials, and root-cause failure investigations.",
-        "Varun's PhD/postdoc story maps well through polymer/thin-film materials, FT-IR/UV-Vis, TGA/DSC, electrochemistry, GPC/MS, DOE/SPC, and failure-mode analysis.",
-        "Role values PhD-level materials/chemistry background and fast data-driven technical recommendations."
-      ],
-      "gaps": [
-        "Must be able to obtain a Top Secret clearance and satisfy ITAR/export-control requirements; Varun’s exact eligibility needs confirmation.",
-        "Hands-on SEM-EDS, LFA, hardness/mechanical testing, and aerospace flight-hardware qualification depth should not be overclaimed.",
-        "SpaceX pace/long-hours culture may be demanding; apply only after targeted outreach confirms level and eligibility fit."
-      ],
-      "cv_match": 4.3,
-      "north_star": 4.2,
-      "comp": 4.5,
-      "cultural": 4.0,
-      "red_flags": -0.5,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first published 2026-06-16, verified 2026-06-17.",
-    "next_action": "Pre-check ITAR/U.S.-person and Top Secret clearance eligibility; if cleared, apply with the Starshield materials resume and use SpaceX materials recruiter/peer outreach first."
-  },
-  {
     "id": 132,
     "source": "greenhouse-direct",
     "url": "https://boards.greenhouse.io/spacex/jobs/8593342002?gh_jid=8593342002",
@@ -1670,5 +1498,225 @@
     },
     "legitimacy_tier": "High Confidence - direct Serán BioScience Lever posting active, created 2026-04-24, verified 2026-06-17.",
     "next_action": "Use existing Serán cluster outreach to ask whether PhD process-development/postdoc backgrounds are in range; if yes, apply with the Serán process-development engineer resume."
+  },
+  {
+    "id": 134,
+    "source": "workday-direct",
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Massachusetts---Andover/Scientist-III_4959167-2",
+    "company": "Pfizer",
+    "title": "Scientist III",
+    "location": "Andover, MA",
+    "date_found": "2026-06-19",
+    "date_posted": "2026-06-18",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-19; jobReqId=4959167, startDate=2026-06-18, postedOn=\"Posted Yesterday\", canApply=true.",
+    "job_id": "4959167",
+    "score": 3.8,
+    "archetype": "Analytical Method Development / QC Scientist",
+    "status": "evaluated",
+    "report_path": "reports/134-pfizer-scientist-iii-2026-06-19.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Pfizer Andover Workday role supporting cGMP analytical method development, validation, transfer, troubleshooting, and PAT methods across small molecules, gases, nucleotides, resins, polymers, enzymes, HPLC/GC, and Raman. Good bridge to Varun's analytical characterization, DOE/SPC, spectroscopy, documentation, and process-development work. Main risks are production-QC orientation, BS/MS minimum rather than explicit PhD route, and no current/future U.S. visa sponsorship.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST / APPLY ONLY IF WORK-AUTH FITS - useful analytical-method validation role, but sponsor constraint and production-QC level need calibration.",
+      "strengths": [
+        "Direct Pfizer Workday posting is current and active; canApply=true on 2026-06-19.",
+        "Responsibilities include analytical test-method development, validation protocols, method transfer, troubleshooting, investigations, and technical documents.",
+        "JD names HPLC, GC, Raman, spectroscopy, cGMP documentation, PAT methods, polymers, salts, sugars, enzymes, resins, and other materials.",
+        "Varun can credibly map spectroscopy/thermal/electrochemical characterization, DOE/SPC process windows, root-cause thinking, and SOP-ready reports."
+      ],
+      "gaps": [
+        "The role is cGMP production/QC support rather than discovery analytical development.",
+        "Minimum requirements are BS+6 or MS+4; PhD fit is plausible but not explicitly called out.",
+        "Posting states U.S. work visa sponsorship is not available now or in the future."
+      ],
+      "cv_match": 3.9,
+      "north_star": 3.7,
+      "comp": 3.8,
+      "cultural": 3.8,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-18, canApply=true, verified 2026-06-19.",
+    "next_action": "Use Pfizer Andover QCA outreach to confirm PhD-level fit and work-authorization constraints before investing in an application."
+  },
+  {
+    "id": 135,
+    "source": "workday-direct",
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Scientist--Analytical-Research-and-Development_4959230-2",
+    "company": "Pfizer",
+    "title": "Senior Scientist, Analytical Research and Development",
+    "location": "Groton, CT",
+    "date_found": "2026-06-19",
+    "date_posted": "2026-06-17",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-19; jobReqId=4959230, startDate=2026-06-17, postedOn=\"Posted 2 Days Ago\", canApply=true.",
+    "job_id": "4959230",
+    "score": 4.2,
+    "archetype": "Analytical Research & Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/135-pfizer-senior-scientist-analytical-research-and-development-2026-06-19.md",
+    "tailored_resume": "tailored_pfizer_analytical_research_development",
+    "pdf_path": "data/output/cv-pfizer-senior-scientist-analytical-research-and-developme-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Pfizer Groton ARD role for PhD analytical chemistry candidates with 0-3 years, focused on drug substance/product analytical strategy, method development/validation/transfer, stability studies, impurity control, chromatography, dissolution, IR/Raman, mass spectrometry, particle size, NMR, technical reports, and regulatory submissions. Strong fit to Varun's analytical/materials characterization, stability/degradation logic, DOE documentation, and cross-functional technical communication; gaps are pharma regulatory submissions, peptide analysis, and direct industry method ownership.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - strong PhD-0/3 analytical-development fit at Pfizer; validate pharma/regulatory expectations and work authorization first.",
+      "strengths": [
+        "Direct Pfizer Workday posting is fresh and active; canApply=true on 2026-06-19.",
+        "Must-have profile accepts PhD in Analytical Chemistry or related field with 0-3 years relevant industrial experience.",
+        "Role centers on analytical strategies, method development/validation/transfer, stability studies, impurity control, reports, and global regulatory submission sections.",
+        "Method suite includes chromatography, dissolution, IR/Raman spectroscopy, mass spectrometry, particle size analysis, and NMR - close to Varun’s analytical/materials toolkit."
+      ],
+      "gaps": [
+        "Direct pharmaceutical industry, regulatory submission, and GMP/ICH validation ownership are adjacent rather than proven.",
+        "Peptide therapeutics and trace-level impurity analysis are nice-to-have rather than core evidence in Varun’s profile.",
+        "Senior Scientist title implies mentoring/project leadership; position Varun as PhD-0/3 but not over-senior."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.3,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-17, canApply=true, verified 2026-06-19.",
+    "next_action": "Send Pfizer Groton ARD peer/team-lead plus recruiter outreach; if PhD analytical/materials backgrounds are in range, apply with the Pfizer ARD tailored PDF."
+  },
+  {
+    "id": 136,
+    "source": "greenhouse-direct",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8584993002?gh_jid=8584993002",
+    "company": "SpaceX",
+    "title": "Sr. Materials Engineer, Materials Laboratory",
+    "location": "Hawthorne, CA",
+    "date_found": "2026-06-19",
+    "date_posted": "2026-06-10",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse API posting active on 2026-06-19; job id=8584993002, first_published=2026-06-10T13:24:24-04:00, updated_at=2026-06-10T13:24:24-04:00.",
+    "job_id": "8584993002",
+    "score": 4.1,
+    "archetype": "Materials Characterization / Failure Analysis Engineer",
+    "status": "evaluated",
+    "report_path": "reports/136-spacex-sr-materials-engineer-materials-laboratory-2026-06-19.md",
+    "tailored_resume": "tailored_spacex_sr_materials_laboratory",
+    "pdf_path": "data/output/cv-spacex-sr-materials-engineer-materials-laboratory-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct SpaceX Materials Laboratory senior role owning data quality, engineering controls, calibration procedures, test-process qualification, training, root-cause investigations, and capability expansion across thermal analysis, characterization, chemistry, reliability, mechanical testing, and R&D. Strong fit to Varun's polymer/thin-film materials, TGA/DSC/FTIR/electrochemistry, DOE/SPC, SOP-ready documentation, and failure-mode analysis. Main risks are 5+ years professional lab experience, breadth across mechanical/SEM/XRD/ICP methods, ITAR/export-control eligibility, and SpaceX pace.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / OUTREACH-FIRST - excellent materials lab/data-quality match, but confirm seniority and ITAR/work-authorization fit before applying.",
+      "strengths": [
+        "Direct SpaceX Greenhouse posting is current and active; first published 2026-06-10.",
+        "Responsibilities explicitly cover data quality, calibration, engineering controls, test-process qualification, training, anomalous-data investigations, and failure analysis.",
+        "Equipment and methods include TGA, DSC, DMA, SEM/EDS, XRD, optical microscopy, FTIR, corrosion/coatings, chemistry testing, reliability, and R&D process development.",
+        "Varun can credibly pitch multi-technique materials characterization, polymer/thin-film systems, DOE/SPC, SOPs, technical reports, and root-cause/failure-mode analysis."
+      ],
+      "gaps": [
+        "Basic qualification asks 5+ years professional engineering experience in a materials testing or characterization laboratory.",
+        "Hands-on mechanical testing, SEM/EDS, XRD, ICP/spark OES, and aerospace lab quality-system depth should not be overclaimed.",
+        "ITAR/export-control eligibility and SpaceX extended-hours culture need pre-checks."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.1,
+      "comp": 4.4,
+      "cultural": 3.9,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first published 2026-06-10, verified 2026-06-19.",
+    "next_action": "Use SpaceX materials lab peer/recruiter outreach to pre-check seniority and ITAR/export-control eligibility; if cleared, apply with the senior materials-lab PDF."
+  },
+  {
+    "id": 137,
+    "source": "company-direct",
+    "url": "https://careers.amgen.com/en/job/thousand-oaks/process-development-senior-scientist/87/96316997104",
+    "company": "Amgen",
+    "title": "Process Development Senior Scientist",
+    "location": "Thousand Oaks, CA",
+    "date_found": "2026-06-19",
+    "date_posted": null,
+    "freshness_verified": true,
+    "freshness_reason": "Direct Amgen careers page returned HTTP 200 on 2026-06-19, included full JD/application flow and states Amgen will continue accepting applications until a sufficient number is received; posting date not shown.",
+    "job_id": "96316997104",
+    "score": 4.3,
+    "archetype": "Analytical Process Development / CMC Scientist",
+    "status": "evaluated",
+    "report_path": "reports/137-amgen-process-development-senior-scientist-2026-06-19.md",
+    "tailored_resume": "tailored_amgen_process_development_senior_scientist",
+    "pdf_path": "data/output/cv-amgen-process-development-senior-scientist-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Amgen iPAS Process Development Senior Scientist role focused on pivotal-phase analytical development for synthetic small molecules, peptides, and siRNA: analytical control strategies, method development/validation/transfer, release/stability testing, purity/chiral purity/structure elucidation with MS, CMC reports, and CMO/CTL transfer. Very strong analytical/CMC bridge for Varun's MS/NMR/FTIR/UV-Vis/TGA/DSC, stability/degradation, DOE, technical writing, and process-development story. Risks are 2+ years post-PhD pharma/biotech preferred, senior title, and sponsorship not guaranteed.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - strong Amgen analytical process-development fit; validate seniority and sponsorship before applying.",
+      "strengths": [
+        "Direct Amgen careers page is current and accepting applications as of 2026-06-19.",
+        "Role centers on analytical control strategy, method development/validation/transfer, release/stability testing, structure elucidation, CMC reports, and CMO/CTL transfer.",
+        "Preferred disciplines include Analytical Chemistry, Organic Chemistry, Physical Chemistry, Material Sciences, and Pharmaceutical Sciences.",
+        "Varun can credibly map LC/GC-MS exposure, NMR/GPC, FT-IR, UV-Vis-NIR, TGA/DSC, DOE/SPC, stability/degradation, technical reports, and process-development documentation."
+      ],
+      "gaps": [
+        "Preferred profile asks 2+ years post-PhD pharmaceutical/biotech industry experience.",
+        "Synthetic peptide/siRNA analytical control strategy and regulatory CMC ownership are adjacent rather than proven.",
+        "Posting says sponsorship is not guaranteed, so work authorization must be checked before applying."
+      ],
+      "cv_match": 4.3,
+      "north_star": 4.3,
+      "comp": 4.2,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Amgen careers posting active on 2026-06-19; application window open; posting date not stated.",
+    "next_action": "Use Amgen iPAS/process-development contacts to calibrate seniority and sponsorship; if positive, apply with the Amgen process-development PDF."
+  },
+  {
+    "id": 138,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Process-Analytical-Technologies_R403426-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Process Analytical Technologies",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-19",
+    "date_posted": "2026-06-17",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS posting active on 2026-06-19; jobReqId=R403426, startDate=2026-06-17, postedOn=\"Posted 2 Days Ago\", canApply=true.",
+    "job_id": "R403426",
+    "score": 4.3,
+    "archetype": "Process Analytical Technology / Analytical Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/138-merck-senior-scientist-process-analytical-technologies-2026-06-19.md",
+    "tailored_resume": "tailored_merck_process_analytical_technologies",
+    "pdf_path": "data/output/cv-merck-senior-scientist-process-analytical-technologies-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck/MSD Workday PAT role developing, validating, and implementing in-line/on-line/at-line analytical methods for process monitoring/control, scale-up, tech transfer, launch readiness, validation packages, and regulatory submissions. Excellent technical fit to Varun's spectroscopy/UV-Vis-NIR/FTIR, chromatography/MS exposure, DOE/SPC process-development mindset, documentation, and real-time analytical/control narrative. Gaps are direct Raman/NIR PAT deployment, chemometrics/modeling, and manufacturing-scale GMP implementation.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - unusually clean PhD-level PAT/process-analytics role; validate chemometrics/PAT deployment depth.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-19.",
+        "Education guideline includes PhD in a relevant discipline with expected completion no later than August 2026, so early-career PhD level is in range.",
+        "Role explicitly asks for spectroscopy including Raman, FTIR, NIR, chromatography, chemometric/modeling approaches, analytical method development, PAT, scale-up, tech transfer, and technical writing.",
+        "Varun can pitch spectroscopy/UV-Vis-NIR/FTIR, electrochemical/process monitoring mindset, DOE/SPC, analytical documentation, and material/process structure-property datasets."
+      ],
+      "gaps": [
+        "Direct industrial PAT implementation and chemometrics/modeling are adjacent rather than proven.",
+        "Manufacturing scale-up, launch readiness, and regulatory filing support should be framed as transferable documentation/process-development experience.",
+        "Rahway, NJ is a plausible but lower-preference location than Bay Area/Boston/Colorado."
+      ],
+      "cv_match": 4.3,
+      "north_star": 4.4,
+      "comp": 4.2,
+      "cultural": 4.2,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-17, canApply=true, verified 2026-06-19.",
+    "next_action": "Send Merck Rahway PAT/analytical-enabling outreach; if chemometrics expectations are bridgeable, apply with the Merck PAT tailored PDF."
   }
 ]
