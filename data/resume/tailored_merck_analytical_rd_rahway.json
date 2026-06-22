@@ -1,0 +1,133 @@
+{
+  "name": "Varunprasaath R. Selvaraju, Ph.D.",
+  "email": "varunprasaath@gmail.com",
+  "phone": "(+1) 678-207-9914",
+  "linkedin": "https://linkedin.com/in/varunprasaath-rs",
+  "summary": "PhD chemist/materials scientist with 6+ years of analytical method development, multi-technique characterization, and DOE/SPC process-development experience across small-molecule, polymer, thin-film, and functional materials systems. Currently leads bio-based polymer process-development work at CU Boulder, building reproducible analytical datasets, stability/degradation readouts, SOP-ready documentation, and technical reports that support development decisions.",
+  "competencies": [
+    "Analytical Method Development",
+    "Small Molecule / Peptide-Oligo Adjacent Characterization",
+    "Chromatography & MS Exposure",
+    "NMR / FT-IR / UV-Vis-NIR",
+    "Stability & Shelf-Life Assessment",
+    "DOE/SPC",
+    "GMP Documentation Mindset",
+    "Regulatory Submission Support"
+  ],
+  "education": [
+    {
+      "degree": "Ph.D. in Chemistry",
+      "school": "University of Colorado Boulder",
+      "year": "2025",
+      "details": "Dissertation: Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials\nAdvisor: Prof. Seth Marder\n(Transferred from Georgia Institute of Technology)"
+    },
+    {
+      "degree": "B.S. (Research), Major: Chemistry; Minor: Materials Science",
+      "school": "Indian Institute of Science (IISc)",
+      "year": "2019",
+      "details": "INSPIRE Scholarship for Higher Education (Top 1% nationally)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2025 - Present",
+      "role": "Postdoctoral Researcher",
+      "bullets": [
+        "Lead DOE-guided polymer process-development experiments, defining critical process parameters, analytical readouts, reproducibility criteria, and SOP-ready controls for scale-up decisions.",
+        "Develop stability/degradation and release-relevant characterization readouts using FT-IR, UV-Vis-NIR-adjacent spectroscopy, thermal analysis, and SPC concepts to connect process conditions with material quality attributes.",
+        "Translate process and characterization data into technical reports, troubleshooting recommendations, and documented methods suitable for cross-functional development review."
+      ]
+    },
+    {
+      "company": "University of Colorado Boulder",
+      "period": "July 2021 - July 2025",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Designed and characterized 15+ organic electrochromic material variants using UV-Vis-NIR, FT-IR, cyclic voltammetry, spectroelectrochemistry, NMR, GPC, TGA, DSC, and mass-spectrometry-informed analysis.",
+        "Assessed structure-property-stability relationships, degradation pathways, impurity-/failure-mode hypotheses, and method comparability to guide molecular and formulation/process decisions.",
+        "Built rigorous experimental documentation and datasets supporting method development, reproducibility assessment, and root-cause analysis."
+      ]
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "period": "Aug 2019 - July 2021",
+      "role": "Graduate Researcher",
+      "bullets": [
+        "Co-led AFOSR-funded molecular thin-film process development, linking CVD/surface preparation with morphology, interfaces, optical performance, and reproducible process controls.",
+        "Prepared technical data packages connecting process variables, material performance, and risk/quality decisions for multidisciplinary stakeholders."
+      ]
+    },
+    {
+      "company": "ETH Zurich",
+      "period": "May 2017 - July 2017",
+      "role": "Research Assistant",
+      "bullets": [
+        "Optimized polymer thin-film deposition using DOE strategies and in-situ QCM-D process monitoring, characterizing film-growth kinetics to improve coating reproducibility."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "company": "University of Colorado Boulder",
+      "period": "2021 - 2025",
+      "role": "Laboratory Operations Manager",
+      "bullets": [
+        "Managed operations for a 15-member process-development laboratory, implementing equipment tracking, calibration routines, SOPs, and safety protocols that improved instrument uptime by 30%.",
+        "Trained researchers on instrument workflows, experimental documentation, and safe handling while coordinating multiple concurrent materials-development projects."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Analytical Method Development and Stability Study",
+      "badge": "Chemistry of Materials 2025",
+      "description": "Mapped degradation, redox-instability, and performance failure modes across functional material variants using orthogonal analytical characterization and documented method comparisons.",
+      "tech": "UV-Vis-NIR, FT-IR, CV, NMR, GPC, TGA/DSC, MS-informed analysis"
+    },
+    {
+      "title": "Bio-Based Polymer Scale-Up Process",
+      "badge": "Current",
+      "description": "Defined DOE-guided process windows, analytical readouts, reproducibility criteria, and SOP-ready specifications for scalable polymer systems.",
+      "tech": "DOE, SPC, FT-IR, UV-Vis-NIR, thermal analysis, technical reports"
+    },
+    {
+      "title": "AFOSR Defense Thin-Film Coatings",
+      "badge": "DoD Funded",
+      "description": "Connected CVD and surface-preparation variables to coating morphology, interfaces, and optical/material performance in thin-film systems.",
+      "tech": "CVD, QCM-D, spectroscopy, process documentation"
+    }
+  ],
+  "publications": [
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Narrow-Band Electrochromism of a Ferrocene-Substituted Rhodamine B.\" Chemistry of Materials, 2025, 37, 5558–5568.",
+    "Mandal, J.; Ramasamy Selvaraju, V.; Yan, W.; Divandari, M.; Spencer, N. D.; Dubner, M. \"In Situ Monitoring of SI-ATRP Throughout Multiple Reinitiations Under Flow by Means of a Quartz Crystal Microbalance.\" RSC Advances, 2018, 8, 20048–20055.",
+    "Ramasamy Selvaraju, V.; Venta, R.; Rajapaksha, I.; Zhang, J.; Barlow, S.; Salman, S.; Scott, C.; Marder, S. \"Beyond Rhodamine B: Investigating Alternative Xanthene Cores for Modular Electrochromic Systems.\" (Manuscript under preparation)."
+  ],
+  "conferences": [
+    "Modular Design and Electrochemical Properties of Xanthene-Based Electrochromic Materials, ACS Fall National Meeting, Denver, CO, August 2024.",
+    "Electrochemical and Spectroscopic Properties of Substituted Rhodamine Derivatives, Gerischer-Lewerenz Electrochemistry Symposium, Fort Collins, CO, August 2024.",
+    "Decoupling Redox and Color for High-Contrast Electrochromics, Excited State Processes Conference, Santa Fe, NM, June 2023.",
+    "Electrochromism: Decoupling Color and Redox in Rhodamine-Based Systems, Rocky Mountain Solid State Chemistry Workshop, Boulder, CO, January 2023."
+  ],
+  "skills": {
+    "Analytical & Characterization": "FT-IR, UV-Vis-NIR, NMR, GPC/SEC, HPLC exposure, GC-MS/LC-MS exposure, cyclic voltammetry, spectroelectrochemistry, TGA, DSC, QCM-D",
+    "Method Development & Stability": "Analytical readouts, degradation studies, impurity/failure-mode hypotheses, reproducibility studies, method documentation, SOP-ready controls",
+    "Process & Quality Mindset": "DOE, SPC, process windows, troubleshooting, root-cause analysis, technical reports, validation-package adjacency, tech-transfer documentation",
+    "Data & Communication": "Experimental design, data visualization, Excel, Python/basic data analysis, JMP/basic, cross-functional technical presentations"
+  },
+  "certifications": [
+    "Statistical Process Control (SPC) – Coursera, 2026"
+  ],
+  "honors": [
+    "Plastic Sustainability Innovation in Material Award",
+    "INSPIRE Scholarship (Top 1%, India, 2015)",
+    "97.12 Percentile – IIT JEE Mains (2015)",
+    "All India Rank 144 – NEST (2014)"
+  ],
+  "teaching": {
+    "role": "Teaching Assistant, Organic Chemistry I & Lab",
+    "school": "Georgia Tech",
+    "period": "2019–2021",
+    "description": "Mentored 120+ undergraduates; developed supplemental materials improving exam performance by 15%."
+  }
+}

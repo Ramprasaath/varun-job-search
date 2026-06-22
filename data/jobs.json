@@ -46,48 +46,6 @@
     "freshness_reason": "Direct Genentech careers page re-verified active on 2026-06-01; embedded structured data exposes applyUrl and datePosted=2026-04-25 (jobSeqNo GENEUS202603107743EXTERNALENUS)."
   },
   {
-    "id": 65,
-    "url": "https://jobs.apple.com/en-us/details/200658288/materials-engineer-polymers",
-    "company": "Apple",
-    "title": "Materials Engineer - Polymers",
-    "location": "Cupertino, CA",
-    "date_found": "2026-04-21",
-    "date_posted": "2026-04-16",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Apple jobs page re-verified reachable on 2026-06-01; Apple JS-rendered page exposes active job-detail shell and Submit Resume copy. Playwright apply-control detector remains uncertain because Apple renders controls client-side.",
-    "job_id": "200658288-0836",
-    "score": 4.5,
-    "archetype": "Materials Scientist",
-    "status": "evaluated",
-    "report_path": null,
-    "pdf_path": "data/output/cv-apple-materials-engineer-polymers-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Direct Apple Careers posting remains active. Strong polymer/materials-characterization fit spanning plastics materials, material selection, process development, and supplier-facing problem solving. Main gap is lack of explicit plastics manufacturing or injection-molding tenure, but the core structure-property-processing story is excellent.",
-    "evaluation": {
-      "recommendation": "APPLY - Strong fit",
-      "strengths": [
-        "Direct polymer and materials characterization alignment",
-        "Strong structure-property-processing background",
-        "DOE/process development experience",
-        "Thin-film and surface/materials expertise"
-      ],
-      "gaps": [
-        "No explicit plastics industry tenure",
-        "Injection molding / 3D printing experience not directly shown"
-      ],
-      "cv_match": 4.5,
-      "north_star": 4.5,
-      "comp": 4.5,
-      "cultural": 4.4,
-      "red_flags": -0.1,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": "tailored_apple_polymers",
-    "legitimacy_tier": "High Confidence - direct Apple jobs page reachable with active submit-resume job shell, posted 2026-04-16, re-verified 2026-06-01.",
-    "next_action": "Top-priority materials application; emphasize polymers, process windows, and failure/root-cause characterization."
-  },
-  {
     "id": 67,
     "source": "greenhouse-direct",
     "url": "https://job-boards.greenhouse.io/citytherapeutics/jobs/5153226008",
@@ -1718,5 +1676,93 @@
     },
     "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-17, canApply=true, verified 2026-06-19.",
     "next_action": "Send Merck Rahway PAT/analytical-enabling outreach; if chemometrics expectations are bridgeable, apply with the Merck PAT tailored PDF."
+  },
+  {
+    "id": 139,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Analytical-R-D_R402823-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Analytical R&D",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-22",
+    "date_posted": "2026-06-12",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS posting active on 2026-06-22; jobReqId=R402823, startDate=2026-06-12, postedOn=\"Posted 10 Days Ago\", canApply=true.",
+    "job_id": "R402823",
+    "score": 4.2,
+    "archetype": "Analytical Research & Development / Pharmaceutical Analytical Sciences",
+    "status": "evaluated",
+    "report_path": "reports/139-merck-senior-scientist-analytical-rd-2026-06-22.md",
+    "tailored_resume": "tailored_merck_analytical_rd_rahway",
+    "pdf_path": "data/output/cv-merck-senior-scientist-analytical-r-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck/MSD Pharmaceutical Analytical Sciences role developing analytical methodologies for synthetic small molecule, peptide, and oligonucleotide APIs/products, release and shelf-life assessment under GMP, manufacturing/process understanding studies, regulatory submissions, and advanced analytical tools. Strong match to Varun's multi-technique analytical characterization, NMR/GPC/MS-informed analysis, stability/degradation reasoning, DOE/SPC process-development mindset, and technical documentation. Gaps are direct GMP release testing, pharma regulatory submission ownership, and routine LC/GC/dissolution industrial method ownership.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - strong PhD-level analytical-development role; validate GMP/regulatory and LC/GC depth expectations before applying.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-22.",
+        "Minimum education accepts PhD in Chemistry, Pharmaceutical Science, or related discipline without an explicit post-PhD years requirement.",
+        "Role centers on analytical method development, release/shelf-life assessment, route/formulation/process understanding, regulatory documents, and cross-functional technical leadership.",
+        "Preferred areas include chromatography, mass spectrometry, dissolution, data science, and large-molecule/peptide/oligonucleotide characterization, mapping to Varun's NMR/GPC/MS-informed, spectroscopy, stability, and DOE documentation story."
+      ],
+      "gaps": [
+        "Direct GMP release/shelf-life testing and regulatory submission authorship are adjacent rather than proven.",
+        "Routine LC/GC/dissolution industrial ownership should be positioned through chromatography/MS exposure and method-development rigor, not overclaimed.",
+        "Senior Scientist title requires leadership framing from PhD/postdoc project ownership and lab operations management."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.3,
+      "comp": 4.2,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-12, canApply=true, verified 2026-06-22.",
+    "next_action": "Send Merck Rahway Pharmaceutical Analytical Sciences outreach; if GMP/regulatory and LC/GC expectations are bridgeable, apply with the Merck analytical R&D PDF."
+  },
+  {
+    "id": 140,
+    "source": "workday-direct",
+    "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Ann-Arbor-MI/Research-Scientist_2636934-2",
+    "company": "KLA",
+    "title": "Research Scientist",
+    "location": "Ann Arbor, MI",
+    "date_found": "2026-06-22",
+    "date_posted": "2026-06-17",
+    "freshness_verified": true,
+    "freshness_reason": "Direct KLA Workday CXS posting active on 2026-06-22; jobReqId=2636934, startDate=2026-06-17, postedOn=\"Posted 5 Days Ago\", canApply=true.",
+    "job_id": "2636934",
+    "score": 3.9,
+    "archetype": "Materials / Optoelectronic Research Scientist",
+    "status": "evaluated",
+    "report_path": "reports/140-kla-research-scientist-ann-arbor-2026-06-22.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct KLA CTO research role around semiconductor physics, optics/light-matter interactions, sensors, vacuum equipment, materials characterization, and spectroscopy. It is a credible outreach-first stretch because Varun has electrochromic/optoelectronic materials, spectroscopy, thin-film processing, CVD/QCM-D, DOE, and hands-on characterization experience, but the role asks for deeper optoelectronic device physics, optical/electronic test benches, vacuum-based equipment ownership, and simulation tools than his profile documents.",
+    "evaluation": {
+      "recommendation": "CURATED STRETCH / OUTREACH FIRST - worthwhile KLA R&D target, but calibrate optoelectronic/vacuum/test-bench depth before applying.",
+      "strengths": [
+        "Direct KLA Workday posting is fresh and active; canApply=true on 2026-06-22.",
+        "PhD in materials science or related optoelectronic-device field is in range.",
+        "Role values materials characterization, spectroscopic methods, semiconductor processing, hands-on experimental systems, and technical communication.",
+        "Varun can connect electrochromic/light-matter materials, UV-Vis-NIR/FTIR/spectroelectrochemistry, thin-film CVD/QCM-D, DOE, and instrument documentation to the research mission."
+      ],
+      "gaps": [
+        "Semiconductor physics, optoelectronic device physics simulations, and optical/electronic device test benches are only adjacent.",
+        "Vacuum-based equipment ownership is limited to thin-film process exposure rather than full tool ownership.",
+        "Ann Arbor is a relocation stretch and the role is less chemically anchored than KLA #119/#128."
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.1,
+      "comp": 4.2,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct KLA Workday posting active, posted 2026-06-17, canApply=true, verified 2026-06-22.",
+    "next_action": "Use KLA Ann Arbor CTO/optics peer outreach to test whether electrochromic thin-film/materials characterization experience is enough before investing in a tailored resume."
   }
 ]

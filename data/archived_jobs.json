@@ -3713,5 +3713,49 @@
     "next_action": "Pre-check ITAR/U.S.-person and Top Secret clearance eligibility; if cleared, apply with the Starshield materials resume and use SpaceX materials recruiter/peer outreach first.",
     "archive_reason": "closed/expired: direct SpaceX Greenhouse API returned HTTP 404 on 2026-06-19; archived before June 19 sweep additions.",
     "archived_at": "2026-06-19"
+  },
+  {
+    "id": 65,
+    "url": "https://jobs.apple.com/en-us/details/200658288/materials-engineer-polymers",
+    "company": "Apple",
+    "title": "Materials Engineer - Polymers",
+    "location": "Cupertino, CA",
+    "date_found": "2026-04-21",
+    "date_posted": "2026-04-16",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Apple jobs page re-verified reachable on 2026-06-01; Apple JS-rendered page exposes active job-detail shell and Submit Resume copy. Playwright apply-control detector remains uncertain because Apple renders controls client-side.",
+    "job_id": "200658288-0836",
+    "score": 4.5,
+    "archetype": "Materials Scientist",
+    "status": "evaluated",
+    "report_path": null,
+    "pdf_path": "data/output/cv-apple-materials-engineer-polymers-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Apple Careers posting remains active. Strong polymer/materials-characterization fit spanning plastics materials, material selection, process development, and supplier-facing problem solving. Main gap is lack of explicit plastics manufacturing or injection-molding tenure, but the core structure-property-processing story is excellent.",
+    "evaluation": {
+      "recommendation": "APPLY - Strong fit",
+      "strengths": [
+        "Direct polymer and materials characterization alignment",
+        "Strong structure-property-processing background",
+        "DOE/process development experience",
+        "Thin-film and surface/materials expertise"
+      ],
+      "gaps": [
+        "No explicit plastics industry tenure",
+        "Injection molding / 3D printing experience not directly shown"
+      ],
+      "cv_match": 4.5,
+      "north_star": 4.5,
+      "comp": 4.5,
+      "cultural": 4.4,
+      "red_flags": -0.1,
+      "legitimacy": "High Confidence"
+    },
+    "tailored_resume": "tailored_apple_polymers",
+    "legitimacy_tier": "High Confidence - direct Apple jobs page reachable with active submit-resume job shell, posted 2026-04-16, re-verified 2026-06-01.",
+    "next_action": "Top-priority materials application; emphasize polymers, process windows, and failure/root-cause characterization.",
+    "archive_reason": "closed: direct Apple jobs page returned \"Page not found / role does not exist or is no longer available\" during 2026-06-22 direct liveness check",
+    "archived_at": "2026-06-22"
   }
 ]
