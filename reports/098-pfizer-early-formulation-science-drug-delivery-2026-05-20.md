@@ -130,3 +130,8 @@ This should enter the active tracker as a top current target. Generate the tailo
 ---
 
 *Report generated: 2026-05-20*
+
+## 2026-06-24 Reactivation Note
+
+This role was restored to the active tracker after direct Pfizer Workday CXS again returned `jobReqId=4956649`, `canApply=true`, `startDate=2026-06-11`, and `postedOn=Posted 13 Days Ago`. The current external path uses San Diego while the JD still describes the La Jolla location. Before applying, confirm U.S. work-authorization/sponsorship feasibility because the current posting states visa sponsorship is not available now or in the future.
+

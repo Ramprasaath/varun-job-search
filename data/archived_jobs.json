@@ -3124,53 +3124,6 @@
     "archived_at": "2026-06-03"
   },
   {
-    "id": 98,
-    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---California---La-Jolla/Senior-Scientist--Early-Formulation-Science-and-Drug-Delivery--Drug-Product-Design_4956649-1",
-    "company": "Pfizer",
-    "title": "Senior Scientist, Early Formulation Science and Drug Delivery, Drug Product Design",
-    "location": "La Jolla, CA (On Premise)",
-    "date_found": "2026-05-20",
-    "date_posted": "2026-05-20",
-    "score": 4.1,
-    "archetype": "Materials / Process Development Scientist",
-    "status": "archived",
-    "report_path": "reports/098-pfizer-early-formulation-science-drug-delivery-2026-05-20.md",
-    "pdf_path": "data/output/cv-pfizer-senior-scientist-early-formulation-science-and-dru-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Best new direct lead this sweep. Entry-PhD-friendly Pfizer EFS-DD role focused on small-molecule developability, material science/physicochemical assessment, stability risk, polymorph/salt screens, and preclinical formulation. Varun maps strongly through materials characterization, thermal/spectroscopic/electrochemical analysis, DOE, polymer process development, and stability/failure-mode work; main gaps are direct pharmaceutics/drug-delivery modeling and regulated formulation experience.",
-    "evaluation": {
-      "recommendation": "APPLY AFTER RAM REVIEW - Use tailored early-formulation/materials-science resume and outreach first.",
-      "strengths": [
-        "Direct fit to recent PhD / 0-3 year postdoc level requirement",
-        "Small-molecule material science, physicochemical properties, stability, dissolution/precipitation, and solid-state risk language maps to Varun's materials characterization story",
-        "DOE/process-development and polymer scale-up work support developability and manufacturability framing",
-        "La Jolla / San Diego is within Varun's stated relocation targets",
-        "Direct Workday posting is fresh and marked canApply=true"
-      ],
-      "gaps": [
-        "No direct pharma pre-formulation or clinical drug-product design role yet",
-        "GastroPlus / PK modeling and in vivo/in vitro biopharmaceutics are not proven skills",
-        "Polymorph and salt screening should be framed as adjacent solid-state/materials characterization, not claimed as direct experience",
-        "Limited regulated/GMP formulation-development evidence"
-      ],
-      "cv_match": 4.1,
-      "north_star": 4.3,
-      "comp": 4.0,
-      "cultural": 4.2,
-      "red_flags": -0.3,
-      "legitimacy": "High Confidence"
-    },
-    "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS, posted 2026-05-20, re-verified active 2026-06-03.",
-    "next_action": "Apply with the Pfizer early-formulation/materials-science resume; use Pfizer recruiter/technical-peer outreach first if Ram approves.",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS re-verified active on 2026-06-03; searchText=4956649 returned total=1 with matching externalPath. Playwright liveness can false-negative this Workday SPA as nav/footer-only.",
-    "date_archived": "2026-06-05",
-    "archive_reason": "expired on direct Workday page during 2026-06-05 liveness check",
-    "archived_date": "2026-06-05"
-  },
-  {
     "id": 99,
     "url": "https://careers.amgen.com/en/job/cambridge/analytical-scientist/87/94873677584",
     "company": "Amgen",
@@ -3757,5 +3710,94 @@
     "next_action": "Top-priority materials application; emphasize polymers, process windows, and failure/root-cause characterization.",
     "archive_reason": "closed: direct Apple jobs page returned \"Page not found / role does not exist or is no longer available\" during 2026-06-22 direct liveness check",
     "archived_at": "2026-06-22"
+  },
+  {
+    "id": 112,
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4209819009",
+    "company": "Lila Sciences",
+    "title": "Scientist I/II, Drug Delivery Chemistry",
+    "location": "Cambridge, MA",
+    "date_found": "2026-06-01",
+    "date_posted": "2026-04-27",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Lila Sciences Greenhouse/API posting active on 2026-06-01; first_published=2026-04-27T13:33:42-04:00 and updated_at=2026-05-14T17:07:40-04:00.",
+    "score": 4.1,
+    "archetype": "Drug Delivery / Medicinal Chemistry Scientist",
+    "status": "archived",
+    "report_path": "reports/112-lila-drug-delivery-chemistry-2026-06-01.md",
+    "tailored_resume": "tailored_lila_drug_delivery_chemistry",
+    "pdf_path": "data/output/cv-lila-sciences-scientist-i-ii-drug-delivery-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct Lila Physical Sciences role spanning high-throughput organic synthesis, novel lipids/small molecules for drug delivery, analytical optimization, CDMO scale-up, and data-driven/automated experimentation. Strong match to Varun's PhD chemistry, organic/materials synthesis, LC-MS/GC-MS/NMR/GPC/FTIR characterization, DOE/SPC, and polymer/materials process-development story. Main risks are lipid-drug-delivery specificity, autonomous-lab/automation depth, and Cambridge relocation.",
+    "evaluation": {
+      "recommendation": "APPLY / OUTREACH FIRST - best new chemistry-forward lead from this sweep; use drug-delivery/process-chemistry resume and ask Lila contacts about lipid/automation expectations.",
+      "strengths": [
+        "PhD in Chemistry/Chemical Engineering is explicitly requested and fits Varun's stage",
+        "Organic synthesis, compound-library optimization, analytical readouts, and data-driven SAR map to his molecular materials and process-development background",
+        "CDMO scale-up, reproducibility, and assay/data-quality language align with DOE/SPC, SOP, and technical-documentation experience",
+        "Salary range is transparent ($108K-$170K) and direct Greenhouse listing is current"
+      ],
+      "gaps": [
+        "Specific lipid design and drug-delivery biology/tolerability language is adjacent rather than core documented experience",
+        "Role values automation/AI-driven lab workflows; Varun should frame DOE/data workflows honestly without overclaiming robotics ownership",
+        "Cambridge relocation and early-stage startup pace need confirmation"
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.2,
+      "comp": 4.1,
+      "cultural": 4.2,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Lila Sciences Greenhouse posting active, first_published 2026-04-27, re-verified 2026-06-01.",
+    "next_action": "Send Lila recruiter/peer outreach to clarify lipid-drug-delivery depth and automation expectations; if fit is acceptable, apply with the Lila drug-delivery resume/PDF.",
+    "archived_date": "2026-06-24",
+    "archive_reason": "closed: direct Greenhouse job returns error/404 on 2026-06-24"
+  },
+  {
+    "id": 126,
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Washington--Bothell/Principal-Scientist--Process-Chemistry_4958939-1",
+    "company": "Pfizer",
+    "title": "Principal Scientist, Process Chemistry",
+    "location": "Bothell, WA",
+    "date_found": "2026-06-10",
+    "date_posted": "2026-06-09",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-17; jobReqId=4958939, startDate=2026-06-10, postedOn=\"Posted 7 Days Ago\", canApply=true.",
+    "score": 3.8,
+    "archetype": "Process Chemistry / Medicinal Chemistry Scientist",
+    "status": "archived",
+    "report_path": "reports/126-pfizer-principal-scientist-process-chemistry-2026-06-10.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Pfizer CPAD Bothell role for ADC drug-linker process chemistry: route screening/selection, process development/characterization, high-throughput/data-rich experimentation, catalysis/continuous processing, analytical/purification interfaces, tech transfer, CDMO campaign execution, patents/regulatory documents, and scientific communication. Varun maps through organic chemistry, DOE-guided process development, analytical characterization, structure-property/stability work, documentation, and publication record. Kept at 3.8 because it is principal-level, asks PhD +4 years pharmaceutical process development plus GMP/regulatory authoring, and explicitly requires permanent U.S. work authorization with no sponsorship.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - strong Pfizer process-chemistry platform, but validate principal-level flexibility and work-authorization constraints before applying.",
+      "strengths": [
+        "Direct Pfizer Workday posting is fresh and active; canApply=true on 2026-06-10 and apply-by date is 2026-06-23.",
+        "Role sits exactly at the organic/process/analytical interface: route screening, scalable chemistry, process characterization, purification technologies, and CDMO tech transfer.",
+        "ADC drug-linker work lets Varun emphasize synthetic organic chemistry, NMR/LC-MS/GPC, DOE, stability/structure-property thinking, and publication/presentation record.",
+        "Bothell CPAD is a high-quality pharma process-development environment with transparent compensation and relocation assistance may be available."
+      ],
+      "gaps": [
+        "Principal Scientist level asks PhD +4 years direct pharmaceutical process development; Varun is an early-career PhD/postdoc without that industry tenure.",
+        "GMP deliveries, regulatory authoring, CDMO management, patents, and early-to-late phase pharma development are stretch areas.",
+        "Posting states permanent U.S. work authorization is required and visa sponsorship is not available now or in the future.",
+        "On-site five days/week in Bothell; relocation and authorization need to be cleared before application effort."
+      ],
+      "cv_match": 3.8,
+      "north_star": 4.1,
+      "comp": 4.2,
+      "cultural": 4.0,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-10, canApply=true, re-verified 2026-06-17.",
+    "next_action": "Use CPAD/ADC process-chemistry outreach first; ask whether academic organic/materials process-development evidence can bridge the principal-level pharma/GMP bar and confirm permanent work-authorization feasibility before applying.",
+    "archived_date": "2026-06-24",
+    "archive_reason": "closed: direct Pfizer Workday CXS searchText=4958939 returned total=0 on 2026-06-24"
   }
 ]
