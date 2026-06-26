@@ -3799,5 +3799,97 @@
     "next_action": "Use CPAD/ADC process-chemistry outreach first; ask whether academic organic/materials process-development evidence can bridge the principal-level pharma/GMP bar and confirm permanent work-authorization feasibility before applying.",
     "archived_date": "2026-06-24",
     "archive_reason": "closed: direct Pfizer Workday CXS searchText=4958939 returned total=0 on 2026-06-24"
+  },
+  {
+    "id": 134,
+    "source": "workday-direct",
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Massachusetts---Andover/Scientist-III_4959167-2",
+    "company": "Pfizer",
+    "title": "Scientist III",
+    "location": "Andover, MA",
+    "date_found": "2026-06-19",
+    "date_posted": "2026-06-18",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-19; jobReqId=4959167, startDate=2026-06-18, postedOn=\"Posted Yesterday\", canApply=true.",
+    "job_id": "4959167",
+    "score": 3.8,
+    "archetype": "Analytical Method Development / QC Scientist",
+    "status": "archived",
+    "report_path": "reports/134-pfizer-scientist-iii-2026-06-19.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Pfizer Andover Workday role supporting cGMP analytical method development, validation, transfer, troubleshooting, and PAT methods across small molecules, gases, nucleotides, resins, polymers, enzymes, HPLC/GC, and Raman. Good bridge to Varun's analytical characterization, DOE/SPC, spectroscopy, documentation, and process-development work. Main risks are production-QC orientation, BS/MS minimum rather than explicit PhD route, and no current/future U.S. visa sponsorship.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST / APPLY ONLY IF WORK-AUTH FITS - useful analytical-method validation role, but sponsor constraint and production-QC level need calibration.",
+      "strengths": [
+        "Direct Pfizer Workday posting is current and active; canApply=true on 2026-06-19.",
+        "Responsibilities include analytical test-method development, validation protocols, method transfer, troubleshooting, investigations, and technical documents.",
+        "JD names HPLC, GC, Raman, spectroscopy, cGMP documentation, PAT methods, polymers, salts, sugars, enzymes, resins, and other materials.",
+        "Varun can credibly map spectroscopy/thermal/electrochemical characterization, DOE/SPC process windows, root-cause thinking, and SOP-ready reports."
+      ],
+      "gaps": [
+        "The role is cGMP production/QC support rather than discovery analytical development.",
+        "Minimum requirements are BS+6 or MS+4; PhD fit is plausible but not explicitly called out.",
+        "Posting states U.S. work visa sponsorship is not available now or in the future."
+      ],
+      "cv_match": 3.9,
+      "north_star": 3.7,
+      "comp": 3.8,
+      "cultural": 3.8,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-18, canApply=true, verified 2026-06-19.",
+    "next_action": "Use Pfizer Andover QCA outreach to confirm PhD-level fit and work-authorization constraints before investing in an application.",
+    "archived_date": "2026-06-26",
+    "archive_reason": "Verified closed via direct Pfizer Workday CXS searchText=4959167 on 2026-06-26: total 0 results."
+  },
+  {
+    "id": 139,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Analytical-R-D_R402823-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Analytical R&D",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-22",
+    "date_posted": "2026-06-12",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS posting active on 2026-06-22; jobReqId=R402823, startDate=2026-06-12, postedOn=\"Posted 10 Days Ago\", canApply=true.",
+    "job_id": "R402823",
+    "score": 4.2,
+    "archetype": "Analytical Research & Development / Pharmaceutical Analytical Sciences",
+    "status": "archived",
+    "report_path": "reports/139-merck-senior-scientist-analytical-rd-2026-06-22.md",
+    "tailored_resume": "tailored_merck_analytical_rd_rahway",
+    "pdf_path": "data/output/cv-merck-senior-scientist-analytical-r-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck/MSD Pharmaceutical Analytical Sciences role developing analytical methodologies for synthetic small molecule, peptide, and oligonucleotide APIs/products, release and shelf-life assessment under GMP, manufacturing/process understanding studies, regulatory submissions, and advanced analytical tools. Strong match to Varun's multi-technique analytical characterization, NMR/GPC/MS-informed analysis, stability/degradation reasoning, DOE/SPC process-development mindset, and technical documentation. Gaps are direct GMP release testing, pharma regulatory submission ownership, and routine LC/GC/dissolution industrial method ownership.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - strong PhD-level analytical-development role; validate GMP/regulatory and LC/GC depth expectations before applying.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-22.",
+        "Minimum education accepts PhD in Chemistry, Pharmaceutical Science, or related discipline without an explicit post-PhD years requirement.",
+        "Role centers on analytical method development, release/shelf-life assessment, route/formulation/process understanding, regulatory documents, and cross-functional technical leadership.",
+        "Preferred areas include chromatography, mass spectrometry, dissolution, data science, and large-molecule/peptide/oligonucleotide characterization, mapping to Varun's NMR/GPC/MS-informed, spectroscopy, stability, and DOE documentation story."
+      ],
+      "gaps": [
+        "Direct GMP release/shelf-life testing and regulatory submission authorship are adjacent rather than proven.",
+        "Routine LC/GC/dissolution industrial ownership should be positioned through chromatography/MS exposure and method-development rigor, not overclaimed.",
+        "Senior Scientist title requires leadership framing from PhD/postdoc project ownership and lab operations management."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.3,
+      "comp": 4.2,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-12, canApply=true, verified 2026-06-22.",
+    "next_action": "Send Merck Rahway Pharmaceutical Analytical Sciences outreach; if GMP/regulatory and LC/GC expectations are bridgeable, apply with the Merck analytical R&D PDF.",
+    "archived_date": "2026-06-26",
+    "archive_reason": "Verified closed via direct Merck/MSD Workday CXS searchText=R402823 on 2026-06-26: total 0 results."
   }
 ]

@@ -1418,50 +1418,6 @@
     "next_action": "Use existing Serán cluster outreach to ask whether PhD process-development/postdoc backgrounds are in range; if yes, apply with the Serán process-development engineer resume."
   },
   {
-    "id": 134,
-    "source": "workday-direct",
-    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Massachusetts---Andover/Scientist-III_4959167-2",
-    "company": "Pfizer",
-    "title": "Scientist III",
-    "location": "Andover, MA",
-    "date_found": "2026-06-19",
-    "date_posted": "2026-06-18",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS posting active on 2026-06-19; jobReqId=4959167, startDate=2026-06-18, postedOn=\"Posted Yesterday\", canApply=true.",
-    "job_id": "4959167",
-    "score": 3.8,
-    "archetype": "Analytical Method Development / QC Scientist",
-    "status": "evaluated",
-    "report_path": "reports/134-pfizer-scientist-iii-2026-06-19.md",
-    "tailored_resume": null,
-    "pdf_path": null,
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh direct Pfizer Andover Workday role supporting cGMP analytical method development, validation, transfer, troubleshooting, and PAT methods across small molecules, gases, nucleotides, resins, polymers, enzymes, HPLC/GC, and Raman. Good bridge to Varun's analytical characterization, DOE/SPC, spectroscopy, documentation, and process-development work. Main risks are production-QC orientation, BS/MS minimum rather than explicit PhD route, and no current/future U.S. visa sponsorship.",
-    "evaluation": {
-      "recommendation": "OUTREACH-FIRST / APPLY ONLY IF WORK-AUTH FITS - useful analytical-method validation role, but sponsor constraint and production-QC level need calibration.",
-      "strengths": [
-        "Direct Pfizer Workday posting is current and active; canApply=true on 2026-06-19.",
-        "Responsibilities include analytical test-method development, validation protocols, method transfer, troubleshooting, investigations, and technical documents.",
-        "JD names HPLC, GC, Raman, spectroscopy, cGMP documentation, PAT methods, polymers, salts, sugars, enzymes, resins, and other materials.",
-        "Varun can credibly map spectroscopy/thermal/electrochemical characterization, DOE/SPC process windows, root-cause thinking, and SOP-ready reports."
-      ],
-      "gaps": [
-        "The role is cGMP production/QC support rather than discovery analytical development.",
-        "Minimum requirements are BS+6 or MS+4; PhD fit is plausible but not explicitly called out.",
-        "Posting states U.S. work visa sponsorship is not available now or in the future."
-      ],
-      "cv_match": 3.9,
-      "north_star": 3.7,
-      "comp": 3.8,
-      "cultural": 3.8,
-      "red_flags": -0.4,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday posting active, posted 2026-06-18, canApply=true, verified 2026-06-19.",
-    "next_action": "Use Pfizer Andover QCA outreach to confirm PhD-level fit and work-authorization constraints before investing in an application."
-  },
-  {
     "id": 135,
     "source": "workday-direct",
     "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/United-States---Connecticut---Groton/Senior-Scientist--Analytical-Research-and-Development_4959230-2",
@@ -1638,50 +1594,6 @@
     "next_action": "Send Merck Rahway PAT/analytical-enabling outreach; if chemometrics expectations are bridgeable, apply with the Merck PAT tailored PDF."
   },
   {
-    "id": 139,
-    "source": "workday-direct",
-    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Analytical-R-D_R402823-1",
-    "company": "Merck/MSD",
-    "title": "Senior Scientist, Analytical R&D",
-    "location": "Rahway, NJ",
-    "date_found": "2026-06-22",
-    "date_posted": "2026-06-12",
-    "freshness_verified": true,
-    "freshness_reason": "Direct Merck/MSD Workday CXS posting active on 2026-06-22; jobReqId=R402823, startDate=2026-06-12, postedOn=\"Posted 10 Days Ago\", canApply=true.",
-    "job_id": "R402823",
-    "score": 4.2,
-    "archetype": "Analytical Research & Development / Pharmaceutical Analytical Sciences",
-    "status": "evaluated",
-    "report_path": "reports/139-merck-senior-scientist-analytical-rd-2026-06-22.md",
-    "tailored_resume": "tailored_merck_analytical_rd_rahway",
-    "pdf_path": "data/output/cv-merck-senior-scientist-analytical-r-d-2026.pdf",
-    "applied_date": null,
-    "follow_up_date": null,
-    "notes": "Fresh direct Merck/MSD Pharmaceutical Analytical Sciences role developing analytical methodologies for synthetic small molecule, peptide, and oligonucleotide APIs/products, release and shelf-life assessment under GMP, manufacturing/process understanding studies, regulatory submissions, and advanced analytical tools. Strong match to Varun's multi-technique analytical characterization, NMR/GPC/MS-informed analysis, stability/degradation reasoning, DOE/SPC process-development mindset, and technical documentation. Gaps are direct GMP release testing, pharma regulatory submission ownership, and routine LC/GC/dissolution industrial method ownership.",
-    "evaluation": {
-      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - strong PhD-level analytical-development role; validate GMP/regulatory and LC/GC depth expectations before applying.",
-      "strengths": [
-        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-22.",
-        "Minimum education accepts PhD in Chemistry, Pharmaceutical Science, or related discipline without an explicit post-PhD years requirement.",
-        "Role centers on analytical method development, release/shelf-life assessment, route/formulation/process understanding, regulatory documents, and cross-functional technical leadership.",
-        "Preferred areas include chromatography, mass spectrometry, dissolution, data science, and large-molecule/peptide/oligonucleotide characterization, mapping to Varun's NMR/GPC/MS-informed, spectroscopy, stability, and DOE documentation story."
-      ],
-      "gaps": [
-        "Direct GMP release/shelf-life testing and regulatory submission authorship are adjacent rather than proven.",
-        "Routine LC/GC/dissolution industrial ownership should be positioned through chromatography/MS exposure and method-development rigor, not overclaimed.",
-        "Senior Scientist title requires leadership framing from PhD/postdoc project ownership and lab operations management."
-      ],
-      "cv_match": 4.2,
-      "north_star": 4.3,
-      "comp": 4.2,
-      "cultural": 4.2,
-      "red_flags": -0.3,
-      "legitimacy": "High Confidence"
-    },
-    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-12, canApply=true, verified 2026-06-22.",
-    "next_action": "Send Merck Rahway Pharmaceutical Analytical Sciences outreach; if GMP/regulatory and LC/GC expectations are bridgeable, apply with the Merck analytical R&D PDF."
-  },
-  {
     "id": 140,
     "source": "workday-direct",
     "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Ann-Arbor-MI/Research-Scientist_2636934-2",
@@ -1809,5 +1721,222 @@
     },
     "legitimacy_tier": "High Confidence - direct Lila Sciences Greenhouse API active, first_published 2026-05-26, verified 2026-06-24.",
     "next_action": "Send Lila materials-science outreach to ask whether electrochemical/thin-film/materials-characterization backgrounds can bridge the magnetism/SQUID/PPMS bar; only generate a resume if the team signals flexibility."
+  },
+  {
+    "id": 143,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Sr-Scientist--Analytical-R-D_R404252-1",
+    "company": "Merck/MSD",
+    "title": "Sr. Scientist, Analytical R&D",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-26",
+    "date_posted": "2026-06-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS searchText=R404252 returned one current posting on 2026-06-26; jobReqId=R404252, startDate=2026-06-25, postedOn=\"Posted Yesterday\", canApply=true.",
+    "job_id": "R404252",
+    "score": 4.6,
+    "archetype": "Pharmaceutical Materials Science / Solid-State Characterization",
+    "status": "evaluated",
+    "report_path": "reports/143-merck-sr-scientist-analytical-rd-pharmaceutical-materials-2026-06-26.md",
+    "tailored_resume": "tailored_merck_pharmaceutical_materials_scientist",
+    "pdf_path": "data/output/cv-merck-pharmaceutical-materials-sr-scientist-analytical-r-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck Pharmaceutical Analysis & Digital Technologies role for a pharmaceutical materials scientist characterizing APIs, intermediates, peptides, excipients, drug-product intermediates, polymorphs/salts, amorphous solid dispersions, crystallization, drug-excipient compatibility, and physical stability. This is an unusually strong fit to Varun's materials chemistry, thermal/spectroscopic characterization, NMR/GPC/MS-informed analysis, DOE/SPC process thinking, and publication-quality technical communication. Main gaps are direct pharma solid-state tool depth (XRPD/SEM/UPLC) and late-stage regulatory filing experience.",
+    "evaluation": {
+      "recommendation": "TOP PRIORITY / APPLY AFTER OUTREACH - strongest fresh direct role in this sweep; tailor around materials characterization, solid-state stability, crystallization, and analytical documentation.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-26.",
+        "Role is explicitly pharmaceutical materials science inside Materials & Biophysical Characterization, with APIs, chemical intermediates, peptides, excipients, drug products, polymorph/salt selection, crystallization, amorphous solid dispersions, and physical stability.",
+        "PhD in chemistry/materials science is accepted without a post-PhD years requirement.",
+        "Varun can credibly map FT-IR, UV-Vis-NIR, TGA/DSC, NMR, GPC, MS-informed analysis, thin films/polymers, DOE/SPC, degradation analysis, and publications to the scientific problem space."
+      ],
+      "gaps": [
+        "XRPD/electron microscopy/powder-characterization and pharma polymorph screens are adjacent rather than proven.",
+        "Late-stage product-development/regulatory filing experience should be framed as technical-documentation readiness, not direct ownership.",
+        "Rahway relocation and work-authorization details still need confirmation."
+      ],
+      "cv_match": 4.6,
+      "north_star": 4.8,
+      "comp": 4.3,
+      "cultural": 4.6,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-25, canApply=true, verified 2026-06-26.",
+    "next_action": "Send MBC/Pharmaceutical Materials outreach to Burçe/Caitlin or a Rahway recruiter; if XRPD/polymorph depth is bridgeable, apply with the Merck pharmaceutical materials PDF."
+  },
+  {
+    "id": 144,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Materials-and-Biophysical-Characterization_R404066-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Materials and Biophysical Characterization",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-26",
+    "date_posted": "2026-06-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS searchText=R404066 returned one current posting on 2026-06-26; jobReqId=R404066, startDate=2026-06-25, postedOn=\"Posted Yesterday\", canApply=true.",
+    "job_id": "R404066",
+    "score": 4.2,
+    "archetype": "Materials & Biophysical Characterization / Formulation Stability",
+    "status": "evaluated",
+    "report_path": "reports/144-merck-materials-biophysical-characterization-2026-06-26.md",
+    "tailored_resume": "tailored_merck_materials_biophysical_characterization",
+    "pdf_path": "data/output/cv-merck-materials-biophysical-characterization-senior-scientist-materials-and-biophysical-charact-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Merck MBC role developing biophysical and particle characterization tools for biotherapeutics, formulation composition, stability, device/process robustness, and CMC documentation. Good fit to Varun's IR/DSC/spectroscopy, thermal analysis, materials stability, process-property reasoning, technical reports, and cross-functional lab operations. Primary risk is that the posting wants direct biologics/protein/peptide stability and particle methods such as DLS, flow imaging, CD, AUC, and flow cytometry.",
+    "evaluation": {
+      "recommendation": "STRONG OUTREACH-FIRST - credible materials/stability bridge, but confirm protein/biologics depth expectations before applying.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-26.",
+        "PhD in Chemistry/Chemical Engineering/Pharmaceutical Sciences or related field with 0-4 years industry experience is in range.",
+        "Role values materials characterization, formulation stability, particle/biophysical tools, technical reports, regulatory documents, and project management.",
+        "Varun can emphasize IR/DSC, spectroscopy, thermal analysis, stability/degradation, process-property reasoning, instrumentation ownership, and scientific communication."
+      ],
+      "gaps": [
+        "Direct biologics/protein aggregation, DLS/flow imaging/CD/AUC, and flow cytometry are not core Varun evidence.",
+        "Application should avoid overclaiming biologics expertise and instead ask whether a materials-characterization PhD profile is in range."
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.3,
+      "comp": 4.3,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-25, canApply=true, verified 2026-06-26.",
+    "next_action": "Use MBC outreach to calibrate the biologics/particle-method gap; apply with the Merck MBC PDF only if they value broader materials-characterization depth."
+  },
+  {
+    "id": 145,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Small-Molecule-Chemical-Engineering_R404711-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Small Molecule Chemical Engineering",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-26",
+    "date_posted": "2026-06-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS searchText=R404711 returned one current posting on 2026-06-26; jobReqId=R404711, startDate=2026-06-25, postedOn=\"Posted Yesterday\", canApply=true.",
+    "job_id": "R404711",
+    "score": 4.0,
+    "archetype": "Small-Molecule Process Development / Chemical Commercialization",
+    "status": "evaluated",
+    "report_path": "reports/145-merck-small-molecule-chemical-engineering-2026-06-26.md",
+    "tailored_resume": "tailored_merck_small_molecule_chemical_engineering",
+    "pdf_path": "data/output/cv-merck-small-molecule-engineering-senior-scientist-small-molecule-chemical-engineeri-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh Merck Chemical Commercialization Technology role for small-molecule process characterization, DOE, robustness/productivity studies, technology transfer, validation, filing and supply support, cGMP/GDP, kilo-lab work, crystallization, QbD, and scale-up. It maps to Varun's organic/materials chemistry, DOE-guided process development, reproducible process windows, analytical documentation, and current polymer process-development postdoc. Main gap is the posting's Chemical Engineering degree/process-scale-up expectation and direct cGMP commercialization experience.",
+    "evaluation": {
+      "recommendation": "SELECTIVE APPLY AFTER FIT-CALIBRATION - good process-development target if Merck will consider a chemistry PhD with DOE/process-window evidence for a chemical-engineering-labeled role.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active; canApply=true on 2026-06-26.",
+        "Role centers on process characterization, statistical DOE, robustness/productivity, technology transfer, validation, crystallization, QbD, and small-molecule process development.",
+        "Varun has organic chemistry, purification/characterization, DOE/SPC, process-window, and technical-reporting evidence.",
+        "Chemical commercialization path is aligned with Varun’s process-development archetype."
+      ],
+      "gaps": [
+        "Preferred profile is PhD Chemical Engineering or strong chemical-process industry experience.",
+        "Kilo-lab/pilot/factory scale-up, cGMP validation, and regulatory filing ownership are adjacent rather than proven."
+      ],
+      "cv_match": 3.9,
+      "north_star": 4.2,
+      "comp": 4.3,
+      "cultural": 4.0,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-25, canApply=true, verified 2026-06-26.",
+    "next_action": "Ask a Merck CCT/process-development contact whether chemistry PhD + DOE process-development evidence can bridge the chemical-engineering label before applying."
+  },
+  {
+    "id": 146,
+    "source": "greenhouse-direct",
+    "url": "https://boards.greenhouse.io/spacex/jobs/8604337002?gh_jid=8604337002",
+    "company": "SpaceX",
+    "title": "Sr. Materials Engineer (Starshield)",
+    "location": "Hawthorne, CA",
+    "date_found": "2026-06-26",
+    "date_posted": "2026-06-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct SpaceX Greenhouse Boards API job 8604337002 active on 2026-06-26; first_published=2026-06-25; posting page/API returned current content.",
+    "job_id": "8604337002",
+    "score": 4.1,
+    "archetype": "Materials Engineering / Failure Analysis / Coatings",
+    "status": "evaluated",
+    "report_path": "reports/146-spacex-sr-materials-engineer-starshield-2026-06-26.md",
+    "tailored_resume": "tailored_spacex_starshield_materials",
+    "pdf_path": "data/output/cv-spacex-sr-materials-engineer-starshield-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct SpaceX Starshield role focused on metals, polymers, coatings, joining/forming, thermal/optical coatings, hands-on lab testing, failure analysis, prototype process trials, material/process qualification, vendor process control, and characterization methods including SEM-EDS, FTIR, DSC, TGA, LFA, rheology, optical microscopy and mechanical testing. Very strong materials/failure-analysis match; main red flags are Top Secret clearance eligibility, ITAR/US-person constraints, long-hour expectations, and limited direct aerospace flight-hardware background.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST / APPLY IF CLEARANCE-ELIGIBLE - strong technical match, but clearance/ITAR and workload need confirmation.",
+      "strengths": [
+        "Direct SpaceX Greenhouse posting is fresh and active; first_published 2026-06-25.",
+        "Role aligns with Varun’s core materials/failure-analysis story: polymers, coatings, FTIR, DSC/TGA, process-property relationships, root-cause analysis, and prototype/process trials.",
+        "Existing Starshield tailored resume/PDF from the prior similar posting can be reused and refreshed.",
+        "Hawthorne is geographically viable relative to California target markets."
+      ],
+      "gaps": [
+        "Must be able to obtain Top Secret clearance and satisfy ITAR requirements; this is the gating question.",
+        "Direct aerospace/flight-hardware and joining/forming experience is not Varun’s core background.",
+        "SpaceX long-hour/weekend expectations may be material."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.4,
+      "comp": 4.1,
+      "cultural": 3.8,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct SpaceX Greenhouse posting active, first_published 2026-06-25, verified 2026-06-26.",
+    "next_action": "Confirm TS/ITAR eligibility first; if yes, use Matthew/James/Mark outreach and apply with the Starshield materials PDF."
+  },
+  {
+    "id": 147,
+    "source": "workday-direct",
+    "url": "https://bristolmyerssquibb.wd5.myworkdayjobs.com/BMS/job/Princeton---NJ---US/Scientist--Material-Sciences_R1602572",
+    "company": "Bristol Myers Squibb",
+    "title": "Scientist, Material Sciences",
+    "location": "Princeton, NJ",
+    "date_found": "2026-06-26",
+    "date_posted": "2026-05-20",
+    "freshness_verified": true,
+    "freshness_reason": "Direct BMS Workday CXS searchText=R1602572 returned one current posting on 2026-06-26; jobReqId=R1602572, startDate=2026-05-20, postedOn=\"Posted 30+ Days Ago\", canApply=true.",
+    "job_id": "R1602572",
+    "score": 4.0,
+    "archetype": "Material Sciences / Physicochemical Protein-Reagent Characterization",
+    "status": "evaluated",
+    "report_path": "reports/147-bms-scientist-material-sciences-2026-06-26.md",
+    "tailored_resume": "tailored_bms_material_sciences",
+    "pdf_path": "data/output/cv-bms-scientist-material-sciences-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Direct BMS Princeton Material Sciences role for physicochemical characterization and conjugation of protein reagents across immunoassays, flow cytometry, IHC, and LCMS. Strong signals include PhD 0+ fit, LC-MS/SEC/UV-Vis method development, validation/implementation of assays, characterization protocols, data summaries, scientific writing, and instrumentation troubleshooting. The main gap is direct protein reagent/bioconjugation and immunoassay context; posting is active but older (2026-05-20 / Posted 30+ Days Ago).",
+    "evaluation": {
+      "recommendation": "APPLY AFTER TARGETED OUTREACH - good PhD-level analytical/material sciences role; calibrate protein-reagent and bioconjugation expectations first.",
+      "strengths": [
+        "Direct BMS Workday posting is active and canApply=true on 2026-06-26.",
+        "PhD in related field with 0+ years experience is explicitly in range.",
+        "Role values LC-MS, SEC, UV-Vis, physicochemical characterization, method development, validation/implementation, data summaries, instrument troubleshooting, and scientific writing.",
+        "Varun can map LC-MS/GC-MS exposure, GPC/SEC, UV-Vis/FT-IR, method documentation, lab operations, and analytical problem solving."
+      ],
+      "gaps": [
+        "Protein reagent conjugation, immunoassay/flow/IHC context, and direct bioconjugation chemistry are adjacent rather than core.",
+        "Posting is active but older than the freshest roles; outreach should precede application."
+      ],
+      "cv_match": 4.0,
+      "north_star": 4.0,
+      "comp": 3.9,
+      "cultural": 4.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct BMS Workday posting active, posted 2026-05-20, canApply=true, verified 2026-06-26.",
+    "next_action": "Ask a BMS Princeton material sciences/LC-MS contact whether Varun’s analytical-materials background can bridge protein reagent conjugation, then apply with the BMS material sciences PDF if yes."
   }
 ]
