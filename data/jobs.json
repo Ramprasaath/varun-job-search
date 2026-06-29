@@ -373,10 +373,10 @@
       "legitimacy": "High Confidence"
     },
     "tailored_resume": "tailored_pfizer_early_formulation_science_drug_delivery",
-    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS active, jobReqId=4956649, canApply=true, startDate 2026-06-11, verified 2026-06-24.",
+    "legitimacy_tier": "High Confidence - direct Pfizer Workday CXS active, jobReqId=4956649, startDate 2026-06-11, re-verified 2026-06-29.",
     "next_action": "Confirm U.S. work-authorization/sponsorship feasibility first; if cleared, apply with the Pfizer early-formulation/materials-science resume and use Pfizer recruiter/technical-peer outreach before submission.",
     "freshness_verified": true,
-    "freshness_reason": "Direct Pfizer Workday CXS re-verified active on 2026-06-24; searchText=4956649 returned total=1 with matching jobReqId, canApply=true, startDate=2026-06-11, postedOn=\"Posted 13 Days Ago\". Current externalPath uses San Diego while the JD states La Jolla."
+    "freshness_reason": "Direct Pfizer Workday CXS re-verified active on 2026-06-29 after UI liveness false-positive; searchText=4956649 returned total=1 with matching jobReqId, startDate=2026-06-11, postedOn=\"Posted 18 Days Ago\"."
   },
   {
     "id": 100,
@@ -1938,5 +1938,179 @@
     },
     "legitimacy_tier": "High Confidence - direct BMS Workday posting active, posted 2026-05-20, canApply=true, verified 2026-06-26.",
     "next_action": "Ask a BMS Princeton material sciences/LC-MS contact whether Varun’s analytical-materials background can bridge protein reagent conjugation, then apply with the BMS material sciences PDF if yes."
+  },
+  {
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Sr-Scientist--NMR-Spectroscopy_R403920",
+    "company": "Merck/MSD",
+    "title": "Sr. Scientist, NMR Spectroscopy",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-29",
+    "date_posted": "2026-06-19",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS searchText=R403920 returned total=1 with matching current posting on 2026-06-29; postedOn=\"Posted 10 Days Ago\".",
+    "job_id": "R403920",
+    "score": 3.8,
+    "archetype": "Analytical Chemistry / NMR Structure Elucidation",
+    "status": "evaluated",
+    "report_path": "reports/148-merck-sr-scientist-nmr-spectroscopy-2026-06-29.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck Rahway NMR Sciences role for structure elucidation, analytical method development, physicochemical characterization, impurities/degradants, and solid/solution NMR across small molecules, peptides, and biologics. Varun maps through organic/materials chemistry, routine NMR use, FT-IR/UV-Vis/TGA/DSC/GPC/MS-adjacent characterization, technical reports, Python, and publication record. Main blocker is depth: JD asks for an NMR-focused PhD or substantial specialist experience with solid-state/solution NMR instrumentation, cryoprobes, automation, and advanced methodology.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST / REACH - keep active because it is fresh, direct, and analytically relevant, but only apply if Merck confirms adjacent materials-NMR experience is in range.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is active and fresh on 2026-06-29.",
+        "Role values organic/physical chemistry, structure elucidation, impurities/degradants, analytical method development, physicochemical characterization, and scientific publications.",
+        "Varun can credibly discuss NMR as part of a broader multi-technique characterization toolkit alongside FT-IR, UV-Vis-NIR, thermal analysis, GPC/SEC, MS-informed analysis, and Python-enabled data handling."
+      ],
+      "gaps": [
+        "Hardest gap is role framing around specialist solid-state and solution NMR, including Bruker/JEOL/Varian hardware, cryoprobes, and automation.",
+        "JD preference for NMR-focused PhD is stronger than Varun’s materials/electrochromic dissertation focus.",
+        "Relocation to Rahway and work authorization still need confirmation."
+      ],
+      "cv_match": 3.7,
+      "north_star": 3.9,
+      "comp": 4.1,
+      "cultural": 4.0,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-19, verified 2026-06-29.",
+    "next_action": "Message Merck NMR/analytical contacts first to ask whether materials-chemistry NMR plus multi-technique characterization is sufficient; apply only if they say the specialist NMR gap is bridgeable.",
+    "id": 148
+  },
+  {
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Sr-Scientist--Oral-Formulation-Sciences--Onsite-_R403276",
+    "company": "Merck/MSD",
+    "title": "Sr. Scientist, Oral Formulation Sciences (Onsite)",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-29",
+    "date_posted": "2026-06-24",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS searchText=R403276 returned total=1 with matching current posting on 2026-06-29; postedOn=\"Posted 5 Days Ago\".",
+    "job_id": "R403276",
+    "score": 4.1,
+    "archetype": "Oral Formulation / Process Development Scientist",
+    "status": "evaluated",
+    "report_path": "reports/149-merck-sr-scientist-oral-formulation-sciences-2026-06-29.md",
+    "tailored_resume": "tailored_merck_oral_formulation_sciences",
+    "pdf_path": "data/output/cv-merck-sr-scientist-oral-formulation-sciences-onsite-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck Pharmaceutical Sciences role translating molecules to medicines through formulation design, scale-up, GMP manufacturing support, DOE, process development, physical/organic chemistry, materials science, technical reports, and cross-functional work with process chemistry, preformulation, analytical, and physical characterization groups. Strong fit to Varun’s PhD chemistry/materials background, DOE/SPC process-development story, polymer scale-up, stability/failure analysis, and technical communication. Main gaps are direct oral dosage/formulation, pilot-plant, and pharma GMP product-development ownership.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER TARGETED OUTREACH - best new role from this sweep; tailor around DOE-guided process development, materials science, physical/organic chemistry, and formulation-adjacent stability work.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is active and fresh on 2026-06-29.",
+        "Role explicitly accepts PhD-level candidates in related scientific/engineering disciplines and emphasizes formulation/process development, scale-up, DOE, technical reports, physical/organic chemistry, and materials science.",
+        "Varun can map current bio-based polymer process development, DOE/SPC, SOP-ready specifications, stability/degradation analysis, and multi-technique characterization to formulation robustness and manufacturing readiness.",
+        "Rahway/NJ is within Varun’s stated relocation corridor."
+      ],
+      "gaps": [
+        "No direct oral drug-product formulation, tablet/capsule process, or pharmaceutical pilot-plant ownership yet.",
+        "Advanced drug-product manufacturing technologies and GMP supply execution should be framed as adjacent readiness, not direct experience.",
+        "Work authorization/relocation details still need confirmation before submission."
+      ],
+      "cv_match": 4.1,
+      "north_star": 4.3,
+      "comp": 4.1,
+      "cultural": 4.1,
+      "red_flags": -0.2,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-24, verified 2026-06-29.",
+    "next_action": "Use the new Merck oral-formulation PDF; contact oral formulation/pharmaceutical sciences contacts to validate the pharma formulation gap, then apply if they confirm adjacent DOE/materials-process experience is acceptable.",
+    "id": 149
+  },
+  {
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Scientist--2nd-Shift----Pharmaceutical-Analytical-Sciences--Onsite-_R395725-1",
+    "company": "Merck/MSD",
+    "title": "Scientist (2nd Shift) - Pharmaceutical Analytical Sciences (Onsite)",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-29",
+    "date_posted": "2026-06-23",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS searchText=R395725 returned total=1 with matching current posting on 2026-06-29; postedOn=\"Posted 6 Days Ago\".",
+    "job_id": "R395725",
+    "score": 3.8,
+    "archetype": "Pharmaceutical Analytical Sciences / GMP Testing",
+    "status": "evaluated",
+    "report_path": "reports/150-merck-pharmaceutical-analytical-sciences-2nd-shift-2026-06-29.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck analytical sciences role supporting small molecule, peptide, and oligonucleotide development through GMP release/stability testing, analytical characterization, chromatography/spectroscopy, LCMS, Empower, data review, method validation/implementation, reports, and cross-functional troubleshooting. Varun fits the analytical characterization and documentation core, but the role is a downlevel BS/MS-oriented second-shift execution role and asks for GMP/industry experience he has not yet demonstrated.",
+    "evaluation": {
+      "recommendation": "BACKUP / OUTREACH-FIRST - good analytical bridge but less attractive than Merck oral formulation, PAT, MBC, and BMS chemical process roles because of second shift and downleveling.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is active and fresh on 2026-06-29.",
+        "Technical keywords match Varun’s analytical toolkit: spectroscopy, chromatographic exposure, LCMS-adjacent analysis, stability/degradation, troubleshooting, technical reports, and data review.",
+        "Small-molecule and peptide/oligo development context is closer than biologics-only roles."
+      ],
+      "gaps": [
+        "Role is explicitly second shift and execution-heavy, which may be a poor lifestyle/trajectory tradeoff for a PhD.",
+        "JD is BS/MS plus industry experience rather than PhD-scientist designed.",
+        "Direct GMP release/stability testing, Empower, and regulated audit support are not yet core evidence in Varun’s CV."
+      ],
+      "cv_match": 3.8,
+      "north_star": 3.6,
+      "comp": 3.7,
+      "cultural": 3.8,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, posted 2026-06-23, verified 2026-06-29.",
+    "next_action": "Only pursue after higher-priority Merck/BMS roles; ask PAS contact whether PhD candidates are considered and whether second-shift expectations are flexible.",
+    "id": 150
+  },
+  {
+    "id": 151,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Assoc-Prin-Scientist--Analytical-R-D_R404248-2",
+    "company": "Merck/MSD",
+    "title": "Assoc Prin. Scientist, Analytical R&D",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-29",
+    "date_posted": "2026-06-25",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS detail endpoint returned status=200 with matching R404248 posting on 2026-06-29; startDate=2026-06-25, postedOn=\"Posted 4 Days Ago\", Job Posting End Date 2026-07-02.",
+    "job_id": "R404248",
+    "score": 4.0,
+    "archetype": "Pharmaceutical Materials Science / Analytical R&D",
+    "status": "evaluated",
+    "report_path": "reports/151-merck-assoc-prin-scientist-analytical-rd-pharmaceutical-materials-2026-06-29.md",
+    "tailored_resume": "tailored_merck_pharmaceutical_materials_scientist",
+    "pdf_path": "data/output/cv-merck-assoc-prin-scientist-analytical-r-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck Pharmaceutical Materials Scientist role in Materials & Biophysical Characterization. Technically one of the strongest matches in the sweep: physicochemical characterization of APIs/intermediates/excipients/drug products, crystallization, polymorph/salt selection, drug-excipient compatibility, amorphous solid dispersions, physical stability, thermal analysis, vibrational spectroscopy, materials science, analytical chemistry, PAT and LC-MS/HRMS keywords. Main risk is seniority: Associate Principal asks for PhD plus 4 years non-academic industry experience, so this should be outreach-first and framed as a reach despite strong technical alignment.",
+    "evaluation": {
+      "recommendation": "REACH / APPLY ONLY AFTER OUTREACH - excellent technical match, urgent deadline, and visa sponsorship listed, but seniority/industry-years requirement is the gating risk.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is active and fresh on 2026-06-29 with deadline 2026-07-02.",
+        "JD explicitly targets pharmaceutical materials science, physical chemistry/materials characterization, thermal analysis, vibrational spectroscopy, crystallization, polymorph/salt selection, amorphous solid dispersions, and physical stability.",
+        "Varun maps strongly through PhD chemistry/materials, FT-IR/UV-Vis-NIR/TGA/DSC/NMR/GPC/MS-informed characterization, stability/degradation work, DOE/SPC process development, publications, and technical reports.",
+        "Posting lists domestic relocation and VISA sponsorship: Yes."
+      ],
+      "gaps": [
+        "Role asks for PhD plus 4 years relevant non-academic industrial experience; Varun’s most relevant evidence is academic/postdoc process and materials work.",
+        "XRPD, electron microscopy, powder properties, API polymorph screening, and regulatory filing are adjacent but not primary CV evidence.",
+        "Associate Principal level may be a stretch versus Senior Scientist/Senior Scientist-adjacent roles already in tracker."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.0,
+      "comp": 4.5,
+      "cultural": 4.1,
+      "red_flags": -0.8,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday CXS active, posted 2026-06-25, verified 2026-06-29; end date 2026-07-02; VISA sponsorship listed as Yes.",
+    "next_action": "Urgent outreach to Merck MBC contacts before 2026-07-01 to test the PhD+4 industry requirement; apply with the pharmaceutical-materials PDF only if the level gap is bridgeable."
   }
 ]
