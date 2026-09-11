@@ -537,6 +537,50 @@
     "next_action": "Use Amgen iPAS/process-development contacts to calibrate seniority and sponsorship; if positive, apply with the Amgen process-development PDF."
   },
   {
+    "id": 139,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Analytical-R-D_R402823-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Analytical R&D",
+    "location": "Rahway, NJ",
+    "date_found": "2026-06-22",
+    "date_posted": "2026-09-09",
+    "freshness_verified": true,
+    "freshness_reason": "Reactivated after direct Merck/MSD Workday CXS detail endpoint returned jobReqId R402823 with canApply=true on 2026-09-11; startDate=2026-09-09, postedOn=\"Posted 2 Days Ago\".",
+    "job_id": "R402823",
+    "score": 4.2,
+    "archetype": "Analytical Research & Development / Pharmaceutical Analytical Sciences",
+    "status": "evaluated",
+    "report_path": "reports/139-merck-senior-scientist-analytical-rd-reactivated-2026-09-11.md",
+    "tailored_resume": "tailored_merck_analytical_rd_rahway",
+    "pdf_path": "data/output/cv-merck-senior-scientist-analytical-r-d-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Reactivated direct Merck/MSD Pharmaceutical Analytical Sciences role after Workday CXS again returned the same req current. Role develops analytical methodologies for synthetic small molecule, peptide, and oligonucleotide APIs/products, release and shelf-life assessment under GMP, manufacturing/process understanding studies, regulatory submissions, and future analytical tools. Strong match to Varun's multi-technique analytical characterization, NMR/GPC/MS-informed analysis, stability/degradation reasoning, DOE/SPC process-development mindset, and technical documentation; main gaps remain direct GMP release testing, pharma regulatory submission ownership, and routine LC/GC/dissolution industrial method ownership.",
+    "evaluation": {
+      "recommendation": "REACTIVATED TOP PRIORITY / APPLY AFTER OUTREACH - same Merck req is current again; validate GMP/regulatory and LC/GC depth expectations before applying.",
+      "strengths": [
+        "Direct Merck/MSD Workday CXS detail endpoint returned canApply=true on 2026-09-11 with startDate 2026-09-09.",
+        "Minimum education accepts PhD in Chemistry, Pharmaceutical Science, or related discipline without an explicit post-PhD years requirement.",
+        "Role centers on analytical method development, release/shelf-life assessment, route/formulation/process understanding, regulatory documents, and cross-functional technical leadership.",
+        "Preferred areas include chromatography, mass spectrometry, dissolution, data science, and large-molecule/peptide/oligonucleotide characterization, mapping to Varun's NMR/GPC/MS-informed, spectroscopy, stability, and DOE documentation story."
+      ],
+      "gaps": [
+        "Direct GMP release/shelf-life testing and regulatory submission authorship are adjacent rather than proven.",
+        "Routine LC/GC/dissolution industrial ownership should be positioned through chromatography/MS exposure and method-development rigor, not overclaimed.",
+        "Senior Scientist title requires leadership framing from PhD/postdoc project ownership and lab operations management."
+      ],
+      "cv_match": 4.2,
+      "north_star": 4.3,
+      "comp": 4.2,
+      "cultural": 4.2,
+      "red_flags": -0.3,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active again, startDate 2026-09-09, canApply=true, verified 2026-09-11.",
+    "next_action": "Use existing Merck Rahway PAS outreach drafts to re-check GMP/regulatory and LC/GC depth expectations; if bridgeable, apply with the existing Merck analytical R&D PDF."
+  },
+  {
     "id": 140,
     "source": "workday-direct",
     "url": "https://kla.wd1.myworkdayjobs.com/Search/job/Ann-Arbor-MI/Research-Scientist_2636934-2",
@@ -929,5 +973,93 @@
     },
     "legitimacy_tier": "High Confidence - direct Periodic Labs Ashby posting active, published 2026-09-01, verified 2026-09-09; visa sponsorship explicitly listed.",
     "next_action": "Use Periodic materials/talent outreach to test whether Varun's characterization/process-data depth is enough before investing in a tailored resume."
+  },
+  {
+    "id": 164,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---California---South-San-Francisco-Grand-Ave/Senior-Scientist--Chemistry_R413639",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Chemistry",
+    "location": "South San Francisco, CA",
+    "date_found": "2026-09-11",
+    "date_posted": "2026-09-10",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS detail endpoint returned jobReqId R413639 with canApply=true on 2026-09-11; startDate=2026-09-10, postedOn=\"Posted Yesterday\".",
+    "job_id": "R413639",
+    "score": 4,
+    "archetype": "Medicinal / Synthetic Chemistry Scientist",
+    "status": "evaluated",
+    "report_path": "reports/164-merck-senior-scientist-chemistry-2026-09-11.md",
+    "tailored_resume": "tailored_merck_discovery_chemistry",
+    "pdf_path": "data/output/cv-merck-senior-scientist-chemistry-2026.pdf",
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck/MSD Discovery Chemistry role in South San Francisco for designing, synthesizing, purifying, and characterizing drug candidates and chemical probes, using synthetic/medicinal chemistry, analytical techniques, and data analysis to build SAR. Strong adjacent fit to Varun's organic synthesis, purification, NMR/GPC/MS-informed characterization, spectroscopy/electrochemistry, structure-property-stability reasoning, and publication record. Main gaps are direct medicinal chemistry program ownership, drug-discovery biology/SAR context, and industry discovery-team experience.",
+    "evaluation": {
+      "recommendation": "APPLY AFTER DISCOVERY-CHEMISTRY OUTREACH - worth a tailored application if Merck values physical-organic/materials synthesis profiles for the SSF Discovery Chemistry team.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active with canApply=true on 2026-09-11.",
+        "PhD in chemistry by Summer 2027 is accepted, so Varun is in range educationally without an industry-years bar.",
+        "Role explicitly combines synthetic chemistry, analytical characterization, purification, data analysis, publications, and scientific mentoring.",
+        "South San Francisco location and $131K-$207K range are strong market signals."
+      ],
+      "gaps": [
+        "Medicinal chemistry SAR and target biology are adjacent rather than proven strengths.",
+        "Varun should position electrochromic molecular design as structure-property medicinal-chemistry-adjacent work, not claim drug-discovery experience.",
+        "Application should be outreach-led to test whether materials/physical-organic synthesis is competitive for the team."
+      ],
+      "cv_match": 3.9,
+      "north_star": 3.9,
+      "comp": 4.6,
+      "cultural": 4.2,
+      "red_flags": -0.4,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, startDate 2026-09-10, canApply=true, verified 2026-09-11.",
+    "next_action": "Use Merck SSF Discovery Chemistry peer/recruiter outreach to test medicinal-chemistry/SAR fit; if positive, apply with the tailored Discovery Chemistry PDF."
+  },
+  {
+    "id": 165,
+    "source": "workday-direct",
+    "url": "https://msd.wd5.myworkdayjobs.com/SearchJobs/job/USA---New-Jersey---Rahway/Senior-Scientist--Materials-and-Biophysical-Characterization_R416475-1",
+    "company": "Merck/MSD",
+    "title": "Senior Scientist, Materials and Biophysical Characterization",
+    "location": "Rahway, NJ",
+    "date_found": "2026-09-11",
+    "date_posted": "2026-09-10",
+    "freshness_verified": true,
+    "freshness_reason": "Direct Merck/MSD Workday CXS detail endpoint returned jobReqId R416475 with canApply=true on 2026-09-11; startDate=2026-09-10, postedOn=\"Posted Yesterday\".",
+    "job_id": "R416475",
+    "score": 3.8,
+    "archetype": "Materials & Biophysical Characterization / Formulation Stability",
+    "status": "evaluated",
+    "report_path": "reports/165-merck-materials-biophysical-characterization-2026-09-11.md",
+    "tailored_resume": null,
+    "pdf_path": null,
+    "applied_date": null,
+    "follow_up_date": null,
+    "notes": "Fresh direct Merck/MSD Materials and Biophysical Characterization role for biotherapeutics formulation stability, particle/biophysical characterization, device/process robustness, technical reports, and CMC documentation. Good bridge to Varun's IR/DSC/spectroscopy, QCM-D exposure, thermal analysis, materials stability, process-property reasoning, DOE/SPC, and lab documentation. Main risk is the direct biologics/protein/peptide stability requirement plus DLS/CD/AUC/flow-imaging method gaps.",
+    "evaluation": {
+      "recommendation": "OUTREACH-FIRST STRETCH - current and credible, but only apply if Merck confirms broader materials-characterization depth can offset biologics/particle-method gaps.",
+      "strengths": [
+        "Direct Merck/MSD Workday posting is fresh and active with canApply=true on 2026-09-11.",
+        "PhD in chemistry, chemical engineering, pharmaceutical sciences, or related discipline with 0-4 years industry experience is in range.",
+        "Role values materials characterization, formulation stability, IR, DSC, QCM-D/interface analysis, technical reports, regulatory documents, and project management.",
+        "Comp range of $117K-$184K fits Varun's target range."
+      ],
+      "gaps": [
+        "Direct biologics/protein aggregation, peptide stability, DLS, CD, AUC, flow imaging, and flow cytometry are not core Varun evidence.",
+        "The application must avoid overclaiming biologics expertise and instead frame Varun as a materials-characterization scientist who can ramp on protein-specific methods.",
+        "This is weaker than pure small-molecule/materials postings, so pursue only after a fit-calibration contact."
+      ],
+      "cv_match": 3.7,
+      "north_star": 3.9,
+      "comp": 4.2,
+      "cultural": 4,
+      "red_flags": -0.5,
+      "legitimacy": "High Confidence"
+    },
+    "legitimacy_tier": "High Confidence - direct Merck/MSD Workday posting active, startDate 2026-09-10, canApply=true, verified 2026-09-11.",
+    "next_action": "Use Merck MBC contacts to ask whether non-biologics materials characterization plus IR/DSC/QCM-D/stability experience is enough before applying; no PDF generated because score is below 4.0."
   }
 ]
